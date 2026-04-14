@@ -1,7 +1,3 @@
-# homework
-## 👥 团队成员与分工
-| 姓名 | 角色 | 主要贡献 |
-
 # 基于 Transformer 的半导体制造关键技术研究热点与发展趋势 —— 文献计量分析（2015-2025）
 
 ## 1. 项目简介
@@ -16,3 +12,18 @@
 [cite_start]根据课程 Lesson 9 要求，本组采用 GUI 驱动路线 [cite: 628-634, 704-710]：
 * [cite_start]**GUI 层**：CiteSpace（主方案，用于聚类与热点分析） [cite: 704-710]。
 * **数据层**：WOS 网页端（主方案，用于全记录数据导出）。
+
+
+## 👥 团队分工 (Contribution Matrix)
+| 姓名 | GitHub ID | 关键贡献 |
+| :--- | :--- | :--- |
+
+
+## 📊 核心分析产出
+### 1. 关键词聚类图谱
+![初始聚类图](results/Keyword_Clusters_LLR.png)
+*图注：基于 643 条 WOS 文献，展示了 Transformer 在半导体缺陷检测等领域的聚集情况。*
+
+### 2. 技术演化时间线 (Timeline)
+![时间线图](results/Timeline_v1.png)
+*图注：展示了自 2017 年以来相关技术的演进脉络。*

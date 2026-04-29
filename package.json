@@ -1,0 +1,27 @@
+{
+  "name": "transformer-semiconductor-bibliometrics",
+  "version": "1.0.0",
+  "description": "本项目通过文献计量学方法，探索 Transformer 架构在半导体制造（如晶圆缺陷检测、工艺优化等）领域的应用图谱。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyz2744153437-max/Transformer-Semiconductor-Bibliometrics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jyz2744153437-max/Transformer-Semiconductor-Bibliometrics/issues"
+  },
+  "homepage": "https://github.com/jyz2744153437-max/Transformer-Semiconductor-Bibliometrics#readme",
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  }
+}

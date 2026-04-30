@@ -19,7 +19,7 @@
 
 | # | 任务 | 状态 | 产出 |
 |---|---|---|---|
-| 1.1 | data/field_dictionary.md | ❌ 待做 | 字段字典 |
+| 1.1 | data/field_dictionary.md | ✅ 完成 | 52字段完整字典，含完整率与用途 |
 | 1.2 | reports/data_quality.md | ❌ 待做 | 数据质量报告 |
 | 1.3 | config/query.yaml | ❌ 待做 | 检索式配置文件 |
 | 1.4 | reports/screening_rule.md | ❌ 待做 | 筛选规则 |
@@ -67,9 +67,10 @@
 | 04-30 | 对标参照组分析 | docs/benchmark_gap_analysis.md |
 | 04-30 | 研究方法论 | reports/methodology.md |
 | 04-30 | 进度文件 | PROGRESS.md |
+| 04-30 | 字段字典（52字段完整分析） | data/field_dictionary.md |
 
 ---
 
 ## 下一步
 
-→ 任务 1.1：编写 `data/field_dictionary.md`（自动读 WOS 数据生成字段字典）
+→ 任务 1.2：编写 `reports/data_quality.md`（基于643条数据生成质量报告）

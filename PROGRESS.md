@@ -20,7 +20,7 @@
 | # | 任务 | 状态 | 产出 |
 |---|---|---|---|
 | 1.1 | data/field_dictionary.md | ✅ 完成 | 52字段完整字典，含完整率与用途 |
-| 1.2 | reports/data_quality.md | ❌ 待做 | 数据质量报告 |
+| 1.2 | reports/data_quality.md | ✅ 完成 | 零重复、A级质量评级、年度趋势、期刊分布 |
 | 1.3 | config/query.yaml | ❌ 待做 | 检索式配置文件 |
 | 1.4 | reports/screening_rule.md | ❌ 待做 | 筛选规则 |
 | 1.5 | reports/novelty_search_v0.md | ❌ 待做 | 查新报告 |
@@ -68,9 +68,11 @@
 | 04-30 | 研究方法论 | reports/methodology.md |
 | 04-30 | 进度文件 | PROGRESS.md |
 | 04-30 | 字段字典（52字段完整分析） | data/field_dictionary.md |
+| 04-30 | 数据质量报告（A级评级） | reports/data_quality.md |
+| 04-30 | 综述范本 + L17-18案例讲解（五步法框架） | 课件及杂项/README.md |
 
 ---
 
 ## 下一步
 
-→ 任务 1.2：编写 `reports/data_quality.md`（基于643条数据生成质量报告）
+→ 任务 1.3：编写 `config/query.yaml`（基于三轮检索迭代记录生成配置文件）

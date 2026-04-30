@@ -10,7 +10,7 @@
 | 里程碑 | 截止 | 状态 | 完成度 |
 |---|---|---|---|
 | M1 数据与检索方案 | 第4周末 | ✅ 完成 | ██████████ 100% |
-| M2 计量分析产出 | 第10周末 | ⚪ 未开始 | ░░░░░░░░░░ 0% |
+| M2 计量分析产出 | 第10周末 | 🔴 进行中 | █████░░░░░ 50% |
 | M3 终稿与Release | 第15周末 | ⚪ 未开始 | ░░░░░░░░░░ 0% |
 
 ---
@@ -75,9 +75,17 @@
 | 05-01 | 查新报告 v0（确认无直接竞争综述） | reports/novelty_search_v0.md |
 | 05-01 | PRISMA 流程图（Mermaid 格式） | reports/prisma_flowchart.md |
 | 05-01 | 数据说明文档 | Data/README.md |
+| 05-01 | 指标计算脚本（Node.js） | src/metrics_calculator.js |
+| 05-01 | 指标规范文档 v2.0 | reports/metrics_spec.md |
+| 05-01 | 图数据模型 | docs/data_model.md |
+| 05-01 | 分析管道脚本 | run_pipeline.js |
+| 05-01 | Python 依赖清单 | requirements.txt |
+| 05-01 | Mini Review 初稿 | paper/manuscript_v1.md |
+| 05-01 | 指标统计报告 | outputs/metrics_report.md |
 
 ---
 
 ## 下一步
 
-→ 阶段 2：M2 计量分析产出（共被引分析、突现检测、合作网络等）
+→ 阶段 2 剩余：CiteSpace GUI 操作（共被引、突现、时间线、耦合、合作网络）
+→ 阶段 3：阈值敏感性对照实验

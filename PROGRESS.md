@@ -1,7 +1,7 @@
 # 项目进度追踪
 
-> 最后更新：2026-04-30
-> 当前阶段：M1 文档补全
+> 最后更新：2026-05-01
+> 当前阶段：M1 文档补全（已完成）
 
 ---
 
@@ -9,7 +9,7 @@
 
 | 里程碑 | 截止 | 状态 | 完成度 |
 |---|---|---|---|
-| M1 数据与检索方案 | 第4周末 | 🔴 进行中 | ████████░░ 80% |
+| M1 数据与检索方案 | 第4周末 | ✅ 完成 | ██████████ 100% |
 | M2 计量分析产出 | 第10周末 | ⚪ 未开始 | ░░░░░░░░░░ 0% |
 | M3 终稿与Release | 第15周末 | ⚪ 未开始 | ░░░░░░░░░░ 0% |
 
@@ -21,11 +21,11 @@
 |---|---|---|---|
 | 1.1 | data/field_dictionary.md | ✅ 完成 | 52字段完整字典，含完整率与用途 |
 | 1.2 | reports/data_quality.md | ✅ 完成 | 零重复、A级质量评级、年度趋势、期刊分布 |
-| 1.3 | config/query.yaml | ❌ 待做 | 检索式配置文件 |
-| 1.4 | reports/screening_rule.md | ❌ 待做 | 筛选规则 |
-| 1.5 | reports/novelty_search_v0.md | ❌ 待做 | 查新报告 |
-| 1.6 | PRISMA 流程图 | ❌ 待做 | 筛选流程图 |
-| 1.7 | data/README.md | ❌ 待做 | 数据说明文档 |
+| 1.3 | config/query.yaml | ✅ 完成 | 检索式配置文件（含v0/v1/v2-final三版本） |
+| 1.4 | reports/screening_rule.md | ✅ 完成 | 筛选规则 + 排除原因编码表 |
+| 1.5 | reports/novelty_search_v0.md | ✅ 完成 | 查新报告（确认无直接竞争综述） |
+| 1.6 | PRISMA 流程图 | ✅ 完成 | reports/prisma_flowchart.md（Mermaid格式） |
+| 1.7 | data/README.md | ✅ 完成 | 数据说明文档 |
 
 ## 阶段 2：M2 计量分析
 
@@ -70,9 +70,14 @@
 | 04-30 | 字段字典（52字段完整分析） | data/field_dictionary.md |
 | 04-30 | 数据质量报告（A级评级） | reports/data_quality.md |
 | 04-30 | 综述范本 + L17-18案例讲解（五步法框架） | 课件及杂项/README.md |
+| 05-01 | 检索式配置文件（含三版本迭代历史） | config/query.yaml |
+| 05-01 | 筛选规则文档 + 排除原因编码表 | reports/screening_rule.md |
+| 05-01 | 查新报告 v0（确认无直接竞争综述） | reports/novelty_search_v0.md |
+| 05-01 | PRISMA 流程图（Mermaid 格式） | reports/prisma_flowchart.md |
+| 05-01 | 数据说明文档 | Data/README.md |
 
 ---
 
 ## 下一步
 
-→ 任务 1.3：编写 `config/query.yaml`（基于三轮检索迭代记录生成配置文件）
+→ 阶段 2：M2 计量分析产出（共被引分析、突现检测、合作网络等）

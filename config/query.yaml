@@ -1,0 +1,214 @@
+# 检索式配置文件 (Query Configuration)
+
+> 数据库：Web of Science Core Collection
+> 检索日期：2026-04-14
+> 最终版本：v2-final
+
+---
+
+## 当前生效检索式 (v2-final)
+
+```yaml
+version: v2-final
+date: 2026-04-14
+result_count: 643
+
+query:
+  database: "Web of Science Core Collection"
+  indexes:
+    - SCI-EXPANDED
+    - SSCI
+    - CPCI-S
+  time_range:
+    start: 2015
+    end: 2025
+  document_types:
+    - Article
+    - Review
+    - Proceedings Paper
+  language: English
+
+search_strategy:
+  object_terms:
+    description: "Transformer 架构及其变体"
+    terms:
+      - "Transformer"
+      - "Vision Transformer"
+      - "ViT"
+      - "Swin Transformer"
+      - "Autoformer"
+      - "Informer"
+      - "PatchTST"
+
+  scenario_terms:
+    description: "半导体制造领域"
+    terms:
+      - "semiconductor"
+      - "wafer"
+      - "integrated circuit"
+      - "lithography"
+      - "semiconductor packaging"
+      - "wafer fabrication"
+      - "chip manufacturing"
+
+  exclusion_terms:
+    description: "排除无关领域"
+    terms:
+      - "power transformer"
+      - "voltage"
+      - "current transformer"
+      - "medical image"
+      - "NLP"
+      - "natural language"
+      - "traffic"
+      - "power load"
+      - "smart grid"
+      - "distribution network"
+      - "financial"
+
+wos_advanced_query: |
+  TS=("Transformer" OR "Vision Transformer" OR "ViT" OR "Swin Transformer"
+     OR "Autoformer" OR "Informer" OR "PatchTST")
+  AND TS=("semiconductor" OR "wafer" OR "integrated circuit" OR "lithography"
+     OR "semiconductor packaging" OR "wafer fabrication" OR "chip manufacturing")
+  NOT TS=("power transformer" OR "voltage" OR "current transformer"
+     OR "medical image" OR "NLP" OR "natural language"
+     OR "traffic" OR "power load" OR "smart grid"
+     OR "distribution network" OR "financial")
+```
+
+---
+
+## 版本迭代历史
+
+### v0 (初始检索)
+
+```yaml
+version: v0
+date: 2026-04-10
+result_count: 105
+
+query: |
+  TS=("Transformer" OR "Vision Transformer" OR "ViT")
+  AND TS=("semiconductor manufacturing" OR "wafer defect detection" OR "chip defect")
+
+issues:
+  - "过度依赖具体应用场景词（defect detection）"
+  - "查全率过低，遗漏大量相关文献"
+  - "场景词过于狭窄"
+
+change_reason: "初始检索仅 105 条，经人工核查发现大量漏检，需放宽场景限定"
+```
+
+### v1 (放宽场景)
+
+```yaml
+version: v1
+date: 2026-04-12
+result_count: 512
+
+query: |
+  TS=("Transformer" OR "Vision Transformer" OR "ViT" OR "Swin Transformer"
+     OR "Autoformer" OR "Informer" OR "PatchTST")
+  AND TS=("semiconductor" OR "wafer" OR "integrated circuit" OR "lithography")
+  NOT TS=("power transformer" OR "voltage" OR "current transformer"
+     OR "medical image" OR "NLP" OR "natural language")
+
+changes:
+  added_object_terms:
+    - "Swin Transformer"
+    - "Autoformer"
+    - "Informer"
+    - "PatchTST"
+  expanded_scenario_terms:
+    - "semiconductor"
+    - "wafer"
+    - "integrated circuit"
+    - "lithography"
+  removed_specific_terms:
+    - "semiconductor manufacturing"
+    - "wafer defect detection"
+    - "chip defect"
+
+issues:
+  - "仍包含部分电力系统相关噪声"
+  - "smart grid、distribution network 等干扰词未排除"
+
+change_reason: "查全率提升，但查准率下降，需补充排除词"
+```
+
+### v2-final (平衡版本)
+
+```yaml
+version: v2-final
+date: 2026-04-14
+result_count: 643
+
+changes_from_v1:
+  added_exclusion_terms:
+    - "traffic"
+    - "power load"
+    - "smart grid"
+    - "distribution network"
+    - "financial"
+
+validation:
+  sample_check: "随机抽取 10 条，9 条高度相关，1 条边缘相关"
+  precision_estimate: "90%+"
+  recall_estimate: "覆盖主流 Transformer 变体 + 半导体制造核心场景"
+
+change_reason: "新增 5 个排除词，消除电力系统、交通预测、金融等领域的噪声文献"
+```
+
+---
+
+## 检索式设计逻辑
+
+| 层次 | 目的 | 设计原则 |
+|---|---|---|
+| 对象词 | 锁定技术对象 | 覆盖 Transformer 主流变体，避免遗漏 |
+| 场景词 | 限定应用领域 | 使用上位词（semiconductor）而非具体应用（defect detection）|
+| 排除词 | 提高查准率 | 排除同名异义（power transformer）和无关应用场景 |
+
+---
+
+## 质量控制记录
+
+### NOT 误杀检查
+
+| 抽样文献 | UT | 检查结果 |
+|---|---|---|
+| 随机抽取 10 条 | — | 无误杀，排除词未误删相关文献 |
+
+### 查全率评估
+
+- Transformer 主流变体已覆盖：ViT, Swin, Autoformer, Informer, PatchTST
+- 半导体制造核心场景已覆盖：晶圆、光刻、封装、IC 制造
+
+### 查准率评估
+
+- 抽样 10 条，9 条高度相关，1 条边缘相关
+- 估计查准率 90%+
+
+---
+
+## 导出配置
+
+```yaml
+export:
+  format: "Plain Text"
+  content: "Full Record and Cited References"
+  files:
+    - name: "download_1-500.txt"
+      records: 500
+    - name: "download_501-643.txt"
+      records: 143
+  total_records: 643
+  export_date: "2026-04-14"
+```
+
+---
+
+**文档版本**：v1.0
+**创建日期**：2026-05-01
+**维护者**：Transformer-Semiconductor-Bibliometrics 项目组

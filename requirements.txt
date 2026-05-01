@@ -1,9 +1,12 @@
-# Python 依赖（备用）
-# 本项目主要使用 Node.js，Python 脚本为备选方案
+# Python 依赖
+# 运行: pip install -r requirements.txt
 
 # 数据处理
 pandas>=2.0.0
 numpy>=1.24.0
+
+# 科学计算
+scipy>=1.10.0
 
 # 网络分析
 networkx>=3.0
@@ -11,6 +14,7 @@ networkx>=3.0
 # 可视化
 matplotlib>=3.7.0
 seaborn>=0.12.0
+plotly>=5.15.0
 
 # Jupyter（可选）
 jupyter>=1.0.0

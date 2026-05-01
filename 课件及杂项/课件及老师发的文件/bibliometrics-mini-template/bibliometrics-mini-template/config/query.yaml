@@ -1,0 +1,30 @@
+project:
+  name: bibliometrics-mini
+  topic: field effect transistor biosensor
+  description: Minimal classroom bibliometrics pipeline.
+
+data:
+  source: openalex
+  query: 'field effect transistor biosensor'
+  from_year: 2020
+  to_year: 2025
+  type: article
+  per_page: 50
+  max_records: 200
+  raw_jsonl: data/raw/openalex_works.jsonl
+  sample_jsonl: data/sample/openalex_works_sample.jsonl
+  wos_dir: data/sample-wos
+
+analysis:
+  min_keyword_occurrence: 1
+  min_edge_weight: 1
+  top_edges: 200
+  top_labels: 12
+  layout_seed: 42
+  use_cosine_normalization: false
+
+outputs:
+  processed_dir: data/processed
+  tables_dir: outputs/tables
+  figures_dir: outputs/figures
+  reports_dir: reports

@@ -1,0 +1,2862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliometrics Report - 2026-05-01</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f8f9fa; }
+.report-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; }
+.report-header h1 { margin-bottom: 0.3rem; }
+.network-section { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.table { font-size: 0.9rem; }
+.table th { background-color: #f1f3f5; position: sticky; top: 0; }
+.badge-cluster { font-size: 0.75em; }
+.toc-nav { position: sticky; top: 1rem; }
+@media print { .no-print { display: none !important; } iframe { display: none; } img { max-width: 100%; page-break-inside: avoid; } .network-section { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<div class="report-header">
+<div class="container">
+<h1>Bibliometrics Analysis Report</h1>
+<p class="mb-0 opacity-75">Generated on 2026-05-01 16:10:02 | Data source: <code>data/sample-wos</code></p>
+</div>
+</div>
+
+<div class="container">
+<nav aria-label="breadcrumb" class="mb-3 no-print">
+<ol class="breadcrumb">
+<li class="breadcrumb-item active">Report Home</li>
+</ol>
+</nav>
+
+<div class="row">
+<div class="col-lg-3 no-print">
+<div class="card sticky-top toc-nav" style="top:1rem;">
+<div class="card-header bg-light fw-bold">Table of Contents</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item list-group-item-action"><a href="#overview">Overview</a></li>
+<li class="list-group-item list-group-item-action"><a href="#section-keyword_cooccurrence">Keyword Co-occurrence Network (W = K.T @ K)</a></li>
+<li class="list-group-item list-group-item-action"><a href="#section-co_citation">Co-citation Network (C = A.T @ A)</a></li>
+<li class="list-group-item list-group-item-action"><a href="#section-bibliographic_coupling">Bibliographic Coupling Network (B = A @ A.T)</a></li>
+<li class="list-group-item list-group-item-action"><a href="#section-coauthorship">Co-authorship Collaboration Network</a></li>
+</ul></div></div>
+
+<div class="col-lg-9">
+
+<section id="overview" class="network-section mb-4">
+<h3>Data Overview & Descriptive Indicators</h3>
+<div class="row">
+<div class="col-md-6">
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th>Seed Works</th><td>4,808</td></tr>
+<tr><th>Reference Pairs</th><td>252,316</td></tr>
+<tr><th>Authorship Rows</th><td>26,507</td></tr>
+<tr><th>Keyword Rows</th><td>54,611</td></tr>
+</tbody>
+</table>
+</div>
+<div class="col-md-6">
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th>Total Seed Works</th><td>4808.00</td></tr>
+<tr><th>Earliest Year</th><td>2000.00</td></tr>
+<tr><th>Latest Year</th><td>2026.00</td></tr>
+<tr><th>Total Citations</th><td>313600.00</td></tr>
+<tr><th>Mean Citations per Work</th><td>65.22</td></tr>
+<tr><th>H-index (Seed Works)</th><td>226.00</td></tr>
+<tr><th>Unique Authors</th><td>17892.00</td></tr>
+</tbody></table></div></div>
+<hr>
+<p><strong>Analysis Parameters:</strong> layout_seed={seed}, top_edges={top_edges}, min_edge_weight={min_edge_weight}</p>
+<p><strong>Formulas:</strong> Keyword co-occurrence W = K.T @ K | Co-citation C = A.T @ A | Bibliographic coupling B = A @ A.T<br>
+Betweenness centrality uses distance = 1/weight for similarity-weighted networks.</p>
+</section>
+
+<div id="section-keyword_cooccurrence" class="network-section mb-5">
+<h3 class="mt-4 mb-3">Keyword Co-occurrence Network (W = K.T @ K)</h3>
+<div class="row"><div class="col-md-6">
+<h5>Network Overview</h5>
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th style="width:45%">Nodes</th><td>112</td></tr>
+<tr><th style="width:45%">Edges</th><td>200</td></tr>
+<tr><th style="width:45%">Density</th><td>0.0322</td></tr>
+<tr><th style="width:45%">Communities</th><td>11</td></tr>
+<tr><th style="width:45%">Modularity</th><td>0.5703</td></tr>
+<tr><th style="width:45%">Avg Clustering Coefficient</th><td>0.3528</td></tr>
+<tr><th style="width:45%">Avg Degree</th><td>3.57</td></tr>
+<tr><th style="width:45%">Avg Weighted Degree</th><td>78.64</td></tr>
+<tr><th style="width:45%">Components</th><td>6</td></tr>
+<tr><th style="width:45%">Largest Component Ratio</th><td>88.39%</td></tr>
+<tr><th style="width:45%">Diameter (Largest CC)</th><td>7</td></tr>
+<tr><th style="width:45%">Avg Path Length (Largest CC)</th><td>3.243</td></tr>
+</tbody></table>
+</div><div class="col-md-6">
+<h5>Static Network Map</h5>
+<a href="..\outputs\figures\keyword_cooccurrence_network.png" target="_blank"><img src="..\outputs\figures\keyword_cooccurrence_network.png" class="img-fluid rounded border shadow-sm" alt="Keyword Co-occurrence Network (W = K.T @ K)" style="max-width:100%;"></a>
+<p class="small text-muted mt-1">Click to enlarge. Nodes colored by community/cluster.</p>
+</div></div>
+<hr class="my-3"><h5>Interactive Network Map</h5>
+<iframe src="..\outputs\figures\keyword_cooccurrence_network.html" width="100%" height="600" frameborder="0" class="border rounded shadow-sm" allowfullscreen></iframe>
+<p class="small text-muted mt-1">Hover over nodes to see detailed metrics. Drag nodes to reposition. Scroll to zoom.</p>
+<hr class="my-3"><h5>Top-20 Node Metrics</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Node</th>
+      <th>Degree</th>
+      <th>Weighted Deg.</th>
+      <th>Betweenness</th>
+      <th>PageRank</th>
+      <th>Closeness</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>positron-emission-tomography</td>
+      <td>36</td>
+      <td>936.0</td>
+      <td>0.4310</td>
+      <td>0.0947</td>
+      <td>0.4081</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>cancer</td>
+      <td>29</td>
+      <td>713.0</td>
+      <td>0.4668</td>
+      <td>0.0575</td>
+      <td>0.4530</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>expression</td>
+      <td>26</td>
+      <td>705.0</td>
+      <td>0.2965</td>
+      <td>0.0647</td>
+      <td>0.3863</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>pet</td>
+      <td>18</td>
+      <td>463.0</td>
+      <td>0.0701</td>
+      <td>0.0432</td>
+      <td>0.3666</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>in-vivo</td>
+      <td>12</td>
+      <td>321.0</td>
+      <td>0.0059</td>
+      <td>0.0273</td>
+      <td>0.3951</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>pooled analysis</td>
+      <td>9</td>
+      <td>242.0</td>
+      <td>0.0177</td>
+      <td>0.0185</td>
+      <td>0.3112</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>cells</td>
+      <td>11</td>
+      <td>238.0</td>
+      <td>0.1269</td>
+      <td>0.0199</td>
+      <td>0.3729</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>carcinoma</td>
+      <td>11</td>
+      <td>237.0</td>
+      <td>0.0159</td>
+      <td>0.0206</td>
+      <td>0.3987</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>apoptosis</td>
+      <td>9</td>
+      <td>204.0</td>
+      <td>0.0162</td>
+      <td>0.0179</td>
+      <td>0.3489</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>electrical detection</td>
+      <td>9</td>
+      <td>194.0</td>
+      <td>0.1078</td>
+      <td>0.0306</td>
+      <td>0.2219</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>exposure</td>
+      <td>8</td>
+      <td>174.0</td>
+      <td>0.0147</td>
+      <td>0.0137</td>
+      <td>0.3101</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>childhood leukemia</td>
+      <td>6</td>
+      <td>153.0</td>
+      <td>0.0000</td>
+      <td>0.0115</td>
+      <td>0.3079</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>risk</td>
+      <td>6</td>
+      <td>147.0</td>
+      <td>0.0000</td>
+      <td>0.0113</td>
+      <td>0.3079</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>fdg-pet</td>
+      <td>6</td>
+      <td>138.0</td>
+      <td>0.0000</td>
+      <td>0.0134</td>
+      <td>0.3135</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>proliferation</td>
+      <td>6</td>
+      <td>127.0</td>
+      <td>0.0000</td>
+      <td>0.0112</td>
+      <td>0.3713</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>growth</td>
+      <td>6</td>
+      <td>125.0</td>
+      <td>0.0285</td>
+      <td>0.0113</td>
+      <td>0.3489</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>positron emission tomography</td>
+      <td>6</td>
+      <td>125.0</td>
+      <td>0.0000</td>
+      <td>0.0120</td>
+      <td>0.3146</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>brain-tumors</td>
+      <td>4</td>
+      <td>124.0</td>
+      <td>0.0000</td>
+      <td>0.0114</td>
+      <td>0.3101</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>gene-expression</td>
+      <td>7</td>
+      <td>119.0</td>
+      <td>0.0616</td>
+      <td>0.0109</td>
+      <td>0.3341</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>progression</td>
+      <td>4</td>
+      <td>111.0</td>
+      <td>0.0000</td>
+      <td>0.0095</td>
+      <td>0.3341</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="my-3"><h5>Cluster / Community Summary</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Community</th>
+      <th>N Nodes</th>
+      <th>Mean Weighted Degree</th>
+      <th>Mean Betweenness</th>
+      <th>Mean Pagerank</th>
+      <th>Mean Closeness</th>
+      <th>Mean Eigenvector</th>
+      <th>Total Weighted Degree</th>
+      <th>Top Node</th>
+      <th>Pct Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>40</td>
+      <td>81.1750</td>
+      <td>0.0140</td>
+      <td>0.0087</td>
+      <td>0.2934</td>
+      <td>0.0775</td>
+      <td>3247.0</td>
+      <td>positron-emission-tomography; pet; in-vivo; fdg-pet; proliferation</td>
+      <td>35.7</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>25</td>
+      <td>96.7600</td>
+      <td>0.0225</td>
+      <td>0.0093</td>
+      <td>0.3095</td>
+      <td>0.0668</td>
+      <td>2419.0</td>
+      <td>expression; cells; carcinoma; apoptosis; growth</td>
+      <td>22.3</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>15</td>
+      <td>124.5333</td>
+      <td>0.0343</td>
+      <td>0.0105</td>
+      <td>0.3032</td>
+      <td>0.0619</td>
+      <td>1868.0</td>
+      <td>cancer; pooled analysis; exposure; childhood leukemia; risk</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>11</td>
+      <td>49.6364</td>
+      <td>0.0217</td>
+      <td>0.0081</td>
+      <td>0.2085</td>
+      <td>0.0019</td>
+      <td>546.0</td>
+      <td>electrical detection; dna; arrays; nanosensors; biosensors</td>
+      <td>9.8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>64.7500</td>
+      <td>0.0117</td>
+      <td>0.0083</td>
+      <td>0.2076</td>
+      <td>0.0012</td>
+      <td>259.0</td>
+      <td>5-fluorouracil; thymidylate synthase; thymidine phosphorylase; dihydropyrimidine dehydrogenase</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>4</td>
+      <td>44.0000</td>
+      <td>0.0001</td>
+      <td>0.0089</td>
+      <td>0.0209</td>
+      <td>0.0000</td>
+      <td>176.0</td>
+      <td>transformer; transformers; integrated circuit modeling; design</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>4</td>
+      <td>28.7500</td>
+      <td>0.0118</td>
+      <td>0.0062</td>
+      <td>0.2262</td>
+      <td>0.0062</td>
+      <td>115.0</td>
+      <td>growth-factor-beta; tgf-beta; tgf-beta superfamily; mic-1</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3</td>
+      <td>26.6667</td>
+      <td>0.0001</td>
+      <td>0.0089</td>
+      <td>0.0140</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>transitional-cell carcinoma; bladder cancer; urothelial carcinoma</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>2</td>
+      <td>20.0000</td>
+      <td>0.0000</td>
+      <td>0.0089</td>
+      <td>0.0090</td>
+      <td>0.0000</td>
+      <td>40.0</td>
+      <td>febrile response; tumor-necrosis-factor</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2</td>
+      <td>15.0000</td>
+      <td>0.0000</td>
+      <td>0.0089</td>
+      <td>0.0090</td>
+      <td>0.0000</td>
+      <td>30.0</td>
+      <td>hereditary breast; ovarian-cancer</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2</td>
+      <td>14.0000</td>
+      <td>0.0000</td>
+      <td>0.0089</td>
+      <td>0.0090</td>
+      <td>0.0000</td>
+      <td>28.0</td>
+      <td>dna methylation; hypermethylation</td>
+      <td>1.8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="section-co_citation" class="network-section mb-5">
+<h3 class="mt-4 mb-3">Co-citation Network (C = A.T @ A)</h3>
+<div class="row"><div class="col-md-6">
+<h5>Network Overview</h5>
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th style="width:45%">Nodes</th><td>119</td></tr>
+<tr><th style="width:45%">Edges</th><td>200</td></tr>
+<tr><th style="width:45%">Density</th><td>0.0285</td></tr>
+<tr><th style="width:45%">Communities</th><td>16</td></tr>
+<tr><th style="width:45%">Modularity</th><td>0.7951</td></tr>
+<tr><th style="width:45%">Avg Clustering Coefficient</th><td>0.5261</td></tr>
+<tr><th style="width:45%">Avg Degree</th><td>3.36</td></tr>
+<tr><th style="width:45%">Avg Weighted Degree</th><td>122.20</td></tr>
+<tr><th style="width:45%">Components</th><td>16</td></tr>
+<tr><th style="width:45%">Largest Component Ratio</th><td>26.05%</td></tr>
+<tr><th style="width:45%">Diameter (Largest CC)</th><td>3</td></tr>
+<tr><th style="width:45%">Avg Path Length (Largest CC)</th><td>1.901</td></tr>
+</tbody></table>
+</div><div class="col-md-6">
+<h5>Static Network Map</h5>
+<a href="..\outputs\figures\co_citation_network.png" target="_blank"><img src="..\outputs\figures\co_citation_network.png" class="img-fluid rounded border shadow-sm" alt="Co-citation Network (C = A.T @ A)" style="max-width:100%;"></a>
+<p class="small text-muted mt-1">Click to enlarge. Nodes colored by community/cluster.</p>
+</div></div>
+<hr class="my-3"><h5>Interactive Network Map</h5>
+<iframe src="..\outputs\figures\co_citation_network.html" width="100%" height="600" frameborder="0" class="border rounded shadow-sm" allowfullscreen></iframe>
+<p class="small text-muted mt-1">Hover over nodes to see detailed metrics. Drag nodes to reposition. Scroll to zoom.</p>
+<hr class="my-3"><h5>Top-20 Node Metrics</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Node</th>
+      <th>Degree</th>
+      <th>Weighted Deg.</th>
+      <th>Betweenness</th>
+      <th>PageRank</th>
+      <th>Closeness</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Zheng GF_2005_NAT BIOTECHNOL</td>
+      <td>28</td>
+      <td>1310.0</td>
+      <td>0.0526</td>
+      <td>0.0635</td>
+      <td>0.2383</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Cui Y_2001_SCIENCE</td>
+      <td>22</td>
+      <td>1014.0</td>
+      <td>0.0103</td>
+      <td>0.0467</td>
+      <td>0.2007</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Weber WA_2000_EUR J NUCL MED</td>
+      <td>15</td>
+      <td>593.0</td>
+      <td>0.0151</td>
+      <td>0.0289</td>
+      <td>0.1356</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Wester HJ_1999_J NUCL MED</td>
+      <td>13</td>
+      <td>529.0</td>
+      <td>0.0109</td>
+      <td>0.0268</td>
+      <td>0.1169</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Greenland S_2000_EPIDEMIOLOGY</td>
+      <td>8</td>
+      <td>402.0</td>
+      <td>0.0025</td>
+      <td>0.0180</td>
+      <td>0.0678</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Ahlbom A_2000_BRIT J CANCER</td>
+      <td>8</td>
+      <td>352.0</td>
+      <td>0.0000</td>
+      <td>0.0159</td>
+      <td>0.0678</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Hahm J_2004_NANO LETT</td>
+      <td>6</td>
+      <td>339.0</td>
+      <td>0.0000</td>
+      <td>0.0143</td>
+      <td>0.1412</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Patolsky F_2004_P NATL ACAD SCI USA</td>
+      <td>6</td>
+      <td>324.0</td>
+      <td>0.0000</td>
+      <td>0.0138</td>
+      <td>0.1412</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Yu YP_2004_J CLIN ONCOL</td>
+      <td>9</td>
+      <td>322.0</td>
+      <td>0.0045</td>
+      <td>0.0281</td>
+      <td>0.0763</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Shields AF_1998_NAT MED</td>
+      <td>9</td>
+      <td>314.0</td>
+      <td>0.0048</td>
+      <td>0.0321</td>
+      <td>0.0763</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Stern E_2007_NATURE</td>
+      <td>7</td>
+      <td>311.0</td>
+      <td>0.0000</td>
+      <td>0.0134</td>
+      <td>0.1439</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Jager PL_2001_J NUCL MED</td>
+      <td>8</td>
+      <td>285.0</td>
+      <td>0.0000</td>
+      <td>0.0134</td>
+      <td>0.0997</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Heiss P_1999_J NUCL MED</td>
+      <td>7</td>
+      <td>276.0</td>
+      <td>0.0000</td>
+      <td>0.0129</td>
+      <td>0.0969</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Wang WU_2005_P NATL ACAD SCI USA</td>
+      <td>5</td>
+      <td>219.0</td>
+      <td>0.0000</td>
+      <td>0.0096</td>
+      <td>0.1387</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Li Z_2004_NANO LETT</td>
+      <td>5</td>
+      <td>214.0</td>
+      <td>0.0000</td>
+      <td>0.0094</td>
+      <td>0.1387</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Lynch TJ_2004_NEW ENGL J MED</td>
+      <td>6</td>
+      <td>213.0</td>
+      <td>0.0003</td>
+      <td>0.0125</td>
+      <td>0.0508</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Paez JG_2004_SCIENCE</td>
+      <td>6</td>
+      <td>205.0</td>
+      <td>0.0001</td>
+      <td>0.0121</td>
+      <td>0.0508</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Tang XN_2005_CANCER RES</td>
+      <td>6</td>
+      <td>199.0</td>
+      <td>0.0004</td>
+      <td>0.0118</td>
+      <td>0.0508</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Rau FC_2002_EUR J NUCL MED MOL I</td>
+      <td>5</td>
+      <td>192.0</td>
+      <td>0.0000</td>
+      <td>0.0092</td>
+      <td>0.0916</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chen RJ_2003_P NATL ACAD SCI USA</td>
+      <td>5</td>
+      <td>182.0</td>
+      <td>0.0000</td>
+      <td>0.0093</td>
+      <td>0.1387</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="my-3"><h5>Cluster / Community Summary</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Community</th>
+      <th>N Nodes</th>
+      <th>Mean Weighted Degree</th>
+      <th>Mean Betweenness</th>
+      <th>Mean Pagerank</th>
+      <th>Mean Closeness</th>
+      <th>Mean Eigenvector</th>
+      <th>Total Weighted Degree</th>
+      <th>Top Node</th>
+      <th>Pct Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>31</td>
+      <td>167.2258</td>
+      <td>0.0020</td>
+      <td>0.0084</td>
+      <td>0.1364</td>
+      <td>0.1245</td>
+      <td>5184.0</td>
+      <td>Zheng GF_2005_NAT BIOTECHNOL; Cui Y_2001_SCIENCE; Hahm J_2004_NANO LETT; Patolsky F_2004_P NATL ACAD SCI USA; Stern E_2007_NATURE</td>
+      <td>26.1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>21</td>
+      <td>156.7619</td>
+      <td>0.0015</td>
+      <td>0.0084</td>
+      <td>0.0866</td>
+      <td>0.0000</td>
+      <td>3292.0</td>
+      <td>Weber WA_2000_EUR J NUCL MED; Wester HJ_1999_J NUCL MED; Jager PL_2001_J NUCL MED; Heiss P_1999_J NUCL MED; Rau FC_2002_EUR J NUCL MED MOL I</td>
+      <td>17.6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9</td>
+      <td>177.1111</td>
+      <td>0.0003</td>
+      <td>0.0084</td>
+      <td>0.0499</td>
+      <td>0.0000</td>
+      <td>1594.0</td>
+      <td>Greenland S_2000_EPIDEMIOLOGY; Ahlbom A_2000_BRIT J CANCER; Linet MS_1997_NEW ENGL J MED; McBride ML_1999_AM J EPIDEMIOL; SAVITZ DA_1988_AM J EPIDEMIOL</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+      <td>137.4286</td>
+      <td>0.0001</td>
+      <td>0.0084</td>
+      <td>0.0412</td>
+      <td>0.0000</td>
+      <td>962.0</td>
+      <td>Lynch TJ_2004_NEW ENGL J MED; Paez JG_2004_SCIENCE; Tang XN_2005_CANCER RES; Shigematsu H_2005_JNCI-J NATL CANCER I; Pao W_2004_P NATL ACAD SCI USA</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10</td>
+      <td>94.2000</td>
+      <td>0.0004</td>
+      <td>0.0084</td>
+      <td>0.0468</td>
+      <td>0.0000</td>
+      <td>942.0</td>
+      <td>Yu YP_2004_J CLIN ONCOL; Lapointe J_2004_P NATL ACAD SCI USA; Welsh JB_2001_CANCER RES; Dhanasekaran SM_2001_NATURE; Singh D_2002_CANCER CELL</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+      <td>78.2000</td>
+      <td>0.0005</td>
+      <td>0.0084</td>
+      <td>0.0456</td>
+      <td>0.0000</td>
+      <td>782.0</td>
+      <td>Shields AF_1998_NAT MED; Machulla HJ_2000_J RADIOANAL NUCL CH; Rasey JS_2002_J NUCL MED; Vesselle H_2002_CLIN CANCER RES; Buck AK_2003_J NUCL MED</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+      <td>113.0000</td>
+      <td>0.0001</td>
+      <td>0.0084</td>
+      <td>0.0360</td>
+      <td>0.0000</td>
+      <td>678.0</td>
+      <td>Albertoni M_2002_ONCOGENE; Bootcov MR_1997_P NATL ACAD SCI USA; Li PX_2000_J BIOL CHEM; Paralkar VM_1998_J BIOL CHEM; Baek SJ_2001_MOL PHARMACOL</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>3</td>
+      <td>104.0000</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0169</td>
+      <td>0.0000</td>
+      <td>312.0</td>
+      <td>Lord RVN_2000_J GASTROINTEST SURG; Gibson UEM_1996_GENOME RES; Heid CA_1996_GENOME RES</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+      <td>40.4000</td>
+      <td>0.0003</td>
+      <td>0.0084</td>
+      <td>0.0177</td>
+      <td>0.0000</td>
+      <td>202.0</td>
+      <td>Ramani R_1997_INT J RADIAT ONCOL; Butson MJ_1996_MED PHYS; SOUBRA M_1994_MED PHYS; Quach KY_2000_MED PHYS; Chuang CF_2002_MED PHYS</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>3</td>
+      <td>50.6667</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0169</td>
+      <td>0.0000</td>
+      <td>152.0</td>
+      <td>Fujibayashi Y_1997_J NUCL MED; Takahashi N_2000_ANN NUCL MED; Lewis JS_1999_J NUCL MED</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>3</td>
+      <td>36.6667</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0132</td>
+      <td>0.0000</td>
+      <td>110.0</td>
+      <td>Cartmell T_2000_J PHYSIOL-LONDON; Chai Z_1996_J EXP MED; KLUGER MJ_1991_PHYSIOL REV</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>3</td>
+      <td>36.6667</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0132</td>
+      <td>0.0000</td>
+      <td>110.0</td>
+      <td>Hughes C_2002_AM J MED GENET; Claes E_2003_AM J MED GENET A; Julian-Reynier C_2000_AM J MED GENET</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>2</td>
+      <td>30.0000</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0085</td>
+      <td>0.0000</td>
+      <td>60.0</td>
+      <td>Greenland S_2003_J AM STAT ASSOC; Greenland S_2005_J R STAT SOC A STAT</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>2</td>
+      <td>30.0000</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0085</td>
+      <td>0.0000</td>
+      <td>60.0</td>
+      <td>Cina SJ_2001_ARCH PATHOL LAB MED; Epstein JI_1998_AM J SURG PATHOL</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>2</td>
+      <td>26.0000</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0085</td>
+      <td>0.0000</td>
+      <td>52.0</td>
+      <td>Braakhuis BJM_2003_CANCER RES; SLAUGHTER DP_1953_CANCER</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>2</td>
+      <td>25.0000</td>
+      <td>0.0000</td>
+      <td>0.0084</td>
+      <td>0.0085</td>
+      <td>0.0000</td>
+      <td>50.0</td>
+      <td>Kim YL_2003_IEEE J SEL TOP QUANT; Roy HK_2004_GASTROENTEROLOGY</td>
+      <td>1.7</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="section-bibliographic_coupling" class="network-section mb-5">
+<h3 class="mt-4 mb-3">Bibliographic Coupling Network (B = A @ A.T)</h3>
+<div class="row"><div class="col-md-6">
+<h5>Network Overview</h5>
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th style="width:45%">Nodes</th><td>253</td></tr>
+<tr><th style="width:45%">Edges</th><td>200</td></tr>
+<tr><th style="width:45%">Density</th><td>0.0063</td></tr>
+<tr><th style="width:45%">Communities</th><td>94</td></tr>
+<tr><th style="width:45%">Modularity</th><td>0.9716</td></tr>
+<tr><th style="width:45%">Avg Clustering Coefficient</th><td>0.2501</td></tr>
+<tr><th style="width:45%">Avg Degree</th><td>1.58</td></tr>
+<tr><th style="width:45%">Avg Weighted Degree</th><td>94.57</td></tr>
+<tr><th style="width:45%">Components</th><td>94</td></tr>
+<tr><th style="width:45%">Largest Component Ratio</th><td>3.95%</td></tr>
+<tr><th style="width:45%">Diameter (Largest CC)</th><td>5</td></tr>
+<tr><th style="width:45%">Avg Path Length (Largest CC)</th><td>2.089</td></tr>
+</tbody></table>
+</div><div class="col-md-6">
+<h5>Static Network Map</h5>
+<a href="..\outputs\figures\bibliographic_coupling_network.png" target="_blank"><img src="..\outputs\figures\bibliographic_coupling_network.png" class="img-fluid rounded border shadow-sm" alt="Bibliographic Coupling Network (B = A @ A.T)" style="max-width:100%;"></a>
+<p class="small text-muted mt-1">Click to enlarge. Nodes colored by community/cluster.</p>
+</div></div>
+<hr class="my-3"><h5>Interactive Network Map</h5>
+<iframe src="..\outputs\figures\bibliographic_coupling_network.html" width="100%" height="600" frameborder="0" class="border rounded shadow-sm" allowfullscreen></iframe>
+<p class="small text-muted mt-1">Hover over nodes to see detailed metrics. Drag nodes to reposition. Scroll to zoom.</p>
+<hr class="my-3"><h5>Top-20 Node Metrics</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Node</th>
+      <th>Degree</th>
+      <th>Weighted Deg.</th>
+      <th>Betweenness</th>
+      <th>PageRank</th>
+      <th>Closeness</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WOS:000250437100017</td>
+      <td>3</td>
+      <td>531.0</td>
+      <td>0.0000</td>
+      <td>0.0045</td>
+      <td>0.0119</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>WOS:000262285900028</td>
+      <td>3</td>
+      <td>531.0</td>
+      <td>0.0000</td>
+      <td>0.0045</td>
+      <td>0.0119</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>WOS:000251113600015</td>
+      <td>3</td>
+      <td>528.0</td>
+      <td>0.0000</td>
+      <td>0.0044</td>
+      <td>0.0119</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>WOS:000173969500004</td>
+      <td>6</td>
+      <td>424.0</td>
+      <td>0.0004</td>
+      <td>0.0070</td>
+      <td>0.0247</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WOS:000311229600009</td>
+      <td>5</td>
+      <td>392.0</td>
+      <td>0.0004</td>
+      <td>0.0065</td>
+      <td>0.0230</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WOS:000265248200004</td>
+      <td>5</td>
+      <td>386.0</td>
+      <td>0.0002</td>
+      <td>0.0061</td>
+      <td>0.0214</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WOS:000258592700016</td>
+      <td>2</td>
+      <td>317.0</td>
+      <td>0.0000</td>
+      <td>0.0042</td>
+      <td>0.0079</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>WOS:000259368000012</td>
+      <td>2</td>
+      <td>317.0</td>
+      <td>0.0000</td>
+      <td>0.0042</td>
+      <td>0.0079</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>WOS:000222226600021</td>
+      <td>4</td>
+      <td>288.0</td>
+      <td>0.0000</td>
+      <td>0.0046</td>
+      <td>0.0201</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WOS:000255676700035</td>
+      <td>3</td>
+      <td>285.0</td>
+      <td>0.0000</td>
+      <td>0.0058</td>
+      <td>0.0119</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>WOS:000255702400003</td>
+      <td>3</td>
+      <td>285.0</td>
+      <td>0.0000</td>
+      <td>0.0058</td>
+      <td>0.0119</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>WOS:000254305000002</td>
+      <td>4</td>
+      <td>283.0</td>
+      <td>0.0001</td>
+      <td>0.0056</td>
+      <td>0.0165</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>WOS:000263314200003</td>
+      <td>3</td>
+      <td>260.0</td>
+      <td>0.0000</td>
+      <td>0.0024</td>
+      <td>0.0119</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>WOS:000185061500015</td>
+      <td>4</td>
+      <td>260.0</td>
+      <td>0.0000</td>
+      <td>0.0042</td>
+      <td>0.0201</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>WOS:000244259900003</td>
+      <td>4</td>
+      <td>252.0</td>
+      <td>0.0003</td>
+      <td>0.0085</td>
+      <td>0.0165</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>WOS:000209419300010</td>
+      <td>2</td>
+      <td>248.0</td>
+      <td>0.0000</td>
+      <td>0.0034</td>
+      <td>0.0079</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>WOS:000226138700002</td>
+      <td>4</td>
+      <td>230.0</td>
+      <td>0.0001</td>
+      <td>0.0050</td>
+      <td>0.0165</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>WOS:000262835600001</td>
+      <td>3</td>
+      <td>226.0</td>
+      <td>0.0000</td>
+      <td>0.0048</td>
+      <td>0.0119</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>WOS:000237053500001</td>
+      <td>4</td>
+      <td>205.0</td>
+      <td>0.0000</td>
+      <td>0.0042</td>
+      <td>0.0165</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>WOS:000235031400003</td>
+      <td>4</td>
+      <td>203.0</td>
+      <td>0.0000</td>
+      <td>0.0045</td>
+      <td>0.0159</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="my-3"><h5>Cluster / Community Summary</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Community</th>
+      <th>N Nodes</th>
+      <th>Mean Weighted Degree</th>
+      <th>Mean Betweenness</th>
+      <th>Mean Pagerank</th>
+      <th>Mean Closeness</th>
+      <th>Mean Eigenvector</th>
+      <th>Total Weighted Degree</th>
+      <th>Top Node</th>
+      <th>Pct Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>10</td>
+      <td>210.4000</td>
+      <td>0.0002</td>
+      <td>0.004</td>
+      <td>0.0182</td>
+      <td>0.0000</td>
+      <td>2104.0</td>
+      <td>WOS:000173969500004; WOS:000311229600009; WOS:000265248200004; WOS:000222226600021; WOS:000185061500015</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>4</td>
+      <td>462.5000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0119</td>
+      <td>0.4873</td>
+      <td>1850.0</td>
+      <td>WOS:000250437100017; WOS:000262285900028; WOS:000251113600015; WOS:000263314200003</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6</td>
+      <td>188.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0147</td>
+      <td>0.0000</td>
+      <td>1128.0</td>
+      <td>WOS:000254305000002; WOS:000226138700002; WOS:000237053500001; WOS:000264892200004; WOS:000266476500001</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>3</td>
+      <td>294.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>882.0</td>
+      <td>WOS:000258592700016; WOS:000259368000012; WOS:000209419300010</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>174.4000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0135</td>
+      <td>0.0000</td>
+      <td>872.0</td>
+      <td>WOS:000235031400003; WOS:000239130000010; WOS:000258921300013; WOS:000284808900011; WOS:000264608400009</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>4</td>
+      <td>187.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0104</td>
+      <td>0.0000</td>
+      <td>748.0</td>
+      <td>WOS:000255676700035; WOS:000255702400003; WOS:000258439900016; WOS:000254494400007</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>4</td>
+      <td>181.5000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0104</td>
+      <td>0.0000</td>
+      <td>726.0</td>
+      <td>WOS:000262835600001; WOS:000267424500009; WOS:000255065200015; WOS:000267581800010</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>7</td>
+      <td>102.5714</td>
+      <td>0.0001</td>
+      <td>0.004</td>
+      <td>0.0124</td>
+      <td>0.0000</td>
+      <td>718.0</td>
+      <td>WOS:000263554000001; WOS:000270577600005; WOS:000230159200004; WOS:000238648900001; WOS:000183818200001</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6</td>
+      <td>111.0000</td>
+      <td>0.0001</td>
+      <td>0.004</td>
+      <td>0.0120</td>
+      <td>0.0000</td>
+      <td>666.0</td>
+      <td>WOS:000244259900003; WOS:000247063300003; WOS:000244885300003; WOS:000230083000016; WOS:000234800100003</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>4</td>
+      <td>149.5000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0119</td>
+      <td>0.0000</td>
+      <td>598.0</td>
+      <td>WOS:000238868700003; WOS:000232145600005; WOS:000256561200004; WOS:000240765900004</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5</td>
+      <td>92.4000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0118</td>
+      <td>0.0000</td>
+      <td>462.0</td>
+      <td>WOS:000227636200010; WOS:000297649900004; WOS:000183999100003; WOS:000243299200047; WOS:000271172300005</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>3</td>
+      <td>150.6667</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>452.0</td>
+      <td>WOS:000220081800007; WOS:000239997100016; WOS:000264489600010</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>4</td>
+      <td>110.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0092</td>
+      <td>0.0000</td>
+      <td>440.0</td>
+      <td>WOS:000230393100001; WOS:000233231800005; WOS:000170085400001; WOS:000267745600007</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>5</td>
+      <td>73.6000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0104</td>
+      <td>0.0000</td>
+      <td>368.0</td>
+      <td>WOS:000233683500004; WOS:000228808500011; WOS:000189357800001; WOS:000176795000007; WOS:000244146100003</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>3</td>
+      <td>122.6667</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>368.0</td>
+      <td>WOS:000261892700002; WOS:000244866700002; WOS:000220796700002</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>2</td>
+      <td>177.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>354.0</td>
+      <td>WOS:000250860700015; WOS:000252002500005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>4</td>
+      <td>87.5000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0074</td>
+      <td>0.0000</td>
+      <td>350.0</td>
+      <td>WOS:000242821000010; WOS:000255856700002; WOS:000258505500002; WOS:000253251200005</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>3</td>
+      <td>115.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>346.0</td>
+      <td>WOS:000232319300039; WOS:000177918300001; WOS:000225358100032</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>2</td>
+      <td>168.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>336.0</td>
+      <td>WOS:000254939900003; WOS:000258903200001</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>3</td>
+      <td>108.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>324.0</td>
+      <td>WOS:000256908200009; WOS:000252396500007; WOS:000247489500001</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>4</td>
+      <td>80.5000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0092</td>
+      <td>0.0000</td>
+      <td>322.0</td>
+      <td>WOS:000256491100005; WOS:000250235400004; WOS:000272116100003; WOS:000261916100004</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>4</td>
+      <td>80.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0092</td>
+      <td>0.0000</td>
+      <td>320.0</td>
+      <td>WOS:000258256800004; WOS:000232874200002; WOS:000236106000001; WOS:000252904100023</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>3</td>
+      <td>105.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>316.0</td>
+      <td>WOS:000257248800002; WOS:000262668300006; WOS:000252828700003</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>3</td>
+      <td>98.6667</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>296.0</td>
+      <td>WOS:000250235400002; WOS:000270079800015; WOS:000253220900002</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>3</td>
+      <td>98.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>294.0</td>
+      <td>WOS:000259673500087; WOS:000255456300086; WOS:000269789900008</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>3</td>
+      <td>97.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0079</td>
+      <td>0.0000</td>
+      <td>292.0</td>
+      <td>WOS:000242181300011; WOS:000256679300009; WOS:000251616100011</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>3</td>
+      <td>91.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>274.0</td>
+      <td>WOS:000271122700004; WOS:000251118600001; WOS:000263295800008</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>2</td>
+      <td>135.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>270.0</td>
+      <td>WOS:000240336000010; WOS:000266388600011</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>4</td>
+      <td>66.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0074</td>
+      <td>0.0000</td>
+      <td>264.0</td>
+      <td>WOS:000253655300002; WOS:000249745200012; WOS:000239780500003; WOS:000245215500010</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>4</td>
+      <td>65.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0083</td>
+      <td>0.0000</td>
+      <td>260.0</td>
+      <td>WOS:000273331300002; WOS:000249466500001; WOS:000271098400003; WOS:000246258600007</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>3</td>
+      <td>77.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>232.0</td>
+      <td>WOS:000173652600004; WOS:000222815100002; WOS:000177393700018</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>2</td>
+      <td>110.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>220.0</td>
+      <td>WOS:000186678000008; WOS:000267545000010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>3</td>
+      <td>70.6667</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>212.0</td>
+      <td>WOS:000170517500002; WOS:000182278500017; WOS:000188663900001</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>2</td>
+      <td>98.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>196.0</td>
+      <td>WOS:000264452800003; WOS:000265692500006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>2</td>
+      <td>94.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>188.0</td>
+      <td>WOS:000251679300004; WOS:000257979000005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>3</td>
+      <td>60.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>180.0</td>
+      <td>WOS:000257910200001; WOS:000256211800004; WOS:000249425900011</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>3</td>
+      <td>58.6667</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>176.0</td>
+      <td>WOS:000236765400008; WOS:000246490000006; WOS:000259037600012</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>2</td>
+      <td>85.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>170.0</td>
+      <td>WOS:000240336000003; WOS:000266388600004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>3</td>
+      <td>51.3333</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0062</td>
+      <td>0.0000</td>
+      <td>154.0</td>
+      <td>WOS:000177157400021; WOS:000178287600006; WOS:000223117600008</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>2</td>
+      <td>77.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>154.0</td>
+      <td>WOS:000087649500017; WOS:000177171300017</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>2</td>
+      <td>75.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>150.0</td>
+      <td>WOS:000267776700011; WOS:000268026600011</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>2</td>
+      <td>73.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>146.0</td>
+      <td>WOS:000263631700002; WOS:000265698500006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>2</td>
+      <td>73.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>146.0</td>
+      <td>WOS:000245612300002; WOS:000261094900002</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>2</td>
+      <td>71.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>142.0</td>
+      <td>WOS:000261597400015; WOS:000267127900009</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>2</td>
+      <td>68.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>136.0</td>
+      <td>WOS:000260291400013; WOS:000271547900016</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>2</td>
+      <td>68.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>136.0</td>
+      <td>WOS:000240381200014; WOS:000260900100002</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>2</td>
+      <td>66.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>132.0</td>
+      <td>WOS:000246480000004; WOS:000253396900017</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>2</td>
+      <td>66.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>132.0</td>
+      <td>WOS:000243220300006; WOS:000252138400010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>2</td>
+      <td>60.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>120.0</td>
+      <td>WOS:000259721000004; WOS:000270199100003</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>2</td>
+      <td>58.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>116.0</td>
+      <td>WOS:000245564000015; WOS:000249894400003</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>2</td>
+      <td>58.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>116.0</td>
+      <td>WOS:000259506400006; WOS:000275598000006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>2</td>
+      <td>57.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>114.0</td>
+      <td>WOS:000251085800011; WOS:000254571000004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>2</td>
+      <td>55.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>110.0</td>
+      <td>WOS:000259377800003; WOS:000268952100004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>2</td>
+      <td>54.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>108.0</td>
+      <td>WOS:000243674300002; WOS:000245565500013</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>2</td>
+      <td>51.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>102.0</td>
+      <td>WOS:000231240000002; WOS:000234894100004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>2</td>
+      <td>51.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>102.0</td>
+      <td>WOS:000270457600068; WOS:000272592300034</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>2</td>
+      <td>49.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>98.0</td>
+      <td>WOS:000252894700035; WOS:000256640500004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>2</td>
+      <td>49.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>98.0</td>
+      <td>WOS:000224370600003; WOS:000237268700005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>2</td>
+      <td>48.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>96.0</td>
+      <td>WOS:000221223000011; WOS:000223194500006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>2</td>
+      <td>46.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>92.0</td>
+      <td>WOS:000250642500022; WOS:000260246400008</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>2</td>
+      <td>45.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>90.0</td>
+      <td>WOS:000238665200010; WOS:000243784100015</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>2</td>
+      <td>44.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>88.0</td>
+      <td>WOS:000265128900007; WOS:000317587300005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>2</td>
+      <td>44.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>88.0</td>
+      <td>WOS:000258493900001; WOS:000285752800039</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>2</td>
+      <td>44.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>88.0</td>
+      <td>WOS:000237050100002; WOS:000243249200001</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>2</td>
+      <td>44.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>88.0</td>
+      <td>WOS:000221409600001; WOS:000226663800059</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>2</td>
+      <td>43.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>86.0</td>
+      <td>WOS:000233711300021; WOS:000241162000011</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>2</td>
+      <td>42.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>84.0</td>
+      <td>WOS:000242488800013; WOS:000313830000085</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>2</td>
+      <td>41.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>82.0</td>
+      <td>WOS:000255448700042; WOS:000261423600010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>2</td>
+      <td>40.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>WOS:000246326800004; WOS:000262456700010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>2</td>
+      <td>40.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>WOS:000265357800014; WOS:000269067000010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>2</td>
+      <td>40.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>WOS:000264748800001; WOS:000268990500006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>2</td>
+      <td>40.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>WOS:000244638400019; WOS:000249319100006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>2</td>
+      <td>40.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>WOS:000178629500006; WOS:000223372700017</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>2</td>
+      <td>39.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>78.0</td>
+      <td>WOS:000226461500009; WOS:000229015500045</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>2</td>
+      <td>39.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>78.0</td>
+      <td>WOS:000221786900058; WOS:000224315600010</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>2</td>
+      <td>39.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>78.0</td>
+      <td>WOS:000247967800001; WOS:000257527100013</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000229432000031; WOS:000231816500033</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000272464700030; WOS:000274166300002</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000240029400014; WOS:000241520100006</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000244738500005; WOS:000247535500013</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000246204900003; WOS:000252863300017</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000260555100009; WOS:000261086700023</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>2</td>
+      <td>38.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>76.0</td>
+      <td>WOS:000231623500014; WOS:000263658300002</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>2</td>
+      <td>37.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>74.0</td>
+      <td>WOS:000229167400011; WOS:000234551000008</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>2</td>
+      <td>37.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>74.0</td>
+      <td>WOS:000165526100006; WOS:000176834800014</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>2</td>
+      <td>37.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>74.0</td>
+      <td>WOS:000261086700015; WOS:000266503900007</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>2</td>
+      <td>37.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>74.0</td>
+      <td>WOS:000188424000004; WOS:000249921200005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>2</td>
+      <td>37.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>74.0</td>
+      <td>WOS:000251520800013; WOS:000252453600003</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>2</td>
+      <td>36.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>72.0</td>
+      <td>WOS:000256491100004; WOS:000259368000003</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>2</td>
+      <td>35.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>70.0</td>
+      <td>WOS:000265030000015; WOS:000307649400004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>2</td>
+      <td>35.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>70.0</td>
+      <td>WOS:000251430000004; WOS:000260015500005</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>2</td>
+      <td>35.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>70.0</td>
+      <td>WOS:000208667700004; WOS:000278139100009</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>2</td>
+      <td>35.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>70.0</td>
+      <td>WOS:000175594700011; WOS:000232712600004</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>2</td>
+      <td>35.0000</td>
+      <td>0.0000</td>
+      <td>0.004</td>
+      <td>0.0040</td>
+      <td>0.0000</td>
+      <td>70.0</td>
+      <td>WOS:000227381400002; WOS:000236243700003</td>
+      <td>0.8</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="section-coauthorship" class="network-section mb-5">
+<h3 class="mt-4 mb-3">Co-authorship Collaboration Network</h3>
+<div class="row"><div class="col-md-6">
+<h5>Network Overview</h5>
+<table class="table table-sm table-bordered">
+<tbody>
+<tr><th style="width:45%">Nodes</th><td>134</td></tr>
+<tr><th style="width:45%">Edges</th><td>200</td></tr>
+<tr><th style="width:45%">Density</th><td>0.0224</td></tr>
+<tr><th style="width:45%">Communities</th><td>29</td></tr>
+<tr><th style="width:45%">Modularity</th><td>0.8348</td></tr>
+<tr><th style="width:45%">Avg Clustering Coefficient</th><td>0.4914</td></tr>
+<tr><th style="width:45%">Avg Degree</th><td>2.99</td></tr>
+<tr><th style="width:45%">Avg Weighted Degree</th><td>31.46</td></tr>
+<tr><th style="width:45%">Components</th><td>29</td></tr>
+<tr><th style="width:45%">Largest Component Ratio</th><td>14.93%</td></tr>
+<tr><th style="width:45%">Diameter (Largest CC)</th><td>3</td></tr>
+<tr><th style="width:45%">Avg Path Length (Largest CC)</th><td>1.700</td></tr>
+</tbody></table>
+</div><div class="col-md-6">
+<h5>Static Network Map</h5>
+<a href="..\outputs\figures\coauthorship_network.png" target="_blank"><img src="..\outputs\figures\coauthorship_network.png" class="img-fluid rounded border shadow-sm" alt="Co-authorship Collaboration Network" style="max-width:100%;"></a>
+<p class="small text-muted mt-1">Click to enlarge. Nodes colored by community/cluster.</p>
+</div></div>
+<hr class="my-3"><h5>Interactive Network Map</h5>
+<iframe src="..\outputs\figures\coauthorship_network.html" width="100%" height="600" frameborder="0" class="border rounded shadow-sm" allowfullscreen></iframe>
+<p class="small text-muted mt-1">Hover over nodes to see detailed metrics. Drag nodes to reposition. Scroll to zoom.</p>
+<hr class="my-3"><h5>Top-20 Node Metrics</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Node</th>
+      <th>Degree</th>
+      <th>Weighted Deg.</th>
+      <th>Betweenness</th>
+      <th>PageRank</th>
+      <th>Closeness</th>
+      <th>Cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Danenberg, KD</td>
+      <td>18</td>
+      <td>249.0</td>
+      <td>0.0106</td>
+      <td>0.0250</td>
+      <td>0.1357</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Danenberg, PV</td>
+      <td>16</td>
+      <td>228.0</td>
+      <td>0.0044</td>
+      <td>0.0212</td>
+      <td>0.1234</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Brabender, J</td>
+      <td>9</td>
+      <td>138.0</td>
+      <td>0.0001</td>
+      <td>0.0121</td>
+      <td>0.0936</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Holscher, AH</td>
+      <td>9</td>
+      <td>123.0</td>
+      <td>0.0000</td>
+      <td>0.0109</td>
+      <td>0.0936</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Schneider, PM</td>
+      <td>8</td>
+      <td>115.0</td>
+      <td>0.0000</td>
+      <td>0.0102</td>
+      <td>0.0905</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Metzger, R</td>
+      <td>7</td>
+      <td>108.0</td>
+      <td>0.0000</td>
+      <td>0.0095</td>
+      <td>0.0876</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Backman, V</td>
+      <td>8</td>
+      <td>106.0</td>
+      <td>0.0021</td>
+      <td>0.0169</td>
+      <td>0.0609</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Cheng, L</td>
+      <td>7</td>
+      <td>102.0</td>
+      <td>0.0022</td>
+      <td>0.0153</td>
+      <td>0.0554</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Langen, KJ</td>
+      <td>7</td>
+      <td>98.0</td>
+      <td>0.0014</td>
+      <td>0.0138</td>
+      <td>0.0526</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Vallbohmer, D</td>
+      <td>8</td>
+      <td>91.0</td>
+      <td>0.0000</td>
+      <td>0.0085</td>
+      <td>0.0905</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Roy, HK</td>
+      <td>7</td>
+      <td>85.0</td>
+      <td>0.0011</td>
+      <td>0.0134</td>
+      <td>0.0554</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Pauleit, D</td>
+      <td>6</td>
+      <td>81.0</td>
+      <td>0.0000</td>
+      <td>0.0114</td>
+      <td>0.0461</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Lopez-Beltran, A</td>
+      <td>5</td>
+      <td>73.0</td>
+      <td>0.0000</td>
+      <td>0.0110</td>
+      <td>0.0468</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Coenen, HH</td>
+      <td>5</td>
+      <td>72.0</td>
+      <td>0.0000</td>
+      <td>0.0100</td>
+      <td>0.0409</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Salonga, D</td>
+      <td>6</td>
+      <td>71.0</td>
+      <td>0.0000</td>
+      <td>0.0067</td>
+      <td>0.0848</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Montironi, R</td>
+      <td>5</td>
+      <td>70.0</td>
+      <td>0.0017</td>
+      <td>0.0119</td>
+      <td>0.0468</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Hamacher, K</td>
+      <td>4</td>
+      <td>66.0</td>
+      <td>0.0000</td>
+      <td>0.0090</td>
+      <td>0.0368</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Liu, Y</td>
+      <td>4</td>
+      <td>65.0</td>
+      <td>0.0000</td>
+      <td>0.0098</td>
+      <td>0.0435</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Kuramochi, H</td>
+      <td>5</td>
+      <td>58.0</td>
+      <td>0.0000</td>
+      <td>0.0061</td>
+      <td>0.0823</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ren, F</td>
+      <td>7</td>
+      <td>56.0</td>
+      <td>0.0033</td>
+      <td>0.0175</td>
+      <td>0.0578</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="my-3"><h5>Cluster / Community Summary</h5>
+<table border="1" class="dataframe table table-striped table-hover table-sm table-bordered">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Community</th>
+      <th>N Nodes</th>
+      <th>Mean Weighted Degree</th>
+      <th>Mean Betweenness</th>
+      <th>Mean Pagerank</th>
+      <th>Mean Closeness</th>
+      <th>Mean Eigenvector</th>
+      <th>Total Weighted Degree</th>
+      <th>Top Node</th>
+      <th>Pct Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>20</td>
+      <td>74.2000</td>
+      <td>0.0008</td>
+      <td>0.0075</td>
+      <td>0.0863</td>
+      <td>0.1779</td>
+      <td>1484.0</td>
+      <td>Danenberg, KD; Danenberg, PV; Brabender, J; Holscher, AH; Schneider, PM</td>
+      <td>14.9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+      <td>45.6000</td>
+      <td>0.0004</td>
+      <td>0.0075</td>
+      <td>0.0407</td>
+      <td>0.0000</td>
+      <td>456.0</td>
+      <td>Cheng, L; Lopez-Beltran, A; Montironi, R; MacLennan, GT; Eble, JN</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>10</td>
+      <td>44.6000</td>
+      <td>0.0003</td>
+      <td>0.0075</td>
+      <td>0.0432</td>
+      <td>0.0000</td>
+      <td>446.0</td>
+      <td>Backman, V; Roy, HK; Liu, Y; Kim, YL; Wali, RK</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>8</td>
+      <td>51.2500</td>
+      <td>0.0002</td>
+      <td>0.0075</td>
+      <td>0.0382</td>
+      <td>0.0000</td>
+      <td>410.0</td>
+      <td>Langen, KJ; Pauleit, D; Coenen, HH; Hamacher, K; Stoffels, G</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>11</td>
+      <td>22.7273</td>
+      <td>0.0006</td>
+      <td>0.0075</td>
+      <td>0.0396</td>
+      <td>0.0000</td>
+      <td>250.0</td>
+      <td>Ren, F; Linthicum, KJ; Pearton, SJ; Piner, EL; Johnson, JW</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6</td>
+      <td>23.3333</td>
+      <td>0.0002</td>
+      <td>0.0075</td>
+      <td>0.0244</td>
+      <td>0.0000</td>
+      <td>140.0</td>
+      <td>Stoehr, R; Hartmann, A; Denzinger, S; Burger, M; Knuechel, R</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>5</td>
+      <td>25.2000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0257</td>
+      <td>0.0000</td>
+      <td>126.0</td>
+      <td>Elsinga, PH; Jager, PL; Hoekstra, HJ; Suurmeijer, AJH; Cobben, DCP</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>5</td>
+      <td>22.8000</td>
+      <td>0.0001</td>
+      <td>0.0075</td>
+      <td>0.0209</td>
+      <td>0.0000</td>
+      <td>114.0</td>
+      <td>Wolf, B; Brischwein, M; Grothe, H; Wiest, J; Ressler, J</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>4</td>
+      <td>24.5000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0226</td>
+      <td>0.0000</td>
+      <td>98.0</td>
+      <td>Reske, SN; Glatting, G; Buck, AK; Neumaier, B</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>4</td>
+      <td>24.5000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0226</td>
+      <td>0.0000</td>
+      <td>98.0</td>
+      <td>Fuchs, CS; Ogino, S; Kawasaki, T; Kirkner, GJ</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+      <td>16.8000</td>
+      <td>0.0001</td>
+      <td>0.0075</td>
+      <td>0.0196</td>
+      <td>0.0000</td>
+      <td>84.0</td>
+      <td>Schwaiger, M; Grosu, AL; Weber, WA; Wester, HJ; Molls, M</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>4</td>
+      <td>20.0000</td>
+      <td>0.0001</td>
+      <td>0.0075</td>
+      <td>0.0175</td>
+      <td>0.0000</td>
+      <td>80.0</td>
+      <td>Hubschle, T; Gerstberger, R; Roth, J; Rummel, C</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>4</td>
+      <td>15.5000</td>
+      <td>0.0001</td>
+      <td>0.0075</td>
+      <td>0.0158</td>
+      <td>0.0000</td>
+      <td>62.0</td>
+      <td>Peters, GJ; Fukushima, M; Temmink, OH; de Bruin, M</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>3</td>
+      <td>17.3333</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0150</td>
+      <td>0.0000</td>
+      <td>52.0</td>
+      <td>Breit, SN; Brown, DA; Bauskin, AR</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>4</td>
+      <td>12.5000</td>
+      <td>0.0001</td>
+      <td>0.0075</td>
+      <td>0.0141</td>
+      <td>0.0000</td>
+      <td>50.0</td>
+      <td>Chinnaiyan, AM; Tomlins, SA; Varambally, S; Shah, RB</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>3</td>
+      <td>14.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0150</td>
+      <td>0.0000</td>
+      <td>42.0</td>
+      <td>Fong, WP; Ng, DKP; Lo, PC</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>3</td>
+      <td>9.3333</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0117</td>
+      <td>0.0000</td>
+      <td>28.0</td>
+      <td>Vetterl, V; Fojt, L; Strasak, L</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>3</td>
+      <td>9.3333</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0117</td>
+      <td>0.0000</td>
+      <td>28.0</td>
+      <td>Bossuyt, A; Lahoutte, T; Mertens, J</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>2</td>
+      <td>9.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>18.0</td>
+      <td>Luheshi, GN; Poole, S</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>2</td>
+      <td>9.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>18.0</td>
+      <td>Toncheva, G; Yoshizumi, TT</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>2</td>
+      <td>9.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>18.0</td>
+      <td>Mishima, F; Nishijima, S</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>2</td>
+      <td>8.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>16.0</td>
+      <td>Keku, TO; Sandler, RS</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Furumoto, S; Iwata, R</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Buck, A; Weber, B</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Tatsch, K; Tonn, JC</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Alam, MA; Nair, PR</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Lewis, JS; Welch, MJ</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Lieber, CM; Patolsky, F</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>2</td>
+      <td>7.0000</td>
+      <td>0.0000</td>
+      <td>0.0075</td>
+      <td>0.0075</td>
+      <td>0.0000</td>
+      <td>14.0</td>
+      <td>Liu, RS; Wang, HE</td>
+      <td>1.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+
+<footer class="text-center text-muted py-4 mt-5 border-top no-print">
+<small>Bibliometrics-mini Pipeline Report | Generated automatically</small>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

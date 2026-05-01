@@ -1,0 +1,3053 @@
+PT J
+AU Blatteis, CM
+   Li, SX
+AF Blatteis, CM
+   Li, SX
+TI Pyrogenic signaling via vagal afferents: what stimulates their receptors?
+SO AUTONOMIC NEUROSCIENCE-BASIC & CLINICAL
+LA English
+DT Article; Proceedings Paper
+DE fever; cytokines; prostaglandin E2; cyclooxygenases-1 and 2; complement; endotoxin; bacterial infection
+ID to-brain communication; tumor-necrosis-factor; guinea-pigs; febrile response; rat-brain; kupffer cells; vagus nerve; systemic inflammation; intravenous-injection; prostaglandin e(2)
+AB Although there is good evidence that pyrogenic messages may be conveyed from the periphery to the brain via vagal afferents, the exact nature of the factors that activate their sensory terminals is unclear. Since IL-1 beta and PGE(2) have established roles in fever production and since their receptors have been identified on or near vagal nerves, they are potential candidate mediators. A difficulty, however, is that (1) IL-1 beta is not expressed constitutively in mononuclear phagocytes, their presumed cell source upon stimulation by exogenous pyrogens, e.g. endotoxin, and (2) similarly, the isoform of the enzyme that selectively mediates die production and release of PGE, by endotoxin-stimulated macrophages, COX-2, is also not constitutively expressed in these cells. Since the transcription and translation of these factors significantly lags the onset of fever induced by endotoxin administered intravenously, in particular, it is possible that a secondary, quickly-acting mediator evoked in almost immediate reaction to the presence of endotoxin excites, directly or indirectly, the sensory neurons. We have evidence that the complement component C5 contributes importantly to the initiation of the febrile response to endotoxin. This article briefly reviews the prevailing concepts of pyrogen sensing and signaling, examines their shortcomings particularly in terms of the temporal discrepancy between the very rapid onset of the febrile response to intravenously administered endotoxin and the significant delay in the elaboration of the putative mediators of fever, and presents newer data that may help to integrate the various preposed mechanisms. (C) 2000 Elsevier Science B.V. All rights reserved.
+C1 Univ Tennessee, Ctr Hlth Sci, Dept Physiol, Memphis, TN 38163 USA.
+RP Blatteis, CM (通讯作者)，Univ Tennessee, Ctr Hlth Sci, Dept Physiol, 894 Union Ave, Memphis, TN 38163 USA.
+EM blatteis@physio1.utmem.edu
+FU NINDS NIH HHS [NS 34857] Funding Source: Medline; NATIONAL INSTITUTE OF NEUROLOGICAL DISORDERS AND STROKE [R01NS034857] Funding Source: NIH RePORTER
+CR ANGEL J, 1994, EUR J BIOCHEM, V226, P125, DOI 10.1111/j.1432-1033.1994.tb20033.x
+   Banks WA, 1995, NEUROIMMUNOMODULAT, V2, P241, DOI 10.1159/000097202
+   Blatteis Clark M, 1997, P117, V0, P0
+   BLATTEIS CM, 1983, BRAIN RES BULL, V11, P519, DOI 10.1016/0361-9230(83)90124-7
+   BLATTEIS CM, 1989, INT CONGR SER, V871, P385
+   Blatteis CM, 2000, INT J BIOMETEOROL, V43, P176, DOI 10.1007/s004840050006
+   Cartmell T, 2000, J PHYSIOL-LONDON, V526, P653, DOI 10.1111/j.1469-7793.2000.00653.x
+   CAVAILLON J-M, 1990, CYTOKINE, V2, P313, DOI 10.1016/1043-4666(90)90061-W
+   Chai Z, 1996, J EXP MED, V183, P311, DOI 10.1084/jem.183.1.311
+   Coceani F, 1998, ANN NY ACAD SCI, V856, P76, DOI 10.1111/j.1749-6632.1998.tb08315.x
+   COCHRANE CG, 1970, J IMMUNOL, V105, P55
+   DENNIS EA, 1991, FASEB J, V5, P2068, DOI 10.1096/fasebj.5.7.1901288
+   Ek M, 1998, J NEUROSCI, V18, P9471
+   Elmquist JK, 1996, J COMP NEUROL, V371, P85, DOI 10.1002/(SICI)1096-9861(19960715)371:1<85::AID-CNE5>3.0.CO;2-H
+   Erdei A, 1996, IMMUNOL LETT, V54, P109, DOI 10.1016/S0165-2478(96)02658-2
+   Fenton MJ, 1998, J LEUKOCYTE BIOL, V64, P25, DOI 10.1002/jlb.64.1.25
+   FINK MP, 1989, J TRAUMA, V29, P1076, DOI 10.1097/00005373-198908000-00004
+   FOX ES, 1987, INFECT IMMUN, V55, P2962, DOI 10.1128/IAI.55.12.2962-2966.1987
+   GIVALOIS L, 1994, AM J PHYSIOL, V267, PR164, DOI 10.1152/ajpregu.1994.267.1.R164
+   Goehler LE, 1999, J NEUROSCI, V19, P2799
+   Goehler LE, 1997, BRAIN RES BULL, V43, P357, DOI 10.1016/S0361-9230(97)00020-8
+   Goldbach JM, 1997, AM J PHYSIOL-REG I, V272, PR675, DOI 10.1152/ajpregu.1997.272.2.R675
+   GORDON JR, 1990, IMMUNOL TODAY, V11, P458, DOI 10.1016/0167-5699(90)90176-A
+   HAEFFNERCAVAILLON N, 1987, J IMMUNOL, V139, P794
+   HANSCH GM, 1984, J IMMUNOL, V133, P2145
+   Hansen MK, 2000, FASEB J, V14, P0
+   HINGLAIS N, 1989, LAB INVEST, V61, P509
+   JANSKY L, 1995, NEUROENDOCRINOLOGY, V62, P55, DOI 10.1159/000126988
+   KARCK U, 1988, J HEPATOL, V7, P352, DOI 10.1016/S0168-8278(88)80008-4
+   Kluger MJ, 1995, NEUROIMMUNOMODULAT, V2, P216, DOI 10.1159/000097199
+   KOMAKI G, 1992, AM J PHYSIOL, V262, PE246, DOI 10.1152/ajpendo.1992.262.2.E246
+   KRAMER RM, 1994, SIGNAL ACTIVATED PHO, V0, P13
+   Lacroix S, 1998, J NEUROCHEM, V70, P452, DOI 10.1046/j.1471-4159.1998.70020452.x
+   Li S, 1999, BRAIN RES, V825, P86, DOI 10.1016/S0006-8993(99)01225-1
+   Li S, 2000, FASEB J, V14, P0
+   Li S, 1999, AM J PHYSIOL-REG I, V277, PR1635, DOI 10.1152/ajpregu.1999.277.6.R1635
+   Li S, 2000, J THERM BIOL, V25, P51, DOI 10.1016/S0306-4565(99)00068-6
+   Luheshi GN, 1998, ANN NY ACAD SCI, V856, P83, DOI 10.1111/j.1749-6632.1998.tb08316.x
+   Maier SF, 1998, ANN NY ACAD SCI, V840, P289, DOI 10.1111/j.1749-6632.1998.tb09569.x
+   MATHISON JC, 1979, J IMMUNOL, V123, P2133
+   Matsumura K, 1998, PROG BRAIN RES, V115, P275
+   NEWTON RC, 1986, J LEUKOCYTE BIOL, V39, P299, DOI 10.1002/jlb.39.3.299
+   PUSCHEL GP, 1993, HEPATOLOGY, V18, P1516
+   Quan N, 1998, BRAIN RES, V802, P189, DOI 10.1016/S0006-8993(98)00402-8
+   Rivest S, 1999, MOL PSYCHIATR, V4, P501, DOI 10.1038/sj.mp.4000676
+   ROSS G, 1999, PFLUGERS ARCH S, V437, P0
+   Roth J, 1998, J PHYSIOL-LONDON, V509, P267, DOI 10.1111/j.1469-7793.1998.267bo.x
+   ROTH J, 1994, J PHYSIOL-LONDON, V477, P177, DOI 10.1113/jphysiol.1994.sp020182
+   Rothwell NJ, 1997, BRIT J PHARMACOL, V121, P841, DOI 10.1038/sj.bjp.0701248
+   ROTONDO D, 1988, EUR J PHARMACOL, V154, P145, DOI 10.1016/0014-2999(88)90091-X
+   Schiltz JC, 1998, SOCIETY FOR NEUROSCIENCE ABSTRACTS, V24, P1615
+   Sehic E, 1996, BRAIN RES BULL, V39, P391, DOI 10.1016/0361-9230(96)00037-8
+   Steiner AA, 2000, FASEB J, V14, P0
+   Szekely M, 2000, AUTON NEUROSCI-BASIC, V85, P26, DOI 10.1016/S1566-0702(00)00217-4
+   Ushikubi F, 1998, NATURE, V395, P281, DOI 10.1038/26233
+   VUKAJLOVICH SW, 1992, BACTERIAL ENDOTOXIC, V2, P213
+   WATSON RWG, 1994, J LEUKOCYTE BIOL, V56, P95, DOI 10.1002/jlb.56.1.95
+   Zhang J, 1999, EUR J NEUROSCI, V11, P2651, DOI 10.1046/j.1460-9568.1999.00682.x
+NR 59
+TC 21
+Z9 23
+U1 0
+U2 4
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1566-0702
+EI 1872-7484
+J9 AUTON NEUROSCI-BASIC
+JI Auton. Neurosci-Basic Clin.
+PD DEC 20
+PY 2000
+VL 85
+IS 1-3
+BP 66
+EP 71
+DI 10.1016/S1566-0702(00)00221-6
+PG 6
+WC Neurosciences
+SC Neurosciences & Neurology
+GA 386ZM
+UT WOS:000166095700008
+PM 11189028
+DA 2022-09-21
+ER
+
+PT J
+AU Cartmell, T
+   Poole, S
+   Turnbull, AV
+   Rothwell, NJ
+   Luheshi, GN
+AF Cartmell, T
+   Poole, S
+   Turnbull, AV
+   Rothwell, NJ
+   Luheshi, GN
+TI Circulating interleukin-6 mediates the febrile response to localised inflammation in rats
+SO JOURNAL OF PHYSIOLOGY-LONDON
+LA English
+DT Article
+ID tumor-necrosis-factor; recombinant human interleukin-6; central-nervous-system; soluble il-6 receptor; factor-alpha; hypothalamic interleukin-6; endothelial-cells; body-temperature; fever; mice
+AB 1. Interleukin (IL)-6 is an important mediator of the host response to disease and has been proposed, largely based upon circumstantial evidence, as the principal endogenous circulating pyrogen responsible for activating CNS mechanisms in fever during infection and inflammation. In the present investigation, we studied the role of peripheral IL-6 in fet-er and its relationship with IL-I, itself an important endogenous pyrogen and a potent stimulus of IL-6 production. 2. Injection of lipopolysaccharide (LPS) into a sterile, subcutaneous air pouch (I.PO.) in rats evoked an increase in body temperature which peaked at 3 h, and which was abolished in animals pretreatment (intraperitoneally) with IL-6 antiserum. 3. The increase in body temperature was accompanied by a significant elevation in concentrations of (immunoreactive) IL-1 and IL-6 at the site of inflammation (pouch), but only IL-B in the circulation and cerebrospinal fluids. We propose that much of the circulating IL-6 originates at the site of inflammation, since injection of human recombinant (hr)IL-B (I.PO.) was detected (10 alin after tilt: injection) in the plasma using an ELISA specific for human IL-6. 4. However, despite the relatively high concentration of IL-6 injected (25 mu g kg(-1) I.PO.), this cytokine had no effect on body temperature when injected alone, but did induce fever when co-injected with a non-pyrogenic dose (when given alone) of IL-1 beta, and exacerbated the fever to a pyrogenic dose of IL-1 beta. 5. The results from the present study demonstrate that IL-6 is a circulating endogenous pyrogen during LPS-induced fever, which acts in concert with IL-1 beta at the local site of inflammation, before entering the circulation. Circulating IL-beta can then activate CNS mechanisms resulting in the development uf the febrile response during disease.
+C1 Univ Manchester, Sch Biol Sci, Manchester M13 9PT, Lancs, England.
+   Univ Manchester, NW Injury Res Ctr, Manchester M13 9PT, Lancs, England.
+   Natl Inst Biol Stand & Controls, Div Endocrinol, Potters Bar EN6 3QG, Herts, England.
+RP Cartmell, T (通讯作者)，Univ Witwatersrand, Sch Med, Dept Physiol, 7 York Rd, ZA-2193 Parktown, South Africa.
+EM tcartmell@chiron.wits.ac.za
+CR AKIRA S, 1993, ADV IMMUNOL, V54, P1, DOI 10.1016/S0065-2776(08)60532-5
+   BANKS WA, 1994, NEUROSCI LETT, V179, P53, DOI 10.1016/0304-3940(94)90933-4
+   BLATTEIS CM, 1992, PROG BRAIN RES, V91, P409
+   CASTELL JV, 1988, EUR J BIOCHEM, V177, P357, DOI 10.1111/j.1432-1033.1988.tb14384.x
+   Chai Z, 1996, J EXP MED, V183, P311, DOI 10.1084/jem.183.1.311
+   DAMAS P, 1992, ANN SURG, V215, P356, DOI 10.1097/00000658-199204000-00009
+   DEVRIES HE, 1995, J NEUROIMMUNOL, V59, P1, DOI 10.1016/0165-5728(95)00009-Q
+   Dinarello CA, 1999, CURR BIOL, V9, PR147, DOI 10.1016/S0960-9822(99)80085-2
+   DINARELLO CA, 1991, BRAIN RES, V562, P199, DOI 10.1016/0006-8993(91)90622-3
+   EDWARDS JCW, 1981, J PATHOL, V134, P147, DOI 10.1002/path.1711340205
+   Elmquist JK, 1997, TRENDS NEUROSCI, V20, P565, DOI 10.1016/S0166-2236(97)01138-7
+   ENGEL A, 1994, INFECTION, V22, P160, DOI 10.1007/BF01716695
+   *EUR PHARM, 1999, BACT END, V0, P41
+   GAILLARD JP, 1993, EUR J IMMUNOL, V23, P820, DOI 10.1002/eji.1830230408
+   Hirota H, 1996, J EXP MED, V183, P2627, DOI 10.1084/jem.183.6.2627
+   HOPKINS SJ, 1995, TRENDS NEUROSCI, V18, P83
+   HOUSSIAU FA, 1988, CLIN EXP IMMUNOL, V71, P320
+   Keul R, 1998, CYTOKINE, V10, P729, DOI 10.1006/cyto.1997.0343
+   KLIR JJ, 1993, AM J PHYSIOL, V265, PR512, DOI 10.1152/ajpregu.1993.265.3.R512
+   KLIR JJ, 1994, AM J PHYSIOL, V266, PR1845, DOI 10.1152/ajpregu.1994.266.6.R1845
+   KLUGER MJ, 1991, PHYSIOL REV, V71, P93, DOI 10.1152/physrev.1991.71.1.93
+   Lacroix S, 1998, J NEUROCHEM, V70, P452, DOI 10.1046/j.1471-4159.1998.70020452.x
+   LEMAY DR, 1990, AM J PHYSIOL, V259, PR126, DOI 10.1152/ajpregu.1990.259.1.R126
+   LEMAY LG, 1990, AM J PHYSIOL, V258, PR798, DOI 10.1152/ajpregu.1990.258.3.R798
+   LEMAY LG, 1990, CYTOKINE, V2, P99
+   Lenczowski MJP, 1999, AM J PHYSIOL-REG I, V276, PR652, DOI 10.1152/ajpregu.1999.276.3.R652
+   Luheshi G, 1996, AM J PHYSIOL-ENDOC M, V270, PE91, DOI 10.1152/ajpendo.1996.270.1.E91
+   Luheshi GN, 1997, AM J PHYSIOL-REG I, V272, PR862, DOI 10.1152/ajpregu.1997.272.3.R862
+   MATSUMURA K, 1998, J NEUROSCI, V18, P6729
+   Miller AJ, 1997, BRIT J PHARMACOL, V120, P1274, DOI 10.1038/sj.bjp.0701049
+   Miller AJ, 1997, AM J PHYSIOL-REG I, V272, PR857, DOI 10.1152/ajpregu.1997.272.3.R857
+   NIJSTEN MWN, 1987, LANCET, V2, P921
+   Peters M, 1996, J EXP MED, V183, P1399, DOI 10.1084/jem.183.4.1399
+   Rees GS, 1999, CYTOKINE, V11, P95, DOI 10.1006/cyto.1998.0408
+   Romano M, 1997, IMMUNITY, V6, P315, DOI 10.1016/S1074-7613(00)80334-9
+   ROTH J, 1993, AM J PHYSIOL, V265, PR653, DOI 10.1152/ajpregu.1993.265.3.R653
+   RYFFEL B, 1995, J APPL TOXICOL, V15, P19, DOI 10.1002/jat.2550150106
+   SAFIEHGARABEDIAN B, 1995, BRIT J PHARMACOL, V115, P1265, DOI 10.1111/j.1476-5381.1995.tb15035.x
+   SCHOBITZ B, 1995, FASEB J, V9, P659, DOI 10.1096/fasebj.9.8.7768358
+   SCHREZENMEIER H, 1995, BRIT J HAEMATOL, V90, P283, DOI 10.1111/j.1365-2141.1995.tb05148.x
+   SHALABY MR, 1989, CLIN IMMUNOL IMMUNOP, V53, P488, DOI 10.1016/0090-1229(89)90010-X
+   SIRONI M, 1989, J IMMUNOL, V142, P549
+   Sundgren-Andersson AK, 1998, AM J PHYSIOL-REG I, V275, PR2028, DOI 10.1152/ajpregu.1998.275.6.R2028
+   TAKTAK YS, 1991, J PHARM PHARMACOL, V43, P578, DOI 10.1111/j.2042-7158.1991.tb03540.x
+   TRITARELLI E, 1994, CANCER RES, V54, P6469
+   Turnbull AV, 1996, ENDOCRINOLOGY, V137, P455, DOI 10.1210/en.137.2.455
+   Vallieres L, 1997, J NEUROCHEM, V69, P1668, DOI 10.1046/j.1471-4159.1997.69041668.x
+   Wang JP, 1997, NEUROIMMUNOMODULAT, V4, P230, DOI 10.1159/000097341
+   WATKINS LR, 1995, LIFE SCI, V57, P1011, DOI 10.1016/0024-3205(95)02047-M
+   ZHENG H, 1995, IMMUNITY, V3, P9, DOI 10.1016/1074-7613(95)90154-X
+   ZHOU DH, 1993, ENDOCRINOLOGY, V133, P2523, DOI 10.1210/en.133.6.2523
+NR 51
+TC 165
+Z9 168
+U1 0
+U2 6
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0022-3751
+EI 1469-7793
+J9 J PHYSIOL-LONDON
+JI J. Physiol.-London
+PD AUG 1
+PY 2000
+VL 526
+IS 3
+BP 653
+EP 661
+DI 10.1111/j.1469-7793.2000.00653.x
+PG 9
+WC Neurosciences; Physiology
+SC Neurosciences & Neurology; Physiology
+GA 352EX
+UT WOS:000089202500018
+PM 10922015
+DA 2022-09-21
+ER
+
+PT J
+AU Grierson, JR
+   Shields, AF
+AF Grierson, JR
+   Shields, AF
+TI Radiosynthesis of 3 '-deoxy-3 '-[F-18]fluorothymidine: [F-18]FLT for imaging of cellular proliferation in vivo
+SO NUCLEAR MEDICINE AND BIOLOGY
+LA English
+DT Article
+DE [F-18]FLT; 3 ' deoxy-3 '-flourothymidine; DNA synthesis; PET imaging; proliferation; fluorine-18; TK-1; thymidine kinase; thymidine metabolism; [C-11]thymidine
+ID positron-emission-tomography; substrate-specificity; thymidine kinase-1; kinetic-analysis; dna-synthesis; pet; 3'-fluorothymidine; nucleosides; tumors; cells
+AB A reliable radiosynthesis of 3'-deoxy-3'-[F-18]fluorothymidine ([F-18]FLT) has been developed based on [F-18]fluoride displacement of a protected nosylate precursor. A simple three-step synthesis is described that is useful for preparing >10 mCi (370 MBq) of radiochemically pure [F-18]FLT, with a specific activity >1 Ci/mu mol (37 GBq/mu mol) at EOS within 100 min and in 13% radiochemical yield tend of bombardment (EOB); 7% end of synthesis (EOS). [F-18]FLT has been designed as a new positron emission tomography imaging agent for visualizing cellular proliferation in vivo based on the metabolism of thymidine. NUCL MED BIOL 27;2:143-156, 2000. (C) 2000 Elsevier Science Inc. All rights reserved.
+C1 Univ Washington, Med Ctr, Res Imaging Lab, Seattle, WA 98195 USA.
+   Wayne State Univ, Harper Hosp, Karamanos Canc Inst, Detroit, MI USA.
+RP Grierson, JR (通讯作者)，Univ Washington, Med Ctr, Res Imaging Lab, Box 356004, Seattle, WA 98195 USA.
+EM grierson@u.washington.edu
+FU NATIONAL CANCER INSTITUTE [R01CA039566, P01CA042045] Funding Source: NIH RePORTER; NCI NIH HHS [CA39566, CA42045] Funding Source: Medline
+CR ARNER ESJ, 1992, BIOCHEM BIOPH RES CO, V188, P712, DOI 10.1016/0006-291X(92)91114-6
+   Balagopala MI, 1996, NUCLEOS NUCLEOT, V15, P899, DOI 10.1080/07328319608002136
+   BAUDOT P, 1977, TOXICOL APPL PHARM, V41, P113, DOI 10.1016/0041-008X(77)90058-8
+   Beaser SB, 1942, J CLIN INVEST, V21, P447, DOI 10.1172/JCI101321
+   CHRISTMAD, 1972, P NATL ACAD SCI USA, V69, P988, DOI 10.1073/pnas.69.4.988
+   Dean JA, 1985, LANGES HDB CHEM, V0, P0
+   Eary JF, 1999, CANCER RES, V59, P615
+   Foulon F, 1997, TETRAHEDRON LETT, V38, P3387, DOI 10.1016/S0040-4039(97)00626-6
+   FOX JJ, 1963, J ORG CHEM, V28, P936, DOI 10.1021/jo01039a014
+   Grierson John R, 1999, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V42, P0
+   Grierson John R, 1997, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V40, P60
+   Grierson JR, 1998, J NUCL MED, V39, P0
+   Grierson JR, 1998, J NUCL MED, V39, P0
+   Grierson JR, 1998, J NUCL MED, V39, P0
+   Grierson JR, 1999, J NUCL MED, V40, P0
+   GRIERSON JR, 1989, J NUCL MED, V30, P343
+   Imamoto T, 1994, LANTHANIDES ORGANIC, V0, P0
+   Kornberg A, 1992, DNA REPLICATION, V0, P53
+   Langen P, 1969, ACTA BIOL MED GER, V23, P759
+   Machulla HJ, 2000, J RADIOANAL NUCL CH, V243, P843, DOI 10.1023/A:1010684101509
+   Mankoff DA, 1999, J NUCL MED, V40, P614
+   Mankoff DA, 1998, J NUCL MED, V39, P1043
+   MARTIAT P, 1988, J NUCL MED, V29, P1633
+   MATTHES E, 1988, BIOCHEM BIOPH RES CO, V153, P825, DOI 10.1016/S0006-291X(88)81170-7
+   MUNCHPETERSEN B, 1991, J BIOL CHEM, V266, P9032
+   Rasey JS, 1999, J NUCL MED, V40, P0
+   SCHINAZI RF, 1992, BIOCHEM PHARMACOL, V44, P199, DOI 10.1016/0006-2952(92)90001-Y
+   SCHLYER DJ, 1987, J NUCL MED, V28, P0
+   SHERLEY JL, 1988, J BIOL CHEM, V263, P8350
+   Shields AF, 1998, J NUCL MED, V39, P0
+   Shields AF, 1999, J NUCL MED, V40, P0
+   Shields AF, 1998, J NUCL MED, V39, P1757
+   Shields AF, 1999, J NUCL MED, V40, P0
+   SHIELDS AF, 1990, J NUCL MED, V31, P337
+   Shields AF, 1998, NAT MED, V4, P1334, DOI 10.1038/3337
+   SUGIMURA H, 1994, J ORG CHEM, V59, P7653, DOI 10.1021/jo00104a020
+   Sundseth R, 1996, ANTIMICROB AGENTS CH, V40, P331, DOI 10.1128/AAC.40.2.331
+   VANAERSCHOT A, 1991, TETRAHEDRON LETT, V32, P1905, DOI 10.1016/S0040-4039(00)85994-8
+   VANEIJKEREN ME, 1992, ACTA ONCOL, V31, P539, DOI 10.3109/02841869209088303
+   WILSON IK, 1991, J FLUORINE CHEM, V55, P283, DOI 10.1016/S0022-1139(00)82356-8
+   YAU EK, 1988, ALDRICHIM ACTA, V21, P106
+   Young H, 1999, DRUG INF J, V33, P237, DOI 10.1177/009286159903300126
+NR 42
+TC 178
+Z9 189
+U1 0
+U2 8
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 0969-8051
+EI 1872-9614
+J9 NUCL MED BIOL
+JI Nucl. Med. Biol.
+PD FEB 15
+PY 2000
+VL 27
+IS 2
+BP 143
+EP 156
+DI 10.1016/S0969-8051(99)00104-3
+PG 14
+WC Radiology, Nuclear Medicine & Medical Imaging
+SC Radiology, Nuclear Medicine & Medical Imaging
+GA 307XT
+UT WOS:000086680000006
+PM 10773543
+DA 2022-09-21
+ER
+
+PT J
+AU Moiseenko, VV
+   Battista, JJ
+   Hill, RP
+   Travis, EL
+   Van Dyk, J
+AF Moiseenko, VV
+   Battista, JJ
+   Hill, RP
+   Travis, EL
+   Van Dyk, J
+TI In-field and out-of-field effects in partial volume lung irradiation in rodents: Possible correlation between early dna damage and functional endpoints
+SO INTERNATIONAL JOURNAL OF RADIATION ONCOLOGY BIOLOGY PHYSICS
+LA English
+DT Article
+DE lung; radiation pneumonitis; volume effect; normal tissue complication probability; radiobiological model; out-of-field effects
+ID mouse lung; radiation pneumonitis; cells; radiosensitivity
+AB Purpose: Recent observations have shown that there are regional variations in radiation response in mouse lung as measured by functional assays. Furthermore, there are both in-field and out-of-field effects in radiation-induced lung damage as observed by DNA assay in rats. The purpose of this work is: (a) to examine mice lethality data following partial volume lung irradiation to assess the possibility of directional or regional effects, (b) to evaluate the correlation between mice lethality data and DNA damage assayed by micronuclei production in rat lung, and (c) to re-interpret mice lethality considering the existence of directional effects in lung cellular response to partial volume irradiation. Methods and Materials: The lethality data for mice, generated at the M. D. Anderson Cancer Center, Houston, and micronuclei yield data for rats obtained at Princess Margaret Hospital, Toronto, were used. A radiobiological model that allows for out-of-held and in-held effects for lung cell damage and lung response was developed. This model is based on the observation of DNA damage in shielded parts of rat lung that was assumed relevant to cell lethality and consequently overall lung response. Results: While the experimental data indicated directional or regional volume effects, the applicability of dose and volume as sole predictors of lung response to radiation was found to be unreliable for lower lung (base) irradiation in mice. This conforms well to rat lung response where micronuclei were observed in shielded apical parts of lung following base irradiation. The radiobiological model, which was specifically developed to account for the lung response outside of primary irradiated volume, provides a good fit to mice lethality data, using parameters inferred from rat micronuclei data. Conclusion: Response to lung irradiation in rodents, in particular, elevated sensitivity to base irradiation, can be interpreted with a hypothesis of in-field and out-of-field effects for cellular response. If the existence of these effects for lung is subsequently proven in humans, it will require the incorporation of geometrical and directional information in normal tissue complication probability calculations for lung. These considerations are ignored in present approaches based only on conventional dose-volume histograms. (C) 2000 Elsevier Science Inc.
+C1 Univ Western Ontario, London Reg Canc Ctr, London, ON N6A 4L6, Canada.
+   Univ Western Ontario, Dept Oncol, London, ON N6A 4L6, Canada.
+   Univ Western Ontario, Dept Med Biophys, London, ON N6A 4L6, Canada.
+   Univ Toronto, Ontario Canc Inst, Princess Margaret Hosp, Toronto, ON, Canada.
+   Univ Toronto, Dept Med Biophys, Toronto, ON, Canada.
+   Univ Texas, MD Anderson Canc Ctr, Houston, TX 77030 USA.
+RP Van Dyk, J (通讯作者)，Univ Western Ontario, London Reg Canc Ctr, 790 Commissioners Rd E, London, ON N6A 4L6, Canada.
+CR Akudugu JM, 2000, RADIAT RES, V153, P62, DOI 10.1667/0033-7587(2000)153[0062:FORIMI]2.0.CO;2
+   BALTAS D, 1997, MODELING CLIN RADIOB, V0, P155
+   BUSH C, 1993, BRIT J CANCER, V67, P102, DOI 10.1038/bjc.1993.17
+   FERTIL B, 1981, INT J RADIAT ONCOL, V7, P621, DOI 10.1016/0360-3016(81)90377-1
+   GRAHAM MV, 1994, INT J RADIAT ONCOL, V29, P1105, DOI 10.1016/0360-3016(94)90407-3
+   Khan MA, 1998, INT J RADIAT ONCOL, V40, P467, DOI 10.1016/S0360-3016(97)00736-0
+   LIAO ZX, 1995, INT J RADIAT ONCOL, V32, P1359, DOI 10.1016/0360-3016(94)00660-D
+   LYMAN JT, 1989, INT J RADIAT ONCOL, V17, P433, DOI 10.1016/0360-3016(89)90462-8
+   Mariya Y, 1997, RADIAT RES, V147, P29, DOI 10.2307/3579439
+   Marks LB, 1999, MED PHYS, V26, P196, DOI 10.1118/1.598503
+   MORGAN GW, 1995, INT J RADIAT ONCOL, V31, P361, DOI 10.1016/0360-3016(94)00477-3
+   NEWCOMB CH, 1993, RADIOTHER ONCOL, V26, P51, DOI 10.1016/0167-8140(93)90026-5
+   Travis EL, 1997, INT J RADIAT ONCOL, V38, P1045, DOI 10.1016/S0360-3016(97)00130-2
+   Tucker SL, 1997, INT J RADIAT ONCOL, V38, P1055, DOI 10.1016/S0360-3016(97)00131-4
+NR 14
+TC 37
+Z9 39
+U1 0
+U2 0
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 655 AVENUE OF THE AMERICAS, NEW YORK, NY 10010 USA
+SN 0360-3016
+EI 
+J9 INT J RADIAT ONCOL
+JI Int. J. Radiat. Oncol. Biol. Phys.
+PD DEC 1
+PY 2000
+VL 48
+IS 5
+BP 1539
+EP 1548
+DI 10.1016/S0360-3016(00)00802-6
+PG 10
+WC Oncology; Radiology, Nuclear Medicine & Medical Imaging
+SC Oncology; Radiology, Nuclear Medicine & Medical Imaging
+GA 378VC
+UT WOS:000165604600038
+PM 11121660
+DA 2022-09-21
+ER
+
+PT J
+AU Weber, WA
+   Wester, HJ
+   Grosu, AL
+   Herz, M
+   Dzewas, B
+   Feldmann, HJ
+   Molls, M
+   Stocklin, G
+   Schwaiger, M
+AF Weber, WA
+   Wester, HJ
+   Grosu, AL
+   Herz, M
+   Dzewas, B
+   Feldmann, HJ
+   Molls, M
+   Stocklin, G
+   Schwaiger, M
+TI O-(2-[F-18]fluoroethyl)-L-tyrosine and L-[methyl-C-11]methionine uptake in brain tumours: initial results of a comparative study
+SO EUROPEAN JOURNAL OF NUCLEAR MEDICINE
+LA English
+DT Article
+DE positron emission tomography; brain tumours; O-(2-[F-18]fluoroethyI)-L-tyrosine; L-[methyl-C-11]methionine
+ID positron-emission-tomography; amino-acid-transport; protein-synthesis rates; c-11 methionine pet; f-18 fluorodeoxyglucose; cerebral gliomas; computed-tomography; in-vivo; tumors; metabolism
+AB O-(2-[F-18]Fluoroethyl)-L-tyrosine (FET) is a recently described amino acid analogue that has shown high accumulation in animal tumours. The aim of this study was to compare the uptake of FET with that of L-[methyl-C-11] methionine (MET) in patients with suspected primary or recurrent intracerebral tumours. Sixteen consecutive patients with intracerebral lesions were studied on the same day by positron emission tomography (PET) using MET and FET. Uptake of FET and MET was quantified by standardized uptake values. Tracer kinetics for normal brain and intracerebral lesions were compared. On the basis of the MET-PET studies, viable tumour tissue was found in 13 patients. All tumours showed rapid uptake of FET and were visualized with high contrast. Mean uptake of FET for normal grey matter, white matter and tumour tissue was 1.1+/-0.2, 0.8+/-0.2 and 2.7+/-0.8 SUV, respectively. In all three tissues, uptake of MET was slightly higher (1.4+/-0.2, 0.9+/-0.1 and 3.3+/-1.0 SUV; P<0.01). However, contrast between tumour and normal tissues was not significantly different between MET and FET. Uptake of FET in non-neoplastic lesions (1.0+/-0.1 SUV) was significantly lower than in tumour tissue (P=0.007). For all lesions there was a close correlation (r=0.98) between MET and FET uptake. In conclusion, in FET studies of human brain tumours, the uptake and image contrast of FET appear to be very similar to those of MET. The specificity of FET for tumour tissue is promising but has to be addressed in a larger series of patients with non-neoplastic lesions.
+C1 Tech Univ Munich, Dept Nucl Med, D-81675 Munich, Germany.
+   Tech Univ Munich, Dept Radiotherapy, D-81675 Munich, Germany.
+RP Weber, WA (通讯作者)，Tech Univ Munich, Dept Nucl Med, Ismaningerstr 22, D-81675 Munich, Germany.
+EM W.Weber@lrz.ru-muenchen.de
+CR Bading JR, 1996, NUCL MED BIOL, V23, P779, DOI 10.1016/0969-8051(96)00073-X
+   Barker FG, 1997, CANCER, V79, P115, DOI 10.1002/(SICI)1097-0142(19970101)79:1<115::AID-CNCR17>3.3.CO;2-#
+   BERGSTROM M, 1983, J COMPUT ASSIST TOMO, V7, P1062, DOI 10.1097/00004728-198312000-00022
+   COENEN HH, 1989, J NUCL MED, V30, P1367
+   Del Fiore G, 1995, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V37, P746
+   DERLON JM, 1989, NEUROSURGERY, V25, P720, DOI 10.1227/00006123-198911000-00006
+   DICHIRO G, 1982, NEUROLOGY, V32, P1323, DOI 10.1212/WNL.32.12.1323
+   Fuechtner F, 1999, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V42, P0
+   Goldman S, 1996, CANCER, V78, P1098, DOI 10.1002/(SICI)1097-0142(19960901)78:5<1098::AID-CNCR21>3.3.CO;2-A
+   HAWKINS RA, 1989, J CEREBR BLOOD F MET, V9, P446, DOI 10.1038/jcbfm.1989.68
+   Heiss P, 1999, J NUCL MED, V40, P1367
+   Heiss WD, 1996, J NUCL MED, V37, P1180
+   Herholz K, 1998, NEUROLOGY, V50, P1316, DOI 10.1212/WNL.50.5.1316
+   Inoue T, 1999, J NUCL MED, V40, P399
+   Inoue T, 1998, J NUCL MED, V39, P663
+   Ishiwata K, 1996, J NUCL MED, V37, P279
+   ISHIWATA K, 1993, J NUCL MED, V34, P1936
+   Langen KJ, 1998, J NUCL MED, V39, P1596
+   Langen KJ, 1997, J NUCL MED, V38, P517
+   MOSSKIN M, 1989, ACTA RADIOL, V30, P225
+   Nariai T, 1997, J NUCL MED, V38, P1563
+   Ogawa T, 1996, EUR J NUCL MED, V23, P889, DOI 10.1007/BF01084361
+   OGAWA T, 1993, RADIOLOGY, V186, P45, DOI 10.1148/radiology.186.1.8380108
+   OGAWA T, 1991, ACTA RADIOL, V32, P197
+   OXENDER DL, 1977, J BIOL CHEM, V252, P2675
+   PARDRIDGE WM, 1983, PHYSIOL REV, V63, P1481, DOI 10.1152/physrev.1983.63.4.1481
+   PRUIM J, 1995, RADIOLOGY, V197, P221, DOI 10.1148/radiology.197.1.7568827
+   Ricci PE, 1998, AM J NEURORADIOL, V19, P407
+   Rigo P, 1996, EUR J NUCL MED, V23, P1641, DOI 10.1007/BF01249629
+   Sasaki M, 1998, EUR J NUCL MED, V25, P1261, DOI 10.1007/s002590050294
+   Shoup TM, 1999, J NUCL MED, V40, P331
+   Uehara H, 1997, J CEREBR BLOOD F MET, V17, P1239, DOI 10.1097/00004647-199711000-00013
+   Weber W, 1997, J NUCL MED, V38, P802
+   Wester HJ, 1999, J NUCL MED, V40, P205
+   WIENHARD K, 1992, J COMPUT ASSIST TOMO, V16, P804, DOI 10.1097/00004728-199209000-00024
+NR 35
+TC 316
+Z9 328
+U1 0
+U2 17
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 0340-6997
+EI 
+J9 EUR J NUCL MED
+JI Eur. J. Nucl. Med.
+PD MAY 15
+PY 2000
+VL 27
+IS 5
+BP 542
+EP 549
+DI 10.1007/s002590050541
+PG 8
+WC Radiology, Nuclear Medicine & Medical Imaging
+SC Radiology, Nuclear Medicine & Medical Imaging
+GA 314GW
+UT WOS:000087048900012
+PM 10853810
+DA 2022-09-21
+ER
+
+PT J
+AU Mueller, J
+   Breback, B
+   Schmalfeldt, B
+   Kuhn, W
+   Graeff, H
+   Hofler, H
+AF Mueller, J
+   Breback, B
+   Schmalfeldt, B
+   Kuhn, W
+   Graeff, H
+   Hofler, H
+TI Stromelysin-3 expression in invasive ovarian carcinomas and tumours of low malignant potential
+SO VIRCHOWS ARCHIV-AN INTERNATIONAL JOURNAL OF PATHOLOGY
+LA English
+DT Article
+DE ovary; carcinoma; borderline; invasion; stromelysin-3
+ID serous borderline tumors; messenger-rna expression; breast-carcinoma; tissue inhibitors; gene-expression; clinicopathological correlations; matrix metalloproteinases; prognostic-significance; cell carcinomas; retinoic acid
+AB Stromelysin (ST)-3 is considered to be a marker of invasion and preinvasive lesions to indicate the likelihood of subsequent invasion. The expression of ST-3 has not been systematically studied in ovarian neoplasms. We studied 47 ovarian carcinomas and 49 ovarian tumours of low malignant potential (LMP) to see whether the expression of ST-3 correlated with any histopathologic features and, in the LMP tumours, whether its expression might be a prognostic indicator. All of the primary tumours and available metastases or implants were studied using immunohistochemistry (IHC) for ST-3 and, in 52 selected lesions, in situ hybridisation (ISH) using a cDNA probe. Expression of ST-3 was seen in 42 of 47 (89%) of the carcinomas and in 16 of 49 (33%) of the LMP cases. A significantly higher percentage of carcinomas than LMP tumours (P<0.00001) expressed ST-3 in the stroma adjacent to the tumour, with a correlation to increasing FIGO (International Federation of Gynecology and Obstetrics) tumour stage. ST-3 was expressed in the surrounding stroma of 1 of 8 LMP implants and 46 of 55 (84%) of the carcinoma metastases. The single LMP patient who died of tumour recurrence had ST-3 expression, but a significant prognostic impact was not found. The infrequent expression of ST-3 in LMP compared with carcinoma metastases appears to be more consistent with a peritoneal "field effect" than spread from the ovarian LMP tumour.
+C1 Tech Univ Munich, Klinikum Rechts Isar, Dept Surg, D-81675 Munich, Germany.
+   Tech Univ Munich, Klinikum Rechts Isar, Inst Pathol, D-81675 Munich, Germany.
+   Tech Univ Munich, Klinikum Rechts Isar, Dept Obstet & Gynaecol, D-81675 Munich, Germany.
+RP Mueller, J (通讯作者)，Tech Univ Munich, Klinikum Rechts Isar, Dept Surg, Ismaninger Str 22, D-81675 Munich, Germany.
+CR Ahmad A, 1998, AM J PATHOL, V152, P721
+   ANDERSON IC, 1995, CANCER RES, V55, P4120
+   BASSET P, 1990, NATURE, V348, P699, DOI 10.1038/348699a0
+   BENJAMIN I, 1994, OBSTET GYN CLIN N AM, V21, P107
+   Chenard MP, 1996, INT J CANCER, V69, P448, DOI 10.1002/(SICI)1097-0215(19961220)69:6<448::AID-IJC5>3.3.CO;2-4
+   Datar RH, 1999, GYNECOL ONCOL, V74, P338, DOI 10.1006/gyno.1999.5506
+   Diebold J, 1996, LAB INVEST, V75, P473
+   Haas CJ, 1999, INT J GYNECOL PATHOL, V18, P158, DOI 10.1097/00004347-199904000-00010
+   Hagglund AC, 1999, ENDOCRINOLOGY, V140, P4351, DOI 10.1210/en.140.9.4351
+   HAHNEL E, 1993, INT J CANCER, V55, P771, DOI 10.1002/ijc.2910550513
+   HAHNEL E, 1994, INT J CANCER, V58, P157, DOI 10.1002/ijc.2910580202
+   Kennedy AW, 1996, CANCER-AM CANCER SOC, V78, P278, DOI 10.1002/(SICI)1097-0142(19960715)78:2<278::AID-CNCR14>3.0.CO;2-T
+   Khalifa MA, 1997, CANCER DETECT PREV, V21, P532
+   Kuhn W, 1999, BRIT J CANCER, V79, P1746, DOI 10.1038/sj.bjc.6690278
+   Linder C, 1997, BREAST CANCER RES TR, V42, P207, DOI 10.1023/A:1005769622570
+   MAJMUDAR G, 1994, MOL CARCINOGEN, V9, P17, DOI 10.1002/mc.2940090105
+   Mueller J, 1997, VIRCHOWS ARCH, V430, P213, DOI 10.1007/BF01324804
+   MULLER D, 1993, CANCER RES, V53, P165
+   Munck-Wikland E, 1998, INT J ONCOL, V12, P859
+   Nayar R, 1996, HUM PATHOL, V27, P521, DOI 10.1016/S0046-8177(96)90156-2
+   POLETTE M, 1993, PATHOL RES PRACT, V189, P1052
+   ROUYER N, 1994, INVAS METAST, V14, P269
+   SANTAVICCA M, 1995, INT J CANCER, V64, P336, DOI 10.1002/ijc.2910640510
+   SCHMALFELDT B, 1995, CANCER RES, V55, P3958
+   Schmalfeldt B, 1999, GEBURTSH FRAUENHEILK, V59, P507
+   SEGAL GH, 1992, AM J SURG PATHOL, V16, P577, DOI 10.1097/00000478-199206000-00005
+   Silva EG, 1998, INT J GYNECOL PATHOL, V17, P1, DOI 10.1097/00004347-199801000-00001
+   Singer CF, 1999, EUR J BIOCHEM, V259, P40, DOI 10.1046/j.1432-1327.1999.00001.x
+   TAVASSOLI FA, 1988, MODERN PATHOL, V1, P407
+   Tetu B, 1998, HUM PATHOL, V29, P979, DOI 10.1016/S0046-8177(98)90204-0
+   Thewes M, 1996, DIAGN MOL PATHOL, V5, P284, DOI 10.1097/00019606-199612000-00010
+   TRIMBLE CL, 1994, GYNECOL ONCOL, V55, P52
+   URBANSKI SJ, 1992, BRIT J CANCER, V66, P1188, DOI 10.1038/bjc.1992.434
+   von Marschall Z, 1998, GUT, V43, P692, DOI 10.1136/gut.43.5.692
+   Wagner S N, 1992, DIAGN MOL PATHOL, V1, P200, DOI 10.1097/00019606-199203000-00029
+NR 35
+TC 24
+Z9 25
+U1 0
+U2 1
+PU SPRINGER-VERLAG
+PI NEW YORK
+PA 175 FIFTH AVE, NEW YORK, NY 10010 USA
+SN 0945-6317
+EI 
+J9 VIRCHOWS ARCH
+JI Virchows Arch. Int. J. Pathol.
+PD DEC 15
+PY 2000
+VL 437
+IS 6
+BP 618
+EP 624
+DI 10.1007/s004280000261
+PG 7
+WC Pathology
+SC Pathology
+GA 389QQ
+UT WOS:000166249600006
+PM 11193473
+DA 2022-09-21
+ER
+
+PT J
+AU Irazoqui, FJ
+   Lopez, PHH
+   Vides, MA
+   Nores, GA
+AF Irazoqui, FJ
+   Lopez, PHH
+   Vides, MA
+   Nores, GA
+TI Novel immunogenicity of Thomsen-Friedenreich disaccharide obtained by a molecular rotation on its carrier linkage
+SO GLYCOBIOLOGY
+LA English
+DT Article
+DE immunogenicity; Thomsen-Friedenreich disaccharide; tumor-associated antigen
+ID agaricus-bisporus lectin; polymorphic epithelial mucin; human monoclonal-antibody; keyhole limpet hemocyanin; cancer cells; aberrant glycosylation; carcinoma patients; tumor-cells; muc-1 mucin; tf antigen
+AB The a-anomeric Gal beta 1-3CalNAc, called Thomsen-Friedenreich disaccharide (TFD), is overexpressed in epithelial cancer cells by aberrant O-glycosylation. TFD is also the main ligand of Agaricus bisporus lectin (ABL), a reversible noncytotoxic inhibitor of proliferation of epithelial cell lines. In order to obtain anti-TFD antibody response with a fine carbohydrate-binding specificity similar to that of ABL, we designed an immunogen of TFD with a molecular rotation on its carrier linkage that exposes more GalNAc than Gal, since ABL recognizes GalNAc more than Gal in TFD, The synthesis was accomplished by C-6 oxidation of Gal from TFD or its a-benzyl derivative (Bzl alpha TFD), followed by reductive amination between the C-6 aldehyde yielded and the available amine of protein. Mice immunized with TFD-KLH (keyhole limpet hemocyanin) or Bzl alpha TFD-KLH produced antibodies which were then analyzed by ELISA against several target antigens, Both immunogens raised anti-KLH antibody titers; however, TFT)-KLH did not raise anti-TFD antibodies showing low TPD immunogenicity. In contrast, Bzl alpha TFD-KLH gave much higher anti-TFD antibody response, indicating that benzyl residue helps improve anti-carbohydrate immune response, When IgG and IgM anti-TFD antibodies were analyzed by competitive ELISA using TFD-related carbohydrates as inhibitors, a high specificity to TFD as well as an enhanced binding to GalNAc over Gal were observed. The axial C-4 hydroxyl group of GalNAc interacted with IgG anti-TFD antibody, as evidenced by the lack of inhibitory activity of GlcNAc in contrast to GalNAc, These findings indicate that the anti-TFD antibodies have fine carbohydrate-binding specificity more similar to ABL than to other TFD-binding proteins that stimulate proliferation of epithelial cell lines.
+C1 Univ Nacl Cordoba, CONICET, CIQUIBIC, Dept Quim Biol, RA-5000 Cordoba, Argentina.
+   Univ Nacl Cordoba, Fac Ciencias Quim, Dept Bioquim Clin, RA-5000 Cordoba, Argentina.
+RP Irazoqui, FJ (通讯作者)，Univ Nacl Cordoba, CONICET, CIQUIBIC, Dept Quim Biol, Ciudad Univ, RA-5000 Cordoba, Argentina.
+CR ADLURI S, 1995, CANCER IMMUNOL IMMUN, V41, P185, DOI 10.1007/BF01521345
+   Agrawal B, 1998, NAT MED, V4, P43, DOI 10.1038/nm0198-043
+   AVIGAD G, 1962, J BIOL CHEM, V237, P2736
+   Baldus SE, 1998, CANCER, V82, P1019, DOI 10.1002/(SICI)1097-0142(19980315)82:6<1019::AID-CNCR3>3.0.CO;2-9
+   BROCKHAUSEN I, 1995, EUR J BIOCHEM, V233, P607, DOI 10.1111/j.1432-1033.1995.607_2.x
+   BROCKHAUSEN I, 1995, GLYCOPROTEINS, V0, P201
+   Bundle DR, 1992, CURR OPIN STRUC BIOL, V2, P666, DOI 10.1016/0959-440X(92)90199-H
+   CAMPBELL BJ, 1995, J CLIN INVEST, V95, P571, DOI 10.1172/JCI117700
+   CAO Y, 1995, CANCER-AM CANCER SOC, V76, P1700, DOI 10.1002/1097-0142(19951115)76:10<1700::AID-CNCR2820761005>3.0.CO;2-Z
+   CARNEIRO F, 1994, HISTOPATHOLOGY, V24, P105, DOI 10.1111/j.1365-2559.1994.tb01288.x
+   CHEN YX, 1995, GLYCOCONJUGATE J, V12, P55, DOI 10.1007/BF00731869
+   Cuatrecasas P, 1971, METHOD ENZYMOL, V22, P345
+   Dahlenborg K, 1997, INT J CANCER, V70, P63, DOI 10.1002/(SICI)1097-0215(19970106)70:1<63::AID-IJC10>3.0.CO;2-E
+   Desai PR, 1995, J IMMUNOL METHODS, V188, P175, DOI 10.1016/0022-1759(95)00246-4
+   FUNG PYS, 1991, CANCER RES, V51, P1170
+   GOUREVITCH MM, 1995, BRIT J CANCER, V72, P934, DOI 10.1038/bjc.1995.436
+   Graham RA, 1996, CANCER IMMUNOL IMMUN, V42, P71, DOI 10.1007/s002620050254
+   GRAY GR, 1974, ARCH BIOCHEM BIOPHYS, V163, P426, DOI 10.1016/0003-9861(74)90495-0
+   Gu XG, 1998, CANCER RES, V58, P3385
+   Hakomori S, 1996, CANCER RES, V56, P5309
+   Hounsell EF, 1996, GLYCOCONJUGATE J, V13, P19, DOI 10.1007/BF01049675
+   Irazoqui FJ, 1997, GLYCOCONJUGATE J, V14, P313, DOI 10.1023/A:1018566527271
+   Irazoqui FJ, 1999, GLYCOBIOLOGY, V9, P59, DOI 10.1093/glycob/9.1.59
+   Kanitakis J, 1998, J CLIN PATHOL, V51, P588, DOI 10.1136/jcp.51.8.588
+   KURTENKOV O, 1995, INT J CANCER, V60, P781, DOI 10.1002/ijc.2910600609
+   LALANI EN, 1991, J BIOL CHEM, V266, P15420
+   LANGKILDE NC, 1996, SCAND J UROL NEPHR S, V172, P45
+   Liggins J, 1997, BBA-MOL BASIS DIS, V1361, P123, DOI 10.1016/S0925-4439(97)00023-9
+   Lloyd KO, 1996, J BIOL CHEM, V271, P33325, DOI 10.1074/jbc.271.52.33325
+   Loris R, 1998, BBA-PROTEIN STRUCT M, V1383, P9, DOI 10.1016/S0167-4838(97)00182-9
+   LOTAN R, 1975, J BIOL CHEM, V250, P8518
+   MacLean GD, 1997, J IMMUNOTHER, V20, P70, DOI 10.1097/00002371-199701000-00008
+   MACLEAN GD, 1992, J IMMUNOTHER, V11, P292, DOI 10.1097/00002371-199205000-00008
+   NORES GA, 1994, J CHROMATOGR A, V686, P155, DOI 10.1016/S0021-9673(94)89015-3
+   Ragupathi G, 1998, GLYCOCONJUGATE J, V15, P217, DOI 10.1023/A:1006936826730
+   Rittenhouse-Diakun K, 1998, HYBRIDOMA, V17, P165, DOI 10.1089/hyb.1998.17.165
+   RYDER SD, 1994, GASTROENTEROLOGY, V106, P85, DOI 10.1016/S0016-5085(94)94527-6
+   RYDER SD, 1994, GASTROENTEROLOGY, V106, P117, DOI 10.1016/S0016-5085(94)94775-9
+   Said IT, 1999, HISTOL HISTOPATHOL, V14, P351, DOI 10.14670/HH-14.351
+   Sames D, 1997, NATURE, V389, P587, DOI 10.1038/39292
+   SCHWARTZ BA, 1977, ARCH BIOCHEM BIOPHYS, V181, P542, DOI 10.1016/0003-9861(77)90261-2
+   Shigeoka H, 1999, TUMOR BIOL, V20, P139, DOI 10.1159/000030056
+   SINGHAL A, 1991, CANCER RES, V51, P1406
+   Springer GF, 1997, J MOL MED, V75, P594, DOI 10.1007/s001090050144
+   SPRINGER GF, 1984, SCIENCE, V224, P1198, DOI 10.1126/science.6729450
+   TaylorPapadimitriou J, 1997, IMMUNOL TODAY, V18, P105, DOI 10.1016/S0167-5699(97)01028-1
+   TOYOKUNI T, 1995, CHEM SOC REV, V116, P231
+   WIRGUIN I, 1995, CANCER IMMUNOL IMMUN, V40, P307, DOI 10.1007/s002620050178
+   Yang GY, 1996, HISTOL HISTOPATHOL, V11, P801
+   YU LG, 1993, CANCER RES, V53, P4627
+   Yu LG, 1997, INT J CANCER, V73, P424, DOI 10.1002/(SICI)1097-0215(19971104)73:3<424::AID-IJC18>3.3.CO;2-C
+   Yu LG, 1999, J BIOL CHEM, V274, P4890, DOI 10.1074/jbc.274.8.4890
+NR 52
+TC 8
+Z9 8
+U1 0
+U2 1
+PU OXFORD UNIV PRESS
+PI OXFORD
+PA GREAT CLARENDON ST, OXFORD OX2 6DP, ENGLAND
+SN 0959-6658
+EI 
+J9 GLYCOBIOLOGY
+JI Glycobiology
+PD AUG 15
+PY 2000
+VL 10
+IS 8
+BP 781
+EP 787
+DI 10.1093/glycob/10.8.781
+PG 7
+WC Biochemistry & Molecular Biology
+SC Biochemistry & Molecular Biology
+GA 343ZE
+UT WOS:000088732500007
+PM 10929004
+DA 2022-09-21
+ER
+
+PT J
+AU Sontag, W
+AF Sontag, W
+TI Modulation of cytokine production by interferential current in differentiated HL-60 cells
+SO BIOELECTROMAGNETICS
+LA English
+DT Article
+DE HL-60 cells; low frequency electric fields; amplitude modulation; cytokines; TNF alpha; IL-1 beta; IL-6; IL-8
+ID blood mononuclear-cells; pulsed electromagnetic-fields; electric-fields; cytosolic calcium; cyclic-amp; in-vitro; dimethylsulfoxide; frequency; induction; alpha
+AB The influence of interferential current (IFC) on the release of four cytokines was investigated. IFC is an amplitude-modulated 4 kHz current used in therapeutic applications. Human promyelocytes (HL-60) were differentiated to monocytes/macrophages by treatment with calcitriol. Release of tumor necrosis factor alpha. (TNF alpha) and interleukines 1 beta, 6, and 8 (IL-1 beta, IL-6, and IL-8) into the supernatant was measured after exposure to IFC at different modulation frequencies. TNF alpha release was stimulated about twofold by 4 kHz sine waves alone. The influences of exposure time (5-30 min) and current density (2.5-2500 mu A/cm(2)) were tested. A maximum field effect was found at an exposure time of 15 min and a current density of 250 mu A/cm(2). With these exposure conditions (15 min and 250 mu A/cm(2)), cells were treated at different modulation frequencies and reacted for TNF alpha, IL-1 beta, and IL-8 release in a complex manner. Within the frequencies studied (0-125 Hz), we found stimulation as well as depression of the release. In a second run the cells were activated by pretreatment with 10 mu g/ml lipopolysaccharide (LPS) and exposed in the same way as the nonactivated cells. Again the modulation frequency influenced, in a complex way, the induction of TNF alpha, IL-1 beta, and IL-8, resulting in a pattern of stimulation and depression of release different from that found in nonactivated cells. For IL-6 production no significant changes were detected in activated or non-activated cells. (C) 2000 Wiley-Liss, Inc.
+C1 Forschungszentrum Karlsruhe, Inst Toxikol, Karlsruhe, Germany.
+RP Sontag, W (通讯作者)，Postfach 3640, D-76021 Karlsruhe, Germany.
+EM sontag@itox.fzk.de
+CR ALDINUCCI C, 1997, BIOELECTROCH BIOENER, V44, P243
+   BALKWILL FR, 1994, CONTR ONCOL, V46, P1
+   Bhattacharya C, 1997, J IMMUNOL, V158, P1293
+   COLLINS SJ, 1979, J EXP MED, V149, P969, DOI 10.1084/jem.149.4.969
+   COSSARIZZA A, 1993, EXP CELL RES, V204, P385, DOI 10.1006/excr.1993.1048
+   Debets R, 1996, MEDIAT INFLAMM, V5, P417, DOI 10.1155/S0962935196000579
+   ISKANDER MF, 1990, BIOL EFFECTS MED APP, V0, P478
+   Jonai H, 1996, IND HEALTH, V34, P359, DOI 10.2486/indhealth.34.359
+   KNEDLITSCHEK G, 1994, RADIAT ENVIRON BIOPH, V33, P141, DOI 10.1007/BF01219337
+   Lehmann MH, 1996, BIOELECTROCH BIOENER, V41, P227, DOI 10.1016/S0302-4598(96)05127-6
+   NIKOLOVA L, 1987, TREATMENT INTERFEREN, V0, P0
+   ONEILL PJ, 1997, CYTOKINES TRAUMA HEM, V0, P1
+   Pessina GP, 1997, BIOELECTROMAGNETICS, V18, P548, DOI 10.1002/(SICI)1521-186X(1997)18:8<548::AID-BEM3>3.0.CO;2-2
+   Petrini C, 1997, BIOELECTROCH BIOENER, V44, P121, DOI 10.1016/S0302-4598(97)00039-1
+   POLZER G, 1994, INHAL TOXICOL, V6, P359, DOI 10.3109/08958379409003033
+   Sironi M, 1996, CYTOKINE, V8, P710, DOI 10.1006/cyto.1996.0094
+   Sontag W, 1998, BIOELECTROCH BIOENER, V46, P255, DOI 10.1016/S0302-4598(98)00150-0
+   Sontag W, 1998, BIOELECTROMAGNETICS, V19, P452
+   Sontag W, 1998, BIOELECTROMAGNETICS, V19, P32, DOI 10.1002/(SICI)1521-186X(1998)19:1<32::AID-BEM3>3.0.CO;2-5
+   TRACEY KJ, 1994, CYTOKINE HDB, V0, P289
+   Ward AR, 1980, ELECT FIELDS WAVES T, V0, P0
+   Welker P, 1996, INT ARCH ALLERGY IMM, V109, P110, DOI 10.1159/000237208
+   WOLF B, 1996, AKTUEL DERMATOL, V22, P94
+NR 23
+TC 10
+Z9 10
+U1 0
+U2 0
+PU WILEY-BLACKWELL
+PI MALDEN
+PA COMMERCE PLACE, 350 MAIN ST, MALDEN 02148, MA USA
+SN 0197-8462
+EI 
+J9 BIOELECTROMAGNETICS
+JI Bioelectromagnetics
+PD APR 15
+PY 2000
+VL 21
+IS 3
+BP 238
+EP 244
+DI 10.1002/(SICI)1521-186X(200004)21:3<238::AID-BEM10>3.0.CO;2-Y
+PG 7
+WC Biology; Biophysics
+SC Life Sciences & Biomedicine - Other Topics; Biophysics
+GA 298GG
+UT WOS:000086130500010
+PM 10723023
+DA 2022-09-21
+ER
+
+PT J
+AU Lord, RVN
+   Salonga, D
+   Danenberg, KD
+   Peters, JH
+   DeMeester, TR
+   Park, M
+   Johansson, J
+   Skinner, KA
+   Chandrasoma, P
+   DeMeester, SR
+   Bremner, CG
+   Tsai, PI
+   Danenberg, PV
+AF Lord, RVN
+   Salonga, D
+   Danenberg, KD
+   Peters, JH
+   DeMeester, TR
+   Park, M
+   Johansson, J
+   Skinner, KA
+   Chandrasoma, P
+   DeMeester, SR
+   Bremner, CG
+   Tsai, PI
+   Danenberg, PV
+TI Telomerase reverse transcriptase expression is increased early in the Barrett's metaplasia, dysplasia, adenocarcinoma sequence
+SO JOURNAL OF GASTROINTESTINAL SURGERY
+LA English
+DT Article
+DE telomerase; telomerase reverse transcriptase; hTERT; hTRT; telomere; Barrett's esophagus; esophageal neoplasms; esophageal adenocarcinoma
+ID catalytic subunit gene; normal human-cells; esophageal adenocarcinoma; neoplastic progression; premalignant lesions; human fibroblasts; rna component; life-span; cancer; p53
+AB Barrett's esophagus is a multistage polyclonal disease that is associated with the development of adenocarcinoma of the esophagus and esophagogastric junction. Telomerase activation is associated with cellular immortality and carcinogenesis, and increased expression of the telomerase reverse transcriptase catalytic subunit (hTERT) has been used for the early detection of malignant diseases. To identify biomarkers associated with each stage of the Barrett's process, relative mRNA expression levels of hTERT were measured using a quantitative reverse transcription-polymerase chain reaction method (ABI 7700 Sequence Detector (TaqMan system) in Barrett's intestinal metaplasia (n = 14), Barrett's dysplasia (n = 10), Barrett's adenocarcinoma (n = 14), and matching normal squamous esophagus tissues (n = 32). hTERT expression was significantly increased at all stages of Barrett's esophagus, including the intestinal metaplasia stage, compared to normal tissues from patients without cancer (intestinal metaplasia vs. normal esophagus, P <0.0001; dysplasia, P = 0.001; adenocarcinoma, P = 0.007; all Mann-Whitney U test), hTERT expression levels were significantly higher in adenocarcinoma tissues than in intestinal metaplasia tissues (P = 0.003), and were higher in dysplasia compared with intestinal metaplasia issues (P = 0.056). hTERT levels were also significantly higher in histologically normal squamous esophagus tissues from cancer patients than in normal esophagus tissues from patients with no cancer (P = 0.013). Very high expression levels ([hTERT x 100: beta-actin] >20) were found only in patients with cancer. These findings suggest that telomerase activation is an important early event in the development of Barrett's esophagus and esophageal adenocarcinoma, that very high telomerase levels may be a clinically useful biomarker for the detection of occult adenocarcinoma, and that a widespread cancer "field" effect is present in the esophagus of patients with Barrett's cancer.
+C1 Univ So Calif, Kenneth Norris Jr Comprehens Canc Ctr, Canc Res Lab 204, Sch Med,Dept Surg, Los Angeles, CA 90033 USA.
+   Univ So Calif, Kenneth Norris Jr Comprehens Canc Ctr, Sch Med, Dept Pathol, Los Angeles, CA 90033 USA.
+   Univ So Calif, Kenneth Norris Jr Comprehens Canc Ctr, Sch Med, Dept Biochem & Mol Biol, Los Angeles, CA 90033 USA.
+RP Lord, RVN (通讯作者)，Univ So Calif, Kenneth Norris Jr Comprehens Canc Ctr, Canc Res Lab 204, Sch Med,Dept Surg, 1303 N Mission Rd, Los Angeles, CA 90033 USA.
+FU NCI NIH HHS [R01 CA 71716] Funding Source: Medline; NATIONAL CANCER INSTITUTE [R01CA071716] Funding Source: NIH RePORTER
+CR ALLSOPP RC, 1992, P NATL ACAD SCI USA, V89, P10114, DOI 10.1073/pnas.89.21.10114
+   Asai A, 1998, ANTICANCER RES, V18, P1465
+   Avilion AA, 1996, CANCER RES, V56, P645
+   Barrett MT, 1999, NAT GENET, V22, P106, DOI 10.1038/8816
+   Barrett MT, 1996, ONCOGENE, V13, P1867
+   BLACKBURN EH, 1978, J MOL BIOL, V120, P33, DOI 10.1016/0022-2836(78)90294-2
+   Bodnar AG, 1998, SCIENCE, V279, P349, DOI 10.1126/science.279.5349.349
+   Bodnar AG, 1996, EXP CELL RES, V228, P58, DOI 10.1006/excr.1996.0299
+   BOYNTON RF, 1991, CANCER RES, V51, P5766
+   Bryan TM, 1997, NAT MED, V3, P1271, DOI 10.1038/nm1197-1271
+   CAMERON AJ, 1990, GASTROENTEROLOGY, V99, P918, DOI 10.1016/0016-5085(90)90607-3
+   Casson AG, 1998, J CLIN PATHOL-MOL PA, V51, P71, DOI 10.1136/mp.51.2.71
+   Chin L, 1999, CELL, V97, P527, DOI 10.1016/S0092-8674(00)80762-X
+   CHOMCZYNSKI P, 1987, ANAL BIOCHEM, V162, P156, DOI 10.1006/abio.1987.9999
+   CHOW WH, 1995, JAMA-J AM MED ASSOC, V274, P474, DOI 10.1001/jama.274.6.474
+   Colgin LM, 1999, CURR OPIN GENET DEV, V9, P97, DOI 10.1016/S0959-437X(99)80014-8
+   Counter CM, 1998, ONCOGENE, V16, P1217, DOI 10.1038/sj.onc.1201882
+   DELANGE T, 1990, MOL CELL BIOL, V10, P518, DOI 10.1128/MCB.10.2.518
+   DeMeester TR, 1997, GASTROENTEROL CLIN N, V26, P669, DOI 10.1016/S0889-8553(05)70321-6
+   Devesa SS, 1998, CANCER, V83, P2049, DOI 10.1002/(SICI)1097-0142(19981115)83:10<2049::AID-CNCR1>3.0.CO;2-2
+   Engelhardt M, 1997, CLIN CANCER RES, V3, P1931
+   Fossel M, 1998, JAMA-J AM MED ASSOC, V279, P1732, DOI 10.1001/jama.279.21.1732
+   Gibson UEM, 1996, GENOME RES, V6, P995, DOI 10.1101/gr.6.10.995
+   GLEESON CM, 1995, CANCER RES, V55, P3406
+   Gonzalez MV, 1997, J CLIN PATHOL, V50, P212, DOI 10.1136/jcp.50.3.212
+   HAMELIN R, 1994, GASTROENTEROLOGY, V107, P1012, DOI 10.1016/0016-5085(94)90225-9
+   HARLEY CB, 1990, NATURE, V345, P458, DOI 10.1038/345458a0
+   Harrington L, 1997, GENE DEV, V11, P3109, DOI 10.1101/gad.11.23.3109
+   Hayashi K, 1997, ONCOGENE, V15, P1481, DOI 10.1038/sj.onc.1201295
+   Heid CA, 1996, GENOME RES, V6, P986, DOI 10.1101/gr.6.10.986
+   Hiyama T, 1999, VIRCHOWS ARCH, V434, P483, DOI 10.1007/s004280050372
+   Holt SE, 1999, J CELL PHYSIOL, V180, P10, DOI 10.1002/(SICI)1097-4652(199907)180:1<10::AID-JCP2>3.0.CO;2-D
+   Ikeguchi M, 1998, NIHON RINSHO, V56, P1176
+   Ireland AP, 1997, ANN SURG, V225, P17, DOI 10.1097/00000658-199701000-00003
+   Ireland AP, 2000, ANN SURG, V231, P179, DOI 10.1097/00000658-200002000-00005
+   Jiang XR, 1999, NAT GENET, V21, P111, DOI 10.1038/5056
+   Kilian A, 1997, HUM MOL GENET, V6, P2011, DOI 10.1093/hmg/6.12.2011
+   KIM NW, 1994, SCIENCE, V266, P2011, DOI 10.1126/science.7605428
+   Kiyono T, 1998, NATURE, V396, P84, DOI 10.1038/23962
+   Klump B, 1998, GASTROENTEROLOGY, V115, P1381, DOI 10.1016/S0016-5085(98)70016-2
+   Kolquist KA, 1998, NAT GENET, V19, P182, DOI 10.1038/554
+   Koyanagi K, 1999, BRIT J SURG, V86, P674, DOI 10.1046/j.1365-2168.1999.01094.x
+   Lagergren J, 1999, NEW ENGL J MED, V340, P825, DOI 10.1056/NEJM199903183401101
+   LORD RV, 1999, P ANN M AM ASS CANC, V40, P0
+   LORD RV, 1999, IN PRESS J GASTROENT, V0, P0
+   Lord RVN, 1998, J GASTROEN HEPATOL, V13, P356, DOI 10.1111/j.1440-1746.1998.tb00646.x
+   Meyerson M, 1997, CELL, V90, P785, DOI 10.1016/S0092-8674(00)80538-3
+   Morales CP, 1998, CANCER, V83, P652, DOI 10.1002/(SICI)1097-0142(19980815)83:4<652::AID-CNCR4>3.0.CO;2-M
+   Morales CP, 1999, NAT GENET, V21, P115, DOI 10.1038/5063
+   MOYZIS RK, 1988, P NATL ACAD SCI USA, V85, P6622, DOI 10.1073/pnas.85.18.6622
+   Nakamura TM, 1997, SCIENCE, V277, P955, DOI 10.1126/science.277.5328.955
+   Nakayama JI, 1998, NAT GENET, V18, P65, DOI 10.1038/ng0198-65
+   NESHAT K, 1994, GASTROENTEROLOGY, V106, P1589, DOI 10.1016/0016-5085(94)90415-4
+   OLOVNIKOAM, 1971, DOKL AKAD NAUK SSSR+, V201, P1496
+   PARK JM, 1999, P AM ASSOC CANC RES, V40, P0
+   Piatyszek Mieczyslaw A, 1995, METHODS IN CELL SCIENCE, V17, P1, DOI 10.1007/BF00981880
+   Prach AT, 1997, LANCET, V350, P933, DOI 10.1016/S0140-6736(05)63269-2
+   PROVENZALE D, 1994, AM J GASTROENTEROL, V89, P670
+   Rudolph KL, 1999, CELL, V96, P701, DOI 10.1016/S0092-8674(00)80580-2
+   Schneider PM, 1996, J THORAC CARDIOV SUR, V111, P323, DOI 10.1016/S0022-5223(96)70441-5
+   Shay JW, 1997, J CLIN PATHOL, V50, P106, DOI 10.1136/jcp.50.2.106
+   Sidransky D, 1997, SCIENCE, V278, P1054, DOI 10.1126/science.278.5340.1054
+   TSAI PI, 1999, P ANN M AM ASS CANC, V40, P0
+   Ulaner GA, 1998, CANCER RES, V58, P4168
+   Urquidi V, 1998, ANN MED, V30, P419, DOI 10.3109/07853899809002483
+   Vasef MA, 1999, AM J CLIN PATHOL, V112, P0
+   VAZIRI H, 1994, P NATL ACAD SCI USA, V91, P9857, DOI 10.1073/pnas.91.21.9857
+   Vaziri H, 1998, CURR BIOL, V8, P279, DOI 10.1016/S0960-9822(98)70109-5
+   Watson A, 1999, GASTROENTEROLOGY, V116, P0
+   WATSON JD, 1972, NATURE-NEW BIOL, V239, P197, DOI 10.1038/newbio239197a0
+   Weinrich SL, 1997, NAT GENET, V17, P498, DOI 10.1038/ng1297-498
+   Yajima T, 1998, CLIN CHEM, V44, P2441
+   Zhuang ZP, 1996, CANCER RES, V56, P1961
+NR 73
+TC 207
+Z9 214
+U1 0
+U2 5
+PU QUALITY MEDICAL PUBLISHING INC
+PI ST LOUIS
+PA 11970 BORMAN DR, STE 222, ST LOUIS, MO 63146 USA
+SN 1091-255X
+EI 
+J9 J GASTROINTEST SURG
+JI J. Gastrointest. Surg.
+PD MAR-APR 15
+PY 2000
+VL 4
+IS 2
+BP 135
+EP 142
+DI 10.1016/S1091-255X(00)80049-9
+PG 8
+WC Gastroenterology & Hepatology; Surgery
+SC Gastroenterology & Hepatology; Surgery
+GA 296YJ
+UT WOS:000086054100008
+PM 10675236
+DA 2022-09-21
+ER
+
+PT J
+AU Machulla, HJ
+   Blocher, A
+   Kuntzsch, M
+   Piert, M
+   Wei, R
+   Grierson, JR
+AF Machulla, HJ
+   Blocher, A
+   Kuntzsch, M
+   Piert, M
+   Wei, R
+   Grierson, JR
+TI Simplified labeling approach for synthesizing 3 '-deoxy-3 '-[F-18]fluorothymidine ([F-18]FLT)
+SO JOURNAL OF RADIOANALYTICAL AND NUCLEAR CHEMISTRY
+LA English
+DT Article
+AB [F-18]FLT (3'-deoxy-3'-[F-18]fluorothymidine) turned out to be a tracer particularly suitable for FET imaging of tumor proliferation because of lacking degradation in vivo. To facilitate clinical studies with [F-18]FLT, we investigated two new easily accessible precursors, 2.3'-anhydrothymidine (AThy) and 5'-O-(4,4'-dimethoxytriphenylmethyl)-2.3-anhydrothymidine (DMTThy), using a common approach for introducing the label with nucleophilic [F-18]fluoride. Radiochemical yields were determined in dependence on substrate concentration, reaction time and temperature. In the case of AThy (10 mg), best FLT yields were 5.3%+/-1.2 (130 degrees C, 30 min). Labeling of DMTThy (10 mg) gave 14.3%+/- 3.3 at 160 degrees C within 10 minutes. Starting with an aqueous solution of 20 GBq [F-18]fluoride the new method allows to produce 1.3 GBq [F-18]FLT within 90 minutes ready for intravenous injection. The new labeling procedures allow [F-18]FLT synthesis without lengthy preparation of the precursor and with high reproducibility mandatory for clinical application.
+C1 Univ Tubingen, Klinikum, PET Zentrum, Sekt Radiopharm, D-72076 Tubingen, Germany.
+   Univ Tubingen, Klinikum, Abt Allgemeine Chirurg, D-72076 Tubingen, Germany.
+   Univ Washington, Dept Radiol, Div Nucl Med, Seattle, WA 98195 USA.
+RP Machulla, HJ (通讯作者)，Univ Tubingen, Klinikum, PET Zentrum, Sekt Radiopharm, Rontgenweg 15, D-72076 Tubingen, Germany.
+EM Machulla@uni-tuebingen.de
+CR Grierson John R, 1997, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V40, P60
+   Grierson JR, 1999, J NUCL MED, V40, P0
+   GRIERSON JR, 1999, J LABELED COMP RA S1, V42, P525
+   Shields AF, 1998, NAT MED, V4, P1334, DOI 10.1038/3337
+   Sigmund H, 1996, HELV CHIM ACTA, V79, P426, DOI 10.1002/hlca.19960790210
+NR 5
+TC 169
+Z9 177
+U1 0
+U2 12
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0236-5731
+EI 1588-2780
+J9 J RADIOANAL NUCL CH
+JI J. Radioanal. Nucl. Chem.
+PD MAR 15
+PY 2000
+VL 243
+IS 3
+BP 843
+EP 846
+DI 10.1023/A:1010684101509
+PG 4
+WC Chemistry, Analytical; Chemistry, Inorganic & Nuclear; Nuclear Science & Technology
+SC Chemistry; Nuclear Science & Technology
+GA 338GF
+UT WOS:000088410200041
+DA 2022-09-21
+ER
+
+PT J
+AU Wodarski, C
+   Eisenbarth, J
+   Weber, K
+   Henze, M
+   Haberkorn, U
+   Eisenhut, M
+AF Wodarski, C
+   Eisenbarth, J
+   Weber, K
+   Henze, M
+   Haberkorn, U
+   Eisenhut, M
+TI Synthesis of 3 '-deoxy-3 '-[F-18]fluoro-thymidine with 2,3 '-anhydro-5 '-O-(4,4 '-dimethoxytrityl)thymidine
+SO JOURNAL OF LABELLED COMPOUNDS & RADIOPHARMACEUTICALS
+LA English
+DT Article
+DE proliferation marker; [F-18]FLT; PET imaging; 2,3 '-anhydro-5 '-O-(4,4 '-dimethoxytrityl)-thymidine
+AB [C-11]Thymidine has been used as a proliferation marker in positron-emission-tomography (PET) studies of tumors. This compound showed metabolite related problems and the radiosynthesis proved to be difficult. Recently, the more stable 3'-deoxy-3'-[F-18]fluorothymidine ([F-18]FLT) has been suggested as an alternative. One advantage of [F-18]FLT is based on thymidine kinase-1 catalyzed phosphorylation of FLT and the intracellular accumulation of this metabolite without participation in DNA synthesis. The radiosynthesis of [F-18]FLT originally designed by Grierson et al. was found to be demanding especially regarding the workup df the [F-18]fluoride/1-(2-deoxy-3 -O-nosyl-5-O-DMT-beta -D-threo-pento-furanosyl)-3-DMBn-thymine reaction mixture. Instead, we us ed 2,3'-anhydro-5'-0-(4,4'-dimethoxytrityl) thymi dine as a precursor for the synthesis of [F-18]FLT. In DMSO at 175 degreesC and in presence of Kryptofix(R) 2.2.2. we obtained 5.6+/-1,4 % [F-18]FLT (EOS).
+C1 Deutsch Krebsforschungszentrum, D-69120 Heidelberg, Germany.
+RP Eisenhut, M (通讯作者)，Deutsch Krebsforschungszentrum, D-69120 Heidelberg, Germany.
+CR Grierson John R, 1997, JOURNAL OF LABELLED COMPOUNDS AND RADIOPHARMACEUTICALS, V40, P60
+   Grierson JR, 2000, NUCL MED BIOL, V27, P143, DOI 10.1016/S0969-8051(99)00104-3
+   HARTMANN H, 1988, AIDS RES HUM RETROV, V4, P457, DOI 10.1089/aid.1988.4.457
+   Machulla HJ, 2000, J RADIOANAL NUCL CH, V243, P843, DOI 10.1023/A:1010684101509
+   MATSUDA A, 1990, NUCLEOS NUCLEOT, V9, P587, DOI 10.1080/07328319008045190
+   SHERLEY JL, 1988, J BIOL CHEM, V263, P8350
+   Shields AF, 1998, NAT MED, V4, P1334, DOI 10.1038/3337
+NR 7
+TC 36
+Z9 40
+U1 0
+U2 4
+PU JOHN WILEY & SONS LTD
+PI W SUSSEX
+PA BAFFINS LANE CHICHESTER, W SUSSEX PO19 1UD, ENGLAND
+SN 0362-4803
+EI 
+J9 J LABELLED COMPD RAD
+JI J. Label. Compd. Radiopharm.
+PD OCT 30
+PY 2000
+VL 43
+IS 12
+BP 1211
+EP 1218
+DI 10.1002/1099-1344(20001030)43:12<1211::AID-JLCR408>3.0.CO;2-#
+PG 8
+WC Biochemical Research Methods; Chemistry, Medicinal; Chemistry, Analytical
+SC Biochemistry & Molecular Biology; Pharmacology & Pharmacy; Chemistry
+GA 365ML
+UT WOS:000089955000008
+DA 2022-09-21
+ER
+
+PT J
+AU Griffin, GD
+   Khalaf, W
+   Hayden, KE
+   Miller, EJ
+   Dowray, VR
+   Creekmore, AL
+   Carruthers, CW
+   Williams, MW
+   Gailey, PC
+AF Griffin, GD
+   Khalaf, W
+   Hayden, KE
+   Miller, EJ
+   Dowray, VR
+   Creekmore, AL
+   Carruthers, CW
+   Williams, MW
+   Gailey, PC
+TI Power frequency magnetic field exposure and gap junctional communication in Clone 9 cells
+SO BIOELECTROCHEMISTRY
+LA English
+DT Article
+DE gap junction; ELF-EMFs; chloral hydrate; magnetic field; cell culture; Clone 9
+ID intercellular communication; inhibition; cancer; oncogene
+AB Exposure to a power-frequency magnetic field has been reported to produce a statistically significant inhibition of gap junctional communication (GJC) in Clone 9 cells that have been pre-stressed by treatment with low concentrations of chloral hydrate (CH) [C.F. Blackman, J.P. Blanchard, S.G. Benane, D.E. House, J.A. Elder, Double blind test of magnetic field effects on neurite outgrowth, Bioelectromagnetics, 19 (1998) 204-209]. This observation might provide mechanistic insight into the possible role of electromagnetic fields (EMFs) in the carcinogenic process, since cancer cells frequently show decreased or absent GJC, and tumor promoting chemicals have been observed to inhibit GJC. Magnetic field exposure conditions were 45 Hz, 23.8 muT rms + parallel DC 36.6 muT, for 30 min of exposure. The responses of Clone 9 cells to the GJC-inhibiting effects of the tumor promoter 12-O-tetradecanoylphorbol 13-acetate and the chemical CH were evaluated and compared to reported results [S.G. Benane, C.F. Blackman, D.E. House, Effects of perchloroethylene and its metabolites on intercellular communication in Clone 9 rat liver cells, J. Toxicol. Environ. Health, 48 (1996) 427-437]. Before magnetic field exposure, cells were exposed fur 24 h to either 3 (nine experiments) or 5 mM (11 experiments) CH to produce GJC of 67% or 50%, respectively, relative to unexposed controls. GJC was assessed microscopically using the scrape-loading technique and a blinded protocol. No statistically significant effect was observed due to magnetic field exposure with either CH concentration. Published by Elsevier Science S.A.
+C1 Oak Ridge Natl Lab, Div Life Sci, Oak Ridge, TN 37831 USA.
+   Oak Ridge Natl Lab, Div Energy, Oak Ridge, TN 37831 USA.
+RP Griffin, GD (通讯作者)，Oak Ridge Natl Lab, Div Life Sci, POB 2008,MS-6101, Oak Ridge, TN 37831 USA.
+EM gfu@ornl.gov
+FU NIEHS NIH HHS [5 R03 ES08864-02] Funding Source: Medline; NATIONAL INSTITUTE OF ENVIRONMENTAL HEALTH SCIENCES [R03ES008864] Funding Source: NIH RePORTER
+CR ADAIR RK, 1991, PHYS REV A, V43, P1039, DOI 10.1103/PhysRevA.43.1039
+   ADEY WR, 1990, ENV HLTH PERSPECT, V86, P247
+   AZARNIA R, 1988, SCIENCE, V239, P398, DOI 10.1126/science.2447651
+   Benane SG, 1996, J TOXICOL ENV HEALTH, V48, P427, DOI 10.1080/009841096161168
+   BENNETT WR, 1994, PHYS TODAY, V47, P23, DOI 10.1063/1.881417
+   Blackman CF, 1998, BIOELECTROMAGNETICS, V19, P204, DOI 10.1002/(SICI)1521-186X(1998)19:4<204::AID-BEM2>3.0.CO;2-5
+   BLACKMAN CF, 1993, BIOELECTROMAGNETICS, V14, P273, DOI 10.1002/bem.2250140310
+   BLACKMAN CF, 1996, REDUCTION GAP JUNCTI, V0, PP16
+   BLACKMAN CF, 1996, DYNAMICS GAP JUNCTIO, V0, PA26
+   CLEARY SF, 1993, AM IND HYG ASSOC J, V54, P178, DOI 10.1202/0002-8894(1993)054<0178:AROIVS>2.0.CO;2
+   DEMELLO W, 1987, INTERCELLULAR COMMUN, V0, P29
+   ELFOULY MH, 1989, MOL CARCINOGEN, V2, P131, DOI 10.1002/mc.2940020305
+   ELFOULY MH, 1987, EXP CELL RES, V168, P422, DOI 10.1016/0014-4827(87)90014-0
+   ENOMOTO T, 1981, P NATL ACAD SCI-BIOL, V78, P5628, DOI 10.1073/pnas.78.9.5628
+   Gailey PC, 1999, BIOELECTROMAGNETICS, V0, P102
+   GUTHRIE SC, 1989, TRENDS NEUROSCI, V12, P12, DOI 10.1016/0166-2236(89)90150-1
+   HENDEE WR, 1994, HEALTH PHYS, V66, P127, DOI 10.1097/00004032-199402000-00001
+   HOLMBERG B, 1995, ENVIRON HEALTH PERSP, V103, P63, DOI 10.2307/3432452
+   JONES TD, 1973, HEALTH PHYS, V24, P241, DOI 10.1097/00004032-197302000-00003
+   Kavet R, 1996, BIOELECTROMAGNETICS, V17, P339, DOI 10.1002/(SICI)1521-186X(1996)17:5<339::AID-BEM1>3.0.CO;2-4
+   KOIFMAN S, 1993, MED HYPOTHESES, V41, P23, DOI 10.1016/0306-9877(93)90027-N
+   Lacy-Hulbert A, 1998, FASEB J, V12, P395, DOI 10.1096/fasebj.12.6.395
+   LOEWENSTEIN WR, 1979, BIOCHIM BIOPHYS ACTA, V560, P1, DOI 10.1016/0304-419X(79)90002-7
+   MEHTA PP, 1986, CELL, V44, P187, DOI 10.1016/0092-8674(86)90497-6
+   MESNIL M, 1986, EXP CELL RES, V165, P391, DOI 10.1016/0014-4827(86)90593-8
+   MIKALSEN SO, 1993, CARCINOGENESIS, V14, P251, DOI 10.1093/carcin/14.2.251
+   MIKI H, 1990, CANCER RES, V50, P1324
+   *NAT RES COUNC COM, 1997, POSS HLTH EFF EXP RE, V0, P0
+   PERRY TS, 1994, IEEE SPECTRUM DEC, V0, P14
+   Schimmelpfeng J, 1995, BIOELECTROMAGNETICS, V16, P381, DOI 10.1002/bem.2250160606
+   TROSKO JE, 1990, PATHOBIOLOGY, V58, P265, DOI 10.1159/000163596
+   UBEDA A, 1995, CANCER LETT, V91, P241, DOI 10.1016/0304-3835(95)03736-G
+   Ubeda A, 1995, CARCINOGENESIS, V16, P2945, DOI 10.1093/carcin/16.12.2945
+   Valberg PA, 1997, RADIAT RES, V148, P2, DOI 10.2307/3579533
+   WEAVER JC, 1990, SCIENCE, V247, P459, DOI 10.1126/science.2300806
+NR 35
+TC 10
+Z9 10
+U1 0
+U2 2
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 1567-5394
+EI 1878-562X
+J9 BIOELECTROCHEMISTRY
+JI Bioelectrochemistry
+PD JUN 15
+PY 2000
+VL 51
+IS 2
+BP 117
+EP 123
+DI 10.1016/S0302-4598(99)00085-9
+PG 7
+WC Biochemistry & Molecular Biology; Biology; Biophysics; Electrochemistry
+SC Biochemistry & Molecular Biology; Life Sciences & Biomedicine - Other Topics; Biophysics; Electrochemistry
+GA 404LK
+UT WOS:000167099500003
+PM 10910159
+DA 2022-09-21
+ER
+
+PT J
+AU Lehmann, M
+   Baumann, W
+   Brischwein, M
+   Ehret, R
+   Kraus, M
+   Schwinde, A
+   Bitzenhofer, M
+   Freund, I
+   Wolf, B
+AF Lehmann, M
+   Baumann, W
+   Brischwein, M
+   Ehret, R
+   Kraus, M
+   Schwinde, A
+   Bitzenhofer, M
+   Freund, I
+   Wolf, B
+TI Non-invasive measurement of cell membrane associated proton gradients by ion-sensitive field effect transistor arrays for microphysiological and bioelectronical applications
+SO BIOSENSORS & BIOELECTRONICS
+LA English
+DT Article
+DE pH-ISFET; biosensors; microenvironmental pH; cancer; cellular sensor; glycolysis
+ID interdigitated electrode structures; magnetic-resonance spectroscopy; cancer-treatment; tumor microenvironment; impedance measurements; interstitial ph; blood-flow; osteoclasts; transport; glucose
+AB The pH in the cellular microenvironment (pH(M)) is an important regulator of cell-to-cell and cell-to-host interactions. Additionally the extracellular acidification rate of a cell culture is an important indicator of global cellular metabolism. In a new approach a biocompatible ion-sensitive field effect transistor (ISFET)-array was developed to measure the pH(M) close to a surface and the global extracellular acidification rate at the same time. This ISFET-array is part of a new multiparametric microsensor chip. The paper highlights some basic applications of this method for in-vitro measurements. Using a fluid perfusion system for cell culture media, it is possible to measure the pH(M) of few (five to ten) adherent tumor cells in a distance of 10-100 nm from the cell plasma membrane. Experiments showed a pH(M)-value of 6.68 +/- 0.06 pH. Further experiments suggest that both the low pH, and the extracellular acidification rate of the examined tumor cell line are mainly built up by glycolysis. (C) 2000 Elsevier Science S.A. All rights reserved.
+C1 Univ Rostock, D-18057 Rostock, Germany.
+RP Wolf, B (通讯作者)，Univ Rostock, Wismarsche Str 8, D-18057 Rostock, Germany.
+CR Bard A, 2001, ELECTROCHEMICAL METH, V2nd, P1
+   BARON R, 1989, CONNECT TISSUE RES, V20, P109, DOI 10.3109/03008208909023879
+   Baumann WH, 1996, THESIS, V0, P0
+   Baumann WH, 1999, SENSOR ACTUAT B-CHEM, V55, P77, DOI 10.1016/S0925-4005(99)00116-1
+   DALY PF, 1989, CANCER RES, V49, P770
+   Dellian M, 1996, BRIT J CANCER, V74, P1206, DOI 10.1038/bjc.1996.518
+   Ehret R, 1997, BIOSENS BIOELECTRON, V12, P29, DOI 10.1016/0956-5663(96)89087-7
+   Ehret R, 1998, MED BIOL ENG COMPUT, V36, P365, DOI 10.1007/BF02522485
+   FLIER JS, 1987, SCIENCE, V235, P1492, DOI 10.1126/science.3103217
+   Gerweck LE, 1996, CANCER RES, V56, P1194
+   GINGELL D, 1990, BIOPHYSICS CELL SURF, V0, P263
+   GRIFFITHS JR, 1991, BRIT J CANCER, V64, P425, DOI 10.1038/bjc.1991.326
+   Kraus M, 1996, TUMOR BIOL, V17, P133, DOI 10.1159/000217977
+   KRAUS M, 1994, ANTICANCER RES, V14, P1573
+   Kraus M, 1998, ENDOCYTOBIOSIS CELL, V12, P133
+   MARTIN GR, 1994, CANCER RES, V54, P5670
+   MORITA T, 1992, MUTAT RES, V268, P297, DOI 10.1016/0027-5107(92)90235-T
+   OWICKI J, 1992, BIOSENS BIOELECTRON, V7, P225
+   Reynolds TY, 1996, CANCER RES, V56, P5754
+   SEVERIN T, 1994, TUMOR BIOL, V15, P304, DOI 10.1159/000217905
+   SILVER IA, 1988, EXP CELL RES, V175, P266, DOI 10.1016/0014-4827(88)90191-7
+   STUBBS M, 1994, CANCER RES, V54, P4011
+   STUBBS M, 1995, ADV ENZYME REGUL, V35, P101, DOI 10.1016/0065-2571(94)00016-V
+   VAUPEL P, 1989, CANCER RES, V49, P6449
+   Vaupel PW, 1997, KLIN PADIATR, V209, P243, DOI 10.1055/s-2008-1043957
+   Warburg O, 1930, METABOLISM TUMORS, V0, P0
+   Wolf B, 1998, BIOSENS BIOELECTRON, V13, P501, DOI 10.1016/S0956-5663(97)00136-X
+   Wolf B, 1997, BIOSENS BIOELECTRON, V12, P301, DOI 10.1016/S0956-5663(96)00071-1
+   WOLF B, 1984, ANTICANCER RES, V4, P213
+   YOUNG PR, 1993, BIOCHIM BIOPHYS ACTA, V1182, P69, DOI 10.1016/0925-4439(93)90155-T
+NR 30
+TC 90
+Z9 94
+U1 1
+U2 18
+PU ELSEVIER ADVANCED TECHNOLOGY
+PI OXFORD
+PA OXFORD FULFILLMENT CENTRE THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0956-5663
+EI 
+J9 BIOSENS BIOELECTRON
+JI Biosens. Bioelectron.
+PD JUN 15
+PY 2000
+VL 15
+IS 3-4
+BP 117
+EP 124
+DI 10.1016/S0956-5663(00)00065-8
+PG 8
+WC Biophysics; Biotechnology & Applied Microbiology; Chemistry, Analytical; Electrochemistry; Nanoscience & Nanotechnology
+SC Biophysics; Biotechnology & Applied Microbiology; Chemistry; Electrochemistry; Science & Technology - Other Topics
+GA 335TD
+UT WOS:000088260100003
+PM 11286328
+DA 2022-09-21
+ER
+
+PT J
+AU Cummings, MC
+   Aubele, M
+   Mattis, A
+   Purdie, D
+   Hutzler, P
+   Hofler, H
+   Werner, M
+AF Cummings, MC
+   Aubele, M
+   Mattis, A
+   Purdie, D
+   Hutzler, P
+   Hofler, H
+   Werner, M
+TI Increasing chromosome 1 copy number parallels histological progression in breast carcinogenesis
+SO BRITISH JOURNAL OF CANCER
+LA English
+DT Article
+DE chromosome 1; FISH; breast carcinoma; histopathology
+ID embedded tissue-sections; interphase cytogenetics; in-situ; abnormality; aneuploidy; carcinoma; cancer; hyperplasia; neoplasia; aneusomy
+AB Chromosome 1 copy number in the benign breast lesions hyperplasia and atypical duct hyperplasia (ADH) was investigated using fluorescence in situ hybridization on paraffin sections. Progression of chromosome 1 changes occurring in parallel with histological progression from normal through hyperplasia and ADH to ductal carcinoma in situ (DCIS) and invasive carcinoma was also assessed, both overall and within individual patients. The mean signal number for normal cells was 1.14, while that for hyperplasia was 1.56 and ADH was 1.5, while values for DCIS of 1.95 and invasive duct carcinoma of 1.79, were higher (P < 0.001). Six of the seven cases also showed a significant trend towards an increasing proportion of cells with greater than 2 signals per nucleus occurring with histological progression (P< 0.001). These results support the concept that benign proliferative breast disease is a biological precursor of in-situ and invasive ductal carcinoma, the early histological changes possibly indicating a field effect with further genetic changes required for the development of a malignant phenotype. (C) 2000 Cancer Research Campaign.
+C1 Univ Queensland, Sch Med, Dept Pathol, Herston, Qld 4006, Australia.
+   GSF Forschungszentrum Umwelt & Gesundheit GmbH, Inst Pathol, Ingolstadter Landstr 1, D-85764 Neuherberg, Germany.
+   Tech Univ Munich, Klinikum Rechts Isar, Inst Allgemeine Pathol & Pathol Anat, D-81675 Munich, Germany.
+   Univ Queensland, Sch Med, Dept Social & Prevent Med, Herston, Qld 4006, Australia.
+RP Cummings, MC (通讯作者)，Univ Queensland, Sch Med, Dept Pathol, Herston, Qld 4006, Australia.
+CR Aubele M, 1997, HISTOCHEM CELL BIOL, V107, P121, DOI 10.1007/s004180050096
+   BUCKLEY CH, 1982, J CLIN PATHOL, V35, P1, DOI 10.1136/jcp.35.1.1
+   DIETRICH CU, 1995, INT J CANCER, V60, P49, DOI 10.1002/ijc.2910600107
+   ELSTON CW, 1987, DIAGNOSTIC HISTOPATH, V0, P399
+   FOX H, 1982, HISTOPATHOLOGY, V6, P493, DOI 10.1111/j.1365-2559.1982.tb02747.x
+   HARRISON M, 1995, J PATHOL, V175, P303, DOI 10.1002/path.1711750308
+   Harrison MM, 1997, HISTOPATHOLOGY, V30, P221, DOI 10.1046/j.1365-2559.1997.d01-591.x
+   Heim S, 2015, CANC CYTOGENETICS, V0, P0
+   LAKHANI SR, 1995, J CLIN PATHOL, V48, P611, DOI 10.1136/jcp.48.7.611
+   Lakhani SR, 1999, J PATHOL, V187, P272, DOI 10.1002/(SICI)1096-9896(199902)187:3<272::AID-PATH265>3.0.CO;2-2
+   Lakhani SR, 1996, LAB INVEST, V74, P129
+   MANTEL N, 1959, J NATL CANCER I, V22, P719
+   MICALE MA, 1994, HUM PATHOL, V25, P29, DOI 10.1016/0046-8177(94)90167-8
+   OCONNELL P, 1994, BREAST CANCER RES TR, V32, P5, DOI 10.1007/BF00666201
+   PAGE DL, 1990, CANCER, V66, P1326, DOI 10.1002/1097-0142(19900915)66:14+<1326::AID-CNCR2820661405>3.0.CO;2-P
+   VERDOODT B, 1994, CANCER GENET CYTOGEN, V78, P53, DOI 10.1016/0165-4608(94)90046-9
+   Visscher DW, 1996, CANCER, V77, P315, DOI 10.1002/(SICI)1097-0142(19960115)77:2<315::AID-CNCR14>3.0.CO;2-4
+   ZITZELSBERGER H, 1994, J PATHOL, V172, P325, DOI 10.1002/path.1711720407
+NR 18
+TC 18
+Z9 18
+U1 0
+U2 0
+PU CHURCHILL LIVINGSTONE
+PI EDINBURGH
+PA JOURNAL PRODUCTION DEPT, ROBERT STEVENSON HOUSE, 1-3 BAXTERS PLACE, LEITH WALK, EDINBURGH EH1 3AF, MIDLOTHIAN, SCOTLAND
+SN 0007-0920
+EI 
+J9 BRIT J CANCER
+JI Br. J. Cancer
+PD MAR 15
+PY 2000
+VL 82
+IS 6
+BP 1204
+EP 1210
+DI 
+PG 7
+WC Oncology
+SC Oncology
+GA 290MM
+UT WOS:000085680100014
+PM 10735507
+DA 2022-09-21
+ER
+
+PT J
+AU Greenland, S
+   Sheppard, AR
+   Kaune, WT
+   Poole, C
+   Kelsh, MA
+AF Greenland, S
+   Sheppard, AR
+   Kaune, WT
+   Poole, C
+   Kelsh, MA
+TI A pooled analysis of magnetic fields, wire codes, and childhood leukemia
+SO EPIDEMIOLOGY
+LA English
+DT Article
+DE childhood neoplasms; electromagnetic fields; environmental exposure; leukemia; magnetic fields; wire codes
+ID electrical wiring configurations; voltage power-lines; electromagnetic-fields; dose-response; trend analysis; cancer; exposure; children; risk; canada
+AB We obtained original individual data from 15 studies of magnetic fields or wire codes and childhood leukemia, and we estimated magnetic field exposure for subjects with sufficient data to do so. Summary estimates from 12 studies that supplied magnetic field measures exhibited little or no association of magnetic fields with leukemia when comparing 0.1-0.2 and 0.2-03 microtesla (muT) categories with the 0-0.1 muT category, but the Mantel-Haenszel summary odds ratio comparing >0.3 muT to 0-0.1 muT was 1.7 (95% confidence limits = 1.2, 2.3). Similar results were obtained using covariate adjustment and spline regression. The study-specific relations appeared consistent despite the numerous methodologic differences among the studies. The association of wire codes with leukemia varied considerably across studies, with odds ratio estimates for very high current us low current configurations ranging from 0.7 to 3.0 (homogeneity P = 0.005). Based on a survey of household magnetic fields, an estimate of the U.S. population attributable fraction of childhood leukemia associated with residential exposure is 3% (95% confidence limits = -2%, 8%). Our results contradict the idea that the magnetic field association with leukemia is less consistent than the wire code association with leukemia, although analysis of the four studies with both measures indicates that the wire code association is not explained by measured fields. The results also suggest that appreciable magnetic field effects, if any, may be concentrated among relatively high and uncommon exposures, and that studies of highly exposed populations would be. needed to clarify the relation of magnetic fields to childhood leukemia.
+C1 Asher Sheppard Consulting, Redlands, CA 92373 USA.
+   Univ Calif Los Angeles, Sch Publ Hlth, Dept Epidemiol, Los Angeles, CA 90024 USA.
+   EM Factors, Richland, WA USA.
+   Loma Linda Univ, Dept Physiol, Loma Linda, CA 92350 USA.
+   Univ N Carolina, Sch Publ Hlth, Dept Epidemiol, Chapel Hill, NC USA.
+   Exponent Hlth Grp, Menlo Pk, CA USA.
+RP Sheppard, AR (通讯作者)，Asher Sheppard Consulting, 108 Orange St,Suite 8, Redlands, CA 92373 USA.
+FU NIEHS NIH HHS [R03 ES-08920] Funding Source: Medline; NATIONAL INSTITUTE OF ENVIRONMENTAL HEALTH SCIENCES [R03ES008920] Funding Source: NIH RePORTER
+CR BEGG CB, 1994, BIOMETRICS, V50, P1088, DOI 10.2307/2533446
+   Bracken MB, 1998, AM J EPIDEMIOL, V148, P467
+   Breslow NE, 1980, IARC SCI PUB, V1, P0
+   BROOKMEYER R, 1986, AM J EPIDEMIOL, V124, P693, DOI 10.1093/oxfordjournals.aje.a114443
+   Carroll RJ, 2006, MEASUREMENT ERROR NO, V0, P0, DOI DOI 10.1201/9781420010138
+   Cheng KK, 1999, LANCET, V354, P1925, DOI 10.1016/S0140-6736(99)10074-6
+   Coghill RW, 1996, EUR J CANCER PREV, V5, P153, DOI 10.1097/00008469-199606000-00002
+   COLEMAN MP, 1989, BRIT J CANCER, V60, P793, DOI 10.1038/bjc.1989.362
+   Dockerty JD, 1999, CANCER CAUSE CONTROL, V10, P641
+   DOVAN T, 1993, BIOELECTROMAGNETICS, V14, P145, DOI 10.1002/bem.2250140207
+   EBI KL, 1999, TR114321 EPRI, V0, P0
+   Fajardo-Gutierrez A, 1997, EXPOSICION CAMPOS EL, V0, P0
+   Feychting M, 2000, EPIDEMIOLOGY, V11, P357, DOI 10.1097/00001648-200005000-00025
+   Feychting M, 1998, SCAND J WORK ENV HEA, V24, P8, DOI 10.5271/sjweh.272
+   FEYCHTING M, 1993, AM J EPIDEMIOL, V138, P467, DOI 10.1093/oxfordjournals.aje.a116881
+   Friedman DR, 1996, EPIDEMIOLOGY, V7, P151, DOI 10.1097/00001648-199603000-00008
+   FULTON JP, 1980, AM J EPIDEMIOL, V111, P292, DOI 10.1093/oxfordjournals.aje.a112899
+   Green LM, 1999, CANCER CAUSE CONTROL, V10, P233, DOI 10.1023/A:1008919408855
+   Green LM, 1999, INT J CANCER, V82, P161, DOI 10.1002/(SICI)1097-0215(19990719)82:2<161::AID-IJC2>3.0.CO;2-X
+   Greenland S, 2000, BIOSTATISTICS, V1, P113, DOI 10.1093/biostatistics/1.1.113
+   Greenland S, 1999, AM J EPIDEMIOL, V149, P1077
+   GREENLAND S, 1995, EPIDEMIOLOGY, V6, P450, DOI 10.1097/00001648-199507000-00025
+   GREENLAND S, 1995, EPIDEMIOLOGY, V6, P356, DOI 10.1097/00001648-199507000-00005
+   GREENLAND S, 1994, AM J EPIDEMIOL, V140, P290, DOI 10.1093/oxfordjournals.aje.a117248
+   GREENLAND S, 2001, IN PRESS BIOMETRICS, V0, P57
+   GUMEY JG, 1995, EPIDEMIOLOGY, V6, P31
+   Hastie Trevor, 1986, STAT SCI, V1, P297, DOI 10.1201/9780203753781-6
+   Hatch EE, 2000, EPIDEMIOLOGY, V11, P189, DOI 10.1097/00001648-200003000-00019
+   *HIGH VOLT TRANSM, 1993, SURV RES MAGN FIELD, V0, P0
+   Jaffa KC, 2000, EPIDEMIOLOGY, V11, P359, DOI 10.1097/00001648-200005000-00026
+   Jaffa KC, 2000, EPIDEMIOLOGY, V11, P353, DOI 10.1097/00001648-200005000-00024
+   JONES TL, 1993, J CLIN EPIDEMIOL, V46, P545, DOI 10.1016/0895-4356(93)90127-M
+   Kheifets LI, 1997, BIOELECTROMAGNETICS, V18, P99, DOI 10.1002/(SICI)1521-186X(1997)18:2<99::AID-BEM2>3.0.CO;2-#
+   Kleinerman RA, 1997, EPIDEMIOLOGY, V8, P575, DOI 10.1097/00001648-199709000-00017
+   Lin Ruey S, 1994, REVIEWS ON ENVIRONMENTAL HEALTH, V10, P97
+   LIN SR, 1989, US DEP EN EL POW RES, V0, P0
+   Linet MS, 1997, NEW ENGL J MED, V337, P1, DOI 10.1056/NEJM199707033370101
+   LONDON SJ, 1991, AM J EPIDEMIOL, V134, P923, DOI 10.1093/oxfordjournals.aje.a116176
+   LOWENTHAL RM, 1991, MED J AUSTRALIA, V155, P347, DOI 10.5694/j.1326-5377.1991.tb142299.x
+   McBride ML, 1999, AM J EPIDEMIOL, V149, P831, DOI 10.1093/oxfordjournals.aje.a009899
+   Michaelis J, 1997, CANCER CAUSE CONTROL, V8, P167, DOI 10.1023/A:1018464012055
+   Michaelis J, 1998, EPIDEMIOLOGY, V9, P92, DOI 10.1097/00001648-199801000-00018
+   MYERS A, 1990, BRIT J CANCER, V62, P1008, DOI 10.1038/bjc.1990.428
+   OLSEN JH, 1993, BRIT MED J, V307, P891, DOI 10.1136/bmj.307.6909.891
+   Petridou E, 1997, INT J CANCER, V73, P345, DOI 10.1002/(SICI)1097-0215(19971104)73:3<345::AID-IJC7>3.3.CO;2-1
+   PORTIER CJ, 1999, NIH PUB, V9, P9
+   Repacholi MH, 1999, LANCET, V354, P1918, DOI 10.1016/S0140-6736(99)00433-X
+   SAHL JD, 1994, CANCER CAUSE CONTROL, V5, P279, DOI 10.1007/BF01830249
+   SAVITZ DA, 1989, SCAND J WORK ENV HEA, V15, P360, DOI 10.5271/sjweh.1848
+   SAVITZ DA, 1993, ENVIRON HEALTH PERSP, V101, P76, DOI 10.2307/3431575
+   SAVITZ DA, 1988, AM J EPIDEMIOL, V128, P21, DOI 10.1093/oxfordjournals.aje.a114943
+   Swanson J, 1999, BIOELECTROMAGNETICS, V20, P244, DOI 10.1002/(SICI)1521-186X(1999)20:4<244::AID-BEM5>3.0.CO;2-2
+   Tarone RE, 1998, OCCUP ENVIRON MED, V55, P333, DOI 10.1136/oem.55.5.333
+   TAUBES G, 1994, ATLANTIC, V274, P94
+   TOMENIUS L, 1986, BIOELECTROMAGNETICS, V7, P191, DOI 10.1002/bem.2250070209
+   Tynes T, 1997, AM J EPIDEMIOL, V145, P219, DOI 10.1093/oxfordjournals.aje.a009094
+   VERKASALO PK, 1993, BRIT MED J, V307, P895, DOI 10.1136/bmj.307.6909.895
+   WEINBERG CR, 1994, AM J EPIDEMIOL, V140, P565, DOI 10.1093/oxfordjournals.aje.a117283
+   WERTHEIMER N, 1979, AM J EPIDEMIOL, V109, P273, DOI 10.1093/oxfordjournals.aje.a112681
+   Zaffanella LE, 1998, SURVEY PERSONAL MAGN, V0, P0
+NR 61
+TC 388
+Z9 408
+U1 0
+U2 39
+PU LIPPINCOTT WILLIAMS & WILKINS
+PI PHILADELPHIA
+PA TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA, PA 19103 USA
+SN 1044-3983
+EI 1531-5487
+J9 EPIDEMIOLOGY
+JI Epidemiology
+PD NOV 15
+PY 2000
+VL 11
+IS 6
+BP 624
+EP 634
+DI 10.1097/00001648-200011000-00003
+PG 11
+WC Public, Environmental & Occupational Health
+SC Public, Environmental & Occupational Health
+GA 367LE
+UT WOS:000090061900003
+PM 11055621
+DA 2022-09-21
+ER
+
+PT J
+AU Medhioub, M
+   Vaury, C
+   Hamelin, R
+   Thomas, G
+AF Medhioub, M
+   Vaury, C
+   Hamelin, R
+   Thomas, G
+TI Lack of somatic mutation in the coding sequence of SIAH1 in tumors hemizygous for this candidate tumor suppressor gene
+SO INTERNATIONAL JOURNAL OF CANCER
+LA English
+DT Article
+ID chromosome arm 16q; breast-cancer; human homolog; sina gene; carcinoma; protein; heterozygosity; identification; allelotype; apoptosis
+AB The human homolog of the Drosophila seven in absentia gene (SIAHI) may play an important role in apoptosis and tumor suppression. Transcription of SIAHI is up regulated in non-tumorigenic clonal populations of cells derived from 2 different tumorigenic parental cell lines. Intracellular SIAHI mRNA concentration increases in intestinal cells as they migrate from the bottom of the crypt to the lumen, where they undergo apoptosis. Finally, SIAHI is located on chromosome 16q12-q13, a region that is frequently deleted in a large variety of human tumors, These observations suggest SIAHI as a candidate tumor suppressor gene that may be inactivated during tumorigenesis, To test this hypothesis, a search for mutation in the coding sequence of this gene was initiated in tumors exhibiting loss of heterozygosity (LOH) at 16q12-q13. No difference was found in IZ hepatocellular carcinomas, 19 breast carcinomas, 9 prostate carcinomas, 7 colon carcinomas and 5 human cell lines derived from colon cancer. One silent sequence variant (C to T transition at amino acid 270) was observed in the FET colon carcinoma cell line, It was subsequently found once in a group of 100 unrelated individuals from the CEPH families. A rapid real-time quantitative RT-PCR fluorescent method shows that SIAHI remained transcriptionally active in the 6 colon cancer-derived cell lines, and the expression is comparable to the normal colon tissue, Taken together, these observations suggest that although many tumors may have lost one SIAHI allele, the second allele would not be the site of frequent somatic mutations and may even remain functional. Int. J. Cancer 87: 794-797, 2000. (C) 2000 Wiley-Liss, Inc.
+C1 Fdn Jean Dausset, CEPH, INSERM,U434, Lab Genet Tumeurs, F-75010 Paris, France.
+RP Thomas, G (通讯作者)，Fdn Jean Dausset, CEPH, INSERM,U434, Lab Genet Tumeurs, Rue Juliette Dodu, F-75010 Paris, France.
+CR BARDI G, 1993, INT J CANCER, V55, P422, DOI 10.1002/ijc.2910550317
+   BIECHE I, 1995, GENE CHROMOSOME CANC, V14, P227, DOI 10.1002/gcc.2870140402
+   Boige V, 1997, CANCER RES, V57, P1986
+   BRATTAIN MG, 1981, ONCODEV BIOL MED, V2, P355
+   Cajot JF, 1997, CANCER RES, V57, P2593
+   Driouch K, 1997, GENE CHROMOSOME CANC, V19, P185, DOI 10.1002/(SICI)1098-2264(199707)19:3<185::AID-GCC8>3.0.CO;2-U
+   Germani A, 1999, MOL CELL BIOL, V19, P3798
+   Grundler DM, 1999, PC WEEK, V16, P54
+   HERMAN JG, 1994, P NATL ACAD SCI USA, V91, P9700, DOI 10.1073/pnas.91.21.9700
+   Hu G, 1997, GENOMICS, V46, P103, DOI 10.1006/geno.1997.4997
+   Hu G, 1997, GENE DEV, V11, P2701, DOI 10.1101/gad.11.20.2701
+   KNUDSON AG, 1971, P NATL ACAD SCI USA, V68, P820, DOI 10.1073/pnas.68.4.820
+   Latil A, 1997, CANCER RES, V57, P1058
+   Li SH, 1997, CELL, V90, P469, DOI 10.1016/S0092-8674(00)80507-3
+   Matsuzawa S, 1998, EMBO J, V17, P2736, DOI 10.1093/emboj/17.10.2736
+   Morrison TB, 1998, BIOTECHNIQUES, V24, P954
+   Nemani M, 1996, P NATL ACAD SCI USA, V93, P9039, DOI 10.1073/pnas.93.17.9039
+   ReyesMugica M, 1997, CANCER RES, V57, P382
+   Roperch JP, 1999, P NATL ACAD SCI USA, V96, P8070, DOI 10.1073/pnas.96.14.8070
+   SATO T, 1991, CANCER RES, V51, P5118
+   Suzuki H, 1996, GENE CHROMOSOME CANC, V17, P225, DOI 10.1002/(SICI)1098-2264(199612)17:4<225::AID-GCC4>3.3.CO;2-S
+   TSUDA H, 1994, CANCER RES, V54, P513
+   Veigl ML, 1998, P NATL ACAD SCI USA, V95, P8698, DOI 10.1073/pnas.95.15.8698
+   Zhang JS, 1998, GENE DEV, V12, P1775, DOI 10.1101/gad.12.12.1775
+NR 24
+TC 20
+Z9 22
+U1 0
+U2 1
+PU WILEY-LISS
+PI NEW YORK
+PA DIV JOHN WILEY & SONS INC, 605 THIRD AVE, NEW YORK, NY 10158-0012 USA
+SN 0020-7136
+EI 
+J9 INT J CANCER
+JI Int. J. Cancer
+PD SEP 15
+PY 2000
+VL 87
+IS 6
+BP 794
+EP 797
+DI 10.1002/1097-0215(20000915)87:6<794::AID-IJC5>3.0.CO;2-B
+PG 4
+WC Oncology
+SC Oncology
+GA 346ME
+UT WOS:000088874800005
+PM 10956387
+DA 2022-09-21
+ER
+
+PT J
+AU Luheshi, GN
+   Bluthe, RM
+   Rushforth, D
+   Mulcahy, N
+   Konsman, JP
+   Goldbach, M
+   Dantzer, R
+AF Luheshi, GN
+   Bluthe, RM
+   Rushforth, D
+   Mulcahy, N
+   Konsman, JP
+   Goldbach, M
+   Dantzer, R
+TI Vagotomy attenuates the behavioural but not the pyrogenic effects of interleukin-1 in rats
+SO AUTONOMIC NEUROSCIENCE-BASIC & CLINICAL
+LA English
+DT Article; Proceedings Paper
+DE fever; cytokines; CNS; social interaction
+ID subdiaphragmatic vagotomy; vagus nerve; induced fever; brain; il-1-beta; cytokines; lipopolysaccharide; inflammation; activation; mechanisms
+AB Vagal afferent signals, have been implicated in cytokine mediated interactions between the periphery and the central nervous system. Studies in experimental animals have shown that cytokine induced activation of brain mediated responses to infection such as fever, sickness behaviour and pituitary-adrenal activation, are inhibited by subdiaphragmatic vagotomy. We have previously proposed that the peripheral signal to the brain in fever is of a humoral nature while others have suggested that either neural afferents or a mixture of both humoral and neural signals may be involved. The objective of the present study was to examine further the role of vagal transmission, in mediating the febrile response to a systemic injection of IL-1 beta in rats and to compare this with changes in social exploration behaviour. Intraperitoneal injection of IL-1 beta (1.0-30.0 mug/kg) inhibited social exploration in rats and this was attenuated in vagotomized animals. Injection of increasing concentrations of IL-1 beta (0.1-1.0 mug/rat) induced significant (P<0.001) increases in core body temperature. However, in contrast to effects on social exploration, the increase in temperature was not inhibited by vagotomy at any of the doses used. These observations demonstrate a dissociation between the two brain mediated events, one of which is dependent on the integrity of the vagus nerve (social exploration) while the other (fever) is apparently generated by different mechanisms which may include circulating pyrogens. (C) 2000 Elsevier Science B.V. All rights reserved.
+C1 Univ Manchester, Sch Biol Sci, Manchester M13 9PT, Lancs, England.
+   INRA, INSERM U394, F-33077 Bordeaux, France.
+RP Luheshi, GN (通讯作者)，McGill Univ, Douglas Hosp, Res Ctr, 6875 Blvd LaSalle, Verdun, PQ H4H 1R3, Canada.
+EM luhgia@Douglas.mcgill.ca
+CR Anforth HR, 1998, EUR CYTOKINE NETW, V9, P279
+   BANKS WA, 1994, NEUROSCI LETT, V179, P53, DOI 10.1016/0304-3940(94)90933-4
+   BANKS WA, 1991, J PHARMACOL EXP THER, V259, P988
+   BLATTEIS CM, 1992, PROG BRAIN RES, V91, P409
+   BLUTHE RM, 1989, NEUROSCI RES COMMUN, V5, P149
+   Caldwell FT, 1999, J TRAUMA, V47, P120, DOI 10.1097/00005373-199907000-00025
+   Caldwell FT, 1999, BURNS, V25, P295, DOI 10.1016/S0305-4179(99)00006-6
+   Cartmell T, 2000, J PHYSIOL-LONDON, V526, P653, DOI 10.1111/j.1469-7793.2000.00653.x
+   Chai Z, 1996, J EXP MED, V183, P311, DOI 10.1084/jem.183.1.311
+   DANTZER R, 1994, EUR CYTOKINE NETW, V5, P271
+   Fleshner M, 1998, J NEUROIMMUNOL, V86, P134, DOI 10.1016/S0165-5728(98)00026-5
+   GAYKEMA RPA, 1995, ENDOCRINOLOGY, V136, P4717, DOI 10.1210/en.136.10.4717
+   Goldbach JM, 1997, AM J PHYSIOL-REG I, V272, PR675, DOI 10.1152/ajpregu.1997.272.2.R675
+   Hansen MK, 1997, AM J PHYSIOL-REG I, V273, PR1246, DOI 10.1152/ajpregu.1997.273.4.R1246
+   HART BL, 1988, NEUROSCI BIOBEHAV R, V12, P123, DOI 10.1016/S0149-7634(88)80004-6
+   HOPKINS SJ, 1995, TRENDS NEUROSCI, V18, P83
+   Kapas L, 1998, AM J PHYSIOL-REG I, V274, PR406, DOI 10.1152/ajpregu.1998.274.2.R406
+   KLIR JJ, 1994, AM J PHYSIOL, V266, PR1845, DOI 10.1152/ajpregu.1994.266.6.R1845
+   LAYE S, 1995, AM J PHYSIOL-REG I, V268, PR1327, DOI 10.1152/ajpregu.1995.268.5.R1327
+   Lenczowski MJP, 1999, AM J PHYSIOL-REG I, V276, PR652, DOI 10.1152/ajpregu.1999.276.3.R652
+   Li H, 1997, NEUROSCI LETT, V222, P53, DOI 10.1016/S0304-3940(97)13341-9
+   Luheshi G, 1996, AM J PHYSIOL-ENDOC M, V270, PE91, DOI 10.1152/ajpendo.1996.270.1.E91
+   Luheshi GN, 1998, ANN NY ACAD SCI, V856, P83, DOI 10.1111/j.1749-6632.1998.tb08316.x
+   Maier SF, 1998, ANN NY ACAD SCI, V840, P289, DOI 10.1111/j.1749-6632.1998.tb09569.x
+   Miller AJ, 1997, BRIT J PHARMACOL, V120, P1274, DOI 10.1038/sj.bjp.0701049
+   Opp MR, 1998, LIFE SCI, V62, P923, DOI 10.1016/S0024-3205(98)00010-1
+   Romanovsky AA, 1997, AM J PHYSIOL-REG I, V273, PR407, DOI 10.1152/ajpregu.1997.273.1.R407
+   ROTHWELL NJ, 1989, AM J PHYSIOL, V256, PE111, DOI 10.1152/ajpendo.1989.256.1.E111
+   ROTHWELL NJ, 1991, TRENDS PHARMACOL SCI, V12, P430, DOI 10.1016/0165-6147(91)90623-Z
+   ROTHWELL NJ, 1991, CAN J PHYSIOL PHARM, V69, P1465, DOI 10.1139/y91-219
+   Schwartz GJ, 1997, AM J PHYSIOL-REG I, V273, PR1193, DOI 10.1152/ajpregu.1997.273.3.R1193
+   Sehic E, 1996, BRAIN RES, V726, P160
+   TAKAHASHI Y, 1999, AM J PHYSIOL, V273, P0
+   VanDam AM, 1996, FASEB J, V10, P351, DOI 10.1096/fasebj.10.2.8641570
+   WATKINS LR, 1995, NEUROSCI LETT, V183, P27, DOI 10.1016/0304-3940(94)11105-R
+   WATKINS LR, 1995, LIFE SCI, V57, P1011, DOI 10.1016/0024-3205(95)02047-M
+NR 36
+TC 77
+Z9 81
+U1 0
+U2 2
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1566-0702
+EI 1872-7484
+J9 AUTON NEUROSCI-BASIC
+JI Auton. Neurosci-Basic Clin.
+PD DEC 20
+PY 2000
+VL 85
+IS 1-3
+BP 127
+EP 132
+DI 10.1016/S1566-0702(00)00231-9
+PG 6
+WC Neurosciences
+SC Neurosciences & Neurology
+GA 386ZM
+UT WOS:000166095700018
+PM 11189019
+DA 2022-09-21
+ER
+
+PT J
+AU Neumann, E
+AF Neumann, E
+TI Digression on chemical electromagnetic field effects in membrane signal transduction - cooperativity paradigm of the acetylcholine receptor
+SO BIOELECTROCHEMISTRY
+LA English
+DT Article
+DE chemical electromagnetic field effects; acetylcholine receptor; single current event; signal transduction; cooperativity
+ID torpedo-californica; magnetic-fields; gene-transfer; hysteresis
+AB There is ongoing public concern on potential hazards and risks of even small electromagnetic fields (EMFs) such as those emanating from electrical appliances. Evolution and persistence of life in the natural geofields and basic scientific experience in using technical EMFs (F) suggest that, in general, living matter is remarkably stable against external field perturbations within the technical safety limits of the EM field strengths. Besides the trivial primary effects of EMF on ionic charges and dipolar matter, it is explicitly elaborated that cellular biochemical reactivity and channel transport processes are field dependent. However, equilibrium(K) and rate (k) constants are only sensitive to F if the reaction moments DeltaM are finite, as seen in the general van't Hoff relationship d 1n K/dF = DeltaM/RT. Indeed, it is the difference (DeltaM) in the electric or magnetic moments (M), representing the difference in the field forces on the reaction partners. that determines the extent of the field-induced transitions, say from an inactive conformer of a macromolecule to an active one. If small EM fields, which locally can only cause small shifts in K and k, are to become effective for chemical reactivity, amplification is required. A widely encountered concept of chemical amplification is structural, and thus functional, cooperativity, realized in many biopolymers. The cooperation of n units of such a polymer yields a larger DeltaM(n) = n DeltaM and exponentially increases the field sensitivity of the overall equilibrium constant K(n)= K-n. Using the acetylcholine receptor protein as an example for signal amplification by structural cooperativity, explicit proposals are specified for the presumed amplification of small local field effects on proteins of the classical signal transduction cascades. Electric membrane field amplification by interfacial polarization in external fields is discussed in the context of using electric field pulses to transiently permeabilize cells and tissue for the direct transfer of effector substances and genes in cancer and gene therapy. (C) 2000 Elsevier Science B.V. All rights reserved.
+C1 Univ Bielefeld, Fac Chem, D-33501 Bielefeld, Germany.
+RP Neumann, E (通讯作者)，Univ Bielefeld, Fac Chem, POB 100131, D-33501 Bielefeld, Germany.
+CR CARTAUD J, 1973, FEBS LETT, V33, P109, DOI 10.1016/0014-5793(73)80171-1
+   CHANG HW, 1984, BIOCHEMISTRY-US, V23, P4546, DOI 10.1021/bi00315a007
+   IMOTO K, 1988, NATURE, V335, P645, DOI 10.1038/335645a0
+   Kukol A, 1998, EUR BIOPHYS J BIOPHY, V27, P618, DOI 10.1007/s002490050173
+   Mir LM, 1999, P NATL ACAD SCI USA, V96, P4262, DOI 10.1073/pnas.96.8.4262
+   NEUMANN E, 1986, PROG BIOPHYS MOL BIO, V47, P197, DOI 10.1016/0079-6107(86)90014-3
+   NEUMANN E, 1982, EMBO J, V1, P841, DOI 10.1002/j.1460-2075.1982.tb01257.x
+   NEUMANN E, 1973, ANGEW CHEM INT EDIT, V12, P356, DOI 10.1002/anie.197303561
+   NEUMANN E, 1972, P NATL ACAD SCI USA, V69, P993, DOI 10.1073/pnas.69.4.993
+   Neumann E, 1996, ARCH PHYSIOL BIOCHEM, V104, P731, DOI 10.1076/apab.104.6.731.12917
+   NEUMANN E, 1987, COMMENTS MOL CELL BI, V4, P121
+   Neumann E, 1996, ENCY MOL BIOL MOL ME, V2, P172
+   Polk C, 1986, HDB BIOL EFFECTS ELE, V0, P0, DOI DOI 10.1201/9781351071017
+   RODBELL M, 1995, BIOSCIENCE REP, V15, P117, DOI 10.1007/BF01207453
+   UNWIN N, 1995, NATURE, V373, P37, DOI 10.1038/373037a0
+   Valberg PA, 1997, RADIAT RES, V148, P2, DOI 10.2307/3579533
+   Weaver JC, 1999, BIOPHYS J, V76, P3026, DOI 10.1016/S0006-3495(99)77455-2
+NR 18
+TC 25
+Z9 25
+U1 0
+U2 1
+PU ELSEVIER SCIENCE SA
+PI LAUSANNE
+PA PO BOX 564, 1001 LAUSANNE, SWITZERLAND
+SN 0302-4598
+EI 
+J9 BIOELECTROCHEMISTRY
+JI Bioelectrochemistry
+PD SEP 15
+PY 2000
+VL 52
+IS 1
+BP 43
+EP 49
+DI 10.1016/S0302-4598(00)00082-9
+PG 7
+WC Biochemistry & Molecular Biology; Biology; Biophysics; Electrochemistry
+SC Biochemistry & Molecular Biology; Life Sciences & Biomedicine - Other Topics; Biophysics; Electrochemistry
+GA 404LL
+UT WOS:000167099600007
+PM 11059576
+DA 2022-09-21
+ER
+
+PT J
+AU Foster, CS
+   Bostwick, DG
+   Bonkhoff, H
+   Damber, JE
+   van der Kwast, T
+   Montironi, R
+   Sakr, WA
+AF Foster, CS
+   Bostwick, DG
+   Bonkhoff, H
+   Damber, JE
+   van der Kwast, T
+   Montironi, R
+   Sakr, WA
+TI Cellular and molecular pathology of prostate cancer precursors
+SO SCANDINAVIAN JOURNAL OF UROLOGY AND NEPHROLOGY
+LA English
+DT Article; Proceedings Paper
+DE adenocarcinoma precursors; biological markers; epithelial cell phenotypes; prostatic intraepithelial neoplasia
+ID protein-kinase-c; in-situ hybridization; tumor-suppressor gene; calcium-binding protein; comparative genomic hybridization; atypical adenomatous hyperplasia; nuclear chromatin texture; neoplastic human prostate; first-degree relatives; cd44 variant isoforms
+AB Prostate cancer is usually heterogeneous and multifocal, with diverse clinical and morphologic manifestations. Current understanding of the molecular basis for this heterogeneity is limited, particularly for prostatic intraepithelial neoplasia (PIN), the only putative precursor which can be identified according to morphologic criteria. However, it is likely that prostatic adenocarcinoma might arise from precursor lesions other than PIN, although these cannot be recognized with certainty at the present time. In this review, we summarize the current state of knowledge regarding the cell-biological and genetic bases for Linking PLN and prostatic adenocarcinoma. It is conceivable that a stem cell of basal phenotype, or an amplifying cell, is the target of prostatic carcinogenesis. Prominent genetic heterogeneity is characteristic of both PIN and carcinoma; and multiple foci of PIN arise independently within the same prostate. This observation suggests that a field effect probably underlies prostatic neoplasia. Multiple foci of cancer also often arise independently, lending additional support to this hypothesis. The strong genetic similarities between PIN and cancer strongly suggest that evolution and clonal expansion of PIN, or other precursor lesions, may account for the multifocal etiology of carcinoma. Uncertainties with respect to identification of those precursor lesions which are most likely to progress to invasive and metastatic prostate cancer reinforce the requirement for objective immunohistochemical or molecular biological markers of the aggressive phenotype.
+C1 Univ Liverpool, Dept Pathol, Liverpool L69 3BX, Merseyside, England.
+   Bostwick Labs, Richmond, VA USA.
+   Univ Saarland, Inst Pathol, D-6650 Homburg, Germany.
+   Sahlgrens Univ Hosp, Dept Urol, S-41345 Gothenburg, Sweden.
+   Erasmus Univ, Dept Pathol, NL-3000 DR Rotterdam, Netherlands.
+   Univ Ancona, Sch Med, I-60128 Ancona, Italy.
+   Wayne State Univ, Harper Hosp, Dept Pathol, Detroit, MI USA.
+RP Foster, CS (通讯作者)，Univ Liverpool, Dept Pathol, Duncan Bldg, Liverpool L69 3BX, Merseyside, England.
+CR ALCARAZ A, 1994, CANCER RES, V54, P3998
+   ALERS CA, 1995, CANCER, V12, P241
+   APRIKIAN AG, 1995, J UROLOGY, V154, P404, DOI 10.1016/S0022-5347(01)67063-0
+   ARCH R, 1992, SCIENCE, V257, P682, DOI 10.1126/science.1496383
+   ARRIGO AP, 1988, MOL CELL BIOL, V8, P5059, DOI 10.1128/MCB.8.12.5059
+   Baltaci S, 2000, BJU INT, V85, P155, DOI 10.1046/j.1464-410x.2000.00388.x
+   BANDYK MG, 1994, GENE CHROMOSOME CANC, V9, P19, DOI 10.1002/gcc.2870090105
+   Bao LR, 1996, NAT MED, V2, P1322, DOI 10.1038/nm1296-1322
+   Bartels PH, 1998, ANAL QUANT CYTOL, V20, P397
+   Bartels PH, 1998, ANAL QUANT CYTOL, V20, P389
+   BENEDICT WF, 1990, J CLIN INVEST, V85, P988, DOI 10.1172/JCI114575
+   BENNDORF R, 1994, J BIOL CHEM, V269, P20780
+   BERRY N, 1990, EUR J BIOCHEM, V189, P205, DOI 10.1111/j.1432-1033.1990.tb15478.x
+   BERTHON P, 1995, INT J ONCOL, V6, P333
+   Berthon P, 1998, AM J HUM GENET, V62, P1416, DOI 10.1086/301879
+   BLOBE GC, 1993, J BIOL CHEM, V268, P658
+   BLOK LJ, 1995, PROSTATE, V26, P213, DOI 10.1002/pros.2990260407
+   Bonkhoff H, 1999, AM J PATHOL, V155, P641, DOI 10.1016/S0002-9440(10)65160-7
+   Bonkhoff H, 1998, PROSTATE, V0, P18
+   Bonkhoff H, 1998, ANAL QUANT CYTOL, V20, P437
+   BONKHOFF H, 1995, HUM PATHOL, V26, P824, DOI 10.1016/0046-8177(95)90002-0
+   Bonkhoff H, 1996, PROSTATE, V28, P98
+   BONKHOFF H, 1994, HUM PATHOL, V25, P42, DOI 10.1016/0046-8177(94)90169-4
+   BONKHOFF H, 1994, PROSTATE, V24, P114, DOI 10.1002/pros.2990240303
+   Bonkhoff H, 1998, PROSTATE, V34, P251, DOI 10.1002/(SICI)1097-0045(19980301)34:4<251::AID-PROS2>3.0.CO;2-K
+   Bonkhoff H, 1996, EUR UROL, V30, P201
+   Bonkhoff H, 1998, VIRCHOWS ARCH, V433, P195, DOI 10.1007/s004280050236
+   BONKHOFF H, 1992, HUM PATHOL, V23, P934, DOI 10.1016/0046-8177(92)90408-U
+   BONKHOFF H, 1991, VIRCHOWS ARCH A, V418, P375, DOI 10.1007/BF01605922
+   BONKHOFF H, 1993, HUM PATHOL, V24, P243, DOI 10.1016/0046-8177(93)90033-D
+   BOOKSTEIN R, 1990, P NATL ACAD SCI USA, V87, P7762, DOI 10.1073/pnas.87.19.7762
+   Bostwick DG, 1998, CANCER, V83, P1995, DOI 10.1002/(SICI)1097-0142(19981101)83:9<1995::AID-CNCR16>3.0.CO;2-2
+   Bostwick DG, 1996, CANCER, V78, P330, DOI 10.1002/(SICI)1097-0142(19960715)78:2<330::AID-CNCR22>3.3.CO;2-8
+   BOSTWICK DG, 1993, HUM PATHOL, V24, P298, DOI 10.1016/0046-8177(93)90041-E
+   BOSTWICK DG, 1995, CANCER-AM CANCER SOC, V75, P1823, DOI 10.1002/1097-0142(19950401)75:7+<1823::AID-CNCR2820751612>3.0.CO;2-7
+   Bostwick DG, 1996, PROSTATE, V29, P117
+   BOVA GS, 1993, CANCER RES, V53, P3869
+   Bratt O, 1997, EUR J CANCER, V33, P2237, DOI 10.1016/S0959-8049(97)00320-1
+   BROTHMAN AR, 1990, CANCER RES, V50, P3795
+   BROWN JA, 1994, J UROLOGY, V152, P1157, DOI 10.1016/S0022-5347(17)32527-2
+   BROWN LF, 1992, MOL BIOL CELL, V3, P1169, DOI 10.1091/mbc.3.10.1169
+   CACACE AM, 1993, ONCOGENE, V8, P2095
+   CALABRETTA B, 1986, J BIOL CHEM, V261, P2628
+   Cannon L, 1982, CANCER SURV, V1, P47
+   CANNONALBRIGHT LA, 1994, CANCER RES, V54, P2378
+   CARTER BS, 1990, CANCER RES, V50, P6830
+   CARTER BS, 1990, P NATL ACAD SCI USA, V87, P8751, DOI 10.1073/pnas.87.22.8751
+   CARTER BS, 1992, P NATL ACAD SCI USA, V89, P3367, DOI 10.1073/pnas.89.8.3367
+   Charpin C, 1997, HUM PATHOL, V28, P289, DOI 10.1016/S0046-8177(97)90126-X
+   Chen HJ, 1997, ONCOGENE, V14, P1581, DOI 10.1038/sj.onc.1200993
+   Cheng L, 1998, J NATL CANCER I, V90, P233, DOI 10.1093/jnci/90.3.233
+   Cheng L, 1998, MODERN PATHOL, V11, P0
+   Cheng L, 1998, CANCER RES, V58, P389
+   CHER ML, 1995, J UROLOGY, V153, P249, DOI 10.1097/00005392-199501000-00086
+   Cher ML, 1996, CANCER RES, V56, P3091
+   CIOCCA DR, 1993, J NATL CANCER I, V85, P570, DOI 10.1093/jnci/85.7.570
+   CLEMENS MJ, 1992, J CELL SCI, V103, P881
+   COLLARD JG, 1987, CANCER RES, V47, P6666
+   COLOMBEL M, 1993, AM J PATHOL, V143, P390
+   COOKE DB, 1988, PROSTATE, V13, P263, DOI 10.1002/pros.2990130402
+   Cooney KA, 1996, CANCER RES, V56, P1142
+   Cooney KA, 1996, CANCER RES, V56, P4150
+   Cooney KA, 1997, J NATL CANCER I, V89, P955, DOI 10.1093/jnci/89.13.955
+   Cornford P, 1999, AM J PATHOL, V154, P137, DOI 10.1016/S0002-9440(10)65260-1
+   CORNFORD PA, 1999, UNPUB CANC RES, V0, P0
+   Cunningham JM, 1996, CANCER RES, V56, P4475
+   Dahiya R, 1997, INT J CANCER, V71, P20, DOI 10.1002/(SICI)1097-0215(19970328)71:1<20::AID-IJC5>3.0.CO;2-5
+   DAVIES BR, 1993, ONCOGENE, V8, P999
+   De Marzo AM, 1998, J UROLOGY, V160, P2381, DOI 10.1016/S0022-5347(01)62196-7
+   De Marzo AM, 1999, AM J PATHOL, V155, P1985, DOI 10.1016/S0002-9440(10)65517-4
+   DESPLAN C, 1983, J BIOL CHEM, V258, P3502
+   diSantAgnese PA, 1996, CANCER, V78, P357, DOI 10.1002/(SICI)1097-0142(19960715)78:2<357::AID-CNCR27>3.0.CO;2-U
+   DISANTAGNESE PA, 1992, CANCER-AM CANCER SOC, V70, P254, DOI 10.1002/1097-0142(19920701)70:1+<254::AID-CNCR2820701312>3.0.CO;2-E
+   DONG JT, 1995, SCIENCE, V268, P884, DOI 10.1126/science.7754374
+   Eeles RA, 1998, AM J HUM GENET, V62, P653, DOI 10.1086/301745
+   EMMERTBUCK MR, 1995, CANCER RES, V55, P2959
+   Erdamar S, 1999, MODERN PATHOL, V12, P751
+   EVANS GS, 1987, PROSTATE, V11, P339, DOI 10.1002/pros.2990110406
+   EVANS JD, 1996, INT J PANCREATOL, V0, P0
+   FINCHAM SM, 1990, PROSTATE, V17, P189, DOI 10.1002/pros.2990170303
+   FINLAY CA, 1989, CELL, V57, P1083, DOI 10.1016/0092-8674(89)90045-7
+   Foster CS, 1997, INT J EXP PATHOL, V78, P311, DOI 10.1046/j.1365-2613.1997.380368.x
+   FOSTER CS, 1992, HUM PATHOL, V23, P381, DOI 10.1016/0046-8177(92)90084-G
+   FREED E, 1989, EMBO J, V8, P2955, DOI 10.1002/j.1460-2075.1989.tb08445.x
+   FRIEND SH, 1986, NATURE, V323, P643, DOI 10.1038/323643a0
+   GAO X, 1995, CANCER RES, V55, P1002
+   GATE CC, 1995, CLIN EXP MET, V13, P203
+   GERKE V, 1985, EMBO J, V4, P2917, DOI 10.1002/j.1460-2075.1985.tb04023.x
+   GHADIRIAN P, 1991, PROSTATE, V19, P43, DOI 10.1002/pros.2990190105
+   Ghadirian P, 1997, INT J CANCER, V70, P679, DOI 10.1002/(SICI)1097-0215(19970317)70:6<679::AID-IJC9>3.0.CO;2-S
+   GIBBS FEM, 1994, J BIOL CHEM, V269, P18992
+   Gibbs M, 1999, AM J HUM GENET, V64, P776, DOI 10.1086/302287
+   GOEBELER M, 1995, BIOCHEM J, V309, P419, DOI 10.1042/bj3090419
+   GOLDGAR DE, 1994, J NATL CANCER I, V86, P1600, DOI 10.1093/jnci/86.21.1600
+   GREENE DR, 1994, J UROLOGY, V151, P1301, DOI 10.1016/S0022-5347(17)35236-9
+   GREENE DR, 1991, J UROLOGY, V146, P1069, DOI 10.1016/S0022-5347(17)38003-5
+   Gronberg H, 1997, CANCER RES, V57, P4707
+   Gronberg H, 1999, AM J HUM GENET, V65, P134, DOI 10.1086/302447
+   Gronberg H, 1997, AM J EPIDEMIOL, V146, P552, DOI 10.1093/oxfordjournals.aje.a009313
+   Gronberg H, 1997, JAMA-J AM MED ASSOC, V278, P1251, DOI 10.1001/jama.278.15.1251
+   Gronberg H, 1996, CANCER, V77, P138, DOI 10.1002/(SICI)1097-0142(19960101)77:1<138::AID-CNCR23>3.0.CO;2-5
+   Gronberg H, 1999, CANCER, V86, P477
+   GUNTHERT U, 1991, CELL, V65, P13, DOI 10.1016/0092-8674(91)90403-L
+   HAYES RB, 1995, INT J CANCER, V60, P361, DOI 10.1002/ijc.2910600315
+   HAYLE AJ, 1993, DIFFERENTIATION, V54, P177, DOI 10.1111/j.1432-0436.1993.tb01600.x
+   HERBERT JM, 1993, BIOCHEM PHARMACOL, V45, P527, DOI 10.1016/0006-2952(93)90123-E
+   HILT DC, 1991, NOVEL CALCIUM BINDIN, V0, P65
+   HINDS P, 1989, J VIROL, V63, P739, DOI 10.1128/JVI.63.2.739-746.1989
+   HIRAI M, 1989, JPN J CANCER RES, V80, P204, DOI 10.1111/j.1349-7006.1989.tb02292.x
+   Hsieh CL, 1997, J NATL CANCER I, V89, P1893, DOI 10.1093/jnci/89.24.1893
+   ICHIKAWA T, 1991, CANCER RES, V51, P3788
+   Ittmann MM, 1996, PROSTATE, V28, P275
+   Ittmann MM, 1996, HUM PATHOL, V27, P28, DOI 10.1016/S0046-8177(96)90134-3
+   JANSSEN PJ, 1994, J HISTOCHEM CYTOCHEM, V42, P1169, DOI 10.1177/42.8.8027537
+   Jenkins R, 1998, GENE CHROMOSOME CANC, V21, P131, DOI 10.1002/(SICI)1098-2264(199802)21:2<131::AID-GCC9>3.3.CO;2-E
+   Jenkins RB, 1998, CANCER RES, V58, P759
+   Jenkins RB, 1997, CANCER RES, V57, P524
+   Kasper S, 1998, LAB INVEST, V78, P319
+   Ke Y, 1998, BRIT J CANCER, V77, P287, DOI 10.1038/bjc.1998.45
+   Ke YQ, 1997, INT J CANCER, V71, P832, DOI 10.1002/(SICI)1097-0215(19970529)71:5<832::AID-IJC22>3.0.CO;2-8
+   KEETCH DW, 1995, J UROLOGY, V154, P2100, DOI 10.1016/S0022-5347(01)66705-3
+   KERR JFR, 1994, CANCER-AM CANCER SOC, V73, P2013, DOI 10.1002/1097-0142(19940415)73:8<2013::AID-CNCR2820730802>3.0.CO;2-J
+   KNOX JD, 1994, AM J PATHOL, V145, P167
+   Koeneman KS, 1998, J UROLOGY, V160, P1533, DOI 10.1016/S0022-5347(01)62608-9
+   KONISHI N, 1995, AM J PATHOL, V147, P1112
+   KRAIN LS, 1974, PREV MED, V3, P154, DOI 10.1016/0091-7435(74)90070-X
+   Krajewska M, 1996, AM J PATHOL, V148, P1567
+   KRONGRAD A, 1994, CANCER RES, V54, P203
+   Kupelian PA, 1997, J CLIN ONCOL, V15, P1478, DOI 10.1200/JCO.1997.15.4.1478
+   KUWANO R, 1986, FEBS LETT, V202, P97, DOI 10.1016/0014-5793(86)80656-1
+   Lamm MLG, 1997, ENDOCRINOLOGY, V138, P4657, DOI 10.1210/en.138.11.4657
+   LANDRY J, 1992, J BIOL CHEM, V267, P794
+   LANDRY J, 1991, J CELL PHYSIOL, V147, P93, DOI 10.1002/jcp.1041470113
+   Latil A, 1995, CLIN CANCER RES, V1, P1385
+   LATIL A, 1994, GENE CHROMOSOME CANC, V11, P119, DOI 10.1002/gcc.2870110208
+   Latil A, 1996, J UROLOGY, V156, P2079, DOI 10.1016/S0022-5347(01)65439-9
+   LAVOIE JN, 1993, J BIOL CHEM, V268, P3420
+   LEE WH, 1994, P NATL ACAD SCI USA, V91, P11733, DOI 10.1073/pnas.91.24.11733
+   LEE YJ, 1994, BIOCHEM BIOPH RES CO, V199, P714, DOI 10.1006/bbrc.1994.1287
+   Lesko SM, 1996, AM J EPIDEMIOL, V144, P1041, DOI 10.1093/oxfordjournals.aje.a008876
+   LEVINE AJ, 1990, BIOCHIM BIOPHYS ACTA, V1032, P119, DOI 10.1016/0304-419X(90)90015-S
+   LEVINE AJ, 1991, NATURE, V351, P453, DOI 10.1038/351453a0
+   LIANG P, 1992, SCIENCE, V257, P967, DOI 10.1126/science.1354393
+   LINDQUIST S, 1988, ANNU REV GENET, V22, P631, DOI 10.1146/annurev.ge.22.120188.003215
+   LIU B, 1994, J NATL CANCER I, V86, P1145, DOI 10.1093/jnci/86.15.1145
+   LORD JM, 1995, J CLIN PATHOL-CL MOL, V48, P0
+   LORD JM, 1984, BIOCHEM J, V219, P547, DOI 10.1042/bj2190547
+   LUNDGREN R, 1992, GENE CHROMOSOME CANC, V4, P16, DOI 10.1002/gcc.2870040103
+   MACFARLANE DE, 1994, J BIOL CHEM, V269, P4327
+   MACGROGAN D, 1994, GENE CHROMOSOME CANC, V10, P151, DOI 10.1002/gcc.2870100302
+   MACKAY CR, 1994, J CELL BIOL, V124, P71, DOI 10.1083/jcb.124.1.71
+   MACOSKA JA, 1993, GENE CHROMOSOME CANC, V8, P88, DOI 10.1002/gcc.2870080205
+   MACOSKA JA, 1994, CANCER RES, V54, P3824
+   MACOSKA JA, 1995, CANCER RES, V55, P5390
+   McIndoe RA, 1997, AM J HUM GENET, V61, P347, DOI 10.1086/514853
+   MCNEAL JE, 1986, HUM PATHOL, V17, P64, DOI 10.1016/S0046-8177(86)80156-3
+   MEIKLE AW, 1985, PROSTATE, V6, P121
+   MERCER WE, 1984, MOL CELL BIOL, V4, P276, DOI 10.1128/MCB.4.2.276
+   Miet SMD, 1999, INT J CANCER, V82, P635, DOI 10.1002/(SICI)1097-0215(19990827)82:5<635::AID-IJC3>3.0.CO;2-W
+   MILARSKI KL, 1989, J CELL BIOL, V108, P413, DOI 10.1083/jcb.108.2.413
+   MOHAMMAD RM, 1995, LEUKEMIA RES, V19, P667, DOI 10.1016/0145-2126(95)00037-O
+   MONROE KR, 1995, NAT MED, V1, P827, DOI 10.1038/nm0895-827
+   Montironi R, 1996, CANCER, V78, P362, DOI 10.1002/(SICI)1097-0142(19960715)78:2<362::AID-CNCR28>3.3.CO;2-I
+   MONTIRONI R, 1995, PATHOL RES PRACT, V191, P873
+   MORIMOTO RI, 1993, SCIENCE, V259, P1409, DOI 10.1126/science.8451637
+   MORIMOTO RI, 1990, STRESS PROTEINS BIOL, V0, P0
+   Mottaz AE, 1997, PROSTATE, V31, P209
+   MURAKAMI YS, 1995, CANCER RES, V55, P3389
+   MURRAY NR, 1993, J BIOL CHEM, V268, P15847
+   Myers RB, 1996, EUR UROL, V30, P153
+   NAGLE RB, 1991, AM J PATHOL, V138, P119
+   NAGLE RB, 1995, AM J PATHOL, V146, P1498
+   NAROD SA, 1995, NAT MED, V1, P99, DOI 10.1038/nm0295-99
+   Neuhausen SL, 1997, BRIT J UROL, V79, P15, DOI 10.1111/j.1464-410X.1997.tb00796.x
+   NOMURA S, 1988, J CELL BIOL, V106, P441, DOI 10.1083/jcb.106.2.441
+   OBRIAN CA, 1989, CANCER RES, V49, P3215
+   OLDBERG A, 1986, P NATL ACAD SCI USA, V83, P8819, DOI 10.1073/pnas.83.23.8819
+   Owen PJ, 1996, EXP CELL RES, V225, P366, DOI 10.1006/excr.1996.0187
+   Page WF, 1997, PROSTATE, V33, P240
+   Paradis V, 1999, J PATHOL, V189, P213
+   PECHERE JF, 1977, CALCIUM BINDING PROT, V0, P0
+   PEEHL DM, 1987, PROSTATE, V10, P281, DOI 10.1002/pros.2990100402
+   Pfohler C, 1998, PROSTATE, V36, P143, DOI 10.1002/(SICI)1097-0045(19980801)36:3<143::AID-PROS1>3.0.CO;2-I
+   PIERCE GB, 1974, AM J PATHOL, V77, P103
+   PONGRACZ J, 1994, BIOCHEM SOC T, V22, P593, DOI 10.1042/bst0220593
+   PONGRACZ J, 1995, INT J CANCER, V61, P35, DOI 10.1002/ijc.2910610107
+   POTTEN CS, 1990, DEVELOPMENT, V110, P1001
+   POWELL CT, 1994, CELL GROWTH DIFFER, V5, P143
+   Powell CT, 1996, CANCER RES, V56, P4137
+   Powell CT, 1996, CELL GROWTH DIFFER, V7, P419
+   Qian JQ, 1999, EUR UROL, V35, P479, DOI 10.1159/000019883
+   Qian JQ, 1998, ANAL QUANT CYTOL, V20, P373
+   QIAN JQ, 1995, CANCER RES, V55, P5408
+   Qian JQ, 1997, HUM PATHOL, V28, P143, DOI 10.1016/S0046-8177(97)90097-6
+   ROSS FP, 1993, J BIOL CHEM, V268, P9901
+   ROTTER V, 1983, EMBO J, V2, P1041, DOI 10.1002/j.1460-2075.1983.tb01543.x
+   RUDY W, 1993, CANCER RES, V53, P1262
+   Rusnak JM, 1996, EXP CELL RES, V224, P189, DOI 10.1006/excr.1996.0127
+   SAKR WA, 1994, CANCER RES, V54, P3273
+   SCREATON GR, 1992, P NATL ACAD SCI USA, V89, P12160, DOI 10.1073/pnas.89.24.12160
+   SEITER S, 1993, J EXP MED, V177, P443, DOI 10.1084/jem.177.2.443
+   SHARON N, 1989, SCIENCE, V246, P227, DOI 10.1126/science.2552581
+   SHIH C, 1979, P NATL ACAD SCI USA, V76, P5714, DOI 10.1073/pnas.76.11.5714
+   SMITH C, 1970, ANN HUM GENET, V34, P85, DOI 10.1111/j.1469-1809.1970.tb00223.x
+   Smith JR, 1996, SCIENCE, V274, P1371, DOI 10.1126/science.274.5291.1371
+   Sosnowski J, 1997, J UROLOGY, V158, P269, DOI 10.1097/00005392-199707000-00084
+   SPITZ MR, 1991, J UROLOGY, V146, P1305, DOI 10.1016/S0022-5347(17)38074-6
+   STANBRIDGE EJ, 1990, ANNU REV GENET, V24, P615
+   STEINBERG GD, 1990, PROSTATE, V17, P337, DOI 10.1002/pros.2990170409
+   SY MS, 1991, J EXP MED, V174, P859, DOI 10.1084/jem.174.4.859
+   TAKAHASHI S, 1995, CANCER RES, V55, P4114
+   Takahashi S, 1996, CLIN CANCER RES, V2, P137
+   TAKAHASHI S, 1994, CANCER RES, V54, P3574
+   TERPE HJ, 1994, HISTOCHEMISTRY, V101, P79, DOI 10.1007/BF00269353
+   TOMEI LD, 1991, APOPTOSIS MOL BASIS, V0, P0
+   TRAPMAN J, 1994, CANCER RES, V54, P6061
+   Van der Kwast TH, 1999, HUM PATHOL, V30, P1503, DOI 10.1016/S0046-8177(99)90174-0
+   Van der Kwast TH, 1998, J PATHOL, V186, P406
+   van der Kwast TH, 1999, EUR UROL, V35, P508, DOI 10.1159/000019889
+   VANDENBERG C, 1995, CLIN CANCER RES, V1, P11
+   VANELDIK LJ, 1982, INT REV CYTOL, V77, P1, DOI 10.1016/S0074-7696(08)62463-8
+   VERHAGEN APM, 1988, PROSTATE, V13, P25, DOI 10.1002/pros.2990130104
+   VERHAGEN APM, 1992, CANCER RES, V52, P6182
+   VIOLA MV, 1986, NEW ENGL J MED, V314, P133, DOI 10.1056/NEJM198601163140301
+   VISAKORPI T, 1995, CANCER RES, V55, P342
+   Vocke CD, 1996, CANCER RES, V56, P2411
+   WARE JL, 1994, AM J PATHOL, V145, P983
+   WERNERT N, 1987, PATHOL RES PRACT, V182, P617
+   WHITTEMORE AS, 1995, AM J EPIDEMIOL, V141, P732, DOI 10.1093/oxfordjournals.aje.a117495
+   WOOLF CM, 1960, CANCER, V13, P739, DOI 10.1002/1097-0142(196007/08)13:4<739::AID-CNCR2820130414>3.0.CO;2-E
+   Xu JF, 1998, NAT GENET, V20, P175, DOI 10.1038/2477
+   Xue Y, 1998, PROSTATE, V34, P292, DOI 10.1002/(SICI)1097-0045(19980301)34:4<292::AID-PROS7>3.0.CO;2-J
+   YOUNG CYF, 1994, ONCOL RES, V6, P203
+   YUNIS JJ, 1978, AM J DIS CHILD, V132, P161, DOI 10.1001/archpedi.1978.02120270059012
+   ZENKLUSEN JC, 1994, CANCER RES, V54, P6370
+   ZENKLUSEN JC, 1994, P NATL ACAD SCI USA, V91, P12155, DOI 10.1073/pnas.91.25.12155
+   ZENKLUSEN JC, 1995, CANCER RES, V55, P1347
+   Zhang WB, 1998, CANCER RES, V58, P619
+   Zitzelsberger H, 1998, VIRCHOWS ARCH, V433, P297, DOI 10.1007/s004280050252
+   ZITZELSBERGER H, 1994, J PATHOL, V172, P325, DOI 10.1002/path.1711720407
+NR 240
+TC 54
+Z9 55
+U1 0
+U2 0
+PU INFORMA HEALTHCARE
+PI LONDON
+PA TELEPHONE HOUSE, 69-77 PAUL STREET, LONDON EC2A 4LQ, ENGLAND
+SN 0036-5599
+EI 
+J9 SCAND J UROL NEPHROL
+JI Scand. J. Urol. Nephrol.
+PD JUN 15
+PY 2000
+VL 34
+IS 
+BP 19
+EP 43
+DI 10.1080/003655900750169284
+PG 25
+WC Urology & Nephrology
+SC Urology & Nephrology
+GA 377RA
+UT WOS:000165526100006
+PM 11144897
+DA 2022-09-21
+ER
+
+PT J
+AU Blom, D
+   Peters, JH
+AF Blom, D
+   Peters, JH
+TI Surgery, radiotherapy, and chemotherapy in carcinoma of the esophagus
+SO CURRENT OPINION IN GASTROENTEROLOGY
+LA English
+DT Article
+ID squamous-cell carcinoma; en-bloc esophagectomy; lymph-node dissection; preoperative radiotherapy; endoscopic ultrasound; thoracic esophagus; barretts-esophagus; radiation-therapy; transhiatal esophagectomy; combined chemoradiotherapy
+AB Esophageal carcinoma remains a highly lethal disease that has shown a recent profound increase in prevalence and an equally dramatic epidemiologic shift. There is a well recognized causal association between gastroesophageal reflux disease and adenocarcinoma of the esophagus, and the molecular events underlying this progression from mucosal injury, to metaplasia, to dysplasia, to carcinoma are now becoming clear. Current diagnostic modalities and preoperative staging systems all have significant limitations. Fortunately, chemoprevention strategies and the identification of clinically useful molecular biomarkers that may be used to stage disease and select appropriate therapy are on the horizon. The extent of surgical resection for esophageal carcinoma remains an area of great controversy. Disease that is confined to the mucosa is being diagnosed more commonly, and endoscopic ablative techniques have been proposed. To date, however, preoperative discrimination of tumor depth and presence of regional nodal metastases remains inadequate in these very early lesions, and caution is urged before adopting therapies that may compromise cure. For disease penetrating the mucosa, the extent of surgical therapy must be tailored by the objectives of treatment (cure vs palliation) and preoperative stage. Surgical resection is the current standard of care, with combined-modality therapy reserved for prohibitive surgical candidates. No clear survival benefit has been documented for neoadjuvant radiotherapy or chemotherapy alone. The results of preoperative combined-modality therapy, including three prospective, randomized trials, are encouraging but to date have not shown a definite benefit. Curr Opin Gastroenterol 2000, 16:392-399 (C) 2000 Lippincott Williams & Wilkins, Inc.
+C1 Univ So Calif, Sch Med, Dept Surg, Los Angeles, CA 90033 USA.
+RP Peters, JH (通讯作者)，Univ So Calif, Sch Med, Dept Surg, 1510 San Pablo St,Suite 514, Los Angeles, CA 90033 USA.
+EM jhpeters@hsc.usc.edu
+CR Adelstein DJ, 1997, CANCER-AM CANCER SOC, V80, P1011
+   ADELSTEIN DJ, 1996, P AN M AM SOC CLIN, V15, P203
+   AKIYAMA H, 1994, DIS ESOPHAGUS, V7, P1
+   AlSarraf M, 1997, J CLIN ONCOL, V15, P277, DOI 10.1200/JCO.1997.15.1.277
+   Altorki NK, 1997, J THORAC CARDIOV SUR, V114, P948, DOI 10.1016/S0022-5223(97)70009-6
+   ARAUJO CMM, 1991, CANCER, V67, P2258, DOI 10.1002/1097-0142(19910501)67:9<2258::AID-CNCR2820670908>3.0.CO;2-G
+   ARNOTT SJ, 1992, RADIOTHER ONCOL, V24, P108, DOI 10.1016/0167-8140(92)90287-5
+   Badwe RA, 1999, CANCER, V85, P763, DOI 10.1002/(SICI)1097-0142(19990215)85:4<763::AID-CNCR2>3.3.CO;2-I
+   Barrett MT, 1999, NAT GENET, V22, P106, DOI 10.1038/8816
+   Bonavina L, 1999, J GASTROINTEST SURG, V3, P468, DOI 10.1016/S1091-255X(99)80099-7
+   Bosset JF, 1997, NEW ENGL J MED, V337, P161, DOI 10.1056/NEJM199707173370304
+   Bowrey DF, 1999, J GASTROINTEST SURG, V3, P462, DOI 10.1016/S1091-255X(99)80098-5
+   CLARK GWB, 1994, ANN THORAC SURG, V58, P646, DOI 10.1016/0003-4975(94)90722-6
+   COSIGLIERE D, 1992, J R COLL SURG EDINB, V37, P113
+   Dannenberg AJ, 1999, SEMIN ONCOL, V26, P499
+   Ellis FH, 1997, J THORAC CARDIOV SUR, V113, P836, DOI 10.1016/S0022-5223(97)70256-3
+   ELLIS FH, 1993, J SURG ONCOL, V52, P231, DOI 10.1002/jso.2930520406
+   FOK M, 1993, SURGERY, V113, P138
+   FORASTIERE AA, 1990, J CLIN ONCOL, V8, P119, DOI 10.1200/JCO.1990.8.1.119
+   GIGNOUX M, 1987, WORLD J SURG, V11, P426, DOI 10.1007/BF01655805
+   Glickman JN, 1999, CANCER, V85, P769, DOI 10.1002/(SICI)1097-0142(19990215)85:4<769::AID-CNCR3>3.3.CO;2-9
+   Greenlee RT, 2000, CA-CANCER J CLIN, V50, P7, DOI 10.3322/canjclin.50.1.7
+   HAGEN JA, 1993, J THORAC CARDIOV SUR, V106, P850
+   HERSKOVIC A, 1992, NEW ENGL J MED, V326, P1593, DOI 10.1056/NEJM199206113262403
+   HOLSCHER AH, 1995, SURGERY, V118, P845, DOI 10.1016/S0039-6060(05)80275-2
+   ISONO K, 1985, JPN J CLIN ONCOL, V15, P49
+   ISONO K, 1991, ONCOLOGY, V48, P411
+   Jankowski JA, 1999, AM J PATHOL, V154, P965, DOI 10.1016/S0002-9440(10)65346-1
+   Kasai M, 1978, WORLD J SURG, V2, P543
+   KATO H, 1991, J SURG ONCOL, V48, P106, DOI 10.1002/jso.2930480207
+   Kelsen DP, 1998, NEW ENGL J MED, V339, P1979, DOI 10.1056/NEJM199812313392704
+   Kim LS, 1999, AM J GASTROENTEROL, V94, P1847
+   Klump B, 1998, GASTROENTEROLOGY, V115, P1381, DOI 10.1016/S0016-5085(98)70016-2
+   Kobayashi S, 1999, AM J SURG, V177, P497, DOI 10.1016/S0002-9610(99)00085-9
+   KOK TC, 1997, P AN M AM SOC CLIN, V16, P277
+   Krasna MJ, 1996, J THORAC CARDIOV SUR, V111, P800, DOI 10.1016/S0022-5223(96)70340-9
+   Krasna MJ, 1999, ANN THORAC SURG, V68, P2021, DOI 10.1016/S0003-4975(99)01146-7
+   Lagergren J, 1999, NEW ENGL J MED, V340, P825, DOI 10.1056/NEJM199903183401101
+   LAUNOIS B, 1981, SURG GYNECOL OBSTET, V153, P690
+   LEICHMAN L, 1984, J CLIN ONCOL, V2, P75, DOI 10.1200/JCO.1984.2.2.75
+   LEWIS I, 1946, BRIT J SURG, V34, P18, DOI 10.1002/bjs.18003413304
+   LIGHTDALE CJ, 1994, SEMIN ONCOL, V21, P438
+   LOGAN A, 1963, J THORAC CARDIOV SUR, V46, P150
+   Lord RVN, 2000, J GASTROINTEST SURG, V4, P135, DOI 10.1016/S1091-255X(00)80049-9
+   Luketich JD, 1997, J THORAC CARDIOV SUR, V114, P817, DOI 10.1016/S0022-5223(97)70086-2
+   MATSUBARA T, 1994, J THORAC CARDIOV SUR, V107, P1073, DOI 10.1016/S0022-5223(94)70383-3
+   NEWAISHY GA, 1982, CLIN RADIOL, V33, P347, DOI 10.1016/S0009-9260(82)80288-2
+   Nigro JJ, 1999, ANN SURG, V230, P433, DOI 10.1097/00000658-199909000-00015
+   Nigro JJ, 1999, J THORAC CARDIOV SUR, V117, P960, DOI 10.1016/S0022-5223(99)70377-6
+   Nishimaki T, 1999, SURGERY, V125, P142, DOI 10.1016/S0039-6060(99)70257-6
+   NYGAARD K, 1992, WORLD J SURG, V16, P1104, DOI 10.1007/BF02067069
+   OKAWA T, 1989, INT J RADIAT ONCOL, V17, P49, DOI 10.1016/0360-3016(89)90369-6
+   Orringer MB, 1999, ANN SURG, V230, P392, DOI 10.1097/00000658-199909000-00012
+   ORRINGER MB, 1984, ANN SURG, V200, P282, DOI 10.1097/00000658-198409000-00005
+   Osborne MP, 1999, SURG CLIN N AM, V79, P1207, DOI 10.1016/S0039-6109(05)70069-4
+   OVERHOLT BF, 1995, GASTROINTEST ENDOSC, V42, P64, DOI 10.1016/S0016-5107(95)70246-6
+   PETERS JH, 1999, ESOPHAGUS, V0, P259
+   POPLIN E, 1987, J CLIN ONCOL, V5, P622, DOI 10.1200/JCO.1987.5.4.622
+   Raoul JL, 1998, INT J RADIAT ONCOL, V42, P29, DOI 10.1016/S0360-3016(98)00192-8
+   ROBEYCAFFERTY SS, 1991, AM J CLIN PATHOL, V95, P844, DOI 10.1093/ajcp/95.6.844
+   Rosch T, 1995, GASTROINTEST ENDOSC CLIN N AM, V5, P537
+   SHAHAB N, 1996, P AN M AM SOC CLIN, V15, P207
+   SIBILLE A, 1995, GASTROENTEROLOGY, V108, P337, DOI 10.1016/0016-5085(95)90058-6
+   SKINNER DB, 1983, J THORAC CARDIOV SUR, V85, P59
+   SKINNER DB, 1982, CANCER, V50, P2571
+   Slabber CF, 1998, AM J CLIN ONCOL-CANC, V21, P462, DOI 10.1097/00000421-199810000-00008
+   Smith TJ, 1998, INT J RADIAT ONCOL, V42, P269, DOI 10.1016/S0360-3016(98)00232-6
+   SONDENAA K, 1992, EUR J SURG, V158, P537
+   STREITZ JM, 1993, J THORAC CARDIOV SUR, V105, P383
+   Sykes AJ, 1998, RADIOTHER ONCOL, V48, P15, DOI 10.1016/S0167-8140(98)00037-1
+   Tabira Y, 1999, J THORAC CARDIOV SUR, V117, P239, DOI 10.1016/S0022-5223(99)70418-6
+   TENIERE P, 1991, SURG GYNECOL OBSTET, V173, P123
+   THOMPSON WM, 1994, SEMIN ONCOL, V21, P447
+   Turner GG, 1933, LANCET, V2, P1315
+   URBA S, 1997, P AN M AM SOC CLIN, V16, P277
+   URBA SG, 1992, CANCER, V69, P285, DOI 10.1002/1097-0142(19920115)69:2<285::AID-CNCR2820690203>3.0.CO;2-E
+   van Sandick JW, 1998, GUT, V43, P216, DOI 10.1136/gut.43.2.216
+   Walsh TN, 1996, NEW ENGL J MED, V335, P462, DOI 10.1056/NEJM199608153350702
+   Winters C, 1987, GASTROENTEROLOGY, V92, P118, DOI 10.1016/0016-5085(87)90847-X
+   Zuccaro G, 1999, AM J GASTROENTEROL, V94, P906
+NR 80
+TC 2
+Z9 2
+U1 0
+U2 1
+PU LIPPINCOTT WILLIAMS & WILKINS
+PI PHILADELPHIA
+PA TWO COMMERCE SQ, 2001 MARKET ST, PHILADELPHIA, PA 19103 USA
+SN 0267-1379
+EI 1531-7056
+J9 CURR OPIN GASTROEN
+JI Curr. Opin. Gastroenterol.
+PD JUL 15
+PY 2000
+VL 16
+IS 4
+BP 392
+EP 399
+DI 10.1097/00001574-200007000-00017
+PG 8
+WC Gastroenterology & Hepatology
+SC Gastroenterology & Hepatology
+GA 324YL
+UT WOS:000087649500017
+PM 17031107
+DA 2022-09-21
+ER
+
+PT J
+AU Lebedeva, NN
+   Sulimov, AV
+   Sulimova, OP
+   Kotrovskaya, TI
+   Gailus, T
+AF Lebedeva, NN
+   Sulimov, AV
+   Sulimova, OP
+   Kotrovskaya, TI
+   Gailus, T
+TI Cellular phone electromagnetic field effects on bioelectric activity of human brain
+SO CRITICAL REVIEWS IN BIOMEDICAL ENGINEERING
+LA English
+DT Review
+ID magnetic-fields; frequency; exposure; cancer
+AB 24 volunteers participated in the experiments. The investigation of EEG reactions to cellular phone (EMF frequency 902.4 MHz and intensity 0.06 mW/cm(2)) was conducted. Two experiments were performed with each subject - cellular phone exposure and Placebo. Duration of the experiment was 60 min: 15 min - background: 15 min - EMF exposure or Placebo; 30 min - afterexposure. EEG was recorded in 16 standard leads with <<eyes open>> and <<eyes closed>>. Special software with non-linear dynamics was developed for EEG analyses. One parameter, multichannel (global) correlation dimension, was calculated. The changes of these parameters can be evidence of brain functional state changes. As a result of EEG record processing, a significant increase of global correlation dimension during the exposure and afterexposure period was discovered, more pronounced in the case of <<eyes closed>>. That can be viewed as the manifestation of cortex activation under phone EMF exposure.
+C1 Russian Acad Sci, Inst Higher Nervous Act & Neurophysiol, Moscow, Russia.
+   Extremely High Frequency Med & Tech Assoc, Moscow, Russia.
+   Deutsch Telekom AG, Berlin, Germany.
+RP Lebedeva, NN (通讯作者)，Russian Acad Sci, Inst Higher Nervous Act & Neurophysiol, Moscow, Russia.
+CR ADEY WR, 1980, P IEEE, V68, P119, DOI 10.1109/PROC.1980.11591
+   AHLBOM A, 1988, SCAND J WORK ENV HEA, V14, P337, DOI 10.5271/sjweh.1909
+   ALEKSEEV SI, 1991, MILLIMETER WAVES MED, V0, P0
+   ALLE E, 1985, NEW ENGL J MED, V23, P1476
+   ARANSON IS, 1989, NELINEYNYYE VOLNY DI, V0, P0
+   ARTYUKHINA NI, 1988, PROBLEMY ELECTROMAG, V0, P42
+   BAO JZ, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   BELL GB, 1992, ELECTROEN CLIN NEURO, V83, P389, DOI 10.1016/0013-4694(92)90075-S
+   BELL GB, 1991, LANCET, V338, P1521, DOI 10.1016/0140-6736(91)92336-Z
+   BELSKII UA, 1993, RADIOTEKHNIKA ELECT, V38, P0
+   BLACKMAN CF, 1990, BIOELECTROMAGNETICS, V11, P159, DOI 10.1002/bem.2250110207
+   BOLDYREVA GN, 1989, JH VYSSH NERV DEYAT, V39, P0
+   BRAVARENKO NI, 1988, PROBLEMY ELECTROMAG, V0, P64
+   BURKHARDT M, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   CHIZHENKOVA RA, 1988, PROBLEMY ELECTROMAG, V0, P0
+   CHIZHENKOVA RA, 1995, 17 ANN M US JUN 18 2, V0, P0
+   COBB BL, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   DAVIS CC, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   DEMETSKIY AM, 1991, ELECTROMAGNETIC FIEL, V0, P0
+   Devyatkov ND, 1991, MILLIMETROVYE VOLNY, V0, P0
+   DOUGLAS MG, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   EFREMOVA TM, 1991, ZH VYSSH NERV DEYAT, V41, P0
+   FEYCHTING M, 1993, AM J EPIDEMIOL, V138, P467, DOI 10.1093/oxfordjournals.aje.a116881
+   GOLOVACHEVA TV, 1997, MILLIMETER WAVES MED, V0, P0
+   GORDON BM, 1995, 10 RUSS S PART FOR S, V0, P0
+   GORDON DS, 1994, MAGNITOLOGIYA, V0, P0
+   GRAHAM C, 1994, BIOELECTROMAGNETICS, V15, P447, DOI 10.1002/bem.2250150508
+   GRASSBERGER P, 1983, PHYSICA D, V9, P0
+   Hansson H A, 1988, PROG CLIN BIOL RES, V257, P119
+   HANSSON HA, 1994, NONLINEAR ELECTRODYN, V0, P65
+   JACOBSON JI, 1992, INDIAN J MED SCI, V0, P321
+   JUUTILAINEN J, 1988, INT J BIOMETEOROL, V32, P17, DOI 10.1007/BF01623987
+   KAZNACHEEV VP, 1981, EXTREMELY WEAK RAD I, V0, P0
+   KHITROVAORLOVA TV, 1991, MAGNITOBIOLOGIYA MAG, V0, P0
+   KHOLODOV YA, 1991, MAGNITOLOGYA, V0, P0
+   KHOLODOV YA, 1975, NEVOUS SYSTEM REACTI, V0, P0
+   KHOLODOV YA, 1992, NERVOUS SYSTEMS REAC, V0, P0
+   KHOLODOV YA, 1966, INFLUENCE EMF MF CNS, V0, P0
+   KHOLODOV YA, 1995, MILLIMETER WAVES MED, V0, P115
+   Kholodov YuA, 1982, BRAIN ELECTROMAGNETI, V0, P0
+   KHROMOVA SV, 1990, THESIS MOSCOW, V0, P0
+   KOLOMYTKIN OV, 1993, MICROWAVES MED, V0, P0
+   KOTROVSKAYA TI, 1996, THESIS MOSCOW, V0, P0
+   LAMBROSO J, 1994, ENEG SANTE SERV ATUD, V0, P5
+   LEBEDEVA NN, 1994, ZH MILLIMETROVYE VOL, V0, P16
+   LEBEDEVA NN, 1992, THESIS MOSCOW, V0, P0
+   LEBEDEVA NN, 1988, PROBLEMY ELEKTROMAGN, V0, P85
+   LEBEDEVA NN, 1993, ZH MILLIMETROVYE VOL, V0, P5
+   LEBEDEVA NN, 1995, MILLIMETER WAVES MED, V0, P0
+   LEVILLAIN D, 1985, ANN MED-PSYCHOL, V143, P235
+   LONDON SJ, 1991, AM J EPIDEMIOL, V134, P923, DOI 10.1093/oxfordjournals.aje.a116176
+   LUKYANOVA SN, 1996, 1 RUSS C INT PART 28, V0, P0
+   LYSKOV E, 1996, THESIS MOSCOW, V0, P0
+   LYSKOV E, 1994, 3 NORD ARB BIOL EFF, V0, P16
+   MANN K, 1996, WIEN MED WOCHENSCHR, V146, P13
+   MICHAELIS J, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   MICHAILOVSKY VN, 1991, BIOL SYSTEM REACTION, V0, P0
+   NOREKYAN TP, 1988, PROBLEMY ELECTROMAG, V0, P5
+   OSOVETS SM, 1983, USPEKHI FIS NAUK, V141, P0
+   PAKHOMOV AG, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   PAVLENKO VB, 1991, MAGNITOBIOLOGIYA MAG, V0, P0
+   PAVLIGINA RA, 1998, ZH VYSSH NERV DEYAT, V0, P0
+   PAVLIGINA RA, 1982, USPEKHI PHYSL NAUK, V13, P0
+   PLEKHANOV GF, 1990, BASIC LAWS ELECTROMA, V0, P0
+   POLK C, 1991, IEEE T EDUC, V34, P243, DOI 10.1109/13.85082
+   POOLE C, 1993, AM J EPIDEMIOL, V137, P318, DOI 10.1093/oxfordjournals.aje.a116679
+   PRESMAN AS, 1974, ELECTROMAGNETIC SIGN, V0, P0
+   Rapp PE, 1985, PHYS LETT A, VA110, P0
+   RUSINOV VS, 1987, HUMAN BRAIN BIOPOTEN, V0, P0
+   Selitskii GV, 1996, FIZIOLOGIYA CHELOVEKA, V22, P66
+   SEMM P, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   Sheppard AR, 1987, PROCEEDINGS OF THE NINTH ANNUAL CONFERENCE OF THE IEEE ENGINEERING IN MEDICINE AND BIOLOGY SOCIETY (CAT. NO.87CH2513-0), V0, P79
+   SIDYAKIN VG, 1986, EFFECT GLOBAL ECOLOG, V0, P0
+   SIDYAKIN VG, 1988, PROBLEMY ELECTROMAG, V0, P0
+   SIENKIEWICZ ZJ, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+   SIGALEVI LA, 1983, CMF INFLUENCE IDENTI, V0, P0
+   SKARDA CA, 1987, BEHAV BRAIN SCI, V0, P10
+   Stam Kees J, 1994, BRAIN TOPOGRAPHY, V7, P141, DOI 10.1007/BF01186772
+   SULIMOVA OP, 1992, THESIS SIMFEROPOL, V0, P0
+   SULIMOVA OP, 1996, 1 RUSS C INT PART 28, V0, P0
+   SVIDERSKAYA NE, 1987, SYNCHRONOUS ELECT AC, V0, P61
+   TEMURYANTS NA, 1992, EXTREMELY LOW FREQUE, V0, P0
+   TEMURYANTS NA, 1989, THESIS MOSCOW, V0, P0
+   TENFORDE TS, 1986, HDB BIOL EFFECTS ELE, V0, P197
+   THUROCZY G, 1995, 17 ANN M US JUN 18 2, V0, P0
+   THUROCZY G, 1994, 16 ANN M DENM JUN 12, V0, P0
+   ULBIKAS YK, 1991, MILLIMETROVYE VOLNI, V2, P0
+   VASSILEVSKY NN, 1995, 17 ANN M US JUN 18 2, V0, P0
+   ZIRIAX JM, 1996, 18 ANN M CAN JUN 9 1, V0, P0
+NR 90
+TC 25
+Z9 29
+U1 0
+U2 5
+PU BEGELL HOUSE INC
+PI DANBURY
+PA 50 NORTH ST, DANBURY, CT 06810 USA
+SN 0278-940X
+EI 1943-619X
+J9 CRIT REV BIOMED ENG
+JI Crit. Rev. Biomed. Eng.
+PD JUN 15
+PY 2000
+VL 28
+IS 1-2
+BP 323
+EP 337
+DI 10.1615/CritRevBiomedEng.v28.i12.450
+PG 15
+WC Engineering, Biomedical
+SC Engineering
+GA 352ZA
+UT WOS:000089248200046
+PM 10999398
+DA 2022-09-21
+ER
+
+PT J
+AU Graham, C
+   Cook, MR
+   Sastre, A
+   Riffle, DW
+   Gerkovich, MM
+AF Graham, C
+   Cook, MR
+   Sastre, A
+   Riffle, DW
+   Gerkovich, MM
+TI Multi-night exposure to 60 Hz magnetic fields: Effects on melatonin and its enzymatic metabolite
+SO JOURNAL OF PINEAL RESEARCH
+LA English
+DT Article
+DE EMF; human; circadian rhythm; cancer; neuroendocrine; adaptation
+ID plasma melatonin; serum melatonin; pineal-gland; workers; rhythm; humans; adaptation; excretion; 50-hz
+AB Magnetic field-induced suppression of nocturnal melatonin in humans has been reported in occupational and residential studies, but not in laboratory-based exposure studies. The present study examined whether this contrasting pattern of results might be related to associated differences in exposure duration or to field-induced measurement instability over time. Thirty healthy young men were evaluated using a randomized, double-blind test protocol. Statistical analysis indicated that 4 consecutive nights of exposure to power-frequency magnetic fields at occupational intensity (resultant flux density = 28.3 microtesla, mu T, [283 milligauss, mG]) had no differential effect on concentrations of melatonin or its major enzymatic metabolite (6-hydroxymelatonin sulfate, 6-OHMS) in daily morning urine samples, compared to equivalent no-exposure sham control conditions. The consistency of intra-individual urinary measurements over the 4 test nights also was quite high (P < 0.01) in the sham control condition. In contrast, repeated nightly exposure to the magnetic field was associated with reduced consistency. Morning urinary measures obtained after exposure on night 4 differed (P < 0.01) from similar measures obtained after the second and third exposure night. Thus, while the overall results of this study do not support the melatonin hypothesis, there is some suggestion of a possible cumulative effect of magnetic field exposure on the stability of individual melatonin measurements over time. Additional research with longer periods of controlled exposure may be warranted.
+C1 Midwest Res Inst, Kansas City, MO 64110 USA.
+RP Graham, C (通讯作者)，Midwest Res Inst, 425 Volker Blvd, Kansas City, MO 64110 USA.
+FU NIEHS NIH HHS [ES 07053] Funding Source: Medline
+CR Akerstedt T, 1998, J SLEEP RES, V26, P260
+   Arendt J, 1995, MELATONIN MAMMALIAN, V0, P0
+   Arnetz BB, 1996, J OCCUP ENVIRON MED, V38, P1108, DOI 10.1097/00043764-199611000-00010
+   Barnes R, 1998, NEUROSCI LETT, V252, P179, DOI 10.1016/S0304-3940(98)00585-0
+   Brzezinski Amnon, 1997, NEW ENGLAND JOURNAL OF MEDICINE, V336, P186
+   Burch JB, 1998, SCAND J WORK ENV HEA, V24, P183, DOI 10.5271/sjweh.297
+   Cagnacci A, 1996, J PINEAL RES, V21, P200, DOI 10.1111/j.1600-079X.1996.tb00287.x
+   COOK MR, 1992, BIOELECTROMAGNETICS, V13, P261, DOI 10.1002/bem.2250130403
+   Dawson TW, 1997, BIOELECTROMAGNETICS, V18, P478, DOI 10.1002/(SICI)1521-186X(1997)18:7<478::AID-BEM3>3.0.CO;2-#
+   DIETRICH F, 1998, EMF ENG REV S STAT S, V5, P1
+   Doynov P, 1999, BIOELECTROMAGNETICS, V20, P101, DOI 10.1002/(SICI)1521-186X(1999)20:2<101::AID-BEM4>3.0.CO;2-R
+   GAILEY P, 1997, EMF SCI REV S BREAK, V0, P55
+   GRAHAM C, 1994, BIOELECTROMAGNETICS, V15, P447, DOI 10.1002/bem.2250150508
+   Graham C, 1997, BIOELECTROMAGNETICS, V18, P166, DOI 10.1002/(SICI)1521-186X(1997)18:2<166::AID-BEM9>3.3.CO;2-Z
+   Graham C, 1996, BIOELECTROMAGNETICS, V17, P263, DOI 10.1002/(SICI)1521-186X(1996)17:4<263::AID-BEM2>3.0.CO;2-1
+   Graham C, 1998, J PINEAL RES, V24, P230, DOI 10.1111/j.1600-079X.1998.tb00538.x
+   HARDELAND R, 1993, NEUROSCI BIOBEHAV R, V17, P347, DOI 10.1016/S0149-7634(05)80016-8
+   KATO M, 1994, NEUROSCI LETT, V168, P205, DOI 10.1016/0304-3940(94)90451-0
+   KAUNE W, 1997, TR107242 EPRI, V0, P0
+   Klante G, 1997, J PINEAL RES, V23, P191, DOI 10.1111/j.1600-079X.1997.tb00354.x
+   KUMLIN T, 1997, 5 NORD WORKSH BIOL E, V0, P67
+   Lai H, 1997, J PINEAL RES, V22, P152, DOI 10.1111/j.1600-079X.1997.tb00317.x
+   Lushington K, 1996, CHRONOBIOL INT, V13, P411, DOI 10.3109/07420529609020912
+   MIDWINTER MJ, 1991, NEUROSCI LETT, V122, P195, DOI 10.1016/0304-3940(91)90856-O
+   Pfluger DH, 1996, J PINEAL RES, V21, P91, DOI 10.1111/j.1600-079X.1996.tb00275.x
+   PORTIER CJ, 1998, NIH PUBL, V0, P0
+   Reiter R, 1997, LIFE SCI, V60, P2255, DOI 10.1016/S0024-3205(97)00030-1
+   Reiter RJ, 1998, ANN MED, V30, P103, DOI 10.3109/07853899808999391
+   Sastre A, 1998, BIOELECTROMAGNETICS, V19, P98
+   SELMAOUI B, 1995, LIFE SCI, V57, P1351, DOI 10.1016/0024-3205(95)02092-W
+   Selmaoui B, 1996, LIFE SCI, V58, P1539, DOI 10.1016/0024-3205(96)00128-2
+   STEVENS RG, 1987, AM J EPIDEMIOL, V125, P556, DOI 10.1093/oxfordjournals.aje.a114569
+   STEVENS RG, 1997, MELATONIN HYPOTHESIS, V0, P0
+   WALDHAUSER F, 1985, ANN NY ACAD SCI, V453, P205, DOI 10.1111/j.1749-6632.1985.tb11811.x
+   WILSON BW, 1990, J PINEAL RES, V9, P259, DOI 10.1111/j.1600-079X.1990.tb00901.x
+NR 35
+TC 35
+Z9 38
+U1 0
+U2 3
+PU MUNKSGAARD INT PUBL LTD
+PI COPENHAGEN
+PA 35 NORRE SOGADE, PO BOX 2148, DK-1016 COPENHAGEN, DENMARK
+SN 0742-3098
+EI 
+J9 J PINEAL RES
+JI J. Pineal Res.
+PD JAN 15
+PY 2000
+VL 28
+IS 1
+BP 1
+EP 8
+DI 10.1034/j.1600-079x.2000.280101.x
+PG 8
+WC Endocrinology & Metabolism; Neurosciences; Physiology
+SC Endocrinology & Metabolism; Neurosciences & Neurology; Physiology
+GA 270XZ
+UT WOS:000084563600001
+PM 10626595
+DA 2022-09-21
+ER
+
+PT J
+AU Adair, RK
+AF Adair, RK
+TI Static and low-frequency magnetic field effects: health risks and therapies
+SO REPORTS ON PROGRESS IN PHYSICS
+LA English
+DT Review
+ID parametric resonance model; weak electric-fields; electromagnetic-fields; stochastic resonance; biological magnetite; pineal melatonin; thermal noise; power-lines; cells; cancer
+AB Many biological processes are affected by electromagnetic fields. Hence incremental internal fields generated by external magnetic fields can be expected to affect that biology. With some exceptions, most of the present interest in the effects of exogenous static and low-frequency magnetic fields centres on three intensity regions. (1)There are concerns that 50-60 Hz power distribution fields as small as 0.2 mu T, may affect the health of populations. (2) ac fields that are larger than 1 mT (and usually smaller than 100 mT) with frequencies of a few kHz or less may have therapeutic value with respect to the healing of bone fractures and soft-tissue injuries. (3) The very large slowly varying fields of the order of 2 T used in magnetic resonance imaging might affect the physiology of the patients. Magnetic fields interact with biological systems through forces on the electrical currents associated with physiological functions and through the torques exerted on the magnetic moments of biologically important molecules and the electrons that play a role in the binding of Seminate radicals. The torques that the Earth's magnetic field applies to the ferrimagnetic domains of biologically formed magnetite affects the biology of species in several different phyla and may have consequences in humans. Low-frequency magnetic fields also induce electric fields through the Faraday effect that may have biological consequences. For either the direct magnetic fields or the magnetically induced electric fields to affect the biology of living systems, the interactions with such systems must generally be larger then the interactions with endogenous physiological and thermal noise. This constraint seems to exclude the possibility that the environmental fields less than 1 mu T from the electric power distribution system affect health and places important constraints on the minimal fields that can be expected to have therapeutic value.
+C1 Yale Univ, Dept Phys, New Haven, CT 06520 USA.
+RP Adair, RK (通讯作者)，Yale Univ, Dept Phys, POB 208121, New Haven, CT 06520 USA.
+CR Adair RK, 1996, BIOELECTROMAGNETICS, V17, P242, DOI 10.1002/(SICI)1521-186X(1996)17:3<242::AID-BEM10>3.0.CO;2-S
+   ADAIR RK, 1994, P NATL ACAD SCI USA, V91, P2925, DOI 10.1073/pnas.91.8.2925
+   ADAIR RK, 1994, P NATL ACAD SCI USA, V91, P9422, DOI 10.1073/pnas.91.20.9422
+   Adair RK, 1998, BIOELECTROMAGNETICS, V19, P181
+   ADAIR RK, 1992, BIOELECTROMAGNETICS, V13, P231, DOI 10.1002/bem.2250130307
+   ADAIR RK, 1991, PHYS REV A, V43, P1039, DOI 10.1103/PhysRevA.43.1039
+   Adair RK, 1996, BIOELECTROMAGNETICS, V17, P510
+   ADAIR RK, 1995, NATO ADV SCI INST SE, V274, P207
+   Adair RK, 1998, BIOELECTROMAGNETICS, V19, P136, DOI 10.1002/(SICI)1521-186X(1998)19:2<136::AID-BEM14>3.0.CO;2-O
+   Adair RK, 1999, BIOELECTROMAGNETICS, V20, P255, DOI 10.1002/(SICI)1521-186X(1999)20:4<255::AID-BEM6>3.0.CO;2-W
+   ADAIR RK, 1993, BIOELECTROMAGNETICS, V14, P1, DOI 10.1002/bem.2250140103
+   Adair RK, 1998, CHAOS, V8, P576, DOI 10.1063/1.166339
+   ADEY WR, 1990, EXTREMELY LOW FREQUE, V0, P211
+   ALBERT EN, 1987, RADIAT RES, V109, P19, DOI 10.2307/3576863
+   ANDERSON JC, 1970, NATURE, V227, P491, DOI 10.1038/227491a0
+   Unknown -, 1997, POSSIBLE HLTH EFFECT, V0, P0
+   ASTUMIAN RD, 1995, P NATL ACAD SCI USA, V92, P3740, DOI 10.1073/pnas.92.9.3740
+   Astumian RD, 1997, NATURE, V388, P632, DOI 10.1038/41684
+   BARKER AT, 1984, LANCET, V1, P994
+   BARKER AT, 1985, CLIN PHYS PHYSIOL M, V6, P261, DOI 10.1088/0143-0815/6/3/008
+   BARNES FS, 1996, CRC HDB BIOL EFFECTS, V0, P103
+   BARNES FS, 1987, MECH APPROACHES INTE, V0, P0
+   BASSETT CAL, 1974, SCIENCE, V184, P575
+   BASSETT CAL, 1962, SCIENCE, V137, P1063, DOI 10.1126/science.137.3535.1063
+   BASSETT CAL, 1989, CRIT REV BIOMED ENG, V17, P451
+   BASSETT CAL, 1977, CLIN ORTHOP RELAT R, V124, P128
+   BAWIN SM, 1976, P NATL ACAD SCI USA, V73, P1999, DOI 10.1073/pnas.73.6.1999
+   Bezrukov SM, 1997, NATURE, V385, P319, DOI 10.1038/385319a0
+   BINDER A, 1984, LANCET, V1, P695
+   BLACKMAN CF, 1994, BIOELECTROMAGNETICS, V15, P239, DOI 10.1002/bem.2250150307
+   BLACKMAN CF, 1990, EXTREMELY LOW FREQUE, V0, P187
+   BLAKEMORE R, 1975, SCIENCE, V190, P377, DOI 10.1126/science.170679
+   BLANCHARD JP, 1994, BIOELECTROMAGNETICS, V15, P217, DOI 10.1002/bem.2250150306
+   BLASIAK J, 1990, J BIOELECTRICITY, V9, P55, DOI 10.3109/15368379009027759
+   BLASK DE, 1990, EXTREMELY LOW FREQUE, V0, P319
+   BORGENS RB, 1984, SCIENCE, V225, P478, DOI 10.1126/science.6740320
+   BRIGHTON CT, 1979, ELECTRICAL PROPERTIE, V0, P519
+   BROCKLEHURST B, 1976, J CHEM SOC FARAD T 2, V72, P1869, DOI 10.1039/f29767201869
+   Bromley DA, 1994, PRESIDENTS SCI REMIN, V0, P0
+   Buchachenko AL, 1984, SPIN POLARIZATION MA, V0, P0
+   Bulmer MG, 1979, PRINCIPLES STAT, V0, P0
+   BUTLER RF, 1975, J GEOPHYS RES, V80, P4049, DOI 10.1029/JB080i029p04049
+   CARSTENSEN EL, 1985, IEEE T BIO-MED ENG, V32, P561, DOI 10.1109/TBME.1985.325480
+   Chan D, 1998, MATRIX BIOL, V17, P169, DOI 10.1016/S0945-053X(98)90056-7
+   COLE P, 1989, UNPUB, V0, P0
+   DURNEY CH, 1988, BIOELECTROMAGNETICS, V9, P315, DOI 10.1002/bem.2250090402
+   EICHWALD C, 1993, BIOPHYS J, V65, P2047, DOI 10.1016/S0006-3495(93)81236-0
+   Engstrom S, 1996, BIOELECTROMAGNETICS, V17, P58, DOI 10.1002/(SICI)1521-186X(1996)17:1<58::AID-BEM8>3.0.CO;2-5
+   FEWTRELL C, 1993, ANNU REV PHYSIOL, V55, P427, DOI 10.1146/annurev.physiol.55.1.427
+   FEYCHTING M, 1993, AM J EPIDEMIOL, V138, P467, DOI 10.1093/oxfordjournals.aje.a116881
+   FEYCHTING M, 1995, AM J EPIDEMIOL, V141, P378, DOI 10.1093/aje/141.4.378-a
+   FEYCHTING M, 1992, 692 IMM, V0, P0
+   Foster Kenneth R, 1996, P25, V0, P0
+   FRANKEL RB, 1900, P149, V0, P0
+   FRIEDENBZB, 1971, J BONE JOINT SURG AM, VA 53, P1400, DOI 10.2106/00004623-197153070-00018
+   FRIEDENBERG ZB, 1971, J TRAUM, V11, P883, DOI 10.1097/00005373-197110000-00010
+   FRIEDENBERG ZB, 1966, J BONE JOINT SURG AM, VA 48, P915, DOI 10.2106/00004623-196648050-00009
+   FRIEDENBERG ZB, 1973, CALCIF TISSUE RES, V13, P52
+   FUKADA E, 1957, J PHYS SOC JPN, V12, P1158, DOI 10.1143/JPSJ.12.1158
+   GRAVES R, 1952, WEATHER OLYMPUS COLL, V0, P0
+   GUY AW, 1982, BIOELECTROMAGNETICS, V3, P47, DOI 10.1002/bem.2250030110
+   HALLE B, 1988, BIOELECTROMAGNETICS, V9, P381, DOI 10.1002/bem.2250090408
+   Henshaw DL, 1996, INT J RADIAT BIOL, V69, P25, DOI 10.1080/095530096146156
+   HEYWOOD BR, 1991, MATER RES SOC SYMP P, V218, P93
+   HILL AB, 1961, P ROY SOC MED, V58, P295
+   Hille B, 1991, IONIC CHANNELS EXCIT, V0, P0
+   HODGKINS AL, 1952, J PHYSIOL-LONDON, V117, P127
+   HUDSPETH AJ, 1985, SCIENCE, V230, P745, DOI 10.1126/science.2414845
+   IERAN M, 1990, J ORTHOPAED RES, V8, P276, DOI 10.1002/jor.1100080217
+   Johnson JB, 1928, PHYS REV, V32, P97, DOI 10.1103/PhysRev.32.97
+   KAISER F, 1993, 9 ANN REV PROG APP C, V0, P425
+   KALMIJN AJ, 1966, NATURE, V212, P1232, DOI 10.1038/2121232b0
+   KATO M, 1993, BIOELECTROMAGNETICS, V14, P97, DOI 10.1002/bem.2250140203
+   KEITH AD, 1974, SCIENCE, V183, P666, DOI 10.1126/science.183.4125.666
+   KELTNER JR, 1990, MAGNET RESON MED, V16, P139, DOI 10.1002/mrm.1910160113
+   Kirschvink JL, 1997, J EXP BIOL, V200, P1363
+   KIRSCHVINK JL, 1981, BIOSYSTEMS, V13, P181, DOI 10.1016/0303-2647(81)90060-5
+   KIRSCHVINK JL, 1992, P NATL ACAD SCI USA, V89, P7683, DOI 10.1073/pnas.89.16.7683
+   KIRSCHVINK JL, 1991, AM ZOOL, V31, P169
+   KNAVE B, 1979, SCAND J WORK ENV HEA, V5, P115, DOI 10.5271/sjweh.2661
+   KRUGLIKOV IL, 1994, BIOELECTROMAGNETICS, V15, P539, DOI 10.1002/bem.2250150607
+   LACYHULBERT A, 1995, RADIAT RES, V144, P9, DOI 10.2307/3579230
+   LANGMUIR I, 1989, PHYS TODAY, V42, P36, DOI 10.1063/1.881205
+   LEDNEV VV, 1991, BIOELECTROMAGNETICS, V12, P71, DOI 10.1002/bem.2250120202
+   LEE QP, 1987, 9 ANN BIOEL SOC M PO, V0, P10
+   LIBOFF A R, 1985, JOURNAL OF BIOLOGICAL PHYSICS, V13, P99, DOI 10.1007/BF01878387
+   LIBOFF AR, 1988, BIOELECTROMAGNETICS, V9, P39, DOI 10.1002/bem.2250090104
+   LIN JC, 1996, CRC HDB BIOL EFFECTS, V0, P337
+   LINDBOHM ML, 1992, AM J EPIDEMIOL, V136, P1041, DOI 10.1093/oxfordjournals.aje.a116569
+   LITOVITZ TA, 1991, BIOCHEM BIOPH RES CO, V178, P862, DOI 10.1016/0006-291X(91)90970-I
+   LU J, 1994, BIOPHYS J, V67, P1525, DOI 10.1016/S0006-3495(94)80626-5
+   Mandeville R, 1997, FASEB J, V11, P1127, DOI 10.1096/fasebj.11.13.9367347
+   MCLEAN MJ, 1995, BIOELECTROMAGNETICS, V16, P20, DOI 10.1002/bem.2250160108
+   MCLEOD KJ, 1992, J BONE JOINT SURG AM, V74A, P920, DOI 10.2106/00004623-199274060-00014
+   MCNAMARA B, 1989, PHYS REV A, V39, P4854, DOI 10.1103/PhysRevA.39.4854
+   MEYER T, 1991, ANNU REV BIOPHYS BIO, V20, P153, DOI 10.1146/annurev.biophys.20.1.153
+   MURRAY RW, 1962, J EXP BIOL, V39, P119
+   *NIEHS, 1999, 994493 NIEHS NIH, V0, P0
+   *NIH, 1998, 983978 NIH US DEP HL, V0, P0
+   NUNCY PL, 1981, ELECT FIELDS BODY NE, V0, P0
+   Nyquist H, 1928, PHYS REV, V32, P110, DOI 10.1103/PhysRev.32.110
+   OLSEN JH, 1993, BRIT MED J, V307, P891, DOI 10.1136/bmj.307.6909.891
+   Owen RD, 1998, RADIAT RES, V150, P23, DOI 10.2307/3579641
+   PARKINSON WC, 1989, BIOL BULL, V176, P170, DOI 10.2307/1541669
+   PICKARD WF, 1988, IEEE T BIO-MED ENG, V35, P243, DOI 10.1109/10.1372
+   PODGORETSKII MI, 1964, SOV PHYS USP, V6, P682
+   POLK C, 1994, BIOELECTROMAGNETICS, V15, P261, DOI 10.1002/bem.2250150308
+   POLK C, 1996, CRC HDB BIOL EFFECTS, V0, P231
+   POLLARD EC, 1979, AQUEOUS CYTOPLASM, V0, P9
+   POLSON MJR, 1982, MED BIOL ENG COMPUT, V20, P243, DOI 10.1007/BF02441362
+   RAISBECK G, 1964, INFORMATION THEORY, V0, P0
+   RASMUSSEN H, 1984, PHYSIOL REV, V64, P223
+   Reed DJ, 1984, PHARMACOL REV, V36, P0
+   Reiter R J, 1980, ENDOCR REV, V1, P109
+   REITER RJ, 1991, ENDOCR REV, V12, P151, DOI 10.1210/edrv-12-2-151
+   REITER RJ, 1990, EXTREMELY LOW FREQUE, V0, P87
+   RYABY JT, 1993, ELECTRICITY AND MAGNETISM IN BIOLOGY AND MEDICINE, V0, P371
+   SAFFER JD, 1995, NATURE, V375, P22, DOI 10.1038/375022a0
+   SANDWEISS J, 1990, BIOELECTROMAGNETICS, V11, P203, DOI 10.1002/bem.2250110210
+   Sastre A, 1998, BIOELECTROMAGNETICS, V19, P98
+   Savitz DA, 1999, AM J EPIDEMIOL, V149, P135
+   SCHNORR TM, 1991, NEW ENGL J MED, V325, P812
+   SCHULTEN K, 1982, FESTKOR-ADV SOLID ST, V22, P61, DOI 10.1007/BFb0107935
+   SOMMERFELD A, 1952, ELECTRODYNAMICS, V0, P45
+   STEVENS RG, 1987, AM J EPIDEMIOL, V125, P556, DOI 10.1093/oxfordjournals.aje.a114569
+   STEVENS RG, 1990, EXTREMELY LOW FREQUE, V0, P9
+   STEVENS RG, 1996, CRC HDB BIOL EFFECTS, V0, P275
+   Swanson John, 1999, JOURNAL OF RADIOLOGICAL PROTECTION, V19, P213, DOI 10.1088/0952-4746/19/3/202
+   TAUBE G, 1993, BAD SCI, V0, P0
+   TENFORDE T, 1996, CRC HDB BIOL EFFECTS, V0, P185
+   TENFORDE TS, 1990, EXTREMELY LOW FREQUE, V0, P291
+   Vali H, 1990, IRON BIOMINERALS, V0, P97
+   Vallbona C, 1997, ARCH PHYS MED REHAB, V78, P1200, DOI 10.1016/S0003-9993(97)90332-4
+   Vergano D, 1999, SCIENCE, V285, P23
+   VERKASALO PK, 1993, BRIT MED J, V307, P895, DOI 10.1136/bmj.307.6909.895
+   WALKER MM, 1985, J COMP PHYSIOL A, V157, P67, DOI 10.1007/BF00611096
+   Weaver JC, 1999, BIOPHYS J, V76, P3026, DOI 10.1016/S0006-3495(99)77455-2
+   WEAVER JC, 1990, SCIENCE, V247, P459, DOI 10.1126/science.2300806
+   WERTHEIMER N, 1979, AM J EPIDEMIOL, V109, P273, DOI 10.1093/oxfordjournals.aje.a112681
+   WILSON R, 1995, AM J EPIDEMIOL, V141, P378, DOI 10.1093/aje/141.4.378
+   Yasui M, 1997, BIOELECTROMAGNETICS, V18, P531, DOI 10.1002/(SICI)1521-186X(1997)18:8<531::AID-BEM1>3.0.CO;2-3
+NR 141
+TC 34
+Z9 36
+U1 0
+U2 18
+PU IOP PUBLISHING LTD
+PI BRISTOL
+PA TEMPLE CIRCUS, TEMPLE WAY, BRISTOL BS1 6BE, ENGLAND
+SN 0034-4885
+EI 1361-6633
+J9 REP PROG PHYS
+JI Rep. Prog. Phys.
+PD MAR 15
+PY 2000
+VL 63
+IS 3
+BP 415
+EP 454
+DI 10.1088/0034-4885/63/3/204
+PG 40
+WC Physics, Multidisciplinary
+SC Physics
+GA 300AA
+UT WOS:000086229600004
+DA 2022-09-21
+ER
+
+PT J
+AU Blatteis, CM
+AF Blatteis, CM
+TI The afferent signalling of fever
+SO JOURNAL OF PHYSIOLOGY-LONDON
+LA English
+DT Article
+ID cytokine
+C1 Univ Tennessee, Ctr Hlth Sci, Coll Med, Dept Physiol, Memphis, TN 38163 USA.
+RP Blatteis, CM (通讯作者)，Univ Tennessee, Ctr Hlth Sci, Coll Med, Dept Physiol, Memphis, TN 38163 USA.
+CR Blatteis CM, 1997, NEWS PHYSIOL SCI, V12, P1
+   Cartmell T, 2000, J PHYSIOL-LONDON, V526, P653, DOI 10.1111/j.1469-7793.2000.00653.x
+   Kozak W, 1998, ANN NY ACAD SCI, V856, P33, DOI 10.1111/j.1749-6632.1998.tb08310.x
+   ROSS G, 1999, PFLUGERS ARCH S, V437, P0
+   Zetterstrom M, 1998, ANN NY ACAD SCI, V856, P48, DOI 10.1111/j.1749-6632.1998.tb08311.x
+NR 5
+TC 34
+Z9 34
+U1 0
+U2 1
+PU CAMBRIDGE UNIV PRESS
+PI NEW YORK
+PA 40 WEST 20TH STREET, NEW YORK, NY 10011-4211 USA
+SN 0022-3751
+EI 
+J9 J PHYSIOL-LONDON
+JI J. Physiol.-London
+PD AUG 1
+PY 2000
+VL 526
+IS 3
+BP 470
+EP 470
+DI 
+PG 1
+WC Neurosciences; Physiology
+SC Neurosciences & Neurology; Physiology
+GA 352EX
+UT WOS:000089202500002
+PM 10921998
+DA 2022-09-21
+ER
+
+PT J
+AU Aubele, M
+   Cummings, M
+   Walch, A
+   Zitzelsberger, H
+   Nahrig, J
+   Hofler, H
+   Werner, M
+AF Aubele, M
+   Cummings, M
+   Walch, A
+   Zitzelsberger, H
+   Nahrig, J
+   Hofler, H
+   Werner, M
+TI Heterogeneous chromosomal aberrations in intraductal breast lesions adjacent to invasive carcinoma
+SO ANALYTICAL CELLULAR PATHOLOGY
+LA English
+DT Article
+ID comparative genomic hybridization; oligonucleotide-primed pcr; ductal carcinoma; in-situ; laser-microdissection; genetic-heterogeneity; dna amplification; cancer; hyperplasia; heterozygosity
+AB There is evidence that breast cancer is a heterogeneous disease phenotypically as well as molecular biologically. So far, heterogeneity on the molecular biological level has not been investigated in potential precursor lesions, such as ductal hyperplasia (DH) and ductal carcinoma in situ (DCIS). In this study we applied comparative genomic hybridization (CGH) to formalin-fixed, paraffin-embedded breast tissue with DH and DCIS, adjacent to invasive ductal carcinoma (IDC), to screen these potential precursor lesions for whole genomic chromosomal imbalances. Laser-microdissection was used to select pure cell populations from the sections. Isolated DNA was amplified by degenerate oligonucleotide primed PCR (DOP-PCR) and further processed for CGH analysis. Investigating multiple samples (n=25) from four patients we found an average of 5.6 +/- 0.9 (mean +/- SEM) chromosomal imbalances already present in DH. In the twelve DCIS lesions an average of 10.8 (+/- 0.9) aberrations was identified with 14.8 (+/- 0.8) aberrations in the four adjacent IDC lesions. The increasing number of chromosomal changes in parallel with the histopathological sequence corroborate the hypothesis, that the carcinomas may have developed through a sequential progression from normal to proliferative epithelium and eventually into carcinoma. However, heterogeneous results were identified in the multiple samples per entity from the same patient, demonstrated mainly in the DCIS samples in the chromosomal regions 6p, 9p, 11q, 16p and 17q, in the DH samples by 3p, 16p and 17q. This heterogeneous findings were most pronounced within the DH and was less in the DCIS and IDC samples. The only aberration consistently found in all samples - even in all DH samples - was amplification of the 20q13 region. Our results demonstrate, that the applied combination of laser-microdissection, DOP-PCR and CGH, may serve to analyse breast carcinogenesis pathways in suitable histological material. However, so far, it is unclear how to handle heterogeneous results and these make identification of relevant changes more difficult. Setting a threshold and valuating only those chromosomal changes which are present in a majority of samples may be one possibility. This involves however, the risk that infrequent but possibly significant aberrations may be missed. Figures on http://www.esacp.org/acp/2000/20-1/aubele.htm.
+C1 GSF, Natl Res Ctr Environm & Hlth, Inst Pathol, D-85764 Neuherberg, Germany.
+   Univ Queensland, Sch Med, Dept Pathol, St Lucia, Qld 4067, Australia.
+   GSF, Natl Res Ctr Environm & Hlth, Inst Radiobiol, Neuherberg, Germany.
+   Univ Munich, Inst Radiobiol, Munich, Germany.
+   Tech Univ Munich, Inst Pathol, D-8000 Munich, Germany.
+RP Aubele, M (通讯作者)，GSF, Natl Res Ctr Environm & Hlth, Inst Pathol, Ingolstadter Landstr 1, D-85764 Neuherberg, Germany.
+CR Anzick SL, 1997, SCIENCE, V277, P965, DOI 10.1126/science.277.5328.965
+   Aubele M, 1999, CANCER GENET CYTOGEN, V110, P94, DOI 10.1016/S0165-4608(98)00205-2
+   Aubele M, 2000, INT J CANCER, V85, P82, DOI 10.1002/(SICI)1097-0215(20000101)85:1<82::AID-IJC15>3.0.CO;2-S
+   Beckmann MW, 1997, J MOL MED, V75, P429, DOI 10.1007/s001090050128
+   BLOOM HJG, 1957, BRIT J CANCER, V11, P359, DOI 10.1038/bjc.1957.43
+   Buerger H, 1999, J PATHOL, V187, P396, DOI 10.1002/(SICI)1096-9896(199903)187:4<396::AID-PATH286>3.0.CO;2-L
+   Chappell SA, 1997, BRIT J CANCER, V75, P1324, DOI 10.1038/bjc.1997.224
+   Coene ED, 1997, VIRCHOWS ARCH, V430, P365, DOI 10.1007/s004280050045
+   Cummings MC, 2000, BRIT J CANCER, V82, P1204
+   Heim S, 1997, CANCER GENET CYTOGEN, V95, P16, DOI 10.1016/S0165-4608(96)00322-6
+   ISOLA JJ, 1995, AM J PATHOL, V147, P905
+   James LA, 1997, ONCOGENE, V14, P1059, DOI 10.1038/sj.onc.1200923
+   KALLIONIEMI A, 1994, P NATL ACAD SCI USA, V91, P2156, DOI 10.1073/pnas.91.6.2156
+   KALLIONIEMI A, 1992, SCIENCE, V258, P818, DOI 10.1126/science.1359641
+   Kasami M, 1997, AM J PATHOL, V150, P1925
+   Kuukasjarvi T, 1997, CANCER RES, V57, P1597
+   Lakhani SR, 1999, J PATHOL, V187, P272, DOI 10.1002/(SICI)1096-9896(199902)187:3<272::AID-PATH265>3.0.CO;2-2
+   Moore E, 1999, J PATHOL, V187, P403, DOI 10.1002/(SICI)1096-9896(199903)187:4<403::AID-PATH284>3.0.CO;2-J
+   Newsham IF, 1998, AM J PATHOL, V153, P5, DOI 10.1016/S0002-9440(10)65538-1
+   Nishizaki T, 1997, GENE CHROMOSOME CANC, V19, P267, DOI 10.1002/(SICI)1098-2264(199708)19:4<267::AID-GCC9>3.0.CO;2-V
+   PAGE DL, 1985, CANCER, V55, P2698, DOI 10.1002/1097-0142(19850601)55:11<2698::AID-CNCR2820551127>3.0.CO;2-A
+   RADFORD DM, 1995, CANCER RES, V55, P3399
+   RIED T, 1995, CANCER RES, V55, P5415
+   ROSEN PP, 1993, TUMORS MAMMARY, V0, P0
+   SILVERSTEIN MJ, 1995, LANCET, V345, P1154
+   TANNER MM, 1994, CANCER RES, V54, P4257
+   Tanner MM, 1998, AM J PATHOL, V153, P191, DOI 10.1016/S0002-9440(10)65560-5
+   TEIXEIRA MR, 1995, INT J CANCER, V63, P63, DOI 10.1002/ijc.2910630113
+   TELENIUS H, 1992, GENOMICS, V13, P718, DOI 10.1016/0888-7543(92)90147-K
+   Tirkkonen M, 1998, GENE CHROMOSOME CANC, V21, P177, DOI 10.1002/(SICI)1098-2264(199803)21:3<177::AID-GCC1>3.0.CO;2-X
+   *UICC, 1997, LASS MAL TUM, V0, P0
+   Weber RG, 1998, AM J PATHOL, V153, P295, DOI 10.1016/S0002-9440(10)65571-X
+   Werner M, 1999, VIRCHOWS ARCH, V435, P469, DOI 10.1007/s004280050429
+   Zitzelsberger H, 1998, VIRCHOWS ARCH, V433, P297, DOI 10.1007/s004280050252
+NR 34
+TC 27
+Z9 27
+U1 0
+U2 0
+PU IOS PRESS
+PI AMSTERDAM
+PA NIEUWE HEMWEG 6B, 1013 BG AMSTERDAM, NETHERLANDS
+SN 0921-8912
+EI 
+J9 ANAL CELL PATHOL
+JI Anal. Cell. Pathol.
+PD JUN 15
+PY 2000
+VL 20
+IS 1
+BP 17
+EP 24
+DI 10.1155/2000/930246
+PG 8
+WC Oncology; Cell Biology; Pathology
+SC Oncology; Cell Biology; Pathology
+GA 338GB
+UT WOS:000088409200003
+PM 11007434
+DA 2022-09-21
+ER
+
+PT J
+AU Konsman, JP
+   Luheshi, GN
+   Bluthe, RM
+   Dantzer, R
+AF Konsman, JP
+   Luheshi, GN
+   Bluthe, RM
+   Dantzer, R
+TI The vagus nerve mediates behavioural depression, but not fever, in response to peripheral immune signals; a functional anatomical analysis
+SO EUROPEAN JOURNAL OF NEUROSCIENCE
+LA English
+DT Article
+DE Fos; interleukin-1; neuro-immune interactions; rat; Stat3
+ID interleukin-1 receptor antagonist; subdiaphragmatic vagotomy blocks; lipopolysaccharide-induced fever; c-fos expression; rat-brain; messenger-rna; transcription factor; febrile response; localized inflammation; abdominal vagotomy
+AB Cytokines act on the brain to induce fever and behavioural depression after infection. Although several mechanisms of cytokine-to-brain communication have been proposed, their physiological significance is unclear. We propose that behavioural depression is mediated by the vagus nerve activating limbic structures, while fever would primarily be due to humoral mechanisms affecting the preoptic area, including interleukin-6 (IL-6) action on the organum vasculosum of the laminae terminalis (OVLT) and induction of prostaglandins. This study assessed the effects of subdiaphragmatic vagotomy in rats on fever, behavioural depression, as measured by the social interaction test, and Fos expression in the brain. These responses were compared with induction of the prostaglandin-producing enzyme cyclooxygenase-2 and the transcription factor Stat3 that translocates after binding of IL-6, Vagotomy blocked behavioural depression after intraperitoneal injection of recombinant rat IL-1 beta (25 mug/kg) or lipopolysaccharide (250 mug/kg; LPS) and prevented Fos expression in limbic structures and ventromedial preoptic area, but not in the OVLT. Fever was not affected by vagotomy, but associated with translocation of Stat3 in the OVLT and cyclooxygenase-2 induction around blood vessels. These results indicate that the recently proposed vagal link between the immune system and the brain activates limbic structures to induce behavioural depression after abdominal inflammation. Although the vagus might play a role in fever in response to low doses of LPS by activating the ventromedial preoptic area, it is likely to be overridden during more severe infection by action of circulating IL-6 on the OVLT or prostaglandins induced along blood vessels of the preoptic area.
+C1 Inst Francois Magendie, INSERM, U394, F-33077 Bordeaux, France.
+   Douglas Hosp, Res Ctr, Verdun, PQ H4H 1R3, Canada.
+RP Konsman, JP (通讯作者)，Fac Hlth Sci, Dept Biomed & Surg, Div Cell Biol, Floor 11, S-58185 Linkoping, Sweden.
+EM jpkonsman@hotmail.com
+CR ADACHI A, 1984, J AUTONOM NERV SYST, V10, P269, DOI 10.1016/0165-1838(84)90023-7
+   Anforth HR, 1998, EUR CYTOKINE NETW, V9, P279
+   Audoly LP, 1999, J PHARMACOL EXP THER, V289, P140
+   BANNWARTH B, 1990, EUR J CLIN PHARMACOL, V38, P343, DOI 10.1007/BF00315572
+   BLATTEIS CM, 1992, PROG BRAIN RES, V91, P409
+   Bluthe RM, 1996, NEUROREPORT, V7, P1485, DOI 10.1097/00001756-199606170-00008
+   BLUTHE RM, 1994, CR ACAD SCI III-VIE, V317, P499
+   BLUTHE RM, 1992, BRAIN RES, V573, P318, DOI 10.1016/0006-8993(92)90779-9
+   Bluthe RM, 1996, NEUROREPORT, V7, P2823, DOI 10.1097/00001756-199611040-00083
+   BOULANT JA, 1981, FED PROC, V40, P2843
+   BREDER CD, 1995, J COMP NEUROL, V355, P296, DOI 10.1002/cne.903550208
+   Caldwell FT, 1999, J TRAUMA, V47, P120, DOI 10.1097/00005373-199907000-00025
+   Caldwell FT, 1998, J TRAUMA, V44, P304, DOI 10.1097/00005373-199802000-00012
+   Cao CY, 1996, BRAIN RES, V733, P263, DOI 10.1016/0006-8993(96)00575-6
+   Cartmell T, 2000, J PHYSIOL-LONDON, V526, P653, DOI 10.1111/j.1469-7793.2000.00653.x
+   Chai Z, 1996, J EXP MED, V183, P311, DOI 10.1084/jem.183.1.311
+   CUNNINGHAM ET, 1988, J COMP NEUROL, V274, P60, DOI 10.1002/cne.902740107
+   DANTZER R, 1994, EUR CYTOKINE NETW, V5, P271
+   Day HEW, 1999, J COMP NEUROL, V413, P113
+   DINARELLO CA, 1992, P SOC EXP BIOL MED, V200, P228
+   Ek M, 1998, J NEUROSCI, V18, P9471
+   Elmquist JK, 1997, TRENDS NEUROSCI, V20, P565, DOI 10.1016/S0166-2236(97)01138-7
+   Elmquist JK, 1997, J COMP NEUROL, V381, P119, DOI 10.1002/(SICI)1096-9861(19970505)381:2<119::AID-CNE1>3.0.CO;2-6
+   Elmquist JK, 1996, J COMP NEUROL, V371, P85, DOI 10.1002/(SICI)1096-9861(19960715)371:1<85::AID-CNE5>3.0.CO;2-H
+   ERICSSON A, 1994, J NEUROSCI, V14, P897
+   Fleshner M, 1998, J NEUROIMMUNOL, V86, P134, DOI 10.1016/S0165-5728(98)00026-5
+   GAYKEMA RPA, 1995, ENDOCRINOLOGY, V136, P4717, DOI 10.1210/en.136.10.4717
+   Goehler LE, 1997, BRAIN RES BULL, V43, P357, DOI 10.1016/S0361-9230(97)00020-8
+   Hakansson ML, 1998, NEUROENDOCRINOLOGY, V68, P420, DOI 10.1159/000054392
+   Hansen MK, 2000, AM J PHYSIOL-REG I, V278, PR331, DOI 10.1152/ajpregu.2000.278.2.R331
+   Hansen MK, 1998, J NEUROSCI, V18, P2247
+   Hansen MK, 1997, AM J PHYSIOL-REG I, V273, PR1246, DOI 10.1152/ajpregu.1997.273.4.R1246
+   HART BL, 1988, NEUROSCI BIOBEHAV R, V12, P123, DOI 10.1016/S0149-7634(88)80004-6
+   Heinrich PC, 1998, BIOCHEM J, V334, P297, DOI 10.1042/bj3340297
+   HIRANO T, 1994, STEM CELLS, V12, P262, DOI 10.1002/stem.5530120303
+   HORAN MA, 1989, CAN J PHYSIOL PHARM, V67, P1011, DOI 10.1139/y89-159
+   Ishizuka Y, 1997, NEUROSCI LETT, V223, P57, DOI 10.1016/S0304-3940(97)13388-2
+   Kapcala LP, 1996, BRAIN RES, V728, P247, DOI 10.1016/S0006-8993(96)00511-2
+   KLUGER MJ, 1991, PHYSIOL REV, V71, P93, DOI 10.1152/physrev.1991.71.1.93
+   Konsman JP, 1999, NEUROSCIENCE, V89, P535, DOI 10.1016/S0306-4522(98)00368-6
+   Kovacs KJ, 1998, NEUROCHEM INT, V33, P287, DOI 10.1016/S0197-0186(98)00023-0
+   KRALY FS, 1986, APPETITE, V7, P1, DOI 10.1016/S0195-6663(86)80038-1
+   Lacosta S, 1999, BRAIN RES, V818, P291, DOI 10.1016/S0006-8993(98)01288-8
+   Lacroix S, 1998, BRAIN PATHOL, V8, P625, DOI 10.1111/j.1750-3639.1998.tb00189.x
+   Lacroix S, 1997, J COMP NEUROL, V387, P307, DOI 10.1002/(SICI)1096-9861(19971020)387:2<307::AID-CNE11>3.0.CO;2-R
+   Laflamme N, 1999, J NEUROSCI, V19, P10923, DOI 10.1523/JNEUROSCI.19-24-10923.1999
+   LAYE S, 1995, AM J PHYSIOL-REG I, V268, PR1327, DOI 10.1152/ajpregu.1995.268.5.R1327
+   Lenczowski MJP, 1999, AM J PHYSIOL-REG I, V276, PR652, DOI 10.1152/ajpregu.1999.276.3.R652
+   Lenczowski MJP, 1997, AM J PHYSIOL-REG I, V273, PR1870, DOI 10.1152/ajpregu.1997.273.6.R1870
+   Li H, 1997, NEUROSCI LETT, V222, P53, DOI 10.1016/S0304-3940(97)13341-9
+   Li S, 1999, BRAIN RES, V825, P86, DOI 10.1016/S0006-8993(99)01225-1
+   LIN MT, 1985, EXP NEUROL, V88, P467, DOI 10.1016/0014-4886(85)90208-0
+   Linthorst ACE, 1995, EUR J NEUROSCI, V7, P2418, DOI 10.1111/j.1460-9568.1995.tb01040.x
+   Luheshi G, 1996, AM J PHYSIOL-ENDOC M, V270, PE91, DOI 10.1152/ajpendo.1996.270.1.E91
+   Matsumura K, 1998, J NEUROSCI, V18, P6279
+   MILNER TA, 1986, J NEUROSCI, V6, P2585
+   MURABE Y, 1981, CELL TISSUE RES, V219, P85
+   Nakamura K, 1999, NEUROSCI LETT, V260, P117, DOI 10.1016/S0304-3940(98)00962-8
+   Niijima A, 1996, J AUTONOM NERV SYST, V61, P287, DOI 10.1016/S0165-1838(96)00098-7
+   Opp MR, 1998, LIFE SCI, V62, P923, DOI 10.1016/S0024-3205(98)00010-1
+   POMERANTZ KB, 1993, BIOCHEMISTRY-US, V32, P13624, DOI 10.1021/bi00212a030
+   RICHE D, 1990, J COMP NEUROL, V293, P399, DOI 10.1002/cne.902930306
+   Romanovsky AA, 1997, AM J PHYSIOL-REG I, V273, PR407, DOI 10.1152/ajpregu.1997.273.1.R407
+   Romanovsky AA, 1998, AM J PHYSIOL-REG I, V275, PR332, DOI 10.1152/ajpregu.1998.275.1.R332
+   ROTHWELL NJ, 1995, TRENDS NEUROSCI, V18, P130, DOI 10.1016/0166-2236(95)93890-A
+   ROTHWELL NJ, 1991, CAN J PHYSIOL PHARM, V69, P1465, DOI 10.1139/y91-219
+   SAGAR SM, 1995, BRAIN RES BULL, V36, P381, DOI 10.1016/0361-9230(94)00217-O
+   SAPER CB, 1983, NEUROSCI LETT, V42, P285, DOI 10.1016/0304-3940(83)90276-8
+   SAWCHENKO PE, 1982, BRAIN RES REV, V4, P275, DOI 10.1016/0165-0173(82)90010-8
+   Sehic E, 1996, AM J PHYSIOL-REG I, V271, PR528, DOI 10.1152/ajpregu.1996.271.3.R528
+   Sehic E, 1996, BRAIN RES, V726, P160
+   SMITH GP, 1981, SCIENCE, V213, P1036, DOI 10.1126/science.7268408
+   SPADARO F, 1990, BRAIN BEHAV IMMUN, V4, P308, DOI 10.1016/0889-1591(90)90034-N
+   Stromberg H, 2000, BRAIN RES, V853, P105, DOI 10.1016/S0006-8993(99)02260-X
+   SUMAL KK, 1983, BRAIN RES, V277, P31, DOI 10.1016/0006-8993(83)90904-6
+   Tkacs NC, 1999, BRAIN RES BULL, V48, P223, DOI 10.1016/S0361-9230(98)00167-1
+   Traub RJ, 1996, NEUROSCIENCE, V74, P873, DOI 10.1016/0306-4522(96)00173-X
+   Ushikubi F, 1998, NATURE, V395, P281, DOI 10.1038/26233
+   Vallieres L, 1997, J NEUROCHEM, V69, P1668, DOI 10.1046/j.1471-4159.1997.69041668.x
+   Vallieres L, 1997, EUR J NEUROSCI, V9, P1461, DOI 10.1111/j.1460-9568.1997.tb01500.x
+   Van Dam AM, 2000, NEUROSCI LETT, V285, P169, DOI 10.1016/S0304-3940(00)01031-4
+   WAN WH, 1994, BRAIN RES BULL, V34, P7, DOI 10.1016/0361-9230(94)90179-1
+   WATKINS LR, 1995, NEUROSCI LETT, V183, P27, DOI 10.1016/0304-3940(94)11105-R
+   Yasui M, 1995, HEPATO-GASTROENTEROL, V42, P683
+   Zhang J, 1999, EUR J NEUROSCI, V11, P2651, DOI 10.1046/j.1460-9568.1999.00682.x
+   Zhang YH, 2000, J NEUROSCI, V20, P6578, DOI 10.1523/JNEUROSCI.20-17-06578.2000
+NR 86
+TC 164
+Z9 167
+U1 0
+U2 9
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0953-816X
+EI 1460-9568
+J9 EUR J NEUROSCI
+JI Eur. J. Neurosci.
+PD DEC 15
+PY 2000
+VL 12
+IS 12
+BP 4434
+EP 4446
+DI 10.1046/j.0953-816X.2000.01319.x
+PG 13
+WC Neurosciences
+SC Neurosciences & Neurology
+GA 387FV
+UT WOS:000166113000027
+PM 11122354
+DA 2022-09-21
+ER
+
+PT J
+AU Takahashi, N
+   Fujibayashi, Y
+   Yonekura, Y
+   Welch, MJ
+   Waki, A
+   Tsuchida, T
+   Sadato, N
+   Sugimoto, K
+   Itoh, H
+AF Takahashi, N
+   Fujibayashi, Y
+   Yonekura, Y
+   Welch, MJ
+   Waki, A
+   Tsuchida, T
+   Sadato, N
+   Sugimoto, K
+   Itoh, H
+TI Evaluation of Cu-62 labeled diacetyl-bis(N-4-methoylthiosemicarbazone) as a hypoxic tissue tracer in patients with lung cancer
+SO ANNALS OF NUCLEAR MEDICINE
+LA English
+DT Article
+DE Cu-62-ATSM; hypoxia; lung cancer; F-18-FDG; PET
+ID intravenous (h2o)-o-15; complex; cells; model; pet
+AB Cu-62 labeled diacetyl-bis(N-4-methylthiosemicarbazone) (Cu-62-ATSM) has been proposed as a generator-produced, positron-emitting tracer for hypoxic tissue imaging. From basic studies, the retention mechanism of Cu-62-ATSM is considered to be closely related to cytosolic/microsomal bioreduction, a possible system for hypoxic bioreductive drug activation. In order to evaluate the characteristics of Cu-62-ATSM, PET studies were performed in 4 normal subjects and 6 patients with lung cancer. Cu-62-ATSM cleared rapidly from the blood with little lung uptake (0.43 +/- 0.09, uptake ratio; divided by the arterial input function) in normal subjects. Intense tumor uptake of Cu-62-ATSM was observed in all patients with lung cancer (3.00 +/- 1.50). A negative correlation was observed between blood flow and flow-normalized Cu-62-ATSM uptake in three of four patients. In contrast, Cu-62-ATSM uptake was not related to that of F-18-fluorodeoxyglucose. The negative correlation between blood flow and flow normalized Cu-62-ATSM uptake suggests an enhancement of retention of Cu-62-ATSM by low flow. Cu-62-ATSM is a promising FET tracer for tumor imaging, which might bring new information for chemotherapeutic treatment as well as radiotherapy of hypoxic tumors.
+C1 Fukui Med Univ, Dept Radiol, Matsuoka, Fukui 9101137, Japan.
+   Fukui Med Univ, Biomed Imaging Res Ctr, Matsuoka, Fukui 9101137, Japan.
+   Washington Univ, Sch Med, Edward Mallinckrodt Inst Radiol, St Louis, MO 63110 USA.
+RP Tsuchida, T (通讯作者)，Fukui Med Univ, Dept Radiol, Matsuoka, Fukui 9101137, Japan.
+CR CHAPMAN JD, 1983, CANCER RES, V43, P1523
+   COLEMAN CN, 1988, J NATL CANCER I, V80, P310, DOI 10.1093/jnci/80.5.310
+   DEGRADO TR, 1994, J NUCL MED, V35, P1398
+   Fujibayashi Y, 1997, J NUCL MED, V38, P1155
+   Fujibayashi Y, 1995, ANN NUCL MED, V9, P1
+   Fujibayashi Y, 1998, J NUCL MED, V39, P0
+   GINGRAS BA, 1962, CAN J CHEM, V40, P1053, DOI 10.1139/v62-161
+   HERSCOVITCH P, 1983, J NUCL MED, V24, P782
+   JERABEK PA, 1986, APPL RADIAT ISOTOPES, V37, P599, DOI 10.1016/0883-2889(86)90079-1
+   KOH WJ, 1992, INT J RADIAT ONCOL, V22, P199, DOI 10.1016/0360-3016(92)91001-4
+   Lewis JS, 1999, J NUCL MED, V40, P177
+   LINDER KE, 1994, J MED CHEM, V37, P9, DOI 10.1021/jm00027a002
+   MANNAN RH, 1991, J NUCL MED, V32, P1764
+   MATSUMOTO K, 1992, NUCL MED BIOL, V19, P39
+   MEYER E, 1989, J NUCL MED, V30, P1069
+   RAICHLE ME, 1983, J NUCL MED, V24, P790
+   TEICHER BA, 1981, CANCER RES, V41, P73
+   WADA K, 1994, BIOL PHARM BULL, V17, P701
+NR 18
+TC 99
+Z9 104
+U1 3
+U2 11
+PU JAPANESE SOCIETY NUCLEAR MEDICINE
+PI TOKYO
+PA C/O JAPAN RADIOISOTOPE ASSOC, 28-45 HON-KOMAGOME 2-CHOME, BUNKYO-KU, TOKYO, 113-0021, JAPAN
+SN 0914-7187
+EI 
+J9 ANN NUCL MED
+JI Ann. Nucl. Med.
+PD OCT 15
+PY 2000
+VL 14
+IS 5
+BP 323
+EP 328
+DI 10.1007/BF02988690
+PG 6
+WC Radiology, Nuclear Medicine & Medical Imaging
+SC Radiology, Nuclear Medicine & Medical Imaging
+GA 374LC
+UT WOS:000165345800001
+PM 11108159
+DA 2022-09-21
+ER
+
+PT J
+AU Quach, KY
+   Morales, J
+   Butson, MJ
+   Rosenfeld, AB
+   Metcalfe, PE
+AF Quach, KY
+   Morales, J
+   Butson, MJ
+   Rosenfeld, AB
+   Metcalfe, PE
+TI Measurement of radiotherapy x-ray skin dose on a chest wall phantom
+SO MEDICAL PHYSICS
+LA English
+DT Article
+DE radiotherapy; skin; radiochromic firm; thermoluminescent dosimeter; MOSFET
+ID radiochromic film dosimetry; radiation dosimeter; tld extrapolation; dependence; beams; light
+AB Sufficient skin dose needs to be delivered by a radiotherapy chest wall treatment regimen to ensure the probability of a near surface tumor recurrence is minimized. To simulate a chest wall treatment a hemicylindrical solid water phantom of 7.5 cm radius was irradiated with 6 MV x-rays using 20x20 cm(2) and 10x20 cm(2) fields at 100 cm source surface distance (SSD) to the base of the phantom. A surface dose profile was obtained from 0 to 180 degrees, in 10 degrees increments around the circumference of the phantom. Dosimetry results obtained from radiochromic film (effective depth of 0.17 mm) were used in the investigation, the superficial doses were found to be 28% (of D-max) at the 0 degrees beam entry position and 58% at the 90 degrees oblique beam position. Superficial dose results were also obtained using extra thin thermoluminescent dosimeters (TLD) (effective depth 0.14 mm) of 30% at 0 degrees, 57% at 90 degrees, and a metal oxide semiconductor field effect transistor (MOSFET) detector (effective depth 0.5 mm) of 43% at 0 degrees, 62% at 90 degrees. Because the differences in measured superficial doses were significant and beyond those related to experimental error, these differences are assumed to be mostly attributable to the effective depth of measurement of each detector. We numerically simulated a bolus on/bolus off technique and found we could increase the coverage to the shin. Using an alternate "bolus on," "bolus off" regimen, the skin would receive 36.8 Gy at 0 degrees incidence and 46.4 Gy at 90 degrees incidence for a prescribed midpoint dose of 50 Gy. From this work it is evident that, as the circumference of the phantom is traversed the SSD increases and hence there is an inverse square fluence fall-off, this is more than offset by the increase in skin dose due to surface curvature to a plateau at about 90 degrees. Beyond this angle it is assumed that beam attenuation through the phantom and inverse square fall-off is causing the surface dose to reduce. (C) 2000 American Association of Physicists in Medicine. [S0094-2405(00)00107-3].
+C1 Wollongong Hosp, Illawarra Canc Care Ctr, Dept Radiotherapy, Wollongong, NSW 2500, Australia.
+   Univ Wollongong, Wollongong, NSW 2500, Australia.
+RP Quach, KY (通讯作者)，Wollongong Hosp, Illawarra Canc Care Ctr, Dept Radiotherapy, POB 1798, Wollongong, NSW 2500, Australia.
+EM quachk@iahs.nsw.gov.au
+CR BIGGS PJ, 1983, PHYS MED BIOL, V28, P1033, DOI 10.1088/0031-9155/28/9/003
+   BRUCKER GJ, 1995, IEEE T NUCL SCI, V42, P33, DOI 10.1109/23.364879
+   Butson Martin J, 1996, AUSTRALASIAN PHYSICAL AND ENGINEERING SCIENCES IN MEDICINE, V19, P74
+   Butson MJ, 1999, MED PHYS, V26, P485, DOI 10.1118/1.598539
+   Butson MJ, 1998, PHYS MED BIOL, V43, P2407, DOI 10.1088/0031-9155/43/8/031
+   Butson MJ, 1998, PHYS MED BIOL, V43, P2647, DOI 10.1088/0031-9155/43/9/015
+   Carolan MG, 1997, AUSTRALASIAN PHYSICAL AND ENGINEERING SCIENCES IN MEDICINE, V20, P183
+   CONSTANTINOU C, 1982, MED PHYS, V9, P436, DOI 10.1118/1.595063
+   CUNNINGHAM JR, 1982, TISSUE INHOMOGENEITY, V1, P0
+   DUTREIX J, 1965, PHYS MED BIOL, V10, P177, DOI 10.1088/0031-9155/10/2/302
+   GLADSTONE DJ, 1994, MED PHYS, V21, P1721, DOI 10.1118/1.597214
+   Hall E, 2018, RADIOBIOLOGY RADIOLO, V0, P0, DOI DOI 10.1667/RR0771.1
+   HUGHES RC, 1988, INT J RADIAT ONCOL, V14, P963, DOI 10.1016/0360-3016(88)90019-3
+   Hunt F, 1996, RADIOGRAPHER, V43, P13
+   *ICRP, 1992, ICRP PUBL, V59, P0
+   Klassen NV, 1997, MED PHYS, V24, P1924, DOI 10.1118/1.598106
+   Kron T, 1998, PHYS MED BIOL, V43, P3235, DOI 10.1088/0031-9155/43/11/006
+   Kron T, 1996, RADIOTHER ONCOL, V41, P119, DOI 10.1016/S0167-8140(96)01795-1
+   KRON T, 1993, MED PHYS, V20, P703, DOI 10.1118/1.597019
+   KRON T, 1990, AUSTRALASIAN PHYSICAL AND ENGINEERING SCIENCES IN MEDICINE, V13, P192
+   MCLAUGHLIN W, 1996, RADIOCHROMIC SOLID S, V0, P152
+   McLaughlin W L, 1989, DOSIMETRY RAD PROCES, V0, P0
+   MCLAUGHLIN WL, 1991, NUCL INSTRUM METH A, V302, P165, DOI 10.1016/0168-9002(91)90506-L
+   METCALFE P, 1997, PHYSICS RADIOTHERAPY, V0, P0
+   Metcalfe P E, 1993, AUSTRALAS PHYS ENG SCI MED, V16, P155
+   MILAN J, 1974, BRIT J RADIOL, V47, P115, DOI 10.1259/0007-1285-47-554-115
+   Niroomand-Rad A, 1998, MED PHYS, V25, P2093, DOI 10.1118/1.598407
+   ORTON CG, 1972, BRIT J RADIOL, V45, P271, DOI 10.1259/0007-1285-45-532-271
+   PURDY JA, 1986, MED PHYS, V13, P259, DOI 10.1118/1.595908
+   RAO BM, 1988, MED PHYS, V15, P246, DOI 10.1118/1.596256
+   Reinstein LE, 1998, PHYS MED BIOL, V43, P2703, DOI 10.1088/0031-9155/43/10/001
+   Reinstein LE, 1997, MED PHYS, V24, P1935, DOI 10.1118/1.598107
+   Reinstein LE, 1999, MED PHYS, V26, P478, DOI 10.1118/1.598538
+   Thames HD, 1987, FRACTIONATION RADIOT, V0, P0
+   TURESSON I, 1989, RADIOTHER ONCOL, V15, P169, DOI 10.1016/0167-8140(89)90131-X
+   VARMA S, 1998, MED PHYS, V25, P1586
+   YIP TCK, 1985, CLIN RADIOL, V36, P149, DOI 10.1016/S0009-9260(85)80098-2
+NR 37
+TC 100
+Z9 100
+U1 0
+U2 6
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 0094-2405
+EI 2473-4209
+J9 MED PHYS
+JI Med. Phys.
+PD JUL 15
+PY 2000
+VL 27
+IS 7
+BP 1676
+EP 1680
+DI 10.1118/1.599035
+PG 5
+WC Radiology, Nuclear Medicine & Medical Imaging
+SC Radiology, Nuclear Medicine & Medical Imaging
+GA 337QG
+UT WOS:000088372700022
+PM 10947272
+DA 2022-09-21
+ER
+
+PT J
+AU Hu, GL
+   Chiang, H
+   Wu, RY
+   Lu, DJ
+AF Hu, GL
+   Chiang, H
+   Wu, RY
+   Lu, DJ
+TI Absence of ELF magnetic field effects on transcription of the connexin43 gene
+SO ELECTRO- AND MAGNETOBIOLOGY
+LA English
+DT Article
+ID junctional intercellular communication; liver epithelial-cells; protein-kinase-c; phorbol-ester; electromagnetic-fields; tumor promoters; gap; carcinogenesis; inhibition; cancer
+AB Studies in our laboratory have revealed that extremely low-frequency (ELF) magnetic fields (MF) suppress gap junctional intercellular communication (GJIC) in cultured cells. To explore the molecular mechanisms, the effect of 50-Hz, 0.8-mT MF on connexin43 gene transcription was studied. Transcriptional levels of the connexin43 gene in the mouse fibroblast cell line NIH3T3 and Chinese hamster lung (CHL) cells were examined by Northern blot analysis using a P-32-labeled connexin43 probe. Cells had been exposed to MF for 24 h and/or had received 2 h of 12-O-tetradecanoylphorbol-13-acetate (TPA) treatment. The connexin43 gene transcriptional level did not change significantly in any exposure groups.
+C1 Zhejiang Univ, Coll Med, Microwave Lab, Hangzhou 310031, Peoples R China.
+RP Hu, GL (通讯作者)，Zhejiang Univ, Coll Med, Microwave Lab, Hangzhou 310031, Peoples R China.
+CR ASAMOTO M, 1991, MOL CARCINOGEN, V4, P322, DOI 10.1002/mc.2940040411
+   BERTHOUD VM, 1993, EUR J CELL BIOL, V62, P384
+   BEYER EC, 1991, J BIOL CHEM, V266, P7971
+   Chiang H, 1999, ELECTRO MAGNETOBIOL, V18, P243, DOI 10.3109/15368379909022580
+   Cruciani VR, 1997, INT J CANCER, V73, P240, DOI 10.1002/(SICI)1097-0215(19971009)73:2<240::AID-IJC14>3.3.CO;2-D
+   de Feijter-Rupp HL, 1998, CARCINOGENESIS, V19, P747, DOI 10.1093/carcin/19.5.747
+   Feychting M, 1995, EUR J CANCER, V31A, P2035, DOI 10.1016/0959-8049(95)00472-6
+   FEYCHTING M, 1993, AM J EPIDEMIOL, V138, P467, DOI 10.1093/oxfordjournals.aje.a116881
+   FLODERUS B, 1993, CANCER CAUSE CONTROL, V4, P465, DOI 10.1007/BF00050866
+   Geimonen E, 1996, J BIOL CHEM, V271, P23667, DOI 10.1074/jbc.271.39.23667
+   KRUTOVSKIKH VA, 1995, LAB INVEST, V72, P571
+   Li CM, 1999, BIOELECTROMAGNETICS, V20, P290, DOI 10.1002/(SICI)1521-186X(1999)20:5<290::AID-BEM5>3.0.CO;2-6
+   Li CM, 1999, ELECTRO MAGNETOBIOL, V18, P249, DOI 10.3109/15368379909022581
+   LI CM, 1996, CHIN J IND HYG OCCUP, V14, P210
+   LOEWENSTEIN WR, 1990, AM REV RESPIR DIS, V142, P48
+   MATESIC DF, 1994, MOL CARCINOGEN, V10, P226, DOI 10.1002/mc.2940100407
+   OH SY, 1991, BIOCHIM BIOPHYS ACTA, V1094, P243, DOI 10.1016/0167-4889(91)90016-Q
+   Ren P, 1998, CARCINOGENESIS, V19, P169, DOI 10.1093/carcin/19.1.169
+   SULLIVAN R, 1995, J CELL BIOL, V130, P419, DOI 10.1083/jcb.130.2.419
+   TenBroek EM, 1997, DEV BIOL, V191, P88, DOI 10.1006/dbio.1997.8703
+   WERTHEIMER N, 1979, AM J EPIDEMIOL, V109, P273, DOI 10.1093/oxfordjournals.aje.a112681
+   Yamasaki H, 1999, NOVART FDN SYMP, V219, P241
+   Yamasaki H, 1999, CR ACAD SCI III-VIE, V322, P151, DOI 10.1016/S0764-4469(99)80038-9
+   Yamasaki H, 1999, CANCER DETECT PREV, V23, P273, DOI 10.1046/j.1525-1500.1999.99037.x
+   Yamasaki H, 1995, MUTAT RES-FUND MOL M, V333, P181, DOI 10.1016/0027-5107(95)00144-1
+NR 25
+TC 4
+Z9 6
+U1 0
+U2 2
+PU MARCEL DEKKER INC
+PI NEW YORK
+PA 270 MADISON AVE, NEW YORK, NY 10016 USA
+SN 1061-9526
+EI 
+J9 ELECTRO MAGNETOBIOL
+JI Electro Magnetobiol.
+PD JUN 15
+PY 2000
+VL 19
+IS 3
+BP 345
+EP 350
+DI 10.1081/JBC-100102125
+PG 6
+WC Biology; Biophysics
+SC Life Sciences & Biomedicine - Other Topics; Biophysics
+GA 380VL
+UT WOS:000165724100009
+DA 2022-09-21
+ER
+
+PT J
+AU DeVault, KR
+AF DeVault, KR
+TI What is the optimal medical therapy for Barrett's esophagus?
+SO DIGESTIVE DISEASES
+LA English
+DT Article
+DE Barrett's esophagus; proton pump inhibitor; acid suppression; chemoprevention; lower esophageal sphincter
+ID gastroesophageal reflux disease; proton pump inhibitors; omeprazole 20 mg; acid reflux; double-blind; controlled trial; vs. omeprazole; 40 mg; adenocarcinoma; ranitidine
+AB The development of Barrett's esophagus (BE) in patients with gastroesophageal reflux disease (GERD) is troubling because of its known association with esophageal cancer. When evaluated clinically, patients with BE have the severest form of GERD and require aggressive therapy to control esophageal acid exposure. Both hypotension of the lower esophageal sphincter and the extent of esophageal acid exposure are major contributors to severe GERD and its complications. It is hypothesized that better control of acid will improve outcomes for BE patients. While it is clear that therapy (medical or surgical) for reflux rarely if ever results in total regression of BE, there are some limited data to support improvement in BE with control of reflux. Current medical choices include prokinetic agents, histamine type-2 receptor antagonists, and proton pump inhibitors. In the future, genetic markers may be used in identifying BE patients at the greatest risk for histologic progression, and chemoprevention with cyclooxygenase-2 inhibitors may be a therapeutic option. This paper will review the rationale for and results of medical antireflux therapy in patients with BE. Copyright (C) 2001 S. Karger AG, Basel
+C1 Mayo Clin Jacksonville, Jacksonville, FL 32224 USA.
+RP DeVault, KR (通讯作者)，Mayo Clin Jacksonville, 4500 San Pablo Rd, Jacksonville, FL 32224 USA.
+EM devault@mayo.edu
+CR Bani-Hani K, 2000, J NATL CANCER I, V92, P1316, DOI 10.1093/jnci/92.16.1316
+   BOZYMSKI EM, 1993, AM J HOSP PHARM, V50, PS4, DOI 10.1093/ajhp/50.4_Suppl_1.S4
+   CAMERON AJ, 1990, GASTROENTEROLOGY, V99, P918, DOI 10.1016/0016-5085(90)90607-3
+   Castell DO, 1999, GASTROINTEST ENDOSC, V49, PS5, DOI 10.1016/S0016-5107(99)70516-X
+   Castell DO, 1996, AM J GASTROENTEROL, V91, P1749
+   ChanTompkins NH, 1997, CLIN INFECT DIS, V24, P1285, DOI 10.1093/clinids/24.6.1285
+   Coenraad M, 1998, AM J GASTROENTEROL, V93, P1068
+   COLINJONES DG, 1995, ALIMENT PHARM THERAP, V9, P9
+   Cooper BT, 1998, ALIMENT PHARM THERAP, V12, P893, DOI 10.1046/j.1365-2036.1998.00389.x
+   Dekkers CPM, 1999, ALIMENT PHARM THERAP, V13, P49
+   DEVAULT KR, 1995, ARCH INTERN MED, V155, P2165, DOI 10.1001/archinte.155.20.2165
+   Dolan K, 1999, HUM PATHOL, V30, P1508, DOI 10.1016/S0046-8177(99)90175-2
+   EBERHART CE, 1994, GASTROENTEROLOGY, V107, P1183, DOI 10.1016/0016-5085(94)90246-1
+   EBERHART CE, 1995, GASTROENTEROLOGY, V109, P285, DOI 10.1016/0016-5085(95)90296-1
+   Fitzgerald RC, 1996, J CLIN INVEST, V98, P2120, DOI 10.1172/JCI119018
+   GANZINI L, 1993, ARCH INTERN MED, V153, P1469, DOI 10.1001/archinte.153.12.1469
+   GILLEN P, 1987, BRIT J SURG, V74, P774, DOI 10.1002/bjs.1800740906
+   GRAY MR, 1991, BRIT J SURG, V78, P1461, DOI 10.1002/bjs.1800781218
+   IASCONE C, 1983, ARCH SURG-CHICAGO, V118, P543
+   JOHNSON DA, 1987, J CLIN GASTROENTEROL, V9, P23, DOI 10.1097/00004836-198702000-00006
+   Kahrilas PJ, 1999, AM J GASTROENTEROL, V94, P92
+   Kahrilas PJ, 2000, ALIMENT PHARM THER, V14, P1249, DOI 10.1046/j.1365-2036.2000.00856.x
+   Katz PO, 1998, ALIMENT PHARM THER, V12, P1231
+   KATZKA DA, 1994, AM J GASTROENTEROL, V89, P989
+   KLINKENBERGKNOL EC, 1987, LANCET, V1, P349
+   KLINKENBERGKNOL EC, 1990, ALIMENT PHARM THERAP, V4, P485
+   Kuo B, 1996, AM J GASTROENTEROL, V91, P1532
+   Lagergren J, 1999, NEW ENGL J MED, V340, P825, DOI 10.1056/NEJM199903183401101
+   Leite LP, 1996, AM J GASTROENTEROL, V91, P1527
+   Lind T, 2000, ALIMENT PHARM THERAP, V14, P861
+   Lord RVN, 2000, J GASTROINTEST SURG, V4, P135, DOI 10.1016/S1091-255X(00)80049-9
+   Loughney T, 1998, AM J GASTROENTEROL, V93, P916
+   Lundell LR, 1999, GUT, V45, P172, DOI 10.1136/gut.45.2.172
+   MARKS RD, 1994, GASTROENTEROLOGY, V106, P907, DOI 10.1016/0016-5085(94)90749-8
+   MASCI E, 1985, DRUG EXP CLIN RES, V11, P687
+   MOSSNER J, 1995, ALIMENT PHARM THERAP, V9, P321
+   NEUMANN CS, 1995, ALIMENT PHARM THERAP, V9, P451
+   Oberg S, 1999, J THORAC CARDIOV SUR, V117, P572, DOI 10.1016/S0022-5223(99)70337-5
+   Ouatu-Lascar R, 1998, AM J GASTROENTEROL, V93, P711
+   Peghini PL, 1997, AM J GASTROENTEROL, V92, P919
+   Peghini PL, 1998, AM J GASTROENTEROL, V93, P763
+   PLUMMER SM, 1995, CARCINOGENESIS, V16, P1023, DOI 10.1093/carcin/16.5.1023
+   RAMIREZ B, 1993, ALIMENT PHARM THER, V7, P5
+   Rampe D, 1997, FEBS LETT, V417, P28, DOI 10.1016/S0014-5793(97)01249-0
+   Richter JE, 2001, AM J GASTROENTEROL, V96, P656
+   SAMPLINER RE, 1990, DIGEST DIS SCI, V35, P93, DOI 10.1007/BF01537229
+   Savarino V, 1996, DIGEST DIS SCI, V41, P1379, DOI 10.1007/BF02088562
+   Sharma P, 1998, AM J GASTROENTEROL, V93, P332, DOI 10.1016/S0002-9270(97)00100-7
+   Shirvani VN, 2000, GASTROENTEROLOGY, V118, P487, DOI 10.1016/S0016-5085(00)70254-X
+   SMITH PM, 1994, GASTROENTEROLOGY, V107, P1312, DOI 10.1016/0016-5085(94)90532-0
+   Soydan AS, 1997, EUR J CANCER, V33, P1508, DOI 10.1016/S0959-8049(97)00168-8
+   Spechler SJ, 2000, GASTR HEPAT, V6, P219
+   Spencer CM, 2000, DRUGS, V60, P321, DOI 10.2165/00003495-200060020-00006
+   Van Lieshout EMM, 1998, INT J ONCOL, V13, P855
+   VANTRAPPEN G, 1988, DIGEST DIS SCI, V33, P523, DOI 10.1007/BF01798351
+   Wilson KT, 1998, CANCER RES, V58, P2929
+   ZANINOTTO G, 1989, ANN THORAC SURG, V47, P362, DOI 10.1016/0003-4975(89)90374-3
+NR 57
+TC 0
+Z9 0
+U1 0
+U2 0
+PU KARGER
+PI BASEL
+PA ALLSCHWILERSTRASSE 10, CH-4009 BASEL, SWITZERLAND
+SN 0257-2753
+EI 1421-9875
+J9 DIGEST DIS
+JI Dig. Dis.
+PD JUN 15
+PY 2000
+VL 18
+IS 4
+BP 217
+EP 223
+DI 10.1159/000051402
+PG 7
+WC Gastroenterology & Hepatology
+SC Gastroenterology & Hepatology
+GA 437DN
+UT WOS:000168975100006
+PM 11356993
+DA 2022-09-21
+ER
+
+PT J
+AU Harding, MA
+   Theodorescu, D
+AF Harding, MA
+   Theodorescu, D
+TI Prostate tumor progression and prognosis: interplay of tumor and host factors
+SO UROLOGIC ONCOLOGY
+LA English
+DT Review
+DE prostate neoplasms; biological tumor markers; prognosis; molecular cloning
+ID endothelial growth-factor; radical prostatectomy; bone-marrow; intraepithelial neoplasia; neuroendocrine differentiation; vascular architecture; microvessel density; localized carcinoma; cancer progression; histological grade
+AB The prognosis for prostate cancer is largely dependent on the probability of metastatic dissemination. Prognostic markers currently in use are very poor predictors of metastatic potential, and as of yet none of the battery of new molecular markers has proven greatly superior. This may be due in part to their inability to assess the degree of interaction of subpopulations of prostate cancer cells with each ether and with their microenvironment. A growing body of evidence indicates that these types of interactions are a major factor in the eventual genesis of cancer cells capable of metastasis. Recent research has demonstrated that specialized components of prostate tumors may play a critical supporting role for the overall growth of the larger tumor. The multifocal nature and apparent polyclonal origins of prostate tumors suggest that carcinogenesis and tumor progression are promoted by global influences or "field effects." It appears that these effects extend beyond the proliferating epithelial component to the tissue stroma. Prostate cancer cells and stromal cells seem to act in concert to modify the microenvironment, leading to metastasis. An understanding of this synergy may provide a new class of prognostic markers which more accurately measure the complex set of interactions that determine tumor behavior. (C) 2000 Elsevier Science Inc. All rights reserved.
+C1 Univ Virginia, Hlth Sci Ctr, Dept Urol, Charlottesville, VA 22908 USA.
+   Univ Virginia, Hlth Sci Ctr, Dept Mol Physiol & Biol Phys, Charlottesville, VA 22908 USA.
+RP Theodorescu, D (通讯作者)，Univ Virginia, Hlth Sci Ctr, Dept Urol, Charlottesville, VA 22908 USA.
+EM theodorescu@virginia.edu
+CR Abrahamsson PA, 1999, PROSTATE, V39, P135, DOI 10.1002/(SICI)1097-0045(19990501)39:2<135::AID-PROS9>3.0.CO;2-S
+   Abrahamsson PA, 1998, PROSTATE, V0, P37
+   Baish JW, 1996, MICROVASC RES, V51, P327, DOI 10.1006/mvre.1996.0031
+   Bostwick D G, 1999, SEMIN UROL ONCOL, V17, P222
+   Bostwick DG, 1998, CANCER, V83, P1995, DOI 10.1002/(SICI)1097-0142(19981101)83:9<1995::AID-CNCR16>3.0.CO;2-2
+   Bostwick DG, 1996, UROLOGY, V48, P47, DOI 10.1016/S0090-4295(96)00149-5
+   BRAWER MK, 1994, CANCER, V73, P678, DOI 10.1002/1097-0142(19940201)73:3<678::AID-CNCR2820730329>3.0.CO;2-6
+   Cher ML, 1999, CLIN CANCER RES, V5, P2421
+   CHUNG LWK, 1995, CANCER SURV, V23, P33
+   Cox JD, 1997, INT J RADIAT ONCOL, V37, P1035
+   Cox ME, 1999, CANCER RES, V59, P3821
+   Cussenot O, 1998, PROSTATE, V0, P43
+   Dachs GU, 1997, NAT MED, V3, P515, DOI 10.1038/nm0597-515
+   Deguchi T, 1997, BRIT J CANCER, V75, P634, DOI 10.1038/bjc.1997.114
+   Duque JLF, 1999, UROLOGY, V54, P523, DOI 10.1016/S0090-4295(99)00167-3
+   EMMERTBUCK MR, 1995, CANCER RES, V55, P2959
+   Fidler IJ, 1999, CANCER CHEMOTH PHARM, V43, PS3, DOI 10.1007/s002800051091
+   FIDLER IJ, 1991, BRIT MED BULL, V47, P157, DOI 10.1093/oxfordjournals.bmb.a072453
+   Forman JD, 1998, ONCOLOGY-NY, V12, P33
+   Fukumura D, 1998, CELL, V94, P715, DOI 10.1016/S0092-8674(00)81731-6
+   Gao CL, 1999, J UROLOGY, V161, P1070, DOI 10.1016/S0022-5347(01)61592-1
+   Gao X, 1997, PROSTATE, V31, P264, DOI 10.1002/(SICI)1097-0045(19970601)31:4<264::AID-PROS8>3.0.CO;2-K
+   Gazit Y, 1997, MICROCIRCULATION-LON, V4, P395, DOI 10.3109/10739689709146803
+   GIMBRONE MA, 1972, J EXP MED, V136, P261, DOI 10.1084/jem.136.2.261
+   GLEAVE M, 1991, CANCER RES, V51, P3753
+   GREENE DR, 1994, CANCER INVEST, V12, P425, DOI 10.3109/07357909409038236
+   Harding MA, 1998, CANCER METAST REV, V17, P429, DOI 10.1023/A:1006137721823
+   Harper ME, 1996, BRIT J CANCER, V74, P910, DOI 10.1038/bjc.1996.456
+   Hayward SW, 1998, INT J ONCOL, V13, P35
+   Jacob K, 1999, CANCER RES, V59, P4453
+   Jain RK, 1997, NAT MED, V3, P1203, DOI 10.1038/nm1197-1203
+   Krupski T, 2000, UROLOGY, V55, P743, DOI 10.1016/S0090-4295(99)00598-1
+   Kvanta A, 1996, EXP EYE RES, V63, P511, DOI 10.1006/exer.1996.0141
+   Macintosh CA, 1998, CANCER RES, V58, P23
+   MAHADEVAN V, 1990, ACTA ONCOL, V29, P97, DOI 10.3109/02841869009089997
+   MERZ VW, 1991, MOL ENDOCRINOL, V5, P503, DOI 10.1210/mend-5-4-503
+   MILLER GJ, 1994, J UROLOGY, V152, P1709, DOI 10.1016/S0022-5347(17)32368-6
+   NOWELL PC, 1986, CANCER RES, V46, P2203
+   Ozen M, 1999, UROLOGY, V53, P381, DOI 10.1016/S0090-4295(98)00487-7
+   Ozen M, 1997, ONCOL RES, V9, P433
+   Polascik TJ, 1998, UROLOGY, V51, P884, DOI 10.1016/S0090-4295(98)00153-8
+   Ruijter ET, 1996, J PATHOL, V180, P295
+   Sakr WA, 1997, EUR UROL, V32, P15
+   SHURBAJI MS, 1995, HUM PATHOL, V26, P106, DOI 10.1016/0046-8177(95)90122-1
+   Thalmann GN, 1999, CLIN CANCER RES, V5, P2271
+   THEODORESCU D, 1991, INT J CANCER, V47, P118, DOI 10.1002/ijc.2910470121
+   Theodorescu D, 1997, CANCER, V80, P2109, DOI 10.1002/(SICI)1097-0142(19971201)80:11<2109::AID-CNCR10>3.0.CO;2-2
+   Theodorescu D, 1997, J UROLOGY, V158, P131, DOI 10.1097/00005392-199707000-00040
+   THEODORESCU D, 1991, J CELL PHYSIOL, V148, P380, DOI 10.1002/jcp.1041480308
+   THOMPSON TC, 1993, MOL CARCINOGEN, V7, P165, DOI 10.1002/mc.2940070307
+   THOMPSON TC, 1989, CELL, V56, P917, DOI 10.1016/0092-8674(89)90625-9
+   vanWeerden WM, 1996, AM J PATHOL, V149, P1055
+   Vartanian RK, 1995, LAB INVEST, V73, P844
+   VILLERS A, 1992, CANCER, V70, P2313, DOI 10.1002/1097-0142(19921101)70:9<2313::AID-CNCR2820700917>3.0.CO;2-T
+   VOGELSTEIN B, 1993, TRENDS GENET, V9, P138, DOI 10.1016/0168-9525(93)90209-Z
+   Volpert OV, 1997, ONCOGENE, V14, P1495, DOI 10.1038/sj.onc.1200977
+   Weinstein MH, 1996, HUM PATHOL, V27, P683, DOI 10.1016/S0046-8177(96)90398-6
+   WOOD DP, 1994, CANCER, V74, P2533, DOI 10.1002/1097-0142(19941101)74:9<2533::AID-CNCR2820740922>3.0.CO;2-D
+   Zitzelsberger H, 1998, VIRCHOWS ARCH, V433, P297, DOI 10.1007/s004280050252
+NR 59
+TC 13
+Z9 14
+U1 0
+U2 1
+PU ELSEVIER SCIENCE INC
+PI NEW YORK
+PA 360 PARK AVE SOUTH, NEW YORK, NY 10010-1710 USA
+SN 1078-1439
+EI 
+J9 UROL ONCOL
+JI Urol. Oncol.
+PD NOV-DEC 15
+PY 2000
+VL 5
+IS 6
+BP 258
+EP 264
+DI 10.1016/S1078-1439(00)00073-9
+PG 7
+WC Oncology; Urology & Nephrology
+SC Oncology; Urology & Nephrology
+GA 390NJ
+UT WOS:000166302400002
+PM 11008094
+DA 2022-09-21
+ER
+

@@ -1,7 +1,7 @@
 # 项目进度追踪
 
 > 最后更新：2026-05-01
-> 当前阶段：M1 文档补全（已完成）
+> 当前阶段：M2 计量分析产出（已完成）
 
 ---
 
@@ -10,7 +10,7 @@
 | 里程碑 | 截止 | 状态 | 完成度 |
 |---|---|---|---|
 | M1 数据与检索方案 | 第4周末 | ✅ 完成 | ██████████ 100% |
-| M2 计量分析产出 | 第10周末 | 🔴 进行中 | █████░░░░░ 50% |
+| M2 计量分析产出 | 第10周末 | ✅ 完成 | ██████████ 100% |
 | M3 终稿与Release | 第15周末 | ⚪ 未开始 | ░░░░░░░░░░ 0% |
 
 ---
@@ -31,15 +31,15 @@
 
 | # | 任务 | 状态 | 产出 |
 |---|---|---|---|
-| 2.1 | 关键词聚类图谱（更新版） | ✅ 已有初版 | Analysis_v1_Initial_Map |
-| 2.2 | 共被引网络分析 | ❌ 待做 | 共被引图 + 聚类表 |
-| 2.3 | 突现检测 | ❌ 待做 | Burst 列表 |
+| 2.1 | 关键词聚类图谱（更新版） | ✅ 完成 | outputs/keyword_cooccurrence_network.png/html |
+| 2.2 | 共被引网络分析 | ✅ 完成 | outputs/co_citation_network.png/html + cluster_summary |
+| 2.3 | 突现检测 | ✅ 完成 | outputs/keyword_bursts.csv + timeline + report |
 | 2.4 | 关键词时间线 | ✅ 已有初版 | Timeline_v1 |
-| 2.5 | 文献耦合分析 | ❌ 待做 | 耦合网络图 |
-| 2.6 | 合作网络分析 | ❌ 待做 | 作者/机构合作图 |
-| 2.7 | 指标计算 | ❌ 待做 | 发文量、h-index 等 |
-| 2.8 | reports/metrics_spec.md 升级 | ❌ 待做 | 补全指标公式和口径 |
-| 2.9 | docs/data_model.md | ❌ 待做 | 图数据模型文档 |
+| 2.5 | 文献耦合分析 | ✅ 完成 | outputs/bibliographic_coupling_network.png/html |
+| 2.6 | 合作网络分析 | ✅ 完成 | outputs/coauthorship_network.png/html |
+| 2.7 | 指标计算 | ✅ 完成 | outputs/network_metrics_*.csv + descriptive_indicators.csv |
+| 2.8 | reports/metrics_spec.md 升级 | ✅ 完成 | 补全指标公式和口径 |
+| 2.9 | docs/data_model.md | ✅ 完成 | 图数据模型文档 |
 
 ## 阶段 3：M3 终稿
 
@@ -82,10 +82,15 @@
 | 05-01 | Python 依赖清单 | requirements.txt |
 | 05-01 | Mini Review 初稿 | paper/manuscript_v1.md |
 | 05-01 | 指标统计报告 | outputs/metrics_report.md |
+| 05-01 | Python 文献计量分析（bibliometrics-mini） | 4 种网络图 + 指标 + HTML 报告 |
+| 05-01 | 筛选记录脚本 + 报告 | src/create_screening.py, reports/screening_record.md |
+| 05-01 | 检索式设计文档 | docs/query_rationale.md, docs/query_changelog.md |
+| 05-01 | 查新报告升级（五维度详细对比表） | reports/novelty_search_v0.md |
+| 05-01 | 突现检测（Kleinberg 算法） | outputs/keyword_bursts.csv, keyword_burst_timeline.png, keyword_burst_report.md |
+| 05-01 | README 更新 | README.md |
 
 ---
 
 ## 下一步
 
-→ 阶段 2 剩余：CiteSpace GUI 操作（共被引、突现、时间线、耦合、合作网络）
-→ 阶段 3：阈值敏感性对照实验
+→ 阶段 3：阈值敏感性对照实验、终稿整理、GitHub Release

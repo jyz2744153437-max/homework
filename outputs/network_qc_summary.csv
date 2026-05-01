@@ -1,0 +1,5 @@
+n_nodes,n_edges,density,n_components,largest_component_ratio,n_communities,modularity,avg_clustering_coefficient,avg_degree,avg_weighted_degree,diameter_largest_component,avg_path_length_largest_component,network
+112,200,0.032175032175032175,6,0.8839285714285714,11,0.5703,0.3528,3.57,78.64,7,3.243,keyword_cooccurrence
+119,200,0.02848597065945022,16,0.2605042016806723,16,0.7951,0.5261,3.36,122.2,3,1.901,co_citation
+253,200,0.006273919317397578,94,0.039525691699604744,94,0.9716,0.2501,1.58,94.57,5,2.089,bibliographic_coupling
+134,200,0.022444170126809562,29,0.14925373134328357,29,0.8348,0.4914,2.99,31.46,3,1.7,coauthorship

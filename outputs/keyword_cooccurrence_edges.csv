@@ -1,0 +1,201 @@
+source,target,weight
+pet,positron-emission-tomography,100.0
+in-vivo,positron-emission-tomography,72.0
+cancer,expression,61.0
+fdg-pet,positron-emission-tomography,56.0
+childhood leukemia,pooled analysis,55.0
+apoptosis,expression,51.0
+brain-tumors,positron-emission-tomography,50.0
+expression,gene,49.0
+in-vivo,pet,47.0
+cells,expression,47.0
+carcinoma,expression,45.0
+dna,electrical detection,41.0
+brain-tumors,pet,39.0
+expression,progression,39.0
+cancer,risk,38.0
+cancer,carcinoma,36.0
+positron emission tomography,positron-emission-tomography,36.0
+cancer,cells,35.0
+expression,growth,34.0
+cancer,exposure,33.0
+f-18-fdg,positron-emission-tomography,33.0
+apoptosis,cancer,32.0
+activation,expression,32.0
+pooled analysis,risk,31.0
+cancer,positron-emission-tomography,31.0
+magnetic-fields,pooled analysis,30.0
+diagnosis,positron-emission-tomography,29.0
+cancer,pooled analysis,29.0
+imaging proliferation,positron-emission-tomography,28.0
+design,transformer,28.0
+positron-emission-tomography,proliferation,28.0
+expression,inhibition,26.0
+carcinoma,progression,26.0
+cancer,progression,26.0
+electromagnetic-fields,exposure,26.0
+exposure,risk,26.0
+5-fluorouracil,thymidylate synthase,26.0
+f-18-fdg,pet,26.0
+positron-emission-tomography,radiotherapy,26.0
+electromagnetic-fields,pooled analysis,25.0
+cancer,childhood leukemia,25.0
+cancer,gene-expression,24.0
+electrical detection,nanosensors,24.0
+breast-cancer,in-vivo,24.0
+biosensors,electrical detection,24.0
+expression,p53,24.0
+expression,prostate cancer,24.0
+exposure,pooled analysis,24.0
+cancer,gene,24.0
+cancer,in-vivo,24.0
+transformer,transformers,24.0
+cancer,electromagnetic-fields,24.0
+pet,positron emission tomography,24.0
+f-18 fluorodeoxyglucose,positron-emission-tomography,23.0
+expression,proliferation,23.0
+bladder cancer,transitional-cell carcinoma,23.0
+colorectal-cancer,expression,23.0
+childhood leukemia,risk,22.0
+f-18-fdg pet,positron-emission-tomography,22.0
+computed-tomography,positron-emission-tomography,22.0
+c-11-methionine pet,positron-emission-tomography,21.0
+apoptosis,growth,21.0
+in-vivo,proliferation,21.0
+imaging proliferation,in-vivo,21.0
+expression,protein,21.0
+cancer,therapy,21.0
+cancer,growth,21.0
+arrays,electrical detection,21.0
+positron-emission-tomography,tumors,21.0
+cell lung-cancer,positron-emission-tomography,21.0
+pet,spect,21.0
+cancer,tumors,21.0
+dihydropyrimidine dehydrogenase,thymidylate synthase,21.0
+angiogenesis,expression,20.0
+pet,proliferation,20.0
+cells,progression,20.0
+cerebral gliomas,positron-emission-tomography,20.0
+thymidine phosphorylase,thymidylate synthase,20.0
+pet,tumor,20.0
+expression,in-vivo,20.0
+breast-cancer,expression,20.0
+positron-emission-tomography,squamous-cell carcinoma,20.0
+cells,in-vivo,20.0
+cancer,tumor,20.0
+pet,tumors,20.0
+febrile response,tumor-necrosis-factor,20.0
+carbon nanotubes,electrical detection,20.0
+5-fluorouracil,thymidine phosphorylase,20.0
+high-grade gliomas,positron-emission-tomography,20.0
+cancer,diagnosis,19.0
+breast-cancer,prostate-cancer,19.0
+exposure,magnetic-fields,19.0
+childhood leukemia,magnetic-fields,19.0
+integrated circuit modeling,transformer,19.0
+fdg-pet,in-vivo,19.0
+cells,growth,19.0
+brain-tumors,in-vivo,19.0
+expression,growth-factor-beta,19.0
+adenocarcinoma,expression,19.0
+amino-acid-transport,positron-emission-tomography,19.0
+carcinoma,cells,19.0
+positron-emission-tomography,tumor,19.0
+cancer,epidemiology,19.0
+apoptosis,colorectal-cancer,18.0
+electromagnetic fields,pooled analysis,18.0
+arrays,nanowires,18.0
+cancer,children,18.0
+arrays,dna,18.0
+apoptosis,proliferation,18.0
+growth-factor-beta,tgf-beta,18.0
+low-grade gliomas,positron-emission-tomography,18.0
+apoptosis,cells,18.0
+5-fluorouracil,dihydropyrimidine dehydrogenase,18.0
+computed-tomography,ct,18.0
+in-vivo,positron emission tomography,18.0
+breast-cancer,positron-emission-tomography,18.0
+adenocarcinoma,cancer,17.0
+expression,inflammation,17.0
+cancer,pet,17.0
+cancer,p53,17.0
+electrical detection,field-effect transistors,17.0
+electrical detection,label-free detection,17.0
+hypoxia,positron-emission-tomography,17.0
+cell lung-cancer,fdg-pet,17.0
+diagnosis,pet,17.0
+angiogenesis,cancer,17.0
+glioma,pet,17.0
+dihydropyrimidine dehydrogenase,thymidine phosphorylase,17.0
+carcinoma,gene-expression,17.0
+positron-emission-tomography,spect,17.0
+colorectal-cancer,gene-expression,17.0
+cancer,carcinogenesis,17.0
+magnetic-resonance-spectroscopy,positron-emission-tomography,17.0
+adenocarcinoma,carcinoma,17.0
+transitional-cell carcinoma,urothelial carcinoma,17.0
+integrated circuit modeling,transformers,17.0
+carcinoma,prostate cancer,17.0
+cancer,proliferation,17.0
+pet,transport,16.0
+fdg-pet,positron emission tomography,16.0
+glioblastoma-multiforme,positron-emission-tomography,16.0
+mri,pet,16.0
+childhood leukemia,electromagnetic-fields,16.0
+leukemia,pooled analysis,16.0
+gliomas,pet,16.0
+apoptosis,gene-expression,16.0
+brain-tumors,positron emission tomography,16.0
+fdg-pet,pet,16.0
+expression,proteins,16.0
+carcinoma,identification,16.0
+prostate cancer,radical prostatectomy,16.0
+methionine,pet,16.0
+radiation-therapy,radiotherapy,16.0
+childhood leukemia,exposure,16.0
+in-vivo,prostate-cancer,16.0
+expression,therapy,15.0
+breast-cancer,carcinoma,15.0
+chemotherapy,positron-emission-tomography,15.0
+carcinoma,gene,15.0
+positron emission tomography,radiotherapy,15.0
+differentiation,expression,15.0
+angiogenesis,endothelial growth-factor,15.0
+expression,methylation,15.0
+expression,metastasis,15.0
+cancer,magnetic-fields,15.0
+electrical detection,sensors,15.0
+mosfet,radiotherapy,15.0
+arrays,growth,15.0
+cells,in-vitro,15.0
+5-fluorouracil,gene-expression,15.0
+metabolism,positron-emission-tomography,15.0
+inflammation,pet,15.0
+hereditary breast,ovarian-cancer,15.0
+cells,tumor,15.0
+growth-factor-beta,tgf-beta superfamily,15.0
+children,risk,15.0
+growth-factor-beta,mic-1,15.0
+electrical detection,silicon nanowires,15.0
+glioma,positron-emission-tomography,15.0
+electromagnetic-fields,risk,15.0
+gene-expression,prostate cancer,15.0
+gene,growth,15.0
+exposure,leukemia,15.0
+cells,dna,15.0
+electromagnetic fields,exposure,15.0
+fdg,positron-emission-tomography,15.0
+cancer,in-vitro,15.0
+apoptosis,in-vitro,15.0
+cells,gene-expression,15.0
+apoptosis,induction,15.0
+expression,tumor,15.0
+positron-emission-tomography,prostate-cancer,14.0
+positron-emission-tomography,radiation necrosis,14.0
+computed-tomography,fdg-pet,14.0
+dna methylation,hypermethylation,14.0
+biosensors,dna,14.0
+dna,nanosensors,14.0
+methionine,positron-emission-tomography,14.0
+children,pooled analysis,14.0
+carcinoma,positron-emission-tomography,14.0

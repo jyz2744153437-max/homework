@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于Transformer的半导体文献计量分析</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"PingFang SC"', '"Microsoft YaHei"', '"Noto Sans SC"', 'sans-serif'],
+              mono: ['"SF Mono"', '"Cascadia Code"', 'Menlo', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <!-- 引入 Lucide 图标库 -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        /* 基础样式与背景模式 */
+        body { margin: 0; overflow: hidden; background-color: #fafafa; }
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .bg-dot-pattern {
+            background-image: radial-gradient(rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        
+        /* 幻灯片切换逻辑与动画 */
+        .slide {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0; /* 移除底部导航栏空间 */
+            display: none;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 2rem;
+        }
+        
+        /* 大屏等比放大及减小留白策略 */
+        @media (min-width: 768px) {
+            .slide { padding: 2rem 3rem; }
+            html { font-size: 16px; }
+        }
+        @media (min-width: 1280px) {
+            html { font-size: 18px; } /* 屏幕较宽时整体按比例放大12.5% */
+        }
+        @media (min-width: 1536px) {
+            html { font-size: 22px; } /* 2K以上屏幕整体放大37.5% */
+        }
+        @media (min-width: 1920px) {
+            html { font-size: 26px; } /* 超大屏等比放大 */
+        }
+
+        .slide.active {
+            display: flex;
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* 元素级入场动画 */
+        .reveal { opacity: 0; }
+        .slide.active .reveal {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+
+        /* 表格与装饰样式 */
+        .tech-table w-full th { border-top: 2px solid #000; border-bottom: 1px solid #000; padding: 12px; text-align: left; font-weight: 600; }
+        .tech-table w-full td { padding: 12px; border-bottom: 1px solid #e5e7eb; }
+        .tech-table w-full tr:last-child td { border-bottom: 2px solid #000; }
+        
+        /* CiteSpace 图片占位符悬浮动效 */
+        .image-placeholder { transition: all 0.3s ease; }
+        .image-placeholder:hover { border-color: #000; box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); }
+        .image-placeholder:hover i { transform: scale(1.2); color: #000; }
+
+        /* CJK 中文排版优化 */
+        p, li, td, th, h1, h2, h3, h4, h5, h6 { line-height: 1.8; }
+
+        /* 3.2 进度条爬升动画 */
+        .bar-fill { width: 0; }
+        @keyframes fillBar1 { from { width: 0; } to { width: 40.4%; } }
+        @keyframes fillBar2 { from { width: 0; } to { width: 12.4%; } }
+        @keyframes fillBar3 { from { width: 0; } to { width: 8.9%; } }
+        @keyframes fillBar4 { from { width: 0; } to { width: 5.9%; } }
+        @keyframes fillBar5 { from { width: 0; } to { width: 5.6%; } }
+        .slide.active .bar-fill-1 { animation: fillBar1 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards; }
+        .slide.active .bar-fill-2 { animation: fillBar2 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards; }
+        .slide.active .bar-fill-3 { animation: fillBar3 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.19s forwards; }
+        .slide.active .bar-fill-4 { animation: fillBar4 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.26s forwards; }
+        .slide.active .bar-fill-5 { animation: fillBar5 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.33s forwards; }
+
+        /* ========== 移动端适配 (< 768px) ========== */
+        @media (max-width: 767px) {
+            body {
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            #slides-container {
+                height: auto;
+                position: relative;
+                scroll-snap-type: y mandatory;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .slide {
+                position: relative;
+                top: auto; left: auto; right: auto; bottom: auto;
+                display: block !important;
+                opacity: 1 !important;
+                min-height: 100vh;
+                height: auto;
+                padding: 1rem; /* 移除底部留白 */
+                flex-direction: column;
+                justify-content: flex-start;
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            .slide.active {
+                z-index: auto;
+            }
+
+            /* 移动端去掉入场动画延迟，直接显示 */
+            .slide .reveal {
+                opacity: 1 !important;
+                animation: none !important;
+            }
+
+            /* 移动端文字缩放 */
+            .slide h1 { font-size: 1.6rem !important; line-height: 1.3 !important; }
+            .slide h2 { font-size: 1.3rem !important; }
+            .slide h3 { font-size: 1.15rem !important; }
+            .slide p, .slide li, .slide td { font-size: 0.9rem !important; }
+            .slide .text-5xl { font-size: 1.6rem !important; }
+            .slide .text-7xl { font-size: 2.2rem !important; }
+            .md\:text-7xl { font-size: 2.2rem !important; }
+            .md\:text-2xl { font-size: 1.1rem !important; }
+
+            /* 移动端表格/网格单列 */
+            .slide .grid-cols-2,
+            .slide .grid-cols-3,
+            .slide .grid-cols-4,
+            .slide .md\:grid-cols-2,
+            .slide .md\:grid-cols-3,
+            .slide .md\:grid-cols-4 {
+                grid-template-columns: 1fr !important;
+            }
+            .slide .md\:flex-row { flex-direction: column !important; }
+            .slide .md\:w-1\/2,
+            .slide .md\:w-1\/3,
+            .slide .md\:w-2\/3,
+            .slide .md\:w-\[45\%\],
+            .slide .md\:w-\[55\%\] { width: 100% !important; }
+
+            /* ECharts 容器 */
+            #trendChart { height: 240px !important; }
+
+            /* 移动端隐藏部分装饰元素 */
+            .slide .absolute.-top-10.-right-10 { display: none !important; }
+            .slide .absolute.-bottom-4.-right-4 { display: none !important; }
+
+            /* flex gap 缩小 */
+            .slide .gap-8 { gap: 0.75rem !important; }
+
+            /* 移动端表格/容器横向滚动 */
+            .slide table { display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+            .slide .tech-table { display: block; overflow-x: auto; }
+            .slide .gap-6 { gap: 0.5rem !important; }
+            .slide .gap-4 { gap: 0.4rem !important; }
+            .slide .space-y-6 > * + * { margin-top: 0.5rem !important; }
+            .slide .space-y-8 > * + * { margin-top: 0.75rem !important; }
+
+            /* padding 缩小 */
+            .slide .p-8 { padding: 1rem !important; }
+            .slide .p-10 { padding: 1.2rem !important; }
+            .slide .p-6 { padding: 0.8rem !important; }
+            .slide .mb-10 { margin-bottom: 1rem !important; }
+            .slide .mb-8 { margin-bottom: 0.8rem !important; }
+            .slide .mb-6 { margin-bottom: 0.6rem !important; }
+            .slide .mt-8 { margin-top: 1rem !important; }
+            .slide .mt-10 { margin-top: 1rem !important; }
+        }
+
+        /* ========== 桌面端覆盖 ========== */
+        @media (min-width: 768px) {
+            #slides-container {
+                scroll-snap-type: none;
+                overflow: visible;
+            }
+        }
+    </style>
+</head>
+<body class="text-zinc-900 font-sans antialiased selection:bg-zinc-900 selection:text-white">
+
+    <!-- 幻灯片容器 -->
+    <main id="slides-container" class="relative w-full h-screen bg-grid-pattern">
+        
+        <!-- ================= PAGE 1 ================= -->
+        <section class="slide active">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="mb-8 font-mono text-xs font-bold tracking-widest text-zinc-400 uppercase">
+                    // Web of Science 核心集系统综述 (2015-2025)
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-tight mb-8 text-black">
+                    基于 Transformer 的<br>半导体制造关键技术<br>研究热点与发展趋势
+                </h1>
+                <div class="w-24 h-1.5 bg-black mb-8"></div>
+                <p class="text-xl md:text-2xl text-zinc-500 font-light mb-12">
+                    —— 基于 643 篇核心文献（含 DL 纯净集 147 篇）的系统计量分析
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-zinc-200 pt-8 font-mono text-sm">
+                    <div><span class="text-zinc-400 block mb-1">汇报团队</span><strong class="text-base">项目展示组</strong></div>
+                    <div><span class="text-zinc-400 block mb-1">项目标签</span><strong class="text-base">Transformer / ViT</strong></div>
+                    <div><span class="text-zinc-400 block mb-1">数据量级</span><strong class="text-base">643 篇 (DL 147) / 5,974 被引</strong></div>
+                    <div><span class="text-zinc-400 block mb-1">汇报日期</span><strong class="text-base">2026年05月01日</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 2 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">01</span>
+                    <h2 class="text-3xl font-bold">第一部分：研究背景与问题</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">1.1 研究背景：Transformer 架构的跨域破圈</h3>
+                <div class="bg-white p-8 border border-zinc-200 shadow-sm text-lg text-zinc-700 leading-relaxed space-y-6">
+                    <p>自 2017 年 Google 提出 <span class="font-mono bg-zinc-100 px-2 py-1">Attention is all you need</span> 以来，Transformer 凭借其卓越的全局特征捕捉能力和自注意力机制，迅速在自然语言处理（NLP）领域占据绝对统治地位。</p>
+                    <p>2020 年，**Vision Transformer (ViT)** 的横空出世，打破了 CNN 在计算机视觉领域的长期垄断。这种底层架构的跃迁，正强势下沉至对精度要求极其苛刻的工业制造和复杂序列预测领域。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 3 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">01</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第一部分：研究背景与问题</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">1.2 研究背景：半导体制造的刚性 AI 需求</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-zinc-50 p-8 border border-zinc-200">
+                        <i data-lucide="cpu" class="w-8 h-8 text-black mb-4"></i>
+                        <h4 class="font-bold text-xl mb-3">行业痛点挑战</h4>
+                        <p class="text-zinc-600">半导体制造作为现代工业皇冠上的明珠，工艺节点已向亚纳米级迈进。晶圆缺陷检测的微观化、多工序良率控制的复杂性，使得传统算法与早期深度学习模型遭遇性能瓶颈。</p>
+                    </div>
+                    <div class="bg-black text-white p-8 border border-zinc-800">
+                        <i data-lucide="zap" class="w-8 h-8 text-white mb-4"></i>
+                        <h4 class="font-bold text-xl mb-3">交叉结合的破局意义</h4>
+                        <p class="text-zinc-300">目前学术界与工业界尚缺乏 Transformer 在该交叉领域的系统性综述。本研究旨在填补这一空白，通过文献计量学手段客观识别技术跃迁路径，为企业的 AI 架构选型提供底层依据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 4 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-3xl font-bold mb-10 text-center">1.3 核心研究问题 (Research Questions)</h3>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-8 border border-zinc-200 relative overflow-hidden group">
+                        <span class="absolute -top-4 -right-4 text-8xl font-black text-zinc-50 group-hover:text-zinc-100 transition-colors">1</span>
+                        <h4 class="font-mono text-sm text-zinc-500 mb-2">Question 01</h4>
+                        <p class="text-xl font-bold relative z-10">2015-2025 年间，该交叉领域的<br><span class="border-b-2 border-black pb-1">研究热点</span>究竟是什么？</p>
+                    </div>
+                    <div class="bg-white p-8 border border-zinc-200 relative overflow-hidden group">
+                        <span class="absolute -top-4 -right-4 text-8xl font-black text-zinc-50 group-hover:text-zinc-100 transition-colors">2</span>
+                        <h4 class="font-mono text-sm text-zinc-500 mb-2">Question 02</h4>
+                        <p class="text-xl font-bold relative z-10">支撑这些核心热点的<br><span class="border-b-2 border-black pb-1">知识基础</span>（奠基文献）由哪些构成？</p>
+                    </div>
+                    <div class="bg-white p-8 border border-zinc-200 relative overflow-hidden group">
+                        <span class="absolute -top-4 -right-4 text-8xl font-black text-zinc-50 group-hover:text-zinc-100 transition-colors">3</span>
+                        <h4 class="font-mono text-sm text-zinc-500 mb-2">Question 03</h4>
+                        <p class="text-xl font-bold relative z-10">哪些主题在近年突然兴起？未来的<br><span class="border-b-2 border-black pb-1">前沿趋势</span>指向何方？</p>
+                    </div>
+                    <div class="bg-white p-8 border border-zinc-200 relative overflow-hidden group">
+                        <span class="absolute -top-4 -right-4 text-8xl font-black text-zinc-50 group-hover:text-zinc-100 transition-colors">4</span>
+                        <h4 class="font-mono text-sm text-zinc-500 mb-2">Question 04</h4>
+                        <p class="text-xl font-bold relative z-10">主导该领域发展演进的核心<br><span class="border-b-2 border-black pb-1">研究团队、机构与国家</span>有哪些？</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 5 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">02</span>
+                    <h2 class="text-3xl font-bold">第二部分：数据与方法</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">2.1 数据来源与全局概览</h3>
+                <div class="bg-white p-8 border border-zinc-200 shadow-sm">
+                    <table class="w-full tech-table text-lg">
+                        <tbody>
+                            <tr><td class="w-1/3 font-bold bg-zinc-50">核心数据库</td><td>Web of Science Core Collection (SCI-EXPANDED, SSCI, CPCI-S)</td></tr>
+                            <tr><td class="font-bold bg-zinc-50">数据检索日期</td><td class="font-mono">2026-04-14</td></tr>
+                            <tr><td class="font-bold bg-zinc-50">目标时间跨度</td><td>2015-01-01 至 2025-12-31</td></tr>
+                            <tr><td class="font-bold bg-zinc-50">最终纳入文献量</td><td class="text-2xl font-black">643 <span class="text-sm font-normal text-zinc-500">篇 | DL 纯净集 147 篇 (Plain Text 全记录导出)</span></td></tr>
+                            <tr><td class="font-bold bg-zinc-50">全局被引总计</td><td class="text-xl font-bold">5,974 <span class="text-sm font-normal text-zinc-500">次 (全局 h-index: 37)</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 6 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">2.2 核心检索式构建逻辑 (经历三轮严谨迭代)</h3>
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-zinc-100 p-4 border border-zinc-200 text-center"><p class="font-mono font-bold text-lg mb-1">Iteration v0</p><p class="text-sm text-zinc-500">初步检索仅获 105 条</p></div>
+                    <div class="bg-zinc-200 p-4 border border-zinc-300 text-center"><p class="font-mono font-bold text-lg mb-1">Iteration v1</p><p class="text-sm text-zinc-500">扩展变体后达 512 条，含噪声</p></div>
+                    <div class="bg-black text-white p-4 text-center shadow-lg"><p class="font-mono font-bold text-lg mb-1">Iteration v2-Final</p><p class="text-sm text-zinc-300">精准控噪锁定 643 条，DL 语义筛选得 147 条</p></div>
+                </div>
+                <div class="bg-zinc-900 text-zinc-300 p-8 rounded-sm font-mono text-sm leading-loose overflow-x-auto shadow-inner">
+                    <div class="flex mb-4">
+                        <span class="text-blue-400 font-bold mr-4 w-16 shrink-0">TS =</span>
+                        <span>(Transformer* OR "Vision Transformer" OR ViT OR Swin OR Autoformer OR Informer OR PatchTST)</span>
+                    </div>
+                    <div class="flex mb-4 font-bold text-white pl-20 text-xs tracking-widest uppercase">AND <span class="text-zinc-500 ml-2">// 严格限定半导体相关场景（如晶圆缺陷检测、版图生成、工艺参数预测、芯片封装检测等）</span></div>
+                    <div class="flex mb-4">
+                        <span class="text-blue-400 font-bold mr-4 w-16 shrink-0">TS =</span>
+                        <span>(semiconductor* OR wafer* OR "integrated circuit*" OR IC OR lithography OR "defect detection"...)</span>
+                    </div>
+                    <div class="flex mb-4 font-bold text-red-400 pl-20 text-xs tracking-widest uppercase">NOT <span class="text-zinc-500 ml-2">// 精准排除 11 类干扰噪声（如电力变压器、医疗影像、NLP自然语言、语音识别、智能电网等非半导体领域）</span></div>
+                    <div class="flex">
+                        <span class="text-blue-400 font-bold mr-4 w-16 shrink-0">TS =</span>
+                        <span class="text-zinc-500">("power transformer" OR "medical image" OR NLP OR speech OR biology OR chemistry OR "smart grid"...)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 7 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">2.3 数据清洗与质控标准 (Quality Control)</h3>
+                <div class="bg-white p-10 border border-zinc-200 shadow-xl relative overflow-hidden">
+                    <i data-lucide="filter" class="absolute -top-10 -right-10 w-64 h-64 text-zinc-50"></i>
+                    <ul class="space-y-8 relative z-10 text-lg">
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 shrink-0 mt-1"></i>
+                            <div>
+                                <strong class="block mb-2">双重验证的【零重复】保障</strong>
+                                <p class="text-zinc-600 text-base">为防止数据库导出冗余，采用 CiteSpace 内置去重模块，辅以 UT (Unique Article Identifier) 与 DOI 双重交叉比对算法，确保样本绝对唯一。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 shrink-0 mt-1"></i>
+                            <div>
+                                <strong class="block mb-2">99%+ 的核心字段完整率</strong>
+                                <p class="text-zinc-600 text-base">对照 PRISMA 2020（国际系统综述与 Meta 分析首选报告标准），逐阶段记录筛选排除原因。纳入文献的 TI（标题）、AU（作者）、AB（摘要）、CR（引文）等核心分析字段数据完整度极高。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6 text-green-500 shrink-0 mt-1"></i>
+                            <div>
+                                <strong class="block mb-2">52 字段数据字典与排除原因编码</strong>
+                                <p class="text-zinc-600 text-base">团队独立编写涵盖 52 个维度的 WoS 导出字段全量字典，建立初筛至复筛的排除原因编码表。经去重置信度、核心字段完整率、编码一致性三项自评，数据基础质量达标。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 8 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">2.4 分析工具与 CiteSpace 参数配置</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 border border-zinc-200 shadow-sm">
+                        <h4 class="font-mono text-sm tracking-widest text-zinc-400 mb-4 uppercase">Toolchain</h4>
+                        <div class="mb-6 pb-6 border-b border-zinc-100">
+                            <strong class="text-xl block mb-2"><i data-lucide="network" class="inline w-5 h-5 mr-2"></i>CiteSpace 6.4.1</strong>
+                            <p class="text-sm text-zinc-600">作为本次核心计量引擎，负责执行关键词共现、共被引网络拓扑、前沿突现词检测、聚类打标与时间线演化分析。</p>
+                        </div>
+                        <div>
+                            <strong class="text-xl block mb-2"><i data-lucide="line-chart" class="inline w-5 h-5 mr-2"></i>Microsoft Excel</strong>
+                            <p class="text-sm text-zinc-600">辅助工具，用于宏观数据透视、发文趋势的精细化统计与柱状可视化制图。</p>
+                        </div>
+                    </div>
+                    <div class="bg-black text-white p-8 border border-zinc-800 shadow-sm">
+                        <h4 class="font-mono text-sm tracking-widest text-zinc-500 mb-4 uppercase">CiteSpace Parameters</h4>
+                        <table class="w-full text-sm">
+                            <tbody class="divide-y divide-zinc-800">
+                                <tr><td class="py-3 text-zinc-400 w-1/3">时间切片 (Slice)</td><td class="py-3 font-mono">2015-2025, 1 Year/Slice</td></tr>
+                                <tr><td class="py-3 text-zinc-400">阈值筛选策略</td><td class="py-3 font-mono">g-index (k=25) <span class="block text-xs text-zinc-500 mt-1">自适应平衡高低频节点</span></td></tr>
+                                <tr><td class="py-3 text-zinc-400">网络裁剪算法</td><td class="py-3 font-mono">Pathfinder + Pruning Sliced <span class="block text-xs text-zinc-500 mt-1">有效提取网络骨架特征</span></td></tr>
+                                <tr><td class="py-3 text-zinc-400">聚类标签提取</td><td class="py-3 font-mono">LLR (Log-Likelihood Ratio)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 9 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">03</span>
+                    <h2 class="text-3xl font-bold">第三部分：结果分析</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 border-l-4 border-black pl-4">3.1 发文趋势宏观分析 (2015-2025, DL 纯净集 147 篇)</h3>
+                <div id="trendChart" class="w-full" style="height: 50vh; min-height: 380px;"></div>
+                <div class="mt-5 pt-4 text-[12px] text-gray-500 leading-relaxed border-t border-zinc-100">
+                    <p class="mb-3">
+                        <strong class="text-black">图 1. 年度发文量与增长率趋势图 (2015-2025, DL 纯净集)。</strong>
+                        主坐标轴（左）表示年度发文绝对量（柱状图），次坐标轴（右）表示较上一年发文量的相对增长率（折线图）。数据源自 Web of Science Core Collection，经 DL 语义筛选后保留 147 篇核心文献，排除 2026 年未满年数据点。2015–2017 年因年发文量基数过小（≤6 篇），增长率波动缺乏统计意义，折线不作展示。
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                        <div class="border-l-2 border-zinc-300 pl-3">
+                            <strong class="text-black block mb-1">I. 萌芽期 (2017-2021)</strong>
+                            <span>5 年仅 12 篇，年均不足 3 篇。Transformer 尚未进入半导体领域视野，偶有深度学习研究也以传统 CNN 为主，未见 ViT/Transformer 术语。</span>
+                        </div>
+                        <div class="border-l-2 border-zinc-400 pl-3">
+                            <strong class="text-black block mb-1">II. 加速期 (2022-2023)</strong>
+                            <span>2021 年 ViT/Swin 提出后经约 1 年学术传导延迟，Wei YX (2022) 等先驱工作"点燃"领域。2023 年发文量首次突破两位数（11 篇）。</span>
+                        </div>
+                        <div class="border-l-2 border-zinc-500 pl-3">
+                            <strong class="text-black block mb-1">III. 爆发期 (2024-2025)</strong>
+                            <span>两年累计 115 篇，占 DL 纯净集总量的 <strong class="text-black">78%</strong>。受大模型热潮与 ViT 生态成熟双驱动，架构级 AI 在半导体全场景应用全面爆发。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 10 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">03</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第三部分：结果分析</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-black pl-4">趋势演变规律：三大阶段特征显著</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 border border-zinc-200 border-t-4 border-t-zinc-300">
+                        <div class="flex justify-between items-center mb-4"><h4 class="font-bold text-xl">萌芽期</h4><span class="font-mono text-xs bg-zinc-100 px-2 py-1">2017-2021</span></div>
+                        <p class="text-4xl font-black mb-4">2.4<span class="text-sm font-normal text-zinc-500 ml-1">篇/年</span></p>
+                        <p class="text-zinc-600 text-sm">5 年总计仅 12 篇 DL-半导体交叉文献。Transformer 架构尚未进入半导体领域视野，偶有涉及深度学习的论文也以传统 CNN 方法为主，无 ViT/Transformer 术语出现。</p>
+                    </div>
+                    <div class="bg-white p-6 border border-zinc-200 border-t-4 border-t-zinc-500">
+                        <div class="flex justify-between items-center mb-4"><h4 class="font-bold text-xl">加速期</h4><span class="font-mono text-xs bg-zinc-100 px-2 py-1">2022-2023</span></div>
+                        <p class="text-4xl font-black mb-4">8.5<span class="text-sm font-normal text-zinc-500 ml-1">篇/年</span></p>
+                        <p class="text-zinc-600 text-sm">2021 年 ViT/Swin Transformer 提出，经过约 1 年的学术传导延迟后，2022 年起 Wei YX (2022) 等先驱学者将多尺度信息融合 Transformer 引入晶圆缺陷识别，标志着领域正式"点燃"。2023 年发文量首次突破两位数（11 篇）。</p>
+                    </div>
+                    <div class="bg-black text-white p-6 shadow-2xl relative overflow-hidden">
+                        <i data-lucide="trending-up" class="absolute -bottom-4 -right-4 w-32 h-32 opacity-10"></i>
+                        <div class="flex justify-between items-center mb-4 relative z-10"><h4 class="font-bold text-xl">爆发期</h4><span class="font-mono text-xs bg-zinc-800 px-2 py-1">2024-2025</span></div>
+                        <p class="text-4xl font-black mb-4 relative z-10 text-white">57.5<span class="text-sm font-normal text-zinc-400 ml-1">篇/年</span></p>
+                        <p class="text-zinc-300 text-sm relative z-10">两年共计 115 篇，<strong>占 DL 纯净集总量的 78%</strong>。2024 年增速 182%，2025 年延续 171% 高增速。受大模型（LLM）热潮与 ViT 生态成熟的双重驱动，架构级 AI 在半导体缺陷检测、版图生成、良率管控等全场景中的应用全面爆发。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 11 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">3.2 国家与地区分布：中国处于绝对领先地位</h3>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-[38%] flex flex-col justify-center">
+                        <div class="text-center bg-black text-white p-10">
+                            <div class="text-7xl font-black font-mono mb-2">260<span class="text-3xl text-zinc-400 ml-1">篇</span></div>
+                            <div class="text-3xl font-bold mb-4">40.4%</div>
+                            <div class="w-16 h-0.5 bg-white mx-auto mb-4"></div>
+                            <p class="text-zinc-300 text-sm leading-relaxed">断层式领先 · 是第二名美国 (80篇) 的 <strong class="text-white">3.25 倍</strong></p>
+                        </div>
+                        <p class="text-xs text-zinc-500 mt-3 leading-relaxed text-center">中国在"半导体智能制造 × AI工业赋能"交叉领域科研投入巨大，美国与韩国紧随其后。</p>
+                    </div>
+                    <div class="md:w-[62%] bg-white border border-zinc-200 p-8">
+                        <h4 class="font-mono text-xs text-zinc-400 mb-6 uppercase tracking-wider">Top 5 Countries / Regions</h4>
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between mb-1"><span class="font-bold text-lg">1. China</span><span class="font-mono font-bold text-lg">40.4% (260)</span></div>
+                                <div class="w-full bg-zinc-100 h-4 rounded-sm"><div class="h-4 rounded-sm bar-fill bar-fill-1" style="background: linear-gradient(to right, #1a1a1a, #52525b);"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1 text-zinc-600"><span>2. USA</span><span class="font-mono text-sm">12.4% (80)</span></div>
+                                <div class="w-full bg-zinc-100 h-2 rounded-sm"><div class="h-2 rounded-sm bar-fill bar-fill-2" style="background: linear-gradient(to right, #6b7280, #a1a1aa);"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1 text-zinc-600"><span>3. South Korea</span><span class="font-mono text-sm">8.9% (57)</span></div>
+                                <div class="w-full bg-zinc-100 h-2 rounded-sm"><div class="h-2 rounded-sm bar-fill bar-fill-3" style="background: linear-gradient(to right, #6b7280, #a1a1aa);"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1 text-zinc-600"><span>4. UK</span><span class="font-mono text-sm">5.9% (38)</span></div>
+                                <div class="w-full bg-zinc-100 h-2 rounded-sm"><div class="h-2 rounded-sm bar-fill bar-fill-4" style="background: linear-gradient(to right, #9ca3af, #d4d4d8);"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1 text-zinc-600"><span>5. Germany</span><span class="font-mono text-sm">5.6% (36)</span></div>
+                                <div class="w-full bg-zinc-100 h-2 rounded-sm"><div class="h-2 rounded-sm bar-fill bar-fill-5" style="background: linear-gradient(to right, #9ca3af, #d4d4d8);"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 12 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-black pl-4">3.3 核心机构与源期刊：高校主导与 IEEE 阵地</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white border border-zinc-200 shadow-md">
+                        <div class="bg-black text-white p-4 font-bold flex justify-between items-center">
+                            <span>Top 5 核心科研机构</span>
+                            <i data-lucide="building-2" class="w-5 h-5"></i>
+                        </div>
+                        <table class="w-full text-left text-sm">
+                            <tbody>
+                                <tr class="bg-zinc-50 font-bold"><td class="p-4 border-b border-zinc-200">1. Southeast University (东南大学)</td><td class="p-4 border-b border-zinc-200 text-right">14 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100">2. Chinese Academy of Sciences (中科院)</td><td class="p-4 border-b border-zinc-100 text-right font-mono">12 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100">3. Univ Elect Sci & Technol China (电子科大)</td><td class="p-4 border-b border-zinc-100 text-right font-mono">12 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100">4. Zhejiang University (浙江大学)</td><td class="p-4 border-b border-zinc-100 text-right font-mono">10 篇</td></tr>
+                                <tr><td class="p-4">5. Xi'an Jiao Tong University (西安交大)</td><td class="p-4 text-right font-mono">10 篇</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="bg-white border border-zinc-200 shadow-md">
+                        <div class="bg-zinc-100 border-b border-zinc-300 text-black p-4 font-bold flex justify-between items-center">
+                            <span>Top 5 载文期刊 (IEEE 霸榜)</span>
+                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                        </div>
+                        <table class="w-full text-left text-sm">
+                            <tbody>
+                                <tr class="font-bold"><td class="p-4 border-b border-zinc-100">1. IEEE Trans. Power Electronics</td><td class="p-4 border-b border-zinc-100 text-right">29 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100 text-zinc-700">2. IEEE Trans. Microwave Theory...</td><td class="p-4 border-b border-zinc-100 text-right font-mono">24 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100 text-zinc-700">3. IEEE Access</td><td class="p-4 border-b border-zinc-100 text-right font-mono">23 篇</td></tr>
+                                <tr><td class="p-4 border-b border-zinc-100 text-zinc-700">4. IEEE Microwave & Wireless Comp.</td><td class="p-4 border-b border-zinc-100 text-right font-mono">19 篇</td></tr>
+                                <tr><td class="p-4 text-zinc-700">5. IEEE Microwave & Wireless Tech.</td><td class="p-4 text-right font-mono">16 篇</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 13 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[96%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-2">3.4 关键词共现网络图谱</h3>
+                <p class="text-zinc-500 mb-3 text-xs">展示领域核心热点结构，图中节点大小代表共现频次，连线粗细代表关键词间关联强度。</p>
+                <div class="flex flex-col md:flex-row gap-5 items-start">
+                    <div class="w-full md:w-[55%]">
+                        <img loading="lazy" src="Visual output/outputs_keyword_cooccurrence_network.png" alt="关键词共现网络图谱" class="w-full rounded shadow-lg max-h-[50vh] object-contain">
+                    </div>
+                    <div class="w-full md:w-[45%] text-xs text-zinc-600 leading-relaxed text-left">
+                        <p><strong class="text-black">解读：</strong>关键词共现网络包含 <strong>N=387 个节点、E=649 条连线</strong>（Density=0.0084），时间跨度为 2015–2025 年。</p>
+                        <p class="mt-2"><strong>deep learning</strong> 以绝对优势位居网络核心，节点尺寸显著大于其他关键词。紧随其后的核心节点包括 <strong>integrated circuit modeling（集成电路建模）、computational modeling（计算建模）、classification（分类）、predictive models（预测模型）、feature extraction（特征提取）</strong>以及 <strong>convolutional neural networks（卷积神经网络）</strong>。</p>
+                        <p class="mt-2"><strong>semiconductor manufacturing（半导体制造）</strong>和 <strong>defect detection（缺陷检测）</strong>等应用导向的关键词也已形成较大节点，反映出 AI 方法正从通用建模向具体制造场景加速渗透。网络整体呈"一超多强"格局——deep learning 为绝对核心，外围由传统器件建模、AI 算法与制造应用三类关键词交织共现。</p>
+                        <a href="outputs/keyword_cooccurrence_network.html" target="_blank" class="inline-flex items-center gap-1 mt-2 text-xs font-bold text-white bg-black hover:bg-zinc-700 transition-colors px-3 py-1.5 rounded-full no-underline">
+                            <i data-lucide="external-link" class="w-3 h-3"></i> 交互式网络图（拖拽/缩放/悬停查看指标）
+                        </a>
+                        <div class="mt-3 pt-3 border-t border-zinc-200">
+                            <p class="text-[11px] text-zinc-400 mb-1.5">▼ 核心关键词识别（N=387, 按节点规模与中心性排序）</p>
+                            <table class="w-full text-[11px]">
+                                <thead><tr class="text-zinc-400 border-b border-zinc-100"><th class="text-left py-0.5 font-normal">关键词</th><th class="text-left py-0.5 font-normal">中文释义</th><th class="text-right py-0.5 font-normal">网络定位</th></tr></thead>
+                                <tbody class="text-zinc-600">
+                                    <tr><td class="py-0.5 font-bold text-black">deep learning</td><td class="py-0.5">深度学习</td><td class="py-0.5 text-right">◎ 绝对核心</td></tr>
+                                    <tr><td class="py-0.5">integrated circuit modeling</td><td class="py-0.5">集成电路建模</td><td class="py-0.5 text-right">● 传统支柱</td></tr>
+                                    <tr><td class="py-0.5">computational modeling</td><td class="py-0.5">计算建模</td><td class="py-0.5 text-right">● 仿真核心</td></tr>
+                                    <tr><td class="py-0.5 font-bold text-black">classification</td><td class="py-0.5">分类</td><td class="py-0.5 text-right">◈ AI桥头堡</td></tr>
+                                    <tr><td class="py-0.5">feature extraction</td><td class="py-0.5">特征提取</td><td class="py-0.5 text-right">● 方法基础</td></tr>
+                                    <tr><td class="py-0.5">predictive models</td><td class="py-0.5">预测模型</td><td class="py-0.5 text-right">● 应用枢纽</td></tr>
+                                    <tr><td class="py-0.5">convolutional neural networks</td><td class="py-0.5">卷积神经网络</td><td class="py-0.5 text-right">● AI传统支柱</td></tr>
+                                    <tr><td class="py-0.5 font-bold text-black">defect detection</td><td class="py-0.5">缺陷检测</td><td class="py-0.5 text-right">▲ 新兴增长极</td></tr>
+                                    <tr><td class="py-0.5">semiconductor manufacturing</td><td class="py-0.5">半导体制造</td><td class="py-0.5 text-right">▲ 场景锚点</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 14 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[94%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">关键词聚类识别 (基于 LLR 算法)</h3>
+                <div class="flex flex-col md:flex-row gap-8 items-center h-full">
+                    <div class="w-full md:w-[55%]">
+                        <img loading="lazy" src="Visual output/outputs_keyword_cluster.png" alt="关键词聚类图" class="w-full rounded shadow max-h-[50vh] object-contain">
+                    </div>
+                    <div class="w-full md:w-[45%]">
+                        <h4 class="text-xl font-bold mb-4">主要聚类标签提取结果</h4>
+                        <table class="w-full tech-table text-base">
+                            <thead class="bg-zinc-100">
+                                <tr><th>聚类 ID</th><th>聚类标签 (LLR) 及中文释义</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="font-mono">#0</td><td class="font-bold text-red-600">lithium-ion batteries <span class="text-zinc-400 text-sm">（锂离子电池）</span></td></tr>
+                                <tr><td class="font-mono">#1</td><td class="font-bold text-amber-600">machine learning <span class="text-zinc-400 text-sm">（机器学习）</span></td></tr>
+                                <tr><td class="font-mono">#2</td><td>annotation <span class="text-zinc-400 text-sm">（数据标注）</span></td></tr>
+                                <tr><td class="font-mono">#3</td><td>defect detection <span class="text-zinc-400 text-sm">（缺陷检测）</span></td></tr>
+                                <tr><td class="font-mono">#4</td><td class="font-bold text-emerald-600">inductors <span class="text-zinc-400 text-sm">（电感器）</span></td></tr>
+                                <tr><td class="font-mono">#5</td><td>forward converter <span class="text-zinc-400 text-sm">（正激变换器）</span></td></tr>
+                                <tr><td class="font-mono">#6</td><td>energy efficiency <span class="text-zinc-400 text-sm">（能效）</span></td></tr>
+                                <tr><td class="font-mono">#7</td><td>eigenvalues and eigenfunctions <span class="text-zinc-400 text-sm">（特征值与特征函数）</span></td></tr>
+                                <tr><td class="font-mono">#8</td><td>cnn <span class="text-zinc-400 text-sm">（卷积神经网络）</span></td></tr>
+                                <tr><td class="font-mono">#9</td><td>parallel processing <span class="text-zinc-400 text-sm">（并行处理）</span></td></tr>
+                            </tbody>
+                        </table>
+                        <p class="text-sm text-zinc-500 mt-4">* LLR 聚类共识别 <strong>10 个聚类</strong>，Modularity Q = <strong>0.6733</strong>（> 0.3 表明网络社团结构显著），Mean Silhouette = <strong>0.9023</strong>（> 0.7 表明聚类结果高度同质且可信）。各聚类单独 Silhouette 值未在图中直接标注。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 15 ================= -->
+        <section class="slide bg-black text-white">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-3xl font-bold mb-5 flex items-center gap-3">
+                    <i data-lucide="crosshair" class="w-8 h-8 text-blue-400"></i>
+                    3.4 关键词聚类深度解读
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-zinc-800 p-5 hover:bg-zinc-900 transition-colors">
+                        <h4 class="text-lg font-bold mb-3 text-blue-300">A. AI 与先进算法聚类（4/10）</h4>
+                        <p class="text-zinc-400 leading-relaxed text-sm mb-3">
+                            10 个聚类中，4 个与人工智能方法直接相关：<code class="bg-zinc-800 text-white px-1">#1 machine learning</code>（含 predictive models、graph neural networks、transformer model）、<code class="bg-zinc-800 text-white px-1">#2 annotation</code>（含 deep learning、data models、data augmentation）、<code class="bg-zinc-800 text-white px-1">#3 defect detection</code>（含 feature extraction、computer vision）和 <code class="bg-zinc-800 text-white px-1">#8 cnn</code>（含 classification）。从时间线看，这些聚类大多在 2021–2022 年后快速壮大。
+                        </p>
+                        <p class="text-zinc-400 leading-relaxed text-sm">
+                            <strong>AI 相关聚类占比达 40%</strong>，与 2021 年 ViT 提出后 Transformer 架构在半导体视觉与检测任务中的快速渗透高度吻合，表明该领域正经历<strong>从传统硬件驱动到 AI 算法驱动的代际转型</strong>。其中 #2 annotation（数据标注）与 #3 defect detection（缺陷检测）作为应用导向最明确的两个聚类，是 AI 方法与半导体制造场景深度融合的直接证据。
+                        </p>
+                    </div>
+                    <div class="border border-zinc-800 p-5 hover:bg-zinc-900 transition-colors">
+                        <h4 class="text-lg font-bold mb-3 text-zinc-300">B. 传统硬件与能源电子聚类（6/10）</h4>
+                        <p class="text-zinc-400 leading-relaxed text-sm mb-3">
+                            传统硬件方向仍占据 6 个聚类席位：<code class="bg-zinc-800 text-white px-1">#0 lithium-ion batteries</code>（含 semiconductor device modeling，规模最大、时间跨度最长）、<code class="bg-zinc-800 text-white px-1">#4 inductors</code>（含 battery equalization，2019–2022 年后已无新节点）、<code class="bg-zinc-800 text-white px-1">#5 forward converter</code>（含 semiconductor manufacturing）、<code class="bg-zinc-800 text-white px-1">#6 energy efficiency</code>（含 integrated circuit modeling）、<code class="bg-zinc-800 text-white px-1">#7 eigenvalues and eigenfunctions</code>（含 analytical models）与 <code class="bg-zinc-800 text-white px-1">#9 parallel processing</code>（含 computational modeling，2020–2021 年已终止）。
+                        </p>
+                        <p class="text-zinc-400 leading-relaxed text-sm">
+                            <strong class="text-yellow-300">核心发现：</strong>传统聚类中的 <strong>#4 inductors（电感器）与 #9 parallel processing（并行处理）在 2022 年后已完全停止产生新节点</strong>，呈现"学术死亡"状态；而 #0 lithium-ion batteries（锂离子电池）和 #6 energy efficiency（能效）虽时间跨度长，近年活跃度也在下降。<strong class="text-yellow-300">传统电力电子与硬件建模方向的研究热度正在系统性衰减，学术资源正向 AI 方法聚类加速转移。</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-4 border border-zinc-700 p-4 bg-zinc-900/50">
+                    <h4 class="text-xs font-bold text-zinc-300 mb-2 flex items-center gap-2"><i data-lucide="help-circle" class="w-4 h-4 text-zinc-500"></i> 关于"为何仍有非AI聚类"的方法论说明</h4>
+                    <div class="grid md:grid-cols-3 gap-3 text-[11px] text-zinc-400 leading-relaxed">
+                        <div>
+                            <p class="text-zinc-200 font-bold mb-0.5">1. LLR 算法的统计本质</p>
+                            <p>CiteSpace 的 LLR（对数似然比）聚类算法基于关键词间的<strong>统计共现模式</strong>自动提取标签，而非语义筛选或 AI 相关性判定。它忠实地反映文献关键词的"自然聚类"结构，不会因为某个聚类不包含 AI 术语就将其排除——这恰是计量分析的客观性所在。</p>
+                        </div>
+                        <div>
+                            <p class="text-zinc-200 font-bold mb-0.5">2. 交叉领域的真实面貌</p>
+                            <p>147 篇 DL 论文虽然均以 Transformer/ViT 方法为核心，但其<strong>应用场景</strong>天然涉及 lithium-ion batteries、energy efficiency、inductors 等半导体器件术语。例如一篇用 ViT 做锂离子电池缺陷检测的论文，其关键词同时包含 "vision transformer" 和 "lithium-ion batteries"——两类聚类并非互斥，而是<strong>方法论×应用场景</strong>的交叉共生。</p>
+                        </div>
+                        <div>
+                            <p class="text-zinc-200 font-bold mb-0.5">3. 反而是重要的"对照组"</p>
+                            <p>传统聚类的存在不仅不是数据清洗不足的证据，反而是<strong>有价值的内部对照</strong>：它们从 2022 年后系统性衰退（#4、#9 已停产生新节点），恰恰反衬出 AI 聚类的崛起并非统计噪声，而是<strong>真实的学术资源转移</strong>。这种"此消彼长"的结构性信号，比单纯的 AI 关键词频次增长更具说服力。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 16 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[96%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-2">3.5 文献共被引网络 (Knowledge Base)</h3>
+                <p class="text-zinc-500 mb-3 text-xs">揭示支撑当前半导体+AI研究的底层知识基石，发掘高频被引的关键节点文献。</p>
+                <div class="flex flex-col md:flex-row gap-5 items-start">
+                    <div class="w-full md:w-[55%]">
+                        <img loading="lazy" src="Visual output/outputs_co_citation_network.png" alt="共被引网络图谱" class="w-full rounded shadow-lg max-h-[50vh] object-contain">
+                    </div>
+                    <div class="w-full md:w-[45%] text-xs text-zinc-600 leading-relaxed text-left">
+                        <p><strong class="text-black">解读：</strong>共被引网络包含 <strong>N=383 个节点、E=1,262 条连线</strong>（Density=0.0172），时间跨度为 2015–2025 年。</p>
+                        <p class="mt-2">网络中最具统治力的高被引节点几乎全部来自 <strong>Vision Transformer (ViT) 及其核心变体</strong>——<strong>Dosovitskiy A (2021)</strong> 提出的 ViT 和 <strong>Liu Z (2021)</strong> 提出的 Swin Transformer 构成了整个知识网络的双核心，节点尺寸和紫色外圈（中心性指标）均最为突出。</p>
+                        <p class="mt-2">紧随其后的关键节点包括 <strong>Carion N (2020)</strong> 的 DETR（检测 Transformer）、<strong>Touvron H (2021)</strong> 的训练策略改进，以及 <strong>Xie EZ (2021)</strong>、<strong>Zhou HY (2021)</strong> 等在视觉 backbone 上的方法贡献。</p>
+                        <p class="mt-2">在应用层面，<strong>Wei YX (2022)</strong> 的晶圆缺陷识别、<strong>Fan SKS (2024)</strong> 的 ViT 晶圆图分类增强框架以及 <strong>Yu JB (2021/2022)</strong> 的系列工作成为连接基础架构与半导体制造的桥梁节点。</p>
+                        <p class="mt-2 text-zinc-800">网络呈现<strong>"基础架构→方法改进→制造应用"三层引文结构</strong>，该交叉领域的知识基础高度依赖 ViT/Swin 两条架构主线，应用层引文正在 2022–2024 年间快速膨胀。</p>
+                        <a href="outputs/co_citation_network.html" target="_blank" class="inline-flex items-center gap-1 mt-2 text-xs font-bold text-white bg-black hover:bg-zinc-700 transition-colors px-3 py-1.5 rounded-full no-underline">
+                            <i data-lucide="external-link" class="w-3 h-3"></i> 交互式共被引网络（拖拽/缩放/悬停查看指标）
+                        </a>
+                        <div class="mt-3 pt-3 border-t border-zinc-200">
+                            <p class="text-[11px] text-zinc-400 mb-1.5">▼ 核心被引文献识别（N=383, 按被引频次与中介中心性排序）</p>
+                            <table class="w-full text-[11px]">
+                                <thead><tr class="text-zinc-400 border-b border-zinc-100"><th class="text-left py-0.5 font-normal">被引文献 (第一作者, 年份)</th><th class="text-center py-0.5 font-normal">知识层级</th><th class="text-right py-0.5 font-normal">角色定位</th></tr></thead>
+                                <tbody class="text-zinc-600">
+                                    <tr><td class="py-0.5 font-bold text-black">Dosovitskiy A (2021) — ViT</td><td class="py-0.5 text-center">L1 奠基</td><td class="py-0.5 text-right">NLP→CV 架构桥梁</td></tr>
+                                    <tr><td class="py-0.5 font-bold text-black">Liu Z (2021) — Swin Transformer</td><td class="py-0.5 text-center">L1 奠基</td><td class="py-0.5 text-right">层次化视觉骨干</td></tr>
+                                    <tr><td class="py-0.5">Carion N (2020) — DETR</td><td class="py-0.5 text-center">L2 方法</td><td class="py-0.5 text-right">检测Transformer先驱</td></tr>
+                                    <tr><td class="py-0.5">Touvron H (2021) — Training ViT</td><td class="py-0.5 text-center">L2 方法</td><td class="py-0.5 text-right">ViT训练策略改进</td></tr>
+                                    <tr><td class="py-0.5">Xie EZ (2021) — PVT</td><td class="py-0.5 text-center">L2 方法</td><td class="py-0.5 text-right">金字塔ViT变体</td></tr>
+                                    <tr><td class="py-0.5 font-bold text-black">Wei YX (2022) — Wafer Defect</td><td class="py-0.5 text-center">L3 应用</td><td class="py-0.5 text-right">晶圆缺陷检测先驱</td></tr>
+                                    <tr><td class="py-0.5">Fan SKS (2024) — ViT Wafer Map</td><td class="py-0.5 text-center">L3 应用</td><td class="py-0.5 text-right">晶圆图分类增强</td></tr>
+                                    <tr><td class="py-0.5">Yu JB (2021/2022)</td><td class="py-0.5 text-center">L3 应用</td><td class="py-0.5 text-right">半导体缺陷检测系列</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 17 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[94%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-4 border-l-4 border-black pl-4">共被引知识聚类群组</h3>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-[58%]">
+                        <img loading="lazy" src="Visual output/outputs_co_citation_cluster.png" alt="共被引聚类图" class="w-full rounded shadow max-h-[52vh] object-contain">
+                    </div>
+                    <div class="w-full md:w-[42%]">
+                        <p class="text-xs text-zinc-500 mb-2">共 8 个聚类 | Modularity Q = <strong>0.8411</strong> | Mean Silhouette = <strong>0.9522</strong></p>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-red-50 p-3 border-l-4 border-l-red-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#0 attention-guided fusion ViT</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">最大聚类。融合注意力的 ViT 变体构成知识基础核心，涵盖 Dosovitskiy (2021)、Liu Z (2021) 等奠基文献。</p>
+                            </div>
+                            <div class="bg-orange-50 p-3 border-l-4 border-l-orange-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#2 mixup-based neural network</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">数据增强方法群。以 Mixup 为代表的少样本增强策略，在缺陷样本天然稀缺的晶圆检测中具有特殊价值。</p>
+                            </div>
+                            <div class="bg-green-50 p-3 border-l-4 border-l-green-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#3 learning-based Conv-Trans</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">CNN-Transformer 混合架构群，代表从 CNN 到 ViT 的中间技术路线，是视觉迁移学习的过渡形态。</p>
+                            </div>
+                            <div class="bg-emerald-50 p-3 border-l-4 border-l-emerald-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#4 vision transformer</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">纯 ViT 方法群。与 #0 互为姊妹聚类，聚焦 ViT 架构本身改进，2021 年以来引用增速最快的知识群组。</p>
+                            </div>
+                            <div class="bg-cyan-50 p-3 border-l-4 border-l-cyan-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#5 advanced quality control</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">先进质量管控应用群。AI 视觉方法应用于半导体良率管理、工艺异常检测，连接学术与产业落地的关键知识群。</p>
+                            </div>
+                            <div class="bg-blue-50 p-3 border-l-4 border-l-blue-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#8 generating layout pattern</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">版图生成应用群。利用 Transformer 序列建模自动生成芯片 Layout，代表 AI 从"检测"向"设计"环节的上游延伸。</p>
+                            </div>
+                            <div class="bg-purple-50 p-3 border-l-4 border-l-purple-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#11 wafer defect</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">晶圆缺陷检测应用群。将 ViT 架构与工业级晶圆图分类任务紧密耦合，是产业需求最旺盛的知识群。</p>
+                            </div>
+                            <div class="bg-pink-50 p-3 border-l-4 border-l-pink-500">
+                                <h4 class="font-bold text-xs text-black mb-1">#12 large scale</h4>
+                                <p class="text-zinc-600 text-xs leading-relaxed">大规模计算群。关注 Transformer 在工业级数据下的扩展性与部署优化，反映算法验证到产线落地的工程瓶颈。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 18 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">03</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第三部分：结果分析</h2>
+                </div>
+                <h3 class="text-3xl font-bold mb-8 border-l-4 border-black pl-4">知识基础的"CV→半导体"技术溢出路径</h3>
+                <div class="bg-zinc-50 border border-zinc-200 p-10 relative">
+                    <i data-lucide="layers" class="absolute top-10 right-10 w-24 h-24 text-zinc-200"></i>
+                    <p class="text-xl leading-relaxed text-zinc-700 relative z-10 mb-6">
+                        通过共被引聚类溯源，我们识别出一条清晰的跨领域技术溢出路径：<br><br>
+                        该交叉领域的知识基础并非内生于半导体学科，而是高度依赖<strong>通用计算机视觉（Computer Vision）</strong>的方法论输出——Dosovitskiy A (2021) 的 ViT 与 Liu Z (2021) 的 Swin Transformer 分别来自 NLP 注意力机制的视觉化迁移与层次化窗口设计，它们构成共被引网络的双核心后，通过 <strong>CNN→Conv-Transformer→ViT</strong> 的技术演化链条逐步渗透至半导体制造的缺陷检测、版图生成与良率管控场景。
+                    </p>
+                    <p class="text-xs text-zinc-400 mb-3">下图展示了该交叉领域知识基础的技术传递链条：从 NLP 注意力机制 → 通用视觉骨干网络 → 半导体具体应用场景，耗时约 5 年完成全链路技术迁移。</p>
+                    <div class="flex items-center gap-4 text-zinc-500 font-mono text-sm border-t border-zinc-200 pt-4">
+                        <div class="bg-white px-3 py-1 border border-zinc-200 shadow-sm text-center">NLP Attention<br><span class="text-xs text-zinc-400">(Vaswani 2017)</span></div>
+                        <i data-lucide="arrow-right" class="w-4 h-4 shrink-0"></i>
+                        <div class="bg-white px-3 py-1 border border-zinc-200 shadow-sm text-center">CV Backbone<br><span class="text-xs text-zinc-400">(ViT/Swin 2021)</span></div>
+                        <i data-lucide="arrow-right" class="w-4 h-4 shrink-0"></i>
+                        <div class="bg-black text-white px-3 py-1 shadow-sm text-center">Wafer Defect<br>&amp; Layout<br><span class="text-xs text-zinc-400">(2022-2025)</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 19 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[94%] mx-auto w-full">
+                <h3 class="text-3xl font-bold mb-2">3.6 突现词检测时间线 (Burst Detection)</h3>
+                <p class="text-zinc-500 mb-2 text-sm">采用 Kleinberg 算法，敏锐捕捉特定时间段内被学术界突然高频关注的前沿技术词汇。</p>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-[45%] text-sm text-zinc-600 leading-relaxed text-left">
+                        <p><strong class="text-black">突现检测（Burst Detection）</strong>是 Kleinberg (2003) 提出的算法，通过建模词频的时序变化识别某词在特定时段是否出现了统计显著的"爆发式"增长。本研究共捕捉到 <strong>25 个突现词</strong>（2015–2025），按时间可划分为三阶段技术演进（我们也叫它"三波浪潮"）。</p>
+                        <p class="mt-3">突现强度绝对值普遍不高（最高仅 <strong class="text-red-600">1.90</strong>），这与交叉领域仍处高速扩张初期、文献基数快速增长导致词频基线抬高的统计特征有关。</p>
+                        <div class="mt-5 space-y-3">
+                            <div class="border-l-4 border-zinc-300 pl-3">
+                                <span class="text-xs text-zinc-400">第一波 (2017–2019)</span>
+                                <p class="text-xs text-zinc-500">RFID、电感耦合、反激变换器等电力电子硬件术语，强度<0.7，传统器件研究微弱信号。</p>
+                            </div>
+                            <div class="border-l-4 border-zinc-500 pl-3">
+                                <span class="text-xs text-zinc-400">第二波 (2020–2022)</span>
+                                <p class="text-xs text-zinc-500">mathematical model (1.2) + classification (1.9) 标志 AI 分类方法规模化导入。</p>
+                            </div>
+                            <div class="border-l-4 border-red-500 pl-3">
+                                <span class="text-xs text-zinc-400">第三波 (2023–2025)</span>
+                                <p class="text-xs text-zinc-500"><strong>2024 年标志性拐点</strong>——vision transformers、ViT、super resolution、SEM 等 6 个术语同步突现。2025 年 anomaly detection 接棒延续。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[55%] -mt-10">
+                        <img loading="lazy" src="Visual output/outputs_burst_timeline.png" alt="突现检测时间线" class="w-full max-h-[52vh] object-contain rounded shadow-lg bg-white p-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 20 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-xl font-bold mb-3 border-l-4 border-black pl-4">突现主题三阶段技术演进解读</h3>
+                <p class="text-xs text-zinc-500 mb-4">共检测到 <strong>25 个突现词</strong>（2015–2025），按时间顺序呈现明显的三波技术浪潮。</p>
+                <div class="space-y-2.5">
+                    <div class="bg-white p-3 border-l-4 border-red-500 flex justify-between items-center group hover:bg-red-50 transition-colors">
+                        <div>
+                            <h4 class="text-base font-bold text-black mb-0.5 font-mono">classification</h4>
+                            <p class="text-xs text-zinc-500">全时段最强突现词。分类任务作为缺陷检测的核心技术形态，在 2022–2024 年间成为该领域方法论文献的第一高频主题。</p>
+                        </div>
+                        <div class="text-right flex-shrink-0 ml-3">
+                            <div class="font-mono text-xs bg-red-100 text-red-700 px-2 py-0.5 inline-block mb-1">Burst: 1.90</div>
+                            <div class="text-xs text-zinc-400">2022 - 2024</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3 border-l-4 border-orange-400 flex justify-between items-center group hover:bg-orange-50 transition-colors">
+                        <div>
+                            <h4 class="text-base font-bold text-black mb-0.5 font-mono">task analysis</h4>
+                            <p class="text-xs text-zinc-500">2023–2024 年高强度突现，反映研究范式从"单一算法竞赛"向"任务级系统分析"的转向。</p>
+                        </div>
+                        <div class="text-right flex-shrink-0 ml-3">
+                            <div class="font-mono text-xs bg-orange-100 text-orange-700 px-2 py-0.5 inline-block mb-1">Burst: 1.86</div>
+                            <div class="text-xs text-zinc-400">2023 - 2024</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3 border-l-4 border-blue-400 flex justify-between items-center group hover:bg-blue-50 transition-colors">
+                        <div>
+                            <h4 class="text-base font-bold text-black mb-0.5 font-mono">scanning electron microscope (SEM)</h4>
+                            <p class="text-xs text-zinc-500">2024 年单年爆发（Strength 1.59）。SEM 是晶圆缺陷成像的核心硬件，其突现说明 AI 研究正从通用数据集向真实半导体检测硬件数据源靠拢。</p>
+                        </div>
+                        <div class="text-right flex-shrink-0 ml-3">
+                            <div class="font-mono text-xs bg-blue-100 text-blue-700 px-2 py-0.5 inline-block mb-1">Burst: 1.59</div>
+                            <div class="text-xs text-zinc-400">2024 - 2024</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3 border-l-4 border-purple-400 flex justify-between items-center group hover:bg-purple-50 transition-colors">
+                        <div>
+                            <h4 class="text-base font-bold text-black mb-0.5 font-mono">vision transformers / ViT</h4>
+                            <p class="text-xs text-zinc-500">2024 年集中爆发！vision transformers（1.05）、ViT（1.05）、super resolution（1.05）三个与 Transformer 视觉架构直接相关的术语同步突现。</p>
+                        </div>
+                        <div class="text-right flex-shrink-0 ml-3">
+                            <div class="font-mono text-xs bg-purple-100 text-purple-700 px-2 py-0.5 inline-block mb-1">Burst: 1.05 ×3</div>
+                            <div class="text-xs text-zinc-400">2024 - 2024</div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3 border-l-4 border-green-400 flex justify-between items-center group hover:bg-green-50 transition-colors">
+                        <div>
+                            <h4 class="text-base font-bold text-black mb-0.5 font-mono">anomaly detection</h4>
+                            <p class="text-xs text-zinc-500">2025 年最新突现词，代表前沿从"已知缺陷分类"向"未知异常检测"升级。同期 machine learning（0.83）也延至 2025，暗示通用 ML 方法仍在持续渗透。</p>
+                        </div>
+                        <div class="text-right flex-shrink-0 ml-3">
+                            <div class="font-mono text-xs bg-green-100 text-green-700 px-2 py-0.5 inline-block mb-1">Burst: 0.97</div>
+                            <div class="text-xs text-zinc-400">2025</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-zinc-50 border border-zinc-200 p-3 mt-4">
+                    <p class="text-xs text-zinc-600 leading-relaxed">
+                        <strong>三阶段技术演进总览：</strong>第一波（2017–2019）以 RFID、电感耦合、反激变换器、电荷均衡等电力电子硬件术语为主，强度<0.7。第二波（2020–2022）出现 mathematical model（1.2）与 classification（1.9），标志 AI 方法规模化导入。第三波（2023–2025）是真正的<strong>"Transformer 大爆发"</strong>——2024 年单年即有 vision transformers、ViT、super resolution、SEM、load modeling、data augmentation 共 6 个术语同步突现，2025 年由 anomaly detection 与 machine learning 接棒。突现强度绝对值普遍不高（最高 1.9），这与交叉领域仍处高速扩张初期、文献基数快速增长导致词频基线抬高的统计特征有关，并不削弱趋势信号的结构性意义。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 20B ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[94%] mx-auto w-full">
+                <h3 class="text-3xl font-bold mb-2">突现主题三阶段技术演进解读</h3>
+                <p class="text-zinc-500 mb-4 text-sm">共检测到 <strong>25 个突现词</strong>（2015–2025），按时间顺序呈现明显的三波技术浪潮。突现强度绝对值普遍不高（最高 1.9），这与交叉领域仍处高速扩张初期、文献基数快速增长导致词频基线抬高的统计特征有关，并不削弱趋势信号的结构性意义。</p>
+
+                <!-- 三波卡片 -->
+                <div class="flex flex-col md:flex-row gap-0 md:gap-0 mb-5">
+                    <div class="flex-1 bg-white border border-zinc-200 border-t-4 border-t-zinc-300 p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-sm text-zinc-500 uppercase tracking-widest">Wave 01</h4>
+                            <span class="font-mono text-xs bg-zinc-100 text-zinc-500 px-2 py-0.5">2017–2019</span>
+                        </div>
+                        <p class="text-sm text-zinc-600 leading-relaxed">以 RFID（射频识别）、电感耦合、反激变换器、电荷均衡等电力电子硬件术语为主。</p>
+                        <div class="mt-3 bg-zinc-100 text-zinc-500 px-3 py-1 text-xs inline-block font-bold">突现强度 &lt; 0.7</div>
+                    </div>
+                    <div class="flex items-center justify-center px-2 py-2 md:py-0 text-zinc-300 flex-shrink-0">
+                        <i data-lucide="chevron-right" class="w-8 h-8 hidden md:block"></i>
+                        <i data-lucide="chevron-down" class="w-6 h-6 md:hidden"></i>
+                    </div>
+                    <div class="flex-1 bg-white border border-zinc-200 border-t-4 border-t-zinc-500 p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-sm text-zinc-700 uppercase tracking-widest">Wave 02</h4>
+                            <span class="font-mono text-xs bg-zinc-200 text-zinc-700 px-2 py-0.5">2020–2022</span>
+                        </div>
+                        <p class="text-sm text-zinc-700 leading-relaxed">出现 <span class="font-mono font-bold">mathematical model</span>（数学模型, 1.2）与 <span class="font-mono font-bold">classification</span>（分类, 1.9）。</p>
+                        <div class="mt-3 bg-zinc-200 text-zinc-800 px-3 py-1 text-xs inline-block font-bold">标志 AI 方法规模化导入</div>
+                    </div>
+                    <div class="flex items-center justify-center px-2 py-2 md:py-0 text-zinc-400 flex-shrink-0">
+                        <i data-lucide="chevron-right" class="w-8 h-8 hidden md:block"></i>
+                        <i data-lucide="chevron-down" class="w-6 h-6 md:hidden"></i>
+                    </div>
+                    <div class="flex-1 bg-black text-white p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-sm text-zinc-300 uppercase tracking-widest">Wave 03</h4>
+                            <span class="font-mono text-xs bg-zinc-800 text-white px-2 py-0.5">2023–2025</span>
+                        </div>
+                        <p class="text-sm text-zinc-300 leading-relaxed">真正的"Transformer 大爆发"。6 个核心术语同步突现，由 anomaly detection（异常检测）接棒。</p>
+                        <div class="mt-3 bg-white text-black px-3 py-1 text-xs inline-block font-bold">前沿范式升级</div>
+                    </div>
+                </div>
+
+                <!-- 时间线详情 -->
+                <div class="bg-white border border-zinc-200 p-5">
+                    <div class="grid grid-cols-5 gap-3 text-xs">
+                        <div>
+                            <div class="text-sm font-bold text-zinc-800 mb-1">2022-24</div>
+                            <h4 class="font-bold text-sm mb-1">classification<span class="text-xs text-zinc-500 ml-1">分类</span></h4>
+                            <span class="text-[11px] font-bold text-zinc-600 font-mono bg-zinc-100 px-1.5 py-0.5">BST 1.90</span>
+                            <p class="text-[11px] text-zinc-500 mt-1 leading-relaxed">全时段最强突现词。分类任务成为领域方法论文献高频主题。</p>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-zinc-800 mb-1">2023-24</div>
+                            <h4 class="font-bold text-sm mb-1">task analysis<span class="text-xs text-zinc-500 ml-1">任务分析</span></h4>
+                            <span class="text-[11px] font-bold text-zinc-600 font-mono bg-zinc-100 px-1.5 py-0.5">BST 1.86</span>
+                            <p class="text-[11px] text-zinc-500 mt-1 leading-relaxed">范式从"单一算法竞赛"向"任务级系统分析"重要转向。</p>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white bg-black inline-block px-2 py-0.5 mb-1">2024</div>
+                            <h4 class="font-bold text-sm mb-1">SEM<span class="text-xs text-zinc-500 ml-1">扫描电子显微镜</span></h4>
+                            <span class="text-[11px] font-bold text-black font-mono border border-zinc-300 px-1.5 py-0.5">BST 1.59</span>
+                            <p class="text-[11px] text-zinc-500 mt-1 leading-relaxed">缺陷成像核心硬件，研究正从通用数据集向真实半导体硬件数据源靠拢。</p>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white bg-black inline-block px-2 py-0.5 mb-1">2024</div>
+                            <h4 class="font-bold text-sm mb-1">vision transformers<span class="text-xs text-zinc-500 ml-1">/ ViT / super res.</span></h4>
+                            <span class="text-[11px] font-bold text-black font-mono border border-zinc-300 px-1.5 py-0.5">BST 1.05</span>
+                            <p class="text-[11px] text-zinc-500 mt-1 leading-relaxed">集中爆发！三个与 Transformer 视觉架构相关的术语同步突现。</p>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-zinc-800 mb-1">2025-26</div>
+                            <h4 class="font-bold text-sm mb-1">anomaly detection<span class="text-xs text-zinc-500 ml-1">异常检测</span></h4>
+                            <span class="text-[11px] font-bold text-zinc-600 font-mono bg-zinc-100 px-1.5 py-0.5">BST 0.97</span>
+                            <div class="text-[11px] font-mono text-zinc-400 mt-0.5">ML (机器学习): 0.83</div>
+                            <p class="text-[11px] text-zinc-500 mt-1 leading-relaxed">最新突现，代表前沿从已知分类向"未知异常检测"升级。ML 持续渗透。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 21 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[94%] mx-auto w-full">
+                <h3 class="text-3xl font-bold mb-2">3.7 聚类时间线演化图 (Timeline View)</h3>
+                <p class="text-zinc-500 mb-2 text-sm">直观展示各大聚类（研究主题）随时间轴的演化、兴衰与技术轨道变迁。</p>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-[45%] text-sm text-zinc-600 leading-relaxed text-left">
+                        <p><strong class="text-black">解读：</strong>时间线演化图（2015–2025）揭示了 10 个聚类在时间轴上的兴衰分化，可清晰划分为三类命运轨迹：</p>
+                        <p class="mt-3"><strong class="text-red-600">第一类 · 已消亡的早期聚类：</strong><strong>#4 inductors</strong>（2019–2022）、<strong>#9 parallel processing</strong>（2020–2021）和 <strong>#6 energy efficiency</strong>（2018–2024）已停止生成新节点。三者均属传统电力电子与硬件建模方向，学术生命周期的终结标志着研究重心向 AI 方向的结构性转移。</p>
+                        <p class="mt-3"><strong class="text-amber-600">第二类 · 持续但边缘化的传统聚类：</strong><strong>#0 lithium-ion batteries</strong> 是全时间线跨度最长的聚类（2018–2025），但增速已放缓；<strong>#5 forward converter</strong>（2022–2024）和 <strong>#7 eigenvalues and eigenfunctions</strong>（2020–2024）处于边缘活跃状态。这些聚类构成"学术底盘"——体量大但不再产生突破性节点。</p>
+                        <p class="mt-3"><strong class="text-green-600">第三类 · 高速崛起的 AI 聚类：</strong><strong>#1 machine learning</strong>（2022–2025）、<strong>#2 annotation</strong>（2018–2025）、<strong>#3 defect detection</strong>（2022–2025）和 <strong>#8 cnn</strong>（2021–2025）是当前最具活力的四个聚类，在 2024–2025 年呈高密度节点分布。其中 #1 和 #2 活跃度延续至 2025 年，#3 defect detection 作为应用导向最明确的聚类，是 AI 与半导体制造场景深度融合的最直接证据。</p>
+                    </div>
+                    <div class="w-full md:w-[55%] -mt-3">
+                        <img loading="lazy" src="Visual output/outputs_timeline_view.png" alt="聚类时间线图" class="w-full rounded shadow-lg max-h-[55vh] object-contain">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 22 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">04</span>
+                    <h2 class="text-3xl font-bold">第四部分：深度讨论与局限性</h2>
+                </div>
+                <h3 class="text-xl font-bold mb-4 border-l-4 border-black pl-4">4.1 研究热点演变脉络</h3>
+                <div class="relative border-l-2 border-zinc-200 ml-4 space-y-6">
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-zinc-300 border-2 border-white"></span>
+                        <h4 class="font-bold text-base mb-1 text-zinc-500">第一波：传统硬件主导 (2017–2019)</h4>
+                        <p class="text-zinc-600 text-sm">突现词以 <strong>RFID、电感耦合（inductive coupling）、负载调制（load modulation）、反激变换器（flyback converter）、电荷均衡（charge equalization）</strong>等电力电子与射频电路术语为主，突现强度集中在 0.67–0.69 的低位区间。时间线显示 #4 inductors、#6 energy efficiency、#9 parallel processing 等传统聚类在此阶段产生主要节点，AI 相关聚类尚未成形。该阶段半导体领域的研究话语权完全由硬件工程主导。</p>
+                    </div>
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-zinc-500 border-2 border-white"></span>
+                        <h4 class="font-bold text-base mb-1 text-zinc-700">第二波：计算建模过渡 (2020–2022)</h4>
+                        <p class="text-zinc-600 text-sm"><strong>mathematical model</strong>（Burst 1.2，2020–2021）成为首个突破 1.0 强度的突现词。<strong>classification</strong>（Burst 1.9）与 <strong>convolutional neural networks</strong>（Burst 1.19）于 2022 年同步突现，宣告 AI 分类方法正式进入核心学术话语。时间线上，#8 cnn（2021 起）、#1 machine learning（2022 起）、#3 defect detection（2022 起）三个 AI 聚类同步诞生，#4 inductors 和 #9 parallel processing 则在此阶段产出最后一批节点后停止活跃。该阶段是<strong>从纯硬件到"硬件+AI"的范式转换临界区</strong>。</p>
+                    </div>
+                    <div class="relative pl-8">
+                        <span class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-black border-4 border-white shadow-md"></span>
+                        <h4 class="font-bold text-base mb-1 text-black">第三波：Transformer 架构大爆发 (2023–2025)</h4>
+                        <p class="text-zinc-800 text-sm"><strong>2024 年成为标志性拐点</strong>——vision transformers（Burst 1.05）、ViT（Burst 1.05）、super resolution（Burst 1.05）、scanning electron microscope（Burst 1.59）、load modeling（Burst 1.05）、data augmentation（Burst 0.89）共 6 个术语在 2024 年同步突现，形成该领域史上最大规模的术语集中爆发。task analysis（Burst 1.86）反映研究范式从算法竞赛向系统级任务分析的升级。2025 年，anomaly detection（Burst 0.97）与 machine learning（Burst 0.83）接棒延续。时间线上，#1 machine learning、#2 annotation、#3 defect detection、#8 cnn 四大 AI 聚类同步活跃至 2025 年，而 #4、#6、#9 等传统聚类已系统性退场。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 23 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">04</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第四部分：深度讨论与局限性</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-black pl-4">4.2 & 4.3 前沿趋势预测 (Frontier Trends)</h3>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="border border-zinc-300 p-8 hover:border-black transition-colors bg-white">
+                        <i data-lucide="image" class="w-8 h-8 text-black mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">1. ViT 高精缺陷检测</h4>
+                        <p class="text-sm text-zinc-600">Vision Transformer 凭借全局感受野，正逐步取代 CNN，成为晶圆划痕、颗粒等微观缺陷识别的标杆模型。</p>
+                    </div>
+                    <div class="border border-zinc-300 p-8 hover:border-black transition-colors bg-white">
+                        <i data-lucide="line-chart" class="w-8 h-8 text-black mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">2. 时序工艺预测</h4>
+                        <p class="text-sm text-zinc-600">利用 Autoformer、Informer 等时序特化 Transformer 变体，对刻蚀温度、压力等多模态传感器数据进行长序列精准预测。</p>
+                    </div>
+                    <div class="border border-zinc-300 p-8 hover:border-black transition-colors bg-white">
+                        <i data-lucide="layers" class="w-8 h-8 text-black mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">3. 多模态深度融合</h4>
+                        <p class="text-sm text-zinc-600">打破单一数据孤岛，联合晶圆视觉图像、机台运行时序日志与专家文本，实现真正的工厂级大模型 (Factory LLM)。</p>
+                    </div>
+                    <div class="border border-zinc-300 p-8 hover:border-black transition-colors bg-white">
+                        <i data-lucide="cpu" class="w-8 h-8 text-black mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">4. 小样本学习与边缘部署</h4>
+                        <p class="text-sm text-zinc-600">结合大模型微调 (Fine-tuning) 与扩散模型 (Diffusion) 解决数据稀缺痛点；探索轻量化实现边缘推理。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 24 ================= -->
+        <section class="slide bg-dot-pattern">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-black pl-4 flex items-center gap-2">
+                    4.4 研究局限性分析 <i data-lucide="alert-circle" class="text-zinc-400 w-6 h-6"></i>
+                </h3>
+                <div class="bg-white p-10 border border-zinc-200 shadow-lg">
+                    <ul class="space-y-6 text-zinc-700 text-lg">
+                        <li class="flex gap-4">
+                            <span class="font-mono font-bold text-black border border-black w-8 h-8 flex items-center justify-center shrink-0">1</span>
+                            <div>
+                                <strong>单一数据源偏差：</strong>
+                                <p class="text-zinc-500 text-base mt-1">目前计量库仅基于 Web of Science Core Collection 的英文文献构建，遗憾未能覆盖 CNKI 等优秀中文学术数据库的本土顶尖成果。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono font-bold text-black border border-black w-8 h-8 flex items-center justify-center shrink-0">2</span>
+                            <div>
+                                <strong>检索式顽固噪声：</strong>
+                                <p class="text-zinc-500 text-base mt-1">尽管团队实施了严苛的排除，但在特定英文语境下，仍可能有少量跨领域的传统电力电子文献逃逸混入。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-mono font-bold text-black border border-black w-8 h-8 flex items-center justify-center shrink-0">3</span>
+                            <div>
+                                <strong>时间截断效应滞后：</strong>
+                                <p class="text-zinc-500 text-base mt-1">检索冻结时间点为 2026年4月，这意味着最新的高强度突现词存在时间切片统计学截断带来的滞后性。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 25 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">05</span>
+                    <h2 class="text-3xl font-bold">第五部分：团队复盘与产出矩阵</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">5.1 项目核心产出物全景 (Deliverables)</h3>
+                <div class="bg-black text-white p-8 border border-zinc-800">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <tbody>
+                            <tr class="border-b border-zinc-800 hover:bg-zinc-900 transition-colors">
+                                <td class="p-4 w-1/4 font-mono text-zinc-400">规范文档体系</td>
+                                <td class="p-4">检索式设计演进表、52字段数据字典、数据质量检测报告、完整 PRISMA 标准筛选流程图</td>
+                            </tr>
+                            <tr class="border-b border-zinc-800 hover:bg-zinc-900 transition-colors">
+                                <td class="p-4 font-mono text-zinc-400">计量硬核资产</td>
+                                <td class="p-4">核心 CiteSpace 高清精修图谱、高强度突现词检测底稿、关键网络指标汇总表</td>
+                            </tr>
+                            <tr class="border-b border-zinc-800 hover:bg-zinc-900 transition-colors">
+                                <td class="p-4 font-mono text-blue-400">学术初稿交付</td>
+                                <td class="p-4 font-bold">文献计量分析课程报告 + 核心文献摘要整理</td>
+                            </tr>
+                            <tr class="hover:bg-zinc-900 transition-colors">
+                                <td class="p-4 font-mono text-green-400">工程化展示套件</td>
+                                <td class="p-4">开源 GitHub 完整仓库 (v1.0 Release) + 本套基于 HTML5 + Tailwind CSS + ECharts 构建的交互式学术幻灯片</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 26 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">05</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第五部分：团队复盘与产出矩阵</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">5.2 技术实践踩坑与反思 (Pitfalls & Retrospective)</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-zinc-50 border border-zinc-200 p-8 border-t-4 border-t-green-500">
+                        <i data-lucide="check-circle-2" class="w-8 h-8 text-green-500 mb-4"></i>
+                        <h4 class="font-bold text-lg mb-3 text-black">做对的坚守：规范至上</h4>
+                        <ul class="text-zinc-600 text-sm leading-relaxed space-y-2 list-disc list-inside">
+                            <li>面对海量且混杂的数据，团队严格执行了 <strong>检索式三轮强迭代逻辑</strong>（从最初失控的噪声到最终的 643 条全集与 147 条 DL 纯净集）。</li>
+                            <li>全套标准文档（从自定义数据字典、PRISMA 流水线到查新报告）的无死角沉淀，保证了整个计量分析过程的可复现与学术严谨。</li>
+                            <li>双集分流设计——全量集作宏观统计与内部对照，DL 纯净集作核心图谱分析——确保了 CiteSpace 输出的客观性与聚焦性的平衡。</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white border border-zinc-200 p-8 border-t-4 border-t-red-500 shadow-md">
+                        <i data-lucide="alert-circle" class="w-8 h-8 text-red-500 mb-4"></i>
+                        <h4 class="font-bold text-lg mb-3 text-black">血泪踩坑记录：工程化陷阱</h4>
+                        <ul class="text-zinc-600 text-sm leading-relaxed space-y-3 list-disc list-inside">
+                            <li><strong class="text-black">Git 仓库血崩：</strong>前期 GitHub 部署时不慎将庞大的 <code>node_modules</code> 强推，导致仓库体积爆炸与 CI 构建瘫痪。</li>
+                            <li><strong class="text-black">框架生态断裂：</strong>构建展示页时，最新版 CSS 框架配置冲突引发内核级报错，经紧急排查回滚至稳定版本。</li>
+                            <li><strong class="text-black">组件库缺失：</strong>设计初期依赖的图标库意外缺失原生组合，果断调整 UI 方案采用泛用图标平替。</li>
+                            <li><strong class="text-black">检索式漂移：</strong>初期关键词过宽导致 500+ 条与半导体完全无关的文献混入（NLP 纯文本、医学影像等），三轮迭代才收敛至精准集。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 27 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10">
+                    <span class="bg-black text-white w-10 h-10 flex items-center justify-center font-mono text-lg">06</span>
+                    <h2 class="text-3xl font-bold">第六部分：结论与未来指引</h2>
+                </div>
+                <h3 class="text-2xl font-bold mb-6 border-l-4 border-black pl-4">6.1 核心主要发现总结</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="bg-white p-5 border border-zinc-200 text-center">
+                        <p class="text-3xl font-black text-black mb-2">78%</p>
+                        <div class="h-px bg-zinc-200 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">爆发式增长</h4>
+                        <p class="text-xs text-zinc-500">2024-2025年发文量占 DL 纯净集近八成，领域处于白热化上升期。</p>
+                    </div>
+                    <div class="bg-white p-5 border border-zinc-200 text-center">
+                        <p class="text-3xl font-black text-black mb-2">40.4%</p>
+                        <div class="h-px bg-zinc-200 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">中国断层领先</h4>
+                        <p class="text-xs text-zinc-500">260篇为第二名美国(80篇)的3.25倍，科研投入强度巨大。</p>
+                    </div>
+                    <div class="bg-white p-5 border border-zinc-200 text-center">
+                        <p class="text-3xl font-black text-black mb-2">2024</p>
+                        <div class="h-px bg-zinc-200 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">历史级拐点</h4>
+                        <p class="text-xs text-zinc-500">6个Transformer术语同步突现，SEM硬件数据源与AI方法在该节点对接。</p>
+                    </div>
+                    <div class="bg-black text-white p-5 border border-zinc-800 text-center">
+                        <p class="text-3xl font-black text-white mb-2">ViT/Swin</p>
+                        <div class="h-px bg-zinc-700 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">知识基础双核心</h4>
+                        <p class="text-xs text-zinc-400">共被引网络引力中心，L1架构奠基→L2方法改进→L3应用落地的三层引文结构。</p>
+                    </div>
+                    <div class="bg-white p-5 border border-zinc-200 text-center">
+                        <p class="text-3xl font-black text-black mb-2">3波</p>
+                        <div class="h-px bg-zinc-200 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">技术浪潮级跃迁</h4>
+                        <p class="text-xs text-zinc-500">传统硬件(2015-19)→AI渗透(2020-22)→Transformer爆发(2023-25)，范式代际转型。</p>
+                    </div>
+                    <div class="bg-white p-5 border border-zinc-200 text-center">
+                        <p class="text-3xl font-black text-black mb-2">~5年</p>
+                        <div class="h-px bg-zinc-200 w-full mb-2"></div>
+                        <h4 class="font-bold text-sm mb-1">知识传导全链路</h4>
+                        <p class="text-xs text-zinc-500">NLP Attention(2017)→CV Backbone(2021)→Wafer Defect(2022-25)，约5年完成跨界穿透。</p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-zinc-50 border border-zinc-200 p-4 text-center">
+                    <p class="text-sm text-zinc-700 leading-relaxed"><strong>核心判断：</strong>传统硬件聚类（#4 inductors、#9 parallel processing）2022年后系统性退场，AI聚类（#1 ML、#2 annotation、#3 defect detection、#8 CNN）齐头并进活跃至2025——<strong>不是关键词偏好的微调，而是整个研究共同体的注意力结构发生了代际级别的重组。</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 28 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <div class="flex items-center gap-4 mb-10 text-zinc-500">
+                    <span class="border border-zinc-300 w-10 h-10 flex items-center justify-center font-mono text-lg text-zinc-600">06</span>
+                    <h2 class="text-2xl font-normal text-zinc-600">第六部分：结论与未来指引</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 border-l-4 border-black pl-4">6.2 本研究核心贡献</h3>
+                        <div class="bg-white p-6 border border-zinc-200">
+                            <ul class="space-y-4 text-sm text-zinc-700 leading-relaxed">
+                                <li class="flex gap-3">
+                                    <span class="font-mono font-bold text-black flex-shrink-0">01</span>
+                                    <span><strong>全景式文献计量基线：</strong>运用 CiteSpace + Kleinberg 突现检测 + LLR 聚类算法，结合 WoS 系统检索与 DL 语义筛选，为该交叉领域提供了一份可复现的文献计量参照基线。</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="font-mono font-bold text-black flex-shrink-0">02</span>
+                                    <span><strong>三层引文结构模型：</strong>首次在半导体制造文献中系统识别出 L1 架构奠基→L2 方法改进→L3 应用落地的知识溢出路径，溯源 ViT/Swin 双核心的知识传导全链路（耗时约 5 年）。</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="font-mono font-bold text-black flex-shrink-0">03</span>
+                                    <span><strong>三波技术浪潮识别：</strong>通过突现检测 + 聚类时间线锁定 2024 年为关键历史拐点——6 个 Transformer 术语同步突现，传统聚类系统性退场与 AI 聚类结构性崛起形成"此消彼长"的清晰信号。</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="font-mono font-bold text-black flex-shrink-0">04</span>
+                                    <span><strong>可复用方法论流水线：</strong>PRISMA 2020 全流程文档化 + 双集分流设计 + 三轮检索式迭代——为交叉学科文献计量分析提供一套可操作的标准范式。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 border-l-4 border-black pl-4">6.3 未来破局方向指引</h3>
+                        <div class="bg-zinc-50 p-6 border border-zinc-200">
+                            <p class="text-xs text-zinc-400 mb-4">基于以上计量发现，识别出该领域尚未被充分覆盖的 8 个方向性缺口：</p>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>多模态大统一：</strong>将 ViT 扩展到光学图像 + SEM + 电性测试时序的联合表征。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>小样本迁移：</strong>晶圆缺陷标注成本极高，Few-shot/ViT 迁移是工业落地的首要瓶颈。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>从检测到预测：</strong>90% 文献集中于表观缺陷，向设备预测性维护的上游迁移几乎是空白。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>边缘端轻量化：</strong>厂端 GPU 稀缺，ViT 蒸馏/剪枝变体在 <50ms 低延迟推理是量产前提。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>中国从量到质：</strong>发文量断层领先，下一步应在基础架构创新上形成可比肩 ViT/Swin 的原创贡献。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>产学研闭环：</strong>引入专利与产线部署报告，揭示"实验室→Fab 厂"的技术转化效率。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>动态追踪更新：</strong>建立半年期更新机制，持续追踪聚类的新生/分裂/合并趋势。</span></li>
+                                <li class="flex items-start gap-2 text-sm"><i data-lucide="chevron-right" class="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0"></i><span><strong>跨库交叉验证：</strong>引入 Scopus/IEEE Xplore，检验 WoS 单库结论的外部有效性。</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 29 ================= -->
+        <section class="slide">
+            <div class="reveal max-w-[92%] mx-auto w-full">
+                <h3 class="text-2xl font-bold mb-6 border-b-2 border-black pb-2 inline-block">核心参考文献 (References)</h3>
+                <p class="text-xs text-zinc-400 mb-4">本报告分析方法与引用的关键文献，供课程评审参考。</p>
+                <div class="bg-zinc-50 p-10 border border-zinc-200 text-sm font-mono leading-loose text-zinc-600 shadow-sm">
+                    <p class="mb-3 text-xs text-zinc-400 uppercase tracking-wider">方法论文献</p>
+                    <p class="mb-4">[1] Kleinberg J. Bursty and hierarchical structure in streams[J]. Data Mining and Knowledge Discovery, 2003, 7(4): 373-397.</p>
+                    <p class="mb-6">[2] Chen C. CiteSpace II: Detecting and visualizing emerging trends and transient patterns in scientific literature[J]. JASIST, 2006, 57(3): 359-377.</p>
+                    <p class="mb-3 text-xs text-zinc-400 uppercase tracking-wider">分析发现的核心文献</p>
+                    <p class="mb-4">[3] Wei YX, Wang H. Mixed-type wafer defect recognition with multi-scale information fusion transformer[J]. IEEE Trans Semicond Manuf, 2022.</p>
+                    <p class="mb-4">[4] Fan SKS, Chiu SH. A new ViT-based augmentation framework for wafer map defect classification[J]. Int J Prod Econ, 2024.</p>
+                    <p class="mb-4">[5] Chen KQ, Cai N, Wu ZS, et al. Multi-scale GAN with transformer for surface defect inspection of IC metal packages[J]. Expert Syst Appl, 2023.</p>
+                    <p class="mb-4">[6] Liu YL, Wu H. Automatic solder defect detection using transformer architecture[J]. IEEE Trans Compon Pack Manuf Technol, 2024.</p>
+                    <p>[7] Wen L, Zhu Y, Ye L, et al. LayouTransformer: Layout patterns with transformer via sequential modeling[C]. IEEE/ACM ICCAD, 2022.</p>
+                </div>
+                <div class="mt-8 text-center text-xs text-zinc-400 font-mono">
+                    <p>Github Repository: https://github.com/jyz2744153437-max/Transformer-Semiconductor-Bibliometrics</p>
+                    <p class="mt-2">Built with HTML5, Tailwind CSS, and Vanilla JavaScript. Version 1.0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PAGE 30 ================= -->
+        <section class="slide bg-white">
+            <div class="reveal max-w-[92%] mx-auto w-full text-center flex flex-col items-center justify-center h-full mt-24">
+                <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-black">
+                    THANK YOU<span class="text-zinc-300 animate-blink">_</span>
+                </h2>
+            </div>
+        </section>
+
+        <!-- 底部全局进度条 -->
+        <div class="fixed bottom-0 left-0 w-full z-50">
+            <div class="w-full h-1 bg-zinc-200">
+                <div id="progress-bar" class="h-1 bg-black transition-all duration-300" style="width: 3.33%;"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 控制脚本 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 初始化 Lucide 图标库
+            lucide.createIcons();
+
+            // 处理在线预览环境下的本地图片裂图问题 (优雅降级)
+            document.querySelectorAll('img').forEach(img => {
+                img.onerror = function() {
+                    this.onerror = null; // 防止无限触发
+                    const src = this.getAttribute('src');
+                    const wrapper = document.createElement('div');
+                    // 继承原有图片的一些基础样式，保持排版不乱
+                    wrapper.className = "w-full h-[300px] md:h-[400px] flex flex-col items-center justify-center bg-zinc-50 border-2 border-dashed border-zinc-300 rounded-lg text-zinc-500 my-4 mx-auto shadow-sm";
+                    wrapper.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-4 text-zinc-300"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                        <p class="font-bold text-lg mb-2 text-zinc-700">图片路径已配置</p>
+                        <p class="text-sm mb-3">目标文件：<code class="bg-zinc-200 px-2 py-1 rounded text-red-600 font-mono text-xs">${src}</code></p>
+                        <p class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-2 rounded-full border border-blue-100">💡 下载此网页与原图片同放一处即可正常显示</p>
+                    `;
+                    this.parentNode.replaceChild(wrapper, this);
+                };
+            });
+
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+            let currentSlide = 0;
+            const progressBar = document.getElementById('progress-bar');
+            let trendChart = null;
+            let trendChartInited = false;
+            let isMobile = window.innerWidth < 768;
+
+            function initTrendChart() {
+                if (trendChartInited) return;
+                const chartDom = document.getElementById('trendChart');
+                if (!chartDom || chartDom.offsetParent === null) return;
+                trendChartInited = true;
+                trendChart = echarts.init(chartDom);
+                const years = ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+                const publications = [1, 1, 1, 3, 6, 6, 11, 31, 84];
+                const growthRatesEarly = [null, 0, 0, 200, 100, 0, null, null, null]; // 2017-2021 虚线+淡灰(小基数参考)
+                const growthRates = [null, null, null, null, null, 0, 83.3, 181.8, 171.0]; // 2022-2025 实线+黑色
+                trendChart.setOption({
+                    animation: true,
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: { type: 'line', lineStyle: { type: 'dashed', color: '#999' } },
+                        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                        borderColor: '#999',
+                        borderWidth: 1,
+                        textStyle: { color: '#000' },
+                        formatter: function(params) {
+                            let html = '<div style="font-weight:bold;border-bottom:1px solid #ccc;padding-bottom:4px;margin-bottom:4px;">年份: ' + params[0].axisValue + '</div>';
+                            params.forEach(function(param) {
+                                var value = param.value === null ? '-' : param.value;
+                                var unit = param.seriesName.indexOf('率') > -1 && value !== '-' ? '%' : (value !== '-' ? ' 篇' : '');
+                                html += '<div>' + param.marker + ' ' + param.seriesName + ': ' + value + unit + '</div>';
+                            });
+                            return html;
+                        }
+                    },
+                    legend: {
+                        data: ['发文量 (Publications)', '增长率 (Growth Rate)', '增长率 (早期参考)'],
+                        top: 0,
+                        itemGap: 40,
+                        textStyle: { fontSize: 12, color: '#000' }
+                    },
+                    grid: { show: false, left: '3%', right: '3%', bottom: '8%', top: '18%', containLabel: true },
+                    xAxis: [{
+                        type: 'category', data: years,
+                        axisLine: { show: true, lineStyle: { color: '#000', width: 1 } },
+                        axisTick: { show: false },
+                        axisLabel: { color: '#000', fontSize: 12, margin: 12 }
+                    }],
+                    yAxis: [
+                        {
+                            type: 'value', name: '发 文 量 (篇)', nameLocation: 'middle', nameGap: 40,
+                            nameTextStyle: { color: '#000', fontSize: 13 },
+                            min: 0, max: 90, interval: 30,
+                            axisLine: { show: false }, axisTick: { show: false },
+                            splitLine: { show: false },
+                            axisLabel: { color: '#000', fontSize: 12 }
+                        },
+                        {
+                            type: 'value', name: '增 长 率 (%)', nameLocation: 'middle', nameGap: 40,
+                            nameTextStyle: { color: '#000', fontSize: 13 },
+                            min: -20, max: 220, interval: 60,
+                            axisLine: { show: false }, axisTick: { show: false },
+                            splitLine: { show: true, lineStyle: { type: 'dashed', color: '#f0f0f0' } },
+                            axisLabel: { color: '#000', fontSize: 12 }
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '发文量 (Publications)', type: 'bar', barWidth: '35%',
+                            itemStyle: { color: function(p) { return ['#d1d5db','#c0c5cc','#adb3bc','#9a9fab','#878c98','#747985','#616773','#4e5561','#374151'][p.dataIndex]; } },
+                            data: publications,
+                            markPoint: {
+                                data: [{
+                                    coord: ['2021', 6], value: 'ViT 提出',
+                                    symbol: 'arrow', symbolRotate: 180, symbolSize: 12,
+                                    symbolOffset: [0, -10],
+                                    itemStyle: { color: '#000' },
+                                    label: { color: '#000', position: 'top', fontSize: 13, fontWeight: 'bold', offset: [0, -5] }
+                                }]
+                            },
+                            markLine: {
+                                symbol: ['none', 'none'],
+                                lineStyle: { color: '#9CA3AF', type: 'dashed', width: 1 },
+                                label: { show: true, position: 'insideEndTop', formatter: '{b}', fontSize: 12, color: '#6B7280', padding: [0, 8, 5, 0] },
+                                data: [
+                                    { xAxis: '2022', name: '加速期 ↴' },
+                                    { xAxis: '2024', name: '爆发期 ↴' }
+                                ]
+                            }
+                        },
+                        {
+                            name: '增长率 (Growth Rate)', type: 'line', yAxisIndex: 1,
+                            symbol: 'circle', symbolSize: 6,
+                            itemStyle: { color: '#000000' },
+                            lineStyle: { width: 2, color: '#000000' },
+                            data: growthRates
+                        },
+                        {
+                            name: '增长率 (早期参考)', type: 'line', yAxisIndex: 1,
+                            symbol: 'diamond', symbolSize: 4,
+                            itemStyle: { color: '#c0c0c0' },
+                            lineStyle: { width: 1, color: '#c0c0c0', type: 'dashed' },
+                            data: growthRatesEarly
+                        }
+                    ]
+                });
+            }
+
+            // ========== 桌面端翻页逻辑 ==========
+            function updateSlideDesktop(index) {
+                if (index < 0 || index >= totalSlides) return;
+
+                slides[currentSlide].classList.remove('active');
+                currentSlide = index;
+                slides[currentSlide].classList.add('active');
+
+                progressBar.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+
+                // 重新触发内联动画
+                const reveals = slides[currentSlide].querySelectorAll('.reveal');
+                reveals.forEach(el => {
+                    el.style.animation = 'none';
+                    el.offsetHeight;
+                    el.style.animation = null;
+                });
+
+                // 第9页（发文趋势图）首次激活时初始化 ECharts
+                if (currentSlide === 8) {
+                    setTimeout(initTrendChart, 100);
+                }
+            }
+
+            // ========== 移动端逻辑 ==========
+            let touchStartY = 0;
+
+            function updateCounterForSlide(index) {
+                currentSlide = index;
+                progressBar.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+            }
+
+            function setupMobile() {
+                // 所有幻灯片设为可见，去掉 active 类依赖
+                slides.forEach(s => { s.style.display = 'block'; s.style.opacity = '1'; });
+                // 首张作为起点
+                updateCounterForSlide(0);
+
+                // IntersectionObserver：检测哪张卡片在视口
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const idx = Array.from(slides).indexOf(entry.target);
+                            if (idx >= 0) updateCounterForSlide(idx);
+                        }
+                    });
+                }, { threshold: 0.5, rootMargin: '0px' });
+                slides.forEach(s => observer.observe(s));
+
+                // 触摸滑动检测
+                window.addEventListener('touchstart', (e) => {
+                    touchStartY = e.touches[0].clientY;
+                }, { passive: true });
+
+                window.addEventListener('touchend', (e) => {
+                    const deltaY = touchStartY - e.changedTouches[0].clientY;
+                    // 滑动距离 > 50px 且方向明确
+                    if (Math.abs(deltaY) > 50 && Math.abs(deltaY) > Math.abs(e.changedTouches[0].clientX - (touchStartY - deltaY))) {
+                        const target = currentSlide + (deltaY > 0 ? 1 : -1);
+                        if (target >= 0 && target < totalSlides) {
+                            slides[target].scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            updateCounterForSlide(target);
+                        }
+                    }
+                });
+
+                // 移动端直接初始化 ECharts
+                setTimeout(initTrendChart, 300);
+            }
+
+            // ========== 模式判断与切换 ==========
+            function setupDesktop() {
+                // 键盘
+                window.addEventListener('keydown', (e) => {
+                    if (isMobile) return;
+                    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ' || e.key === 'Enter' || e.key === 'PageDown') {
+                        e.preventDefault();
+                        updateSlideDesktop(currentSlide + 1);
+                    }
+                    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+                        e.preventDefault();
+                        updateSlideDesktop(currentSlide - 1);
+                    }
+                });
+
+                // 滚轮
+                window.addEventListener('wheel', (e) => {
+                    if (isMobile) return;
+                    if (e.deltaY > 0) {
+                        updateSlideDesktop(currentSlide + 1);
+                    } else if (e.deltaY < 0) {
+                        updateSlideDesktop(currentSlide - 1);
+                    }
+                });
+
+                updateSlideDesktop(0);
+            }
+
+            // 初始启动
+            if (isMobile) {
+                setupMobile();
+            } else {
+                setupDesktop();
+            }
+
+            // 窗口大小变化
+            window.addEventListener('resize', function() {
+                if (trendChart) trendChart.resize();
+                const nowMobile = window.innerWidth < 768;
+                if (nowMobile !== isMobile) {
+                    // 模式切换时刷新页面（最简单可靠的处理）
+                    location.reload();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

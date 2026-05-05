@@ -1,0 +1,98 @@
+keyword,burst_start,burst_end,strength,total_freq
+transformer feedback,2015,2015,2,5
+wide-band,2015,2015,2,9
+converters,2017,2018,2,6
+transformers,2023,2025,2,76
+deep learning,2024,2025,2,37
+noise,2024,2025,2,17
+network,2025,2025,2,21
+accuracy,2025,2025,2,23
+predictive models,2025,2025,2,17
+semiconductor device,2025,2025,2,12
+cmos,2015,2015,1,41
+compact,2015,2015,1,7
+monolithic microwave integrated circuit (mmic),2015,2015,1,9
+silicon,2015,2016,1,14
+gallium arsenide,2015,2015,1,7
+impedance matching,2015,2015,1,12
+load modulation,2015,2015,1,5
+receiver,2015,2017,1,6
+power-amplifier,2015,2015,1,7
+gallium nitride,2015,2015,1,6
+amplifier,2015,2016,1,14
+power transformers,2015,2015,1,5
+doherty,2015,2015,1,5
+gallium nitride (gan),2015,2016,1,6
+silicon carbide,2015,2018,1,5
+linearity,2015,2015,1,5
+dc/dc converter,2015,2015,1,6
+transceiver,2015,2017,1,8
+mechanism,2016,2016,1,6
+converter,2016,2016,1,22
+couplers,2016,2016,1,5
+technology,2016,2016,1,5
+inverters,2017,2020,1,9
+mmic,2017,2019,1,8
+chip,2017,2017,1,7
+resistance,2017,2017,1,10
+mixers,2017,2017,1,6
+pulse width modulation,2017,2018,1,5
+high,2017,2017,1,5
+sige,2017,2020,1,7
+switch,2018,2019,1,6
+systems,2018,2018,1,5
+dc-dc power converters,2018,2018,1,6
+transmitters,2018,2018,1,5
+coils,2019,2020,1,11
+bicmos,2019,2019,1,6
+magnetic,2020,2021,1,6
+magnetic cores,2020,2020,1,6
+high frequency,2021,2022,1,5
+topology,2021,2021,1,10
+ferrites,2021,2022,1,5
+mathematical model,2021,2021,1,12
+saturation magnetization,2021,2021,1,5
+solid modeling,2021,2022,1,5
+semiconductor device modeling,2022,2022,1,5
+couplings,2022,2022,1,17
+inductors,2022,2024,1,24
+dual-band,2022,2022,1,6
+metals,2022,2022,1,5
+gain,2022,2025,1,22
+optimization,2023,2025,1,12
+measurement,2023,2025,1,11
+power amplifiers,2023,2025,1,11
+semiconductor,2024,2025,1,14
+transformer,2024,2025,1,146
+integrated circuit,2024,2025,1,26
+modeling,2024,2025,1,25
+manufacturing,2024,2024,1,5
+model,2024,2025,1,20
+impedance,2024,2025,1,43
+design,2024,2025,1,86
+transistors,2024,2025,1,16
+radio frequency,2024,2025,1,11
+vision transformer,2025,2025,1,12
+identification,2025,2025,1,10
+detection,2025,2025,1,8
+anomaly detection,2025,2025,1,10
+computational modeling,2025,2025,1,20
+data models,2025,2025,1,11
+circuit faults,2025,2025,1,15
+feature extraction,2025,2025,1,15
+switches,2025,2025,1,23
+training,2025,2025,1,13
+integrated circuit modeling,2025,2025,1,77
+semiconductor manufacturing,2025,2025,1,14
+machine learning,2025,2025,1,9
+learning,2025,2025,1,9
+deep,2025,2025,1,6
+cmos,2025,2025,1,41
+power amplifier (pa),2025,2025,1,17
+semiconductor device measurement,2025,2025,1,10
+neural networks,2025,2025,1,6
+harmonic analysis,2025,2025,1,9
+circuits,2025,2025,1,10
+estimation,2025,2025,1,6
+degradation,2025,2025,1,9
+logic gates,2025,2025,1,8

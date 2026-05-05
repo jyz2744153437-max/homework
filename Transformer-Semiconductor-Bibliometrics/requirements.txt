@@ -1,0 +1,21 @@
+# Python 依赖
+# 运行: pip install -r requirements.txt
+
+# 数据处理
+pandas==2.2.3
+numpy==2.0.2
+
+# 科学计算
+scipy==1.14.1
+
+# 网络分析
+networkx==3.3
+
+# 可视化
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+
+# Jupyter（可选）
+jupyter==1.1.1
+notebook==7.2.2

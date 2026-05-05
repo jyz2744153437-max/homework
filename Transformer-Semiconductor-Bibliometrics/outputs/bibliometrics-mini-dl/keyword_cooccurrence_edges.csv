@@ -1,0 +1,201 @@
+source,target,weight
+transformer,transformers,11.0
+integrated circuit modeling,transformers,10.0
+predictive models,transformers,7.0
+integrated circuit modeling,transformer,7.0
+feature extraction,transformers,7.0
+computational modeling,transformers,7.0
+accuracy,predictive models,6.0
+computational modeling,predictive models,6.0
+deep learning,transformers,6.0
+deep,learning,6.0
+classification,network,5.0
+deep learning,feature extraction,5.0
+data models,transformers,5.0
+circuit modeling,integrated,5.0
+deep learning,transformer,5.0
+training,transformers,5.0
+anomaly detection,deep learning,5.0
+feature extraction,transformer,5.0
+computational modeling,deep learning,5.0
+accuracy,data models,5.0
+accuracy,integrated circuit modeling,5.0
+classification,patterns,4.0
+degradation,transformers,4.0
+computational modeling,data models,4.0
+cnn,transformer,4.0
+computational modeling,integrated circuit,4.0
+classification,transformer,4.0
+deep learning,integrated circuit,4.0
+batteries,transformers,4.0
+deep learning,integrated circuit modeling,4.0
+deep learning,network,4.0
+feature extraction,integrated circuit modeling,4.0
+feature extraction,noise,4.0
+data models,predictive models,4.0
+accuracy,deep learning,4.0
+integrated circuit,modeling,4.0
+integrated circuit modeling,predictive models,4.0
+data mining,feature extraction,4.0
+transformers,visualization,4.0
+network,transformer,4.0
+accuracy,computational modeling,4.0
+training,transformer,4.0
+computational modeling,modeling,4.0
+accuracy,transformers,4.0
+accuracy,integrated circuit modeling;,3.0
+circuit,transformer,3.0
+accuracy,models,3.0
+accuracy;,transformers,3.0
+deep learning,detection,3.0
+accuracy,semiconductor device,3.0
+estimation,transformer,3.0
+classification,transformers,3.0
+computational modeling,transformer,3.0
+circuit modeling,transformers,3.0
+accuracy,feature extraction,3.0
+data mining,deep learning,3.0
+data models,training,3.0
+feature extraction,manufacturing,3.0
+annotation,vision transformer,3.0
+computer vision,deep learning,3.0
+deep learning,predictive models,3.0
+integrated,transformers,3.0
+encoding,transformers,3.0
+integrated circuit,transformer,3.0
+integrated circuit modeling,lithium-ion,3.0
+integrated circuit modeling,models,3.0
+convolution,integrated circuit modeling,3.0
+integrated circuit modeling,training,3.0
+computational modeling,integrated circuit modeling,3.0
+data models,deep learning,3.0
+lithium-ion,transformer,3.0
+lithium-ion batteries,transformer,3.0
+lithium-ion batteries,transformers,3.0
+manufacturing,transformer,3.0
+manufacturing,transformers,3.0
+metrology,vision transformer,3.0
+model,transformers,3.0
+modeling,predictive models,3.0
+models,predictive models,3.0
+annotation,metrology,3.0
+predictive models,training,3.0
+accuracy,training,3.0
+state of health,transformer,3.0
+system,transformer,3.0
+task analysis,transformers,3.0
+estimation,state of health,3.0
+accuracy,transformer,3.0
+cnn,patterns,3.0
+transformer,visualization,3.0
+network,patterns,3.0
+degradation,market research,2.0
+analytical models,predictive models,2.0
+defect detection,network,2.0
+estimation,integrated circuit modeling,2.0
+analytical models,timing,2.0
+deep learning;,semiconductor manufacturing,2.0
+diffusion model,semantic segmentation,2.0
+analytical models,transformers,2.0
+deep learning,modeling,2.0
+batteries,circuit modeling,2.0
+data models,predictive models;,2.0
+circuit modeling,predictive models,2.0
+convolutional neural networks,integrated circuit,2.0
+data mining,transformer,2.0
+adaptation models,feature extraction,2.0
+computer vision,scanning electron microscope (sem);,2.0
+accuracy;,deep learning,2.0
+batteries,deep learning,2.0
+annotation,deep learning;,2.0
+batteries,degradation,2.0
+adaptation models,integrated circuit modeling,2.0
+computer vision,semiconductor manufacturing,2.0
+data mining,transformers,2.0
+batteries,feature extraction,2.0
+accuracy;,feature extraction,2.0
+accuracy,degradation,2.0
+accuracy,delays,2.0
+convolution,state of health,2.0
+convolution,transformer,2.0
+adaptation models,lithium-ion,2.0
+adaptation models,lithium-ion batteries,2.0
+cnn,network,2.0
+convolution,transformers,2.0
+batteries,integrated,2.0
+batteries,integrated circuit modeling,2.0
+anomaly,detection,2.0
+accuracy,fault diagnosis,2.0
+deep learning;,vision transformer,2.0
+encoding,training,2.0
+(soh),estimation,2.0
+artificial,intelligence,2.0
+batteries,lithium-ion,2.0
+batteries,lithium-ion batteries,2.0
+deep,vision transformer,2.0
+convolutional neural networks,model,2.0
+computational modeling,convolutional neural networks,2.0
+accuracy,graph neural networks,2.0
+anomaly detection,data normalization,2.0
+convolutional neural networks,modeling,2.0
+circuit,system,2.0
+degradation,transformer,2.0
+accuracy,instruments,2.0
+deep learning,lithography,2.0
+(soh),transformer,2.0
+(soh),transformers,2.0
+defect,network,2.0
+computational modeling,training,2.0
+adaptation models,transformer,2.0
+adaptation models,transformers,2.0
+deep learning,kernel,2.0
+deep learning,defect detection,2.0
+defect,patterns,2.0
+batteries,predictive models,2.0
+convolutional neural networks,noise,2.0
+accuracy,network,2.0
+circuits,integrated circuit modeling,2.0
+detection,transformers,2.0
+deep learning,delays,2.0
+design automation,transformers,2.0
+encoding,transformer,2.0
+defect,transformer,2.0
+convolutional neural networks,transformers,2.0
+analytical,integrated circuit modeling,2.0
+batteries,transformer,2.0
+accurate,transformers,2.0
+classification,vision transformer,2.0
+data models,integrated circuit modeling,2.0
+classification,wafer map,2.0
+delays,integrated circuit modeling,2.0
+accuracy,measurement,2.0
+accuracy,meta-learning,2.0
+degradation,predictive models,2.0
+design automation,integrated circuit modeling,2.0
+computational modeling,timing,2.0
+accuracy,modeling,2.0
+extraction,feature,2.0
+feature extraction,graph neural networks,2.0
+feature extraction,integrated circuit,2.0
+analytical,models,2.0
+feature extraction,kernel,2.0
+feature extraction,lithium-ion,2.0
+feature extraction,lithography,2.0
+convolutional neural network,pattern-recognition,2.0
+feature extraction,model,2.0
+feature extraction,modeling,2.0
+data mining,kernel,2.0
+feature extraction,predictive models,2.0
+feature extraction,state of health,2.0
+data models,transformer,2.0
+accuracy,predictive models;,2.0
+feature extraction,visualization,2.0
+graph neural networks,integrated circuit modeling,2.0
+hardware,integrated circuit modeling,2.0
+hardware,transformer,2.0
+hardware,transformers,2.0
+heuristic algorithms,integrated circuit modeling,2.0
+heuristic algorithms,training,2.0
+identification,network,2.0
+identification,patterns,2.0
+identification,transformer,2.0

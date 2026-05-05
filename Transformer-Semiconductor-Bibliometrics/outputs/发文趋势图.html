@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文献计量分析：发文趋势图</title>
+    <!-- 引入 Tailwind CSS 以实现现代、简洁的排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <style>
+        body {
+            /* 极简风：纯白背景 */
+            background-color: #ffffff;
+            /* 学术论文常用字体栈 */
+            font-family: "Times New Roman", "SimSun", "Songti SC", serif;
+        }
+        .paper-container {
+            background-color: #ffffff;
+            /* 极简风：去除阴影和多余边框 */
+        }
+        /* 强制宋体渲染保证中文学术感 */
+        .academic-font {
+            font-family: "SimSun", "Songti SC", serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8 bg-white">
+
+    <!-- 模拟学术报告纸张容器，加宽以适应 1:3 构图 -->
+    <div class="paper-container w-full max-w-[1200px] p-2 md:p-6">
+
+        <h1 class="text-xl md:text-2xl font-bold text-center mb-10 text-black academic-font tracking-wide">
+            基于 Transformer 的半导体制造领域文献发文趋势分析（DL 纯净集 147 篇）
+        </h1>
+
+        <!-- ECharts 容器：严格 1:3 构图 -->
+        <div id="trendChart" class="w-full aspect-[3/1]"></div>
+
+        <!-- 学术图例说明 (Caption) -->
+        <div class="mt-8 pt-5 text-[13px] text-gray-500 leading-relaxed text-justify max-w-5xl mx-auto">
+            <p>
+                <strong class="academic-font text-black">图 1. 年度发文量与增长率趋势图 (2017-2025, DL 纯净集)。</strong>
+                主坐标轴（左）表示年度发文绝对量（柱状图），次坐标轴（右）表示较上一年发文量的相对增长率（折线图）。数据源自 Web of Science Core Collection，经 DL 语义筛选保留 147 篇核心文献。2017-2021年因基数过小增长率缺乏统计意义，折线从2022年起展示。
+            </p>
+            <p class="mt-2">
+                <strong class="academic-font text-black">数据说明：</strong>
+                检索截止至 2026 年 4 月 14 日。为保证年度统计的可比性与严谨性，本图表基于 DL 语义筛选后的 147 篇纯净集（排除电力电子变压器等噪声文献），并排除 2026 年未满年数据点。2017 年作为基准年，不计相对增长率。
+            </p>
+            <p class="mt-2">
+                <strong class="academic-font text-black">阶段演进：</strong>
+                结合数据特征可清晰划分为三个阶段：
+                1) <strong class="text-black">萌芽期 (2017-2021)</strong>：5 年仅 12 篇，年均不足 3 篇，Transformer 架构尚未进入半导体领域视野；
+                2) <strong class="text-black">加速期 (2022-2023)</strong>：2021 年 ViT/Swin Transformer 提出后经约 1 年学术传导延迟，2022 年起以 Wei YX (2022) 晶圆缺陷检测为代表的前驱工作点燃领域；
+                3) <strong class="text-black">爆发期 (2024-2025)</strong>：两年累计 115 篇、占 DL 纯净集总量的 78%，领域处于技术落地与理论拓展的高速红利期。
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const chartDom = document.getElementById('trendChart');
+            const myChart = echarts.init(chartDom);
+
+            // 数据源
+            const years = ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025'];
+            const publications = [1, 1, 1, 3, 6, 6, 11, 31, 84];
+            const growthRatesEarly = [null, 0, 0, 200, 100, null, null, null, null]; // 2017-2021 虚线+淡灰(小基数参考)
+            const growthRates = [null, null, null, null, null, 0, 83.3, 181.8, 171.0]; // 2022-2025 实线+黑色
+
+            const option = {
+                animation: true,
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'line',
+                        lineStyle: { type: 'dashed', color: '#999' }
+                    },
+                    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+                    borderColor: '#999',
+                    borderWidth: 1,
+                    textStyle: { color: '#000', fontFamily: 'Times New Roman' },
+                    formatter: function(params) {
+                        let html = `<div style="font-family: 'Times New Roman', SimSun; font-weight: bold; border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-bottom: 4px;">年份: ${params[0].axisValue}</div>`;
+                        params.forEach(param => {
+                            const value = param.value === null ? '-' : param.value;
+                            const unit = param.seriesName.includes('率') && value !== '-' ? '%' : (value !== '-' ? ' 篇' : '');
+                            html += `<div>${param.marker} ${param.seriesName}: ${value}${unit}</div>`;
+                        });
+                        return html;
+                    }
+                },
+                legend: {
+                    data: ['发文量 (Publications)', '增长率 (Growth Rate)', '增长率 (早期参考)'],
+                    top: 0,
+                    itemGap: 40,
+                    textStyle: {
+                        fontFamily: '"Times New Roman", SimSun, serif',
+                        fontSize: 13,
+                        color: '#000'
+                    }
+                },
+                // 极简风网格：去除边框，留白更足
+                grid: {
+                    show: false,
+                    left: '3%',
+                    right: '3%',
+                    bottom: '10%',
+                    top: '20%',
+                    containLabel: true
+                },
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: years,
+                        axisLine: { show: true, lineStyle: { color: '#000', width: 1 } }, // 极简黑色基线
+                        axisTick: {
+                            show: false // 去除刻度线，更为极简
+                        },
+                        axisLabel: {
+                            color: '#000',
+                            fontFamily: '"Times New Roman", serif',
+                            fontSize: 12,
+                            margin: 12
+                        }
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value',
+                        name: '发 文 量 (篇)',
+                        nameLocation: 'middle',
+                        nameGap: 40,
+                        nameTextStyle: {
+                            color: '#000',
+                            fontFamily: 'SimSun, serif',
+                            fontSize: 13
+                        },
+                        min: 0,
+                        max: 90,
+                        interval: 30,
+                        axisLine: { show: false },
+                        axisTick: { show: false },
+                        splitLine: { show: false }, // 无水平网格线
+                        axisLabel: {
+                            color: '#000',
+                            fontFamily: '"Times New Roman", serif',
+                            fontSize: 12
+                        }
+                    },
+                    {
+                        type: 'value',
+                        name: '增 长 率 (%)',
+                        nameLocation: 'middle',
+                        nameGap: 40,
+                        nameTextStyle: {
+                            color: '#000',
+                            fontFamily: 'SimSun, serif',
+                            fontSize: 13
+                        },
+                        min: -20,
+                        max: 220,
+                        interval: 60,
+                        axisLine: { show: false },
+                        axisTick: { show: false },
+                        splitLine: {
+                            show: true,
+                            lineStyle: { type: 'dashed', color: '#f0f0f0' } // 极浅的灰色虚线
+                        },
+                        axisLabel: {
+                            color: '#000',
+                            fontFamily: '"Times New Roman", serif',
+                            fontSize: 12
+                        }
+                    }
+                ],
+                series: [
+                    {
+                        name: '发文量 (Publications)',
+                        type: 'bar',
+                        barWidth: '35%', // 更细的柱子，增加留白
+                        itemStyle: {
+                            color: '#E5E7EB', // 极简灰，极为干净
+                        },
+                        data: publications,
+                        markPoint: {
+                             data: [
+                                {
+                                    coord: ['2021', 6],
+                                    value: 'ViT 提出',
+                                    symbol: 'arrow', // 改为极简小箭头
+                                    symbolRotate: 180, // 箭头向下指
+                                    symbolSize: 12,
+                                    symbolOffset: [0, -10],
+                                    itemStyle: { color: '#000' }, // 纯黑箭头
+                                    label: {
+                                        color: '#000', // 纯黑文字，防止和背景融合
+                                        position: 'top', // 放在箭头上方
+                                        fontSize: 13,
+                                        fontFamily: 'SimSun',
+                                        fontWeight: 'bold',
+                                        offset: [0, -5]
+                                    }
+                                }
+                            ]
+                        },
+                        markLine: {
+                            symbol: ['none', 'none'],
+                            lineStyle: {
+                                color: '#9CA3AF', // 淡灰虚线
+                                type: 'dashed',
+                                width: 1
+                            },
+                            label: {
+                                show: true,
+                                position: 'insideEndTop',
+                                formatter: '{b}',
+                                fontFamily: 'SimSun',
+                                fontSize: 12,
+                                color: '#6B7280',
+                                padding: [0, 8, 5, 0]
+                            },
+                            data: [
+                                // 通过垂线划分三个历史时期
+                                { xAxis: '2022', name: '加速期 ↴' },
+                                { xAxis: '2024', name: '爆发期 ↴' }
+                            ]
+                        }
+                    },
+                    {
+                        name: '增长率 (Growth Rate)',
+                        type: 'line',
+                        yAxisIndex: 1,
+                        symbol: 'circle',
+                        symbolSize: 6,
+                        itemStyle: { color: '#000000' },
+                        lineStyle: {
+                            width: 2,
+                            color: '#000000'
+                        },
+                        data: growthRates
+                    },
+                    {
+                        name: '增长率 (早期参考)',
+                        type: 'line',
+                        yAxisIndex: 1,
+                        symbol: 'diamond',
+                        symbolSize: 4,
+                        itemStyle: { color: '#c0c0c0' },
+                        lineStyle: {
+                            width: 1,
+                            color: '#c0c0c0',
+                            type: 'dashed'
+                        },
+                        data: growthRatesEarly
+                    }
+                ]
+            };
+
+            myChart.setOption(option);
+
+            // 响应式调整
+            window.addEventListener('resize', function() {
+                myChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>

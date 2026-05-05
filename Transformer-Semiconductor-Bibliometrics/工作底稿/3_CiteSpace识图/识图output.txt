@@ -1,0 +1,254 @@
+CiteSpace 文献计量图谱识图任务提取报告
+
+============================================================
+
+图 1/6：关键词共现网络
+
+============================================================
+
+网络规模: N=387, E=649, Density=0.0084
+
+Top 关键词节点（从大到小）:
+
+deep learning
+
+integrated circuit modeling
+
+computational modeling
+
+classification
+
+predictive models
+
+feature extraction
+
+convolutional neural networks
+
+semiconductor device modeling
+
+data models
+
+analytical models
+
+semiconductor manufacturing
+
+battery equalization
+
+adaptation models
+
+computer vision
+
+circuit faults
+
+balancing circuit
+
+聚类区块: 无（该图为共现网络图，无明显大面积彩色背景涂层区块，仅节点外圈带有代表年份的彩色年环）
+
+其他可见标注:
+
+左上角文字：Timespan: 2017-2026 (Slice Length=1), Selection Criteria: g-index (k=25), LRF=2.5, L/N=10, LBY=8, e=1.0. Pruning: None
+
+左下角图例：彩色色带从 2017（深蓝/紫色）过渡到 2026（红色）
+
+============================================================
+
+图 2/6：关键词聚类图
+
+============================================================
+
+聚类总数: 10
+
+Modularity Q: 0.6733, Mean Silhouette: 0.9023
+
+#0: 标签=lithium-ion batteries, Silhouette=[未显示单独数值], Size=[未显示单独数值，约数十个节点], 颜色=红色/粉红色区域
+
+#1: 标签=machine learning, Silhouette=[未显示], Size=[未显示], 颜色=橙色/浅黄色区域
+
+#2: 标签=annotation, Silhouette=[未显示], Size=[未显示], 颜色=浅黄色/亮绿色区域
+
+#3: 标签=defect detection, Silhouette=[未显示], Size=[未显示], 颜色=浅绿色区域
+
+#4: 标签=inductors, Silhouette=[未显示], Size=[未显示], 颜色=翠绿色区域
+
+#5: 标签=forward converter, Silhouette=[未显示], Size=[未显示], 颜色=青色/浅蓝色区域
+
+#6: 标签=energy efficiency, Silhouette=[未显示], Size=[未显示], 颜色=浅蓝色区域
+
+#7: 标签=eigenvalues and eigenfunctions, Silhouette=[未显示], Size=[未显示], 颜色=蓝色/浅紫色区域
+
+#8: 标签=cnn, Silhouette=[未显示], Size=[未显示], 颜色=紫色区域
+
+#9: 标签=parallel processing, Silhouette=[未显示], Size=[未显示], 颜色=洋红色/粉紫色区域
+
+(注：图中仅显示了总体指标 Q=0.6733, S=0.9023，未直接标注每个聚类的具体 Silhouette 和 Size 数值，大小可通过斑块内散点数量估算)
+
+============================================================
+
+图 3/6：文献共被引网络
+
+============================================================
+
+网络规模: N=383, E=1262, Density=0.0172
+
+Top 被引文献节点（从大到小）:
+
+Dosovitskiy A (2021)
+
+Liu Z (2021)
+
+Carion N (2020)
+
+Touvron H (2021)
+
+Wang JL (2020)
+
+Liu Z (2022)
+
+Yu JB (2021)
+
+Yu JB (2022)
+
+Wei YX (2022)
+
+Hou XN (2024)
+
+Xie EZ (2021)
+
+Zhou HY (2021)
+
+Yu NG (2023)
+
+Fan SKS (2024)
+
+Alawieh MB (2020)
+
+Nag S (2022)
+
+聚类标签（如有）: 无可见聚类标签（纯共被引节点网络）
+
+连线密度: 中等密集（网络中心节点连接极为密集，边缘节点相对稀疏）
+
+其他标注: 左侧图例时间轴为 2017（深紫）至 2026（红色）；左上角标注 Timespan: 2017-2026。大节点带有明显的紫红色外圈，代表中心性或突现性。
+
+============================================================
+
+图 4/6：共被引聚类图
+
+============================================================
+
+聚类总数: 8 （图上可见标号为 #0, #2, #3, #4, #5, #8, #11, #12）
+
+Modularity Q: 0.8411, Mean Silhouette: 0.9522
+
+#0: 标签=attention-guided fusion vision transformer, Silhouette=[未显示], Size=[未显示], 颜色=红色区域
+
+#2: 标签=mixup-based neural network, Silhouette=[未显示], Size=[未显示], 颜色=橙色/黄色区域
+
+#3: 标签=learning-based convolutional transformer, Silhouette=[未显示], Size=[未显示], 颜色=亮绿色区域
+
+#4: 标签=vision transformer, Silhouette=[未显示], Size=[未显示], 颜色=翠绿色区域
+
+#5: 标签=advanced quality control, Silhouette=[未显示], Size=[未显示], 颜色=青色区域
+
+#8: 标签=generating layout pattern, Silhouette=[未显示], Size=[未显示], 颜色=淡蓝色区域
+
+#11: 标签=wafer defect, Silhouette=[未显示], Size=[未显示], 颜色=紫色区域
+
+#12: 标签=large scale, Silhouette=[未显示], Size=[未显示], 颜色=粉紫色区域
+
+============================================================
+
+图 5/6：突现检测时间线
+
+============================================================
+
+突现词总数: 25
+
+时间范围: 2017 - 2026
+
+"classification" — Strength: 1.9, 区间: 2022-2024
+
+"task analysis" — Strength: 1.86, 区间: 2023-2024
+
+"scanning electron microscope (sem)" — Strength: 1.59, 区间: 2024-2024
+
+"in-memory computing" — Strength: 1.26, 区间: 2023-2023
+
+"mathematical model" — Strength: 1.2, 区间: 2020-2021
+
+"convolutional neural networks" — Strength: 1.19, 区间: 2022-2024
+
+"super resolution (sr)" — Strength: 1.05, 区间: 2024-2024
+
+"vision transformers" — Strength: 1.05, 区间: 2024-2024
+
+"vision transformer (vit)" — Strength: 1.05, 区间: 2024-2024
+
+"load modeling" — Strength: 1.05, 区间: 2024-2024
+
+"scanning electron microscopy" — Strength: 1.05, 区间: 2024-2024
+
+"anomaly detection" — Strength: 0.97, 区间: 2025-2026
+
+"data augmentation" — Strength: 0.89, 区间: 2024-2024
+
+"machine learning" — Strength: 0.83, 区间: 2025-2026
+
+"network" — Strength: 0.8, 区间: 2025-2026
+
+"hf rfid" — Strength: 0.69, 区间: 2017-2017
+
+"load modulation" — Strength: 0.69, 区间: 2017-2017
+
+"inductive coupling" — Strength: 0.69, 区间: 2017-2017
+
+"reverse engineering" — Strength: 0.69, 区间: 2018-2018
+
+"transfer learning" — Strength: 0.69, 区间: 2018-2018
+
+"integrated circuit" — Strength: 0.67, 区间: 2017-2017
+
+"design" — Strength: 0.67, 区间: 2019-2019
+
+"lithium ion battery" — Strength: 0.67, 区间: 2019-2019
+
+"charge equalization" — Strength: 0.67, 区间: 2019-2019
+
+"flyback converter" — Strength: 0.67, 区间: 2019-2019
+(注：图中用红色的线段（Block）表示突现发生的时间区间，青蓝色线段代表整体时间跨度。颜色深浅不代表强度，强度主要通过 Strength 列的具体数值体现)
+
+============================================================
+
+图 6/6：聚类时间线演化图
+
+============================================================
+
+X 轴时间范围: 2017 - 2026
+
+#0 "lithium-ion batteries": 时间跨度 2018-2026, 2024-2025年状态=[活跃], 备注=跨度极长，包含大量中后期节点（如 semiconductor device modeling）
+
+#1 "machine learning": 时间跨度 2022-2026, 2024-2025年状态=[活跃], 备注=近期核心聚类，包含 predictive models, graph neural networks, transformer model
+
+#2 "annotation": 时间跨度 2018-2026, 2024-2025年状态=[活跃], 备注=包含 deep learning(极早极大节点), data models, data augmentation
+
+#3 "defect detection": 时间跨度 2022-2025, 2024-2025年状态=[活跃], 备注=包含 feature extraction, defect classification, computer vision
+
+#4 "inductors": 时间跨度 2019-2022, 2024-2025年状态=[不活跃], 备注=早期活跃，主要节点有 battery equalization, coupled inductor，目前已无新节点
+
+#5 "forward converter": 时间跨度 2022-2024, 2024-2025年状态=[边缘活跃], 备注=包含 semiconductor manufacturing 较大节点
+
+#6 "energy efficiency": 时间跨度 2018-2024, 2024-2025年状态=[不活跃], 备注=主要包含 integrated circuit modeling, antenna measurements，近年趋于平缓
+
+#7 "eigenvalues and eigenfunctions": 时间跨度 2020-2024, 2024-2025年状态=[边缘活跃], 备注=主要包含 analytical models
+
+#8 "cnn": 时间跨度 2021-2025, 2024-2025年状态=[活跃], 备注=包含 classification 较大节点
+
+#9 "parallel processing": 时间跨度 2020-2021, 2024-2025年状态=[不活跃], 备注=极早期聚类，包含 computational modeling，生命周期极短
+(注：节点大小代表该关键词出现的频次/中心度；图谱连线展示了跨聚类、跨年份的共现关系)
+
+============================================================
+
+总览摘要
+
+============================================================
+本批文献计量分析揭示了2017-2026年间该领域研究范式的深刻转变。关键词聚类方面共检测出10个聚类，呈现明显的“二分天下”格局：约一半聚焦于传统电力电子与硬件模型（如#0锂离子电池、#4电感器、#5正激变换器等），另一半则高度集中于AI与先进算法（如#1机器学习、#2标注/深度学习、#3缺陷检测、#8CNN等）。共被引网络明确指出了知识基础的核心来源，以 Dosovitskiy A (2021) 提出的 Vision Transformer (ViT) 以及 Liu Z (2021) 的 Swin Transformer 构成了网络中最具统治力的核心节点，形成多个以机器视觉和缺陷检测为主的引文簇。突现词分析显示，最强突现词为 "classification" (1.9) 和 "task analysis" (1.86)，早期的突现词多为 RFID 和电路设计，而2024年迎来了与Transformer架构直接相关的大规模爆发（vision transformers, vit, sem, 异常检测等）。时间线演化趋势证实，传统的电路与并行处理聚类（如#4, #9）已逐渐停止活跃，而以“机器学习”、“缺陷检测”及“标注/数据增强”为主导的AI技术在2024-2025年展现出极强的生命力，标志着 Transformer 架构正在全面接管半导体制造中的计算机视觉与缺陷检测环节。

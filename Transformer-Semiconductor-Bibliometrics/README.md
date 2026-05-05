@@ -119,6 +119,9 @@ Transformer-Semiconductor-Bibliometrics/
 │   └── metrics_calculator.*      # 指标计算
 ├── paper/                        # 论文草稿
 │   └── manuscript_v1.md          # Mini Review 初稿
+├── 质量基准/                     # 项目质量参照标准
+│   ├── 分析报告.md               # 深度分析报告（评分 80→95+）
+│   └── 课程要求细则.md           # L1-L18 课件要求逐项对照
 ├── 工作底稿/                     # 过程文档存档
 │   ├── 1_意见反馈/               # 迭代修改意见
 │   ├── 2_AI插图生成/             # 插图生成提示词与产物

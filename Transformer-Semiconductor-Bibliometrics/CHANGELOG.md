@@ -5,11 +5,11 @@
 - 时间范围最终统一 2015-2025：README、manuscript、项目展示.html、三阶段技术演进.html 全部核查修正
 - bibliometrics-mini 完整 pipeline 运行：基于 DL 纯净集 147 篇，生成 4 个交互式 Plotly 网络图（关键词共现/共被引/文献耦合/合作网络）+ 综合 HTML 报告
 - 网络指标对齐模板验证：确认 node metrics 包含全部 8 个字段，与 bmmini.metrics.py 完全一致
-- README 新增 TL;DR 一句话总结
-- 项目展示.html 嵌入交互式网络图 iframe
-- 仓库体积排查：159MB（.git 95MB + 工作底稿 25MB + Visual output 23MB）
-- PROGRESS 完成度更新至 95%
-- run_pipeline.py 更新 bibliometrics-mini 自动化说明
+- 项目展示.html 嵌入交互式网络图入口链接
+- 两份参考文件（分析报告 + 课程要求细则）归档至 `质量基准/`
+- 仓库体积排查 + 138MB 大文件清除（git filter-branch）
+- gh-pages 部署更新至最新版
+- README 新增 TL;DR、PROGRESS 更新至 95%、run_pipeline.py 更新
 
 ## 2026-05-05 — 仓库优化与文档归档
 

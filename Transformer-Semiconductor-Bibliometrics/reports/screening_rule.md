@@ -142,6 +142,22 @@
 
 ---
 
-**文档版本**：v1.0
-**创建日期**：2026-05-01
+**文档版本**：v1.1
+**更新日期**：2026-05-06
 **执行者**：Transformer-Semiconductor-Bibliometrics 项目组
+
+---
+
+## 8. 脚本与产出对应说明
+
+| 步骤 | 执行方式 | 产出 |
+|------|----------|------|
+| 去重检查 + 初/复筛记录 | `src/create_screening.py` | `Data/screened_stage1.csv`, `Data/screened_final.csv` |
+| DL 语义筛选（643→147） | 基于特征词/排除词关键词匹配，辅助人工逐篇核查标题摘要 | `Data/screened_dl_final.csv` |
+
+DL 语义筛选采用**关键词匹配 + 人工核查**混合流程：
+1. 特征词命中（attention mechanism, vision transformer, deep learning, neural network 等）→ 保留
+2. 排除词命中（power amplifier, MMIC, DC-DC, Doherty, GaN, RFID 等）且无 DL 特征词 → 排除
+3. 特征词与排除词均未命中的边缘文献 → 人工逐篇读标题摘要判定
+
+筛选规则关键词列表与本报告 1-3 节中的纳入/排除标准一致。`create_screening.py` 负责阶段 1-2 的记录生成，DL 语义筛选的自动化脚本因数据集规模可控（643 篇）采用半自动流程，未独立成脚本。

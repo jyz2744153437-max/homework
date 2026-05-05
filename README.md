@@ -203,6 +203,19 @@ Kleinberg 算法识别 25 个突现词，2024 年是关键拐点——vision tra
 ### 聚类时间线演化图
 ![聚类时间线演化图](Visual%20output/outputs_timeline_view.png)
 
+### 交互式网络图（Plotly）
+
+以下 4 个 HTML 文件可在浏览器中**拖拽、缩放、悬停查看节点指标**（度、中介中心性、PageRank、所属社团等），比静态图片更适合深入分析：
+
+| 网络类型 | 文件 | 说明 |
+|----------|------|------|
+| 关键词共现 | [outputs/keyword_cooccurrence_network.html](outputs/keyword_cooccurrence_network.html) | 两关键词同时出现则连线，球大=高频，同色=同社团，**识别研究热点** |
+| 共被引网络 | [outputs/co_citation_network.html](outputs/co_citation_network.html) | 两篇文献被同一篇引用则连线，**揭示知识基础**——Vaswani(2017)、ViT(2021)、Swin(2021) 是三大基石 |
+| 文献耦合 | [outputs/bibliographic_coupling_network.html](outputs/bibliographic_coupling_network.html) | 两篇文献引用了相同的参考文献则连线，**发现研究前沿** |
+| 合作网络 | [outputs/coauthorship_network.html](outputs/coauthorship_network.html) | 两作者共同发表论文则连线，**识别核心团队与机构** |
+
+> **怎么玩**：鼠标拖拽移动节点、滚轮缩放、悬停任意节点弹出完整指标卡片。边缘小球往往是新兴方向，中间密集团簇是核心研究集群。
+
 | 其他产出 | 文件 | 状态 |
 |---|---|---|
 | 三阶段技术演进解读 | Visual output/三阶段技术演进.html | 已生成 |
